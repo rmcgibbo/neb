@@ -9,6 +9,8 @@
 #include "openmm/internal/windowsExport.h"
 
 namespace OpenMM {
+
+class OPENMM_EXPORT NEBIntegrator : public Integrator {
 public:
     /**
      * Create a NEBIntegrator.
