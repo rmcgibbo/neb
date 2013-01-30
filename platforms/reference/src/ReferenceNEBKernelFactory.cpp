@@ -22,7 +22,6 @@ using namespace OpenMM;
 extern "C" void initNEBReferenceKernels() {
     Platform& platform = Platform::getPlatformByName("Reference");
     ReferenceNEBKernelFactory* factory = new ReferenceNEBKernelFactory();
-    platform.registerKernelFactory(IntegrateNEBStepKernel::Name(), factory);
 }
 
 KernelImpl* ReferenceNEBKernelFactory::createKernelImpl(std::string name, const Platform& platform, ContextImpl& context) const {
