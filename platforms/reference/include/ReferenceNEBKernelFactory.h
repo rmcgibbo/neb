@@ -4,7 +4,8 @@
 #include "openmm/KernelFactory.h"
 
 namespace OpenMM {
-class ReferenceRpmdKernelFactory : public KernelFactory {
+
+class ReferenceNEBKernelFactory : public KernelFactory {
 public:
     KernelImpl* createKernelImpl(std::string name, const Platform& platform, ContextImpl& context) const;
 };

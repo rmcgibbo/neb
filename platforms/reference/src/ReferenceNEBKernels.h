@@ -2,6 +2,8 @@
 #define REFERENCE_NEB_KERNELS_H_
 
 #include "ReferencePlatform.h"
+#include "ReferenceKernels.h"
+#include "openmm/kernels.h"
 #include "openmm/NEBKernels.h"
 #include "SimTKUtilities/RealVec.h"
 
@@ -13,6 +15,9 @@ namespace OpenMM {
  */
 class ReferenceIntegrateNEBStepKernel : public IntegrateNEBStepKernel {
 public:
+    ReferenceIntegrateNEBStepKernel(std::string name, const Platform& platform, ReferencePlatform::PlatformData& data) :
+            IntegrateNEBStepKernel(name, platform), data(data) {
+    }
     /**
      * Initialize the kernel.
      *
@@ -41,7 +46,11 @@ public:
      * Copy positions and velocities for one copy into the context.
      */
     void copyToContext(int copy, ContextImpl& context);
+
 private:
+    ReferencePlatform::PlatformData& data;
+    ReferenceIntegrateVerletStepKernel* dynamicsStepKernel; 
+    VerletIntegrator* stepIntegrator;
     std::vector<std::vector<RealVec> > positions;
     std::vector<std::vector<RealVec> > velocities;
     std::vector<std::vector<RealVec> > forces;

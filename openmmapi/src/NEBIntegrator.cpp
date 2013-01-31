@@ -8,15 +8,31 @@
 #include <iostream>
 
 using namespace OpenMM;
-using namespace std;
+using std::string;
+using std::vector;
 
 
-NEBIntegrator::NEBIntegrator(int numImages, double temperature, double frictionCoeff, double stepSize) {
-    std::cout << "Constructor!";
+NEBIntegrator::NEBIntegrator(int numImages, double temperature, double frictionCoeff, double stepSize, double springConstant) :
+    owner(NULL), numImages(numImages), springConstant(springConstant), forcesAreValid(false), hasSetPosition(false), hasSetVelocity(false){
+    std::cout << "Constructor! (NEBIntegrator)\n";
+    setTemperature(temperature);
+    setFriction(frictionCoeff);
+    setStepSize(stepSize);
+    setConstraintTolerance(1e-4);
+    setRandomNumberSeed((int) time(NULL));
 }
 
 void NEBIntegrator::initialize(ContextImpl& contextRef) {
-    std::cout << "Initialize!";
+    std::cout << "Initialize! (NEBIntegrator)\n";
+
+    if (owner != NULL && &contextRef.getOwner() != owner)
+        throw OpenMMException("This Integrator is already bound to a context");
+    if (contextRef.getSystem().getNumConstraints() > 0)
+        throw OpenMMException("NEBIntegrator cannot be used with Systems that include constraints");
+    context = &contextRef;
+    owner = &contextRef.getOwner();
+    kernel = context->getPlatform().createKernel(IntegrateNEBStepKernel::Name(), contextRef);
+    dynamic_cast<IntegrateNEBStepKernel&>(kernel.getImpl()).initialize(contextRef.getSystem(), *this);
 }
 
 void NEBIntegrator::stateChanged(State::DataType changed) {
@@ -30,8 +46,10 @@ vector<string> NEBIntegrator::getKernelNames() {
 }
 
 void NEBIntegrator::setPositions(int image, const vector<Vec3>& positions) {
+    std::cout << "NEBIntegrator::setPositions...\n";
     dynamic_cast<IntegrateNEBStepKernel&>(kernel.getImpl()).setPositions(image, positions);
     hasSetPosition = true;
+    std::cout << "NEBIntegrator::setPositions... finished\n";
 }
 
 void NEBIntegrator::setVelocities(int image, const vector<Vec3>& velocities) {
@@ -45,22 +63,19 @@ State NEBIntegrator::getState(int image, int types, bool enforcePeriodicBox, int
 }
 
 void NEBIntegrator::step(int steps) {
-    // if (!hasSetPosition) {
-    //     // Initialize the positions from the context.
-    //     
-    //     State s = context->getOwner().getState(State::Positions);
-    //     for (int i = 0; i < numImages; i++) {
-    //         // i don't tho
-    //         setPositions(i, s.getPositions());
-    //     }
-    // }
-    // if (!hasSetVelocity) {
-    //     // Initialize the velocities from the context.
-    //     
-    //     State s = context->getOwner().getState(State::Velocities);
-    //     for (int i = 0; i < numCopies; i++)
-    //         setVelocities(i, s.getVelocities());
-    // }
+    if (!hasSetPosition) {
+        // Initialize the positions from the context.
+        throw "Error! No positions!";
+    }
+    if (!hasSetVelocity) {
+        // Initialize the velocities from the context.
+        
+        State s = context->getOwner().getState(State::Velocities);
+        for (int i = 0; i < numImages; i++)
+            setVelocities(i, s.getVelocities());
+    }
+    std::cout << "NEBIntegrator::step\n";
+    
     for (int i = 0; i < steps; ++i) {
         dynamic_cast<IntegrateNEBStepKernel&>(kernel.getImpl()).execute(*context, *this, forcesAreValid);
         forcesAreValid = true;
