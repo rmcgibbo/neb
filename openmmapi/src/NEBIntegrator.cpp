@@ -57,6 +57,11 @@ State NEBIntegrator::getState(int image, int types, bool enforcePeriodicBox, int
     return context->getOwner().getState(types, enforcePeriodicBox, groups);
 }
 
+double NEBIntegrator::computeKineticEnergy() {
+  return 0.0;
+}
+
+
 void NEBIntegrator::step(int steps) {
     if (!hasSetPosition) {
         // Initialize the positions from the context.

@@ -41,6 +41,12 @@ public:
          return randomNumberSeed;
      }
      
+     /**
+      * Compute the kinetic energy. We're not going to actually
+      * implement this function...
+      **/
+     double computeKineticEnergy();
+     
      void setRandomNumberSeed(int seed) {
          randomNumberSeed = seed;
      }
