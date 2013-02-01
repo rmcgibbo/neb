@@ -31,6 +31,6 @@ extern "C" void initNEBReferenceKernels() {
 KernelImpl* ReferenceNEBKernelFactory::createKernelImpl(std::string name, const Platform& platform, ContextImpl& context) const {
     ReferencePlatform::PlatformData& data = *static_cast<ReferencePlatform::PlatformData*>(context.getPlatformData());
     if (name == IntegrateNEBStepKernel::Name())
-        return new ReferenceIntegrateNEBStepKernel(name, platform, data);
+        return new ReferenceIntegrateNEBStepKernel(name, platform);
     throw OpenMMException((std::string("Tried to create kernel with illegal kernel name '")+name+"'").c_str());
 }

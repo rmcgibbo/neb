@@ -16,42 +16,27 @@ public:
      * Create a NEBIntegrator.
      *
      * @param numImages      the number of copies of the system that should be simulated
-     * @param temperature    the temperature of the heat bath (in Kelvin)
-     * @param frictionCoeff  the friction coefficient which couples the system to the heat bath (in inverse picoseconds)
      * @param stepSize       the step size with which to integrator the system (in picoseconds)
      * @param springConstant the spring constant between the images
      */
-     NEBIntegrator(int numImages, double temperature, double frictionCoeff, double stepSize, double springConstant);
+     NEBIntegrator(int numImages, double stepSize, double springConstant);
      
      int getNumImages() const {
          return numImages;
-     }
-     
-     double getTemperature() const {
-         return temperature;
-     }
-     
-     void setTemperature(double temp) {
-         temperature = temp;
-     }
-     
-     double getFriction() const {
-         return friction;
-     }
-
-     double setFriction(double coeff) {
-         friction = coeff;
      }
      
      double getSpringConstant() const {
          return springConstant;
      }
 
-     double setSpringConstant(double k) {
+     double getStepSize() const {
+          return stepSize;
+     }
+
+     void setSpringConstant(double k) {
          springConstant = k;
      }
-     
-     
+          
      int getRandomNumberSeed() const {
          return randomNumberSeed;
      }
@@ -113,7 +98,7 @@ protected:
      std::vector<std::string> getKernelNames();
 
 private:
-    double temperature, friction, springConstant;
+    double temperature, friction, springConstant, stepSize;
     int numImages, randomNumberSeed;
     bool forcesAreValid, hasSetPosition, hasSetVelocity;
     ContextImpl* context;

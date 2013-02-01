@@ -15,8 +15,8 @@ namespace OpenMM {
  */
 class ReferenceIntegrateNEBStepKernel : public IntegrateNEBStepKernel {
 public:
-    ReferenceIntegrateNEBStepKernel(std::string name, const Platform& platform, ReferencePlatform::PlatformData& data) :
-            IntegrateNEBStepKernel(name, platform), data(data) {
+    ReferenceIntegrateNEBStepKernel(std::string name, const Platform& platform) :
+            IntegrateNEBStepKernel(name, platform) {
     }
     /**
      * Initialize the kernel.
@@ -48,9 +48,6 @@ public:
     void copyToContext(int copy, ContextImpl& context);
 
 private:
-    ReferencePlatform::PlatformData& data;
-    ReferenceIntegrateVerletStepKernel* dynamicsStepKernel; 
-    VerletIntegrator* stepIntegrator;
     std::vector<std::vector<RealVec> > positions;
     std::vector<std::vector<RealVec> > velocities;
     std::vector<std::vector<RealVec> > forces;
