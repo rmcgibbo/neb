@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="Integrator_8h" kind="file">
+    <compoundname>Integrator.h</compoundname>
+    <includes refid="State_8h" local="yes">State.h</includes>
+    <includes refid="Vec3_8h" local="yes">Vec3.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">vector</includes>
+    <includes refid="windowsExport_8h" local="yes">internal/windowsExport.h</includes>
+    <includedby refid="BrownianIntegrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/BrownianIntegrator.h</includedby>
+    <includedby refid="Context_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Context.h</includedby>
+    <includedby refid="CustomIntegrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomIntegrator.h</includedby>
+    <includedby refid="LangevinIntegrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/LangevinIntegrator.h</includedby>
+    <includedby refid="VariableLangevinIntegrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h</includedby>
+    <includedby refid="VariableVerletIntegrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h</includedby>
+    <includedby refid="VerletIntegrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VerletIntegrator.h</includedby>
+    <includedby refid="OpenMM_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</includedby>
+    <includedby refid="RPMDIntegrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h</includedby>
+    <includedby refid="NEBIntegrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h</includedby>
+    <incdepgraph>
+      <node id="322">
+        <label>cassert</label>
+      </node>
+      <node id="324">
+        <label>map</label>
+      </node>
+      <node id="320">
+        <label>State.h</label>
+        <link refid="State_8h_source"/>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="325">
+        <label>vector</label>
+      </node>
+      <node id="323">
+        <label>iosfwd</label>
+      </node>
+      <node id="321">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h</label>
+        <link refid="Integrator.h"/>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="340">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h</label>
+        <link refid="RpmdKernels_8h_source"/>
+      </node>
+      <node id="338">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VerletIntegrator.h</label>
+        <link refid="VerletIntegrator_8h_source"/>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBKernels.h</label>
+        <link refid="NEBKernels_8h_source"/>
+      </node>
+      <node id="339">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h</label>
+        <link refid="RPMDIntegrator_8h_source"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Context.h</label>
+        <link refid="Context_8h_source"/>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+      <node id="337">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h</label>
+        <link refid="VariableVerletIntegrator_8h_source"/>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+      <node id="328">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/BrownianIntegrator.h</label>
+        <link refid="BrownianIntegrator_8h_source"/>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+      <node id="329">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</label>
+        <link refid="OpenMM_8h_source"/>
+      </node>
+      <node id="333">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h</label>
+        <link refid="NonbondedForceImpl_8h_source"/>
+      </node>
+      <node id="332">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h</label>
+        <link refid="NonbondedForce_8h_source"/>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+      <node id="335">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/LangevinIntegrator.h</label>
+        <link refid="LangevinIntegrator_8h_source"/>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+      <node id="341">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h</label>
+        <link refid="NEBIntegrator_8h_source"/>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBKerenls.h</label>
+        <link refid="NEBKerenls_8h_source"/>
+      </node>
+      <node id="336">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h</label>
+        <link refid="VariableLangevinIntegrator_8h_source"/>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+      <node id="327">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h</label>
+        <link refid="Integrator.h"/>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+        <childnode refid="338" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+      </node>
+      <node id="334">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomIntegrator.h</label>
+        <link refid="CustomIntegrator_8h_source"/>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+      <node id="331">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/LocalEnergyMinimizer.h</label>
+        <link refid="LocalEnergyMinimizer_8h_source"/>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1Integrator" prot="public">OpenMM::Integrator</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h"/>
+  </compounddef>
+</doxygen>

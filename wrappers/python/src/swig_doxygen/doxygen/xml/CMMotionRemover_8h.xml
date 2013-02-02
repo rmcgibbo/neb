@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="CMMotionRemover_8h" kind="file">
+    <compoundname>CMMotionRemover.h</compoundname>
+    <includes refid="Force_8h" local="yes">Force.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="windowsExport_8h" local="yes">internal/windowsExport.h</includes>
+    <includedby refid="CMMotionRemoverImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h</includedby>
+    <includedby refid="OpenMM_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</includedby>
+    <incdepgraph>
+      <node id="91">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CMMotionRemover.h</label>
+        <link refid="CMMotionRemover.h"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>string</label>
+      </node>
+      <node id="93">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="95">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CMMotionRemover.h</label>
+        <link refid="CMMotionRemover.h"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h</label>
+        <link refid="CMMotionRemoverImpl_8h_source"/>
+      </node>
+      <node id="97">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</label>
+        <link refid="OpenMM_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1CMMotionRemover" prot="public">OpenMM::CMMotionRemover</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CMMotionRemover.h"/>
+  </compounddef>
+</doxygen>

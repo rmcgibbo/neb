@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1CMMotionRemoverImpl" kind="class" prot="public">
+    <compoundname>OpenMM::CMMotionRemoverImpl</compoundname>
+    <basecompoundref refid="classOpenMM_1_1ForceImpl" prot="public" virt="non-virtual">OpenMM::ForceImpl</basecompoundref>
+    <includes refid="CMMotionRemoverImpl_8h" local="no">CMMotionRemoverImpl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1CMMotionRemoverImpl_1ac3e35885a7785ec43590013def3df818" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1CMMotionRemover" kindref="compound">CMMotionRemover</ref> &amp;</type>
+        <definition>CMMotionRemover&amp; OpenMM::CMMotionRemoverImpl::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" line="62" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CMMotionRemoverImpl_1a05b9acd014451903b09e37ae0103df07" prot="private" static="no" mutable="no">
+        <type>Kernel</type>
+        <definition>Kernel OpenMM::CMMotionRemoverImpl::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" line="63" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1CMMotionRemoverImpl_1a0dd545e0e933b3f85b32b8e50bc15fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CMMotionRemoverImpl::CMMotionRemoverImpl</definition>
+        <argsstring>(CMMotionRemover &amp;owner)</argsstring>
+        <name>CMMotionRemoverImpl</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1CMMotionRemover" kindref="compound">CMMotionRemover</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CMMotionRemoverImpl_1a313cdcf88d449d798efd48abcd8e9165" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::CMMotionRemoverImpl::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a0a1f85a9c94613577399c1fada6ecb01">initialize</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called after the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> is created and before <ref refid="classOpenMM_1_1CMMotionRemoverImpl_1a18edb48051188aed459774402c3968cf" kindref="member">updateContextState()</ref>, calcForces(), or calcEnergy() is called on it. This allows it to do any necessary initialization. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CMMotionRemoverImpl_1abd9857ee78c7f0361709adfb7a79035c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenMM_1_1CMMotionRemover" kindref="compound">CMMotionRemover</ref> &amp;</type>
+        <definition>CMMotionRemover&amp; OpenMM::CMMotionRemoverImpl::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a766c966d25ad0d8cf287ee07e524a081">getOwner</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object from which this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> was created. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" line="49" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CMMotionRemoverImpl_1a18edb48051188aed459774402c3968cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::CMMotionRemoverImpl::updateContextState</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>updateContextState</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1aae2f5cc793b7071cb6516a02fa736087">updateContextState</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called at the beginning of each time step. It give the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> a chance to modify the state variables (positions, velocities, and parameters) stored in the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> in arbitrary ways before integration is performed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CMMotionRemoverImpl_1ac920c08c02e0a3c02712d293a996b8f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double OpenMM::CMMotionRemoverImpl::calcForcesAndEnergy</definition>
+        <argsstring>(ContextImpl &amp;context, bool includeForces, bool includeEnergy, int groups)</argsstring>
+        <name>calcForcesAndEnergy</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a1e2544ac6d58460a79697236e8b758be">calcForcesAndEnergy</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeForces</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeEnergy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>groups</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the force on each particle generated by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> and/or this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>&apos;s contribution to the potential energy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeForces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if forces should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeEnergy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the energy should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>groups</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a set of bit flags for which force groups to include. Group i should be included if (groups&amp;(1&lt;&lt;i)) != 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>this force&apos;s contribution to the potential energy of the system, or 0 if this force does not contribute to potential energy (or if includeEnergy is false) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" line="53" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CMMotionRemoverImpl_1a41ddec26ad2ae4183b1ebdba0fc5c093" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; OpenMM::CMMotionRemoverImpl::getDefaultParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultParameters</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1adf18979257a14b23dd52dbda9e87c308">getDefaultParameters</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a map containing the default values for all adjustable parameters defined by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>. These parameters and their default values will automatically be added to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" line="57" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CMMotionRemoverImpl_1aabde8c28e00c89a1bfb1dfeec9bd0dbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; OpenMM::CMMotionRemoverImpl::getKernelNames</definition>
+        <argsstring>()</argsstring>
+        <name>getKernelNames</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a5820facb44adaab79bbb02a3ba5bd79b">getKernelNames</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" line="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the internal implementation of <ref refid="classOpenMM_1_1CMMotionRemover" kindref="compound">CMMotionRemover</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="163">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="162">
+        <label>OpenMM::CMMotionRemoverImpl</label>
+        <link refid="classOpenMM_1_1CMMotionRemoverImpl"/>
+        <childnode refid="163" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="165">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="164">
+        <label>OpenMM::CMMotionRemoverImpl</label>
+        <link refid="classOpenMM_1_1CMMotionRemoverImpl"/>
+        <childnode refid="165" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" line="45" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMMotionRemoverImpl.h" bodystart="45" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1CMMotionRemoverImpl_1ac920c08c02e0a3c02712d293a996b8f9" prot="public" virt="virtual"><scope>OpenMM::CMMotionRemoverImpl</scope><name>calcForcesAndEnergy</name></member>
+      <member refid="classOpenMM_1_1CMMotionRemoverImpl_1a0dd545e0e933b3f85b32b8e50bc15fb6" prot="public" virt="non-virtual"><scope>OpenMM::CMMotionRemoverImpl</scope><name>CMMotionRemoverImpl</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1aaa19783e47e53df34083cbaadf37e41c" prot="public" virt="virtual"><scope>OpenMM::CMMotionRemoverImpl</scope><name>getBondedParticles</name></member>
+      <member refid="classOpenMM_1_1CMMotionRemoverImpl_1a41ddec26ad2ae4183b1ebdba0fc5c093" prot="public" virt="virtual"><scope>OpenMM::CMMotionRemoverImpl</scope><name>getDefaultParameters</name></member>
+      <member refid="classOpenMM_1_1CMMotionRemoverImpl_1aabde8c28e00c89a1bfb1dfeec9bd0dbe" prot="public" virt="virtual"><scope>OpenMM::CMMotionRemoverImpl</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1CMMotionRemoverImpl_1abd9857ee78c7f0361709adfb7a79035c" prot="public" virt="virtual"><scope>OpenMM::CMMotionRemoverImpl</scope><name>getOwner</name></member>
+      <member refid="classOpenMM_1_1CMMotionRemoverImpl_1a313cdcf88d449d798efd48abcd8e9165" prot="public" virt="virtual"><scope>OpenMM::CMMotionRemoverImpl</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1CMMotionRemoverImpl_1a05b9acd014451903b09e37ae0103df07" prot="private" virt="non-virtual"><scope>OpenMM::CMMotionRemoverImpl</scope><name>kernel</name></member>
+      <member refid="classOpenMM_1_1CMMotionRemoverImpl_1ac3e35885a7785ec43590013def3df818" prot="private" virt="non-virtual"><scope>OpenMM::CMMotionRemoverImpl</scope><name>owner</name></member>
+      <member refid="classOpenMM_1_1CMMotionRemoverImpl_1a18edb48051188aed459774402c3968cf" prot="public" virt="virtual"><scope>OpenMM::CMMotionRemoverImpl</scope><name>updateContextState</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1a8a2bccbabb2587111b46da67cea8293c" prot="public" virt="virtual"><scope>OpenMM::CMMotionRemoverImpl</scope><name>~ForceImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

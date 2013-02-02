@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="CustomExternalForceImpl_8h" kind="file">
+    <compoundname>CustomExternalForceImpl.h</compoundname>
+    <includes refid="ForceImpl_8h" local="yes">ForceImpl.h</includes>
+    <includes refid="CustomExternalForce_8h" local="yes">openmm/CustomExternalForce.h</includes>
+    <includes local="yes">openmm/Kernel.h</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="450">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="444" relation="include">
+        </childnode>
+      </node>
+      <node id="443">
+        <label>ForceImpl.h</label>
+        <link refid="ForceImpl_8h_source"/>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+      </node>
+      <node id="442">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomExternalForceImpl.h</label>
+        <link refid="CustomExternalForceImpl.h"/>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="449" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+      </node>
+      <node id="452">
+        <label>cassert</label>
+      </node>
+      <node id="454">
+        <label>openmm/Kernel.h</label>
+      </node>
+      <node id="446">
+        <label>string</label>
+      </node>
+      <node id="445">
+        <label>map</label>
+      </node>
+      <node id="444">
+        <label>openmm/internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="448">
+        <label>vector</label>
+      </node>
+      <node id="447">
+        <label>utility</label>
+      </node>
+      <node id="449">
+        <label>openmm/CustomExternalForce.h</label>
+        <link refid="CustomExternalForce_8h_source"/>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="451" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+      </node>
+      <node id="453">
+        <label>iosfwd</label>
+      </node>
+      <node id="451">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="452" relation="include">
+        </childnode>
+        <childnode refid="453" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classOpenMM_1_1CustomExternalForceImpl" prot="public">OpenMM::CustomExternalForceImpl</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomExternalForceImpl.h"/>
+  </compounddef>
+</doxygen>

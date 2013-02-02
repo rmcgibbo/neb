@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="CustomBondForceImpl_8h" kind="file">
+    <compoundname>CustomBondForceImpl.h</compoundname>
+    <includes refid="ForceImpl_8h" local="yes">ForceImpl.h</includes>
+    <includes refid="CustomBondForce_8h" local="yes">openmm/CustomBondForce.h</includes>
+    <includes local="yes">openmm/Kernel.h</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="419">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="413" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>ForceImpl.h</label>
+        <link refid="ForceImpl_8h_source"/>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>cassert</label>
+      </node>
+      <node id="423">
+        <label>openmm/Kernel.h</label>
+      </node>
+      <node id="415">
+        <label>string</label>
+      </node>
+      <node id="414">
+        <label>map</label>
+      </node>
+      <node id="413">
+        <label>openmm/internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="411">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomBondForceImpl.h</label>
+        <link refid="CustomBondForceImpl.h"/>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+      </node>
+      <node id="418">
+        <label>openmm/CustomBondForce.h</label>
+        <link refid="CustomBondForce_8h_source"/>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+      </node>
+      <node id="417">
+        <label>vector</label>
+      </node>
+      <node id="416">
+        <label>utility</label>
+      </node>
+      <node id="422">
+        <label>iosfwd</label>
+      </node>
+      <node id="420">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classOpenMM_1_1CustomBondForceImpl" prot="public">OpenMM::CustomBondForceImpl</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomBondForceImpl.h"/>
+  </compounddef>
+</doxygen>

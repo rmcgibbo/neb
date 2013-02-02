@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="AmoebaAngleForce_8h" kind="file">
+    <compoundname>AmoebaAngleForce.h</compoundname>
+    <includes refid="Force_8h" local="yes">openmm/Force.h</includes>
+    <includes refid="windowsExportAmoeba_8h" local="yes">internal/windowsExportAmoeba.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="AmoebaAngleForceImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaAngleForceImpl.h</includedby>
+    <includedby refid="OpenMMAmoeba_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/OpenMMAmoeba.h</includedby>
+    <incdepgraph>
+      <node id="995">
+        <label>openmm/Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="996" relation="include">
+        </childnode>
+      </node>
+      <node id="996">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="994">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaAngleForce.h</label>
+        <link refid="AmoebaAngleForce.h"/>
+        <childnode refid="995" relation="include">
+        </childnode>
+        <childnode refid="997" relation="include">
+        </childnode>
+        <childnode refid="998" relation="include">
+        </childnode>
+      </node>
+      <node id="998">
+        <label>vector</label>
+      </node>
+      <node id="997">
+        <label>internal/windowsExportAmoeba.h</label>
+        <link refid="windowsExportAmoeba_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1002">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h</label>
+        <link refid="amoebaKernels_8h_source"/>
+      </node>
+      <node id="1001">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/OpenMMAmoeba.h</label>
+        <link refid="OpenMMAmoeba_8h_source"/>
+        <childnode refid="1002" relation="include">
+        </childnode>
+      </node>
+      <node id="1000">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaAngleForceImpl.h</label>
+        <link refid="AmoebaAngleForceImpl_8h_source"/>
+      </node>
+      <node id="999">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaAngleForce.h</label>
+        <link refid="AmoebaAngleForce.h"/>
+        <childnode refid="1000" relation="include">
+        </childnode>
+        <childnode refid="1001" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1AmoebaAngleForce" prot="public">OpenMM::AmoebaAngleForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaAngleForce_1_1AngleInfo" prot="public">OpenMM::AmoebaAngleForce::AngleInfo</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaAngleForce.h"/>
+  </compounddef>
+</doxygen>

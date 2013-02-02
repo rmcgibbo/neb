@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="Vec3_8h" kind="file">
+    <compoundname>Vec3.h</compoundname>
+    <includes local="no">cassert</includes>
+    <includes local="no">iosfwd</includes>
+    <includedby refid="State_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h</includedby>
+    <includedby refid="Integrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h</includedby>
+    <includedby refid="CMAPTorsionForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CMAPTorsionForce.h</includedby>
+    <includedby refid="System_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/System.h</includedby>
+    <includedby refid="CustomAngleForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h</includedby>
+    <includedby refid="CustomBondForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomBondForce.h</includedby>
+    <includedby refid="CustomCompoundBondForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomCompoundBondForce.h</includedby>
+    <includedby refid="CustomExternalForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomExternalForce.h</includedby>
+    <includedby refid="CustomGBForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h</includedby>
+    <includedby refid="CustomHbondForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h</includedby>
+    <includedby refid="CustomIntegrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomIntegrator.h</includedby>
+    <includedby refid="CustomNonbondedForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h</includedby>
+    <includedby refid="CustomTorsionForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h</includedby>
+    <includedby refid="HarmonicAngleForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicAngleForce.h</includedby>
+    <includedby refid="HarmonicBondForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h</includedby>
+    <includedby refid="ContextImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ContextImpl.h</includedby>
+    <includedby refid="PeriodicTorsionForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/PeriodicTorsionForce.h</includedby>
+    <includedby refid="RBTorsionForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/RBTorsionForce.h</includedby>
+    <includedby refid="OpenMM_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</includedby>
+    <includedby refid="AmoebaBondForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaBondForce.h</includedby>
+    <includedby refid="AmoebaMultipoleForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaMultipoleForce.h</includedby>
+    <includedby refid="AmoebaMultipoleForceImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h</includedby>
+    <includedby refid="RPMDIntegrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h</includedby>
+    <includedby refid="RpmdKernels_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h</includedby>
+    <includedby refid="NEBIntegrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h</includedby>
+    <includedby refid="NEBKerenls_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBKerenls.h</includedby>
+    <includedby refid="NEBKernels_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBKernels.h</includedby>
+    <incdepgraph>
+      <node id="922">
+        <label>cassert</label>
+      </node>
+      <node id="923">
+        <label>iosfwd</label>
+      </node>
+      <node id="921">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h</label>
+        <link refid="Vec3.h"/>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="923" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="962">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomTorsionForceImpl.h</label>
+        <link refid="CustomTorsionForceImpl_8h_source"/>
+      </node>
+      <node id="971">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/RBTorsionForceImpl.h</label>
+        <link refid="RBTorsionForceImpl_8h_source"/>
+      </node>
+      <node id="947">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h</label>
+        <link refid="CustomAngleForce_8h_source"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="955">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h</label>
+        <link refid="CustomGBForce_8h_source"/>
+        <childnode refid="956" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="968">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/PeriodicTorsionForce.h</label>
+        <link refid="PeriodicTorsionForce_8h_source"/>
+        <childnode refid="969" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="975">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaMultipoleForce.h</label>
+        <link refid="AmoebaMultipoleForce_8h_source"/>
+        <childnode refid="976" relation="include">
+        </childnode>
+        <childnode refid="974" relation="include">
+        </childnode>
+      </node>
+      <node id="963">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicAngleForce.h</label>
+        <link refid="HarmonicAngleForce_8h_source"/>
+        <childnode refid="964" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="973">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaBondForceImpl.h</label>
+        <link refid="AmoebaBondForceImpl_8h_source"/>
+      </node>
+      <node id="939">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h</label>
+        <link refid="RpmdKernels_8h_source"/>
+      </node>
+      <node id="972">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaBondForce.h</label>
+        <link refid="AmoebaBondForce_8h_source"/>
+        <childnode refid="973" relation="include">
+        </childnode>
+        <childnode refid="974" relation="include">
+        </childnode>
+      </node>
+      <node id="937">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VerletIntegrator.h</label>
+        <link refid="VerletIntegrator_8h_source"/>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="976">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h</label>
+        <link refid="AmoebaMultipoleForceImpl_8h_source"/>
+      </node>
+      <node id="942">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBKernels.h</label>
+        <link refid="NEBKernels_8h_source"/>
+      </node>
+      <node id="954">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomExternalForceImpl.h</label>
+        <link refid="CustomExternalForceImpl_8h_source"/>
+      </node>
+      <node id="967">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ContextImpl.h</label>
+        <link refid="ContextImpl_8h_source"/>
+      </node>
+      <node id="970">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/RBTorsionForce.h</label>
+        <link refid="RBTorsionForce_8h_source"/>
+        <childnode refid="971" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="938">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h</label>
+        <link refid="RPMDIntegrator_8h_source"/>
+        <childnode refid="939" relation="include">
+        </childnode>
+      </node>
+      <node id="959">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h</label>
+        <link refid="CustomNonbondedForce_8h_source"/>
+        <childnode refid="960" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="925">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h</label>
+        <link refid="State_8h_source"/>
+        <childnode refid="926" relation="include">
+        </childnode>
+        <childnode refid="929" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+      </node>
+      <node id="944">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMAPTorsionForceImpl.h</label>
+        <link refid="CMAPTorsionForceImpl_8h_source"/>
+      </node>
+      <node id="964">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/HarmonicAngleForceImpl.h</label>
+        <link refid="HarmonicAngleForceImpl_8h_source"/>
+      </node>
+      <node id="952">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomCompoundBondForceImpl.h</label>
+        <link refid="CustomCompoundBondForceImpl_8h_source"/>
+      </node>
+      <node id="946">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h</label>
+        <link refid="amoebaKernels_8h_source"/>
+      </node>
+      <node id="974">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/OpenMMAmoeba.h</label>
+        <link refid="OpenMMAmoeba_8h_source"/>
+        <childnode refid="946" relation="include">
+        </childnode>
+      </node>
+      <node id="948">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomAngleForceImpl.h</label>
+        <link refid="CustomAngleForceImpl_8h_source"/>
+      </node>
+      <node id="961">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h</label>
+        <link refid="CustomTorsionForce_8h_source"/>
+        <childnode refid="962" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="929">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Context.h</label>
+        <link refid="Context_8h_source"/>
+        <childnode refid="930" relation="include">
+        </childnode>
+        <childnode refid="931" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="950">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomBondForceImpl.h</label>
+        <link refid="CustomBondForceImpl_8h_source"/>
+      </node>
+      <node id="936">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h</label>
+        <link refid="VariableVerletIntegrator_8h_source"/>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="927">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/BrownianIntegrator.h</label>
+        <link refid="BrownianIntegrator_8h_source"/>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="949">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomBondForce.h</label>
+        <link refid="CustomBondForce_8h_source"/>
+        <childnode refid="950" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="928">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</label>
+        <link refid="OpenMM_8h_source"/>
+      </node>
+      <node id="932">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h</label>
+        <link refid="NonbondedForceImpl_8h_source"/>
+      </node>
+      <node id="957">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h</label>
+        <link refid="CustomHbondForce_8h_source"/>
+        <childnode refid="958" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="965">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h</label>
+        <link refid="HarmonicBondForce_8h_source"/>
+        <childnode refid="966" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="953">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomExternalForce.h</label>
+        <link refid="CustomExternalForce_8h_source"/>
+        <childnode refid="954" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="958">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h</label>
+        <link refid="CustomHbondForceImpl_8h_source"/>
+      </node>
+      <node id="931">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h</label>
+        <link refid="NonbondedForce_8h_source"/>
+        <childnode refid="932" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="969">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/PeriodicTorsionForceImpl.h</label>
+        <link refid="PeriodicTorsionForceImpl_8h_source"/>
+      </node>
+      <node id="966">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/HarmonicBondForceImpl.h</label>
+        <link refid="HarmonicBondForceImpl_8h_source"/>
+      </node>
+      <node id="945">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/System.h</label>
+        <link refid="System_8h_source"/>
+        <childnode refid="929" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+        <childnode refid="946" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+      </node>
+      <node id="934">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/LangevinIntegrator.h</label>
+        <link refid="LangevinIntegrator_8h_source"/>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="940">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h</label>
+        <link refid="NEBIntegrator_8h_source"/>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+      </node>
+      <node id="941">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBKerenls.h</label>
+        <link refid="NEBKerenls_8h_source"/>
+      </node>
+      <node id="924">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h</label>
+        <link refid="Vec3.h"/>
+        <childnode refid="925" relation="include">
+        </childnode>
+        <childnode refid="926" relation="include">
+        </childnode>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="945" relation="include">
+        </childnode>
+        <childnode refid="947" relation="include">
+        </childnode>
+        <childnode refid="949" relation="include">
+        </childnode>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="953" relation="include">
+        </childnode>
+        <childnode refid="955" relation="include">
+        </childnode>
+        <childnode refid="957" relation="include">
+        </childnode>
+        <childnode refid="933" relation="include">
+        </childnode>
+        <childnode refid="959" relation="include">
+        </childnode>
+        <childnode refid="961" relation="include">
+        </childnode>
+        <childnode refid="963" relation="include">
+        </childnode>
+        <childnode refid="965" relation="include">
+        </childnode>
+        <childnode refid="967" relation="include">
+        </childnode>
+        <childnode refid="968" relation="include">
+        </childnode>
+        <childnode refid="970" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+        <childnode refid="972" relation="include">
+        </childnode>
+        <childnode refid="975" relation="include">
+        </childnode>
+        <childnode refid="976" relation="include">
+        </childnode>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+      </node>
+      <node id="935">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h</label>
+        <link refid="VariableLangevinIntegrator_8h_source"/>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="926">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h</label>
+        <link refid="Integrator_8h_source"/>
+        <childnode refid="927" relation="include">
+        </childnode>
+        <childnode refid="929" relation="include">
+        </childnode>
+        <childnode refid="933" relation="include">
+        </childnode>
+        <childnode refid="934" relation="include">
+        </childnode>
+        <childnode refid="935" relation="include">
+        </childnode>
+        <childnode refid="936" relation="include">
+        </childnode>
+        <childnode refid="937" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+      </node>
+      <node id="951">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomCompoundBondForce.h</label>
+        <link refid="CustomCompoundBondForce_8h_source"/>
+        <childnode refid="952" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="960">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomNonbondedForceImpl.h</label>
+        <link refid="CustomNonbondedForceImpl_8h_source"/>
+      </node>
+      <node id="943">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CMAPTorsionForce.h</label>
+        <link refid="CMAPTorsionForce_8h_source"/>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="933">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomIntegrator.h</label>
+        <link refid="CustomIntegrator_8h_source"/>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="930">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/LocalEnergyMinimizer.h</label>
+        <link refid="LocalEnergyMinimizer_8h_source"/>
+        <childnode refid="928" relation="include">
+        </childnode>
+      </node>
+      <node id="956">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomGBForceImpl.h</label>
+        <link refid="CustomGBForceImpl_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1Vec3" prot="public">OpenMM::Vec3</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h"/>
+  </compounddef>
+</doxygen>

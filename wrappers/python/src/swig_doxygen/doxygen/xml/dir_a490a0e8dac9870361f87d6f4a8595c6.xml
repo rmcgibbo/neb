@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_a490a0e8dac9870361f87d6f4a8595c6" kind="dir">
+    <compoundname>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/</compoundname>
+    <innerfile refid="AndersenThermostatImpl_8h">AndersenThermostatImpl.h</innerfile>
+    <innerfile refid="AssertionUtilities_8h">AssertionUtilities.h</innerfile>
+    <innerfile refid="CMAPTorsionForceImpl_8h">CMAPTorsionForceImpl.h</innerfile>
+    <innerfile refid="CMMotionRemoverImpl_8h">CMMotionRemoverImpl.h</innerfile>
+    <innerfile refid="ContextImpl_8h">ContextImpl.h</innerfile>
+    <innerfile refid="CustomAngleForceImpl_8h">CustomAngleForceImpl.h</innerfile>
+    <innerfile refid="CustomBondForceImpl_8h">CustomBondForceImpl.h</innerfile>
+    <innerfile refid="CustomCompoundBondForceImpl_8h">CustomCompoundBondForceImpl.h</innerfile>
+    <innerfile refid="CustomExternalForceImpl_8h">CustomExternalForceImpl.h</innerfile>
+    <innerfile refid="CustomGBForceImpl_8h">CustomGBForceImpl.h</innerfile>
+    <innerfile refid="CustomHbondForceImpl_8h">CustomHbondForceImpl.h</innerfile>
+    <innerfile refid="CustomNonbondedForceImpl_8h">CustomNonbondedForceImpl.h</innerfile>
+    <innerfile refid="CustomTorsionForceImpl_8h">CustomTorsionForceImpl.h</innerfile>
+    <innerfile refid="ForceImpl_8h">ForceImpl.h</innerfile>
+    <innerfile refid="GBSAOBCForceImpl_8h">GBSAOBCForceImpl.h</innerfile>
+    <innerfile refid="GBVIForceImpl_8h">GBVIForceImpl.h</innerfile>
+    <innerfile refid="HarmonicAngleForceImpl_8h">HarmonicAngleForceImpl.h</innerfile>
+    <innerfile refid="HarmonicBondForceImpl_8h">HarmonicBondForceImpl.h</innerfile>
+    <innerfile refid="MonteCarloBarostatImpl_8h">MonteCarloBarostatImpl.h</innerfile>
+    <innerfile refid="MSVC__erfc_8h">MSVC_erfc.h</innerfile>
+    <innerfile refid="NonbondedForceImpl_8h">NonbondedForceImpl.h</innerfile>
+    <innerfile refid="PeriodicTorsionForceImpl_8h">PeriodicTorsionForceImpl.h</innerfile>
+    <innerfile refid="RBTorsionForceImpl_8h">RBTorsionForceImpl.h</innerfile>
+    <innerfile refid="SplineFitter_8h">SplineFitter.h</innerfile>
+    <innerfile refid="windowsExport_8h">windowsExport.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/"/>
+  </compounddef>
+</doxygen>

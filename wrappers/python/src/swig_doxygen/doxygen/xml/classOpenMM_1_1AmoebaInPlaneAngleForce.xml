@@ -1,0 +1,628 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1AmoebaInPlaneAngleForce" kind="class" prot="public">
+    <compoundname>OpenMM::AmoebaInPlaneAngleForce</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Force" prot="public" virt="non-virtual">OpenMM::Force</basecompoundref>
+    <includes refid="AmoebaInPlaneAngleForce_8h" local="no">AmoebaInPlaneAngleForce.h</includes>
+    <innerclass refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1_1AngleInfo" prot="public">OpenMM::AmoebaInPlaneAngleForce::AngleInfo</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1a6f9b4c0d69c769e0a732da4e210209d9" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaInPlaneAngleForce::_globalCubicK</definition>
+        <argsstring></argsstring>
+        <name>_globalCubicK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="177" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1addc0dd4337e0b53fb51bd914607123d2" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaInPlaneAngleForce::_globalQuarticK</definition>
+        <argsstring></argsstring>
+        <name>_globalQuarticK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="177" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1ae75a822459525efbf76374e8eac95a0b" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaInPlaneAngleForce::_globalPenticK</definition>
+        <argsstring></argsstring>
+        <name>_globalPenticK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="177" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1aac9beced29cebad0fcd411c5ff0771c5" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaInPlaneAngleForce::_globalSexticK</definition>
+        <argsstring></argsstring>
+        <name>_globalSexticK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="177" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1aa07764e6a1526ba0ea0d13f340751fea" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1_1AngleInfo" kindref="compound">AngleInfo</ref> &gt;</type>
+        <definition>std::vector&lt;AngleInfo&gt; OpenMM::AmoebaInPlaneAngleForce::angles</definition>
+        <argsstring></argsstring>
+        <name>angles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="180" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1afdc360fe24d83c514be0fc87c027e16e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaInPlaneAngleForce::AmoebaInPlaneAngleForce</definition>
+        <argsstring>()</argsstring>
+        <name>AmoebaInPlaneAngleForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an <ref refid="classOpenMM_1_1AmoebaAngleForce" kindref="compound">AmoebaAngleForce</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1ab05327e8ddd8ce1eb271218d5ac94831" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaInPlaneAngleForce::getNumAngles</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumAngles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of in-plane angle terms in the potential function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="64" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1a0947a8874b2a45c335908a37d4c948d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaInPlaneAngleForce::setAmoebaGlobalInPlaneAngleCubic</definition>
+        <argsstring>(double cubicK)</argsstring>
+        <name>setAmoebaGlobalInPlaneAngleCubic</name>
+        <param>
+          <type>double</type>
+          <declname>cubicK</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the global cubic term</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cubicK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the cubic force constant for the angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1afc80a4791db14b0b28da3739adea225f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaInPlaneAngleForce::getAmoebaGlobalInPlaneAngleCubic</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getAmoebaGlobalInPlaneAngleCubic</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the global cubic term</para><para><simplesect kind="return"><para>global cubicK term </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1ae1cff3db44e9b3088fb1e9118c988d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaInPlaneAngleForce::setAmoebaGlobalInPlaneAngleQuartic</definition>
+        <argsstring>(double quarticK)</argsstring>
+        <name>setAmoebaGlobalInPlaneAngleQuartic</name>
+        <param>
+          <type>double</type>
+          <declname>quarticK</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the global quartic term</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>quarticK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the quartic force constant for the angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1ac45568cd8fcd71a5afe1c9eaef605fcb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaInPlaneAngleForce::getAmoebaGlobalInPlaneAngleQuartic</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getAmoebaGlobalInPlaneAngleQuartic</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the global quartic term</para><para><simplesect kind="return"><para>global quartic term </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1aa7f469f54d78967f6bded1c7031c04dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaInPlaneAngleForce::setAmoebaGlobalInPlaneAnglePentic</definition>
+        <argsstring>(double penticK)</argsstring>
+        <name>setAmoebaGlobalInPlaneAnglePentic</name>
+        <param>
+          <type>double</type>
+          <declname>penticK</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the global pentic term</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>penticK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pentic force constant for the angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1a8301d679ad78af0794a6db4b200e41a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaInPlaneAngleForce::getAmoebaGlobalInPlaneAnglePentic</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getAmoebaGlobalInPlaneAnglePentic</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the global pentic term</para><para><simplesect kind="return"><para>global penticK term </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1aebe74432014019c1a1f7dc9085a08859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaInPlaneAngleForce::setAmoebaGlobalInPlaneAngleSextic</definition>
+        <argsstring>(double sexticK)</argsstring>
+        <name>setAmoebaGlobalInPlaneAngleSextic</name>
+        <param>
+          <type>double</type>
+          <declname>sexticK</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the global sextic term</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sexticK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sextic force constant for the angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1a38a2259e6ec0db4c8faef01f086a4711" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaInPlaneAngleForce::getAmoebaGlobalInPlaneAngleSextic</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getAmoebaGlobalInPlaneAngleSextic</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the global sextic term</para><para><simplesect kind="return"><para>global sextic term </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1a0062959ee8181fc201a79c84a4c35fc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaInPlaneAngleForce::addAngle</definition>
+        <argsstring>(int particle1, int particle2, int particle3, int particle4, double length, double quadraticK)</argsstring>
+        <name>addAngle</name>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle4</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>quadraticK</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an angle term to the force field.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the fourth particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium angle, measured in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quadratic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>k the quadratic force constant for the angle measured in kJ/mol/radian^2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the angle that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1a7999d9c7eee5cff76584f31fa1393d01" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaInPlaneAngleForce::getAngleParameters</definition>
+        <argsstring>(int index, int &amp;particle1, int &amp;particle2, int &amp;particle3, int &amp;particle4, double &amp;length, double &amp;quadraticK) const </argsstring>
+        <name>getAngleParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle4</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>quadraticK</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the force field parameters for an angle term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the angle for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the fourth particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium angle, measured in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quadratic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>k the quadratic force constant for the angle measured in kJ/mol/radian^2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1a1371f188fb4568202fda59458e8859f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaInPlaneAngleForce::setAngleParameters</definition>
+        <argsstring>(int index, int particle1, int particle2, int particle3, int particle4, double length, double quadraticK)</argsstring>
+        <name>setAngleParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle4</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>quadraticK</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the force field parameters for an angle term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the angle for which to set parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the fourth particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium angle, measured in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quadratic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>k the quadratic force constant for the angle, measured in kJ/mol/radian^2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1a0dc821ac5f8dd8b27c01a5878643b88c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaInPlaneAngleForce::updateParametersInContext</definition>
+        <argsstring>(Context &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the per-angle parameters in a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> to match those stored in this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object. This method provides an efficient method to update certain parameters in an existing <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> without needing to reinitialize it. Simply call <ref refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a1371f188fb4568202fda59458e8859f7" kindref="member">setAngleParameters()</ref> to modify this object&apos;s parameters, then call updateParametersInState() to copy them over to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>.</para><para>The only information this method updates is the values of per-angle parameters. The set of particles involved in an angle cannot be changed, nor can new angles be added. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="173"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaInPlaneAngleForce_1a22885756a72cb87e96fa02196479f7e4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> *</type>
+        <definition>ForceImpl* OpenMM::AmoebaInPlaneAngleForce::createImpl</definition>
+        <argsstring>()</argsstring>
+        <name>createImpl</name>
+        <reimplements refid="classOpenMM_1_1Force_1ac110723f39368f7eeb0dbb2105771255">createImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is created, it invokes this method on each <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. It should create a new <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> object which can be used by the context for calculating forces. The <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> will be deleted automatically when the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is deleted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="176"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements an interaction at trigonal centers corresponding to the projected in-plane angle bend energy between four particles. The interaction is defined by a 6th order polynomial in the angle between them. Only the quadratic term is set per-angle. The coefficients of the higher order terms each have a single value that is set globally.</para><para>To use it, create an <ref refid="classOpenMM_1_1AmoebaInPlaneAngleForce" kindref="compound">AmoebaInPlaneAngleForce</ref> object then call <ref refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a0062959ee8181fc201a79c84a4c35fc5" kindref="member">addAngle()</ref> once for each angle. After an angle has been added, you can modify its force field parameters by calling <ref refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a1371f188fb4568202fda59458e8859f7" kindref="member">setAngleParameters()</ref>. This will have no effect on Contexts that already exist unless you call <ref refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a0dc821ac5f8dd8b27c01a5878643b88c" kindref="member">updateParametersInContext()</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="25">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="24">
+        <label>OpenMM::AmoebaInPlaneAngleForce</label>
+        <link refid="classOpenMM_1_1AmoebaInPlaneAngleForce"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="27">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="26">
+        <label>OpenMM::AmoebaInPlaneAngleForce</label>
+        <link refid="classOpenMM_1_1AmoebaInPlaneAngleForce"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" line="52" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h" bodystart="52" bodyend="181"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a6f9b4c0d69c769e0a732da4e210209d9" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>_globalCubicK</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1ae75a822459525efbf76374e8eac95a0b" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>_globalPenticK</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1addc0dd4337e0b53fb51bd914607123d2" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>_globalQuarticK</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1aac9beced29cebad0fcd411c5ff0771c5" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>_globalSexticK</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a0062959ee8181fc201a79c84a4c35fc5" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>addAngle</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1afdc360fe24d83c514be0fc87c027e16e" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>AmoebaInPlaneAngleForce</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1aa07764e6a1526ba0ea0d13f340751fea" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>angles</name></member>
+      <member refid="classOpenMM_1_1Force_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a22885756a72cb87e96fa02196479f7e4" prot="protected" virt="virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>createImpl</name></member>
+      <member refid="classOpenMM_1_1Force_1a40e75e251ec93d3bc9fc87b96026fbc2" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>Force</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1afc80a4791db14b0b28da3739adea225f" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>getAmoebaGlobalInPlaneAngleCubic</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a8301d679ad78af0794a6db4b200e41a3" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>getAmoebaGlobalInPlaneAnglePentic</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1ac45568cd8fcd71a5afe1c9eaef605fcb" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>getAmoebaGlobalInPlaneAngleQuartic</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a38a2259e6ec0db4c8faef01f086a4711" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>getAmoebaGlobalInPlaneAngleSextic</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a7999d9c7eee5cff76584f31fa1393d01" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>getAngleParameters</name></member>
+      <member refid="classOpenMM_1_1Force_1aa6d1d0fd8cad61e7ea37305c6d13a10d" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>getContextImpl</name></member>
+      <member refid="classOpenMM_1_1Force_1a5aca97957c70da1076fcd7cbac340604" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>getForceGroup</name></member>
+      <member refid="classOpenMM_1_1Force_1a4dead2c44734956400d0ca8619650890" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>getImplInContext</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1ab05327e8ddd8ce1eb271218d5ac94831" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>getNumAngles</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a0947a8874b2a45c335908a37d4c948d8" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>setAmoebaGlobalInPlaneAngleCubic</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1aa7f469f54d78967f6bded1c7031c04dc" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>setAmoebaGlobalInPlaneAnglePentic</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1ae1cff3db44e9b3088fb1e9118c988d28" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>setAmoebaGlobalInPlaneAngleQuartic</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1aebe74432014019c1a1f7dc9085a08859" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>setAmoebaGlobalInPlaneAngleSextic</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a1371f188fb4568202fda59458e8859f7" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>setAngleParameters</name></member>
+      <member refid="classOpenMM_1_1Force_1a53e3829a91825a9f6aa17e5ade713f84" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>setForceGroup</name></member>
+      <member refid="classOpenMM_1_1AmoebaInPlaneAngleForce_1a0dc821ac5f8dd8b27c01a5878643b88c" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1Force_1a6516b32ebeb95a694f56d93bdf81f4fb" prot="public" virt="virtual"><scope>OpenMM::AmoebaInPlaneAngleForce</scope><name>~Force</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

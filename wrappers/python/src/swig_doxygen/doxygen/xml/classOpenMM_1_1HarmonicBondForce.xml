@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1HarmonicBondForce" kind="class" prot="public">
+    <compoundname>OpenMM::HarmonicBondForce</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Force" prot="public" virt="non-virtual">OpenMM::Force</basecompoundref>
+    <includes refid="HarmonicBondForce_8h" local="no">HarmonicBondForce.h</includes>
+    <innerclass refid="classOpenMM_1_1HarmonicBondForce_1_1BondInfo" prot="private">OpenMM::HarmonicBondForce::BondInfo</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1HarmonicBondForce_1a3e357100be77e68f3fa74116d7fb8bc1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; BondInfo &gt;</type>
+        <definition>std::vector&lt;BondInfo&gt; OpenMM::HarmonicBondForce::bonds</definition>
+        <argsstring></argsstring>
+        <name>bonds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h" line="106" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1HarmonicBondForce_1a4680213cfa8c079818b4d226de0ca038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::HarmonicBondForce::HarmonicBondForce</definition>
+        <argsstring>()</argsstring>
+        <name>HarmonicBondForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classOpenMM_1_1HarmonicBondForce" kindref="compound">HarmonicBondForce</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1HarmonicBondForce_1aa6c65903d12db992f909e6672765eb8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::HarmonicBondForce::getNumBonds</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumBonds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of harmonic bond stretch terms in the potential function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h" line="59" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1HarmonicBondForce_1a5c4d3a1141e09d1c8e3d1d18caac408c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::HarmonicBondForce::addBond</definition>
+        <argsstring>(int particle1, int particle2, double length, double k)</argsstring>
+        <name>addBond</name>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a bond term to the force field.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the bond </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the bond </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium length of the bond, measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the harmonic force constant for the bond, measured in kJ/mol/nm^2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the bond that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1HarmonicBondForce_1a90e8326c38e76d17027214f511483cd4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::HarmonicBondForce::getBondParameters</definition>
+        <argsstring>(int index, int &amp;particle1, int &amp;particle2, double &amp;length, double &amp;k) const </argsstring>
+        <name>getBondParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the force field parameters for a bond term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the bond for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the bond </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the bond </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium length of the bond, measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the harmonic force constant for the bond, measured in kJ/mol/nm^2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1HarmonicBondForce_1a519e89d09191c96a35ff7aa0b4592171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::HarmonicBondForce::setBondParameters</definition>
+        <argsstring>(int index, int particle1, int particle2, double length, double k)</argsstring>
+        <name>setBondParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the force field parameters for a bond term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the bond for which to set parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the bond </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the bond </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium length of the bond, measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the harmonic force constant for the bond, measured in kJ/mol/nm^2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1HarmonicBondForce_1a127b80645795287b080629e35292bd47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::HarmonicBondForce::updateParametersInContext</definition>
+        <argsstring>(Context &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the per-bond parameters in a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> to match those stored in this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object. This method provides an efficient method to update certain parameters in an existing <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> without needing to reinitialize it. Simply call <ref refid="classOpenMM_1_1HarmonicBondForce_1a519e89d09191c96a35ff7aa0b4592171" kindref="member">setBondParameters()</ref> to modify this object&apos;s parameters, then call updateParametersInState() to copy them over to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>.</para><para>The only information this method updates is the values of per-bond parameters. The set of particles involved in a bond cannot be changed, nor can new bonds be added. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h" line="101"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1HarmonicBondForce_1a8bc110294e45692385968f2801ea0490" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> *</type>
+        <definition>ForceImpl* OpenMM::HarmonicBondForce::createImpl</definition>
+        <argsstring>()</argsstring>
+        <name>createImpl</name>
+        <reimplements refid="classOpenMM_1_1Force_1ac110723f39368f7eeb0dbb2105771255">createImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is created, it invokes this method on each <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. It should create a new <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> object which can be used by the context for calculating forces. The <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> will be deleted automatically when the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is deleted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h" line="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements an interaction between pairs of particles that varies harmonically with the distance between them. To use it, create a <ref refid="classOpenMM_1_1HarmonicBondForce" kindref="compound">HarmonicBondForce</ref> object then call <ref refid="classOpenMM_1_1HarmonicBondForce_1a5c4d3a1141e09d1c8e3d1d18caac408c" kindref="member">addBond()</ref> once for each bond. After a bond has been added, you can modify its force field parameters by calling <ref refid="classOpenMM_1_1HarmonicBondForce_1a519e89d09191c96a35ff7aa0b4592171" kindref="member">setBondParameters()</ref>. This will have no effect on Contexts that already exist unless you call <ref refid="classOpenMM_1_1HarmonicBondForce_1a127b80645795287b080629e35292bd47" kindref="member">updateParametersInContext()</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="367">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="366">
+        <label>OpenMM::HarmonicBondForce</label>
+        <link refid="classOpenMM_1_1HarmonicBondForce"/>
+        <childnode refid="367" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="369">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="368">
+        <label>OpenMM::HarmonicBondForce</label>
+        <link refid="classOpenMM_1_1HarmonicBondForce"/>
+        <childnode refid="369" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h" line="50" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicBondForce.h" bodystart="50" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1HarmonicBondForce_1a5c4d3a1141e09d1c8e3d1d18caac408c" prot="public" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>addBond</name></member>
+      <member refid="classOpenMM_1_1HarmonicBondForce_1a3e357100be77e68f3fa74116d7fb8bc1" prot="private" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>bonds</name></member>
+      <member refid="classOpenMM_1_1Force_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1HarmonicBondForce_1a8bc110294e45692385968f2801ea0490" prot="protected" virt="virtual"><scope>OpenMM::HarmonicBondForce</scope><name>createImpl</name></member>
+      <member refid="classOpenMM_1_1Force_1a40e75e251ec93d3bc9fc87b96026fbc2" prot="public" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>Force</name></member>
+      <member refid="classOpenMM_1_1HarmonicBondForce_1a90e8326c38e76d17027214f511483cd4" prot="public" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>getBondParameters</name></member>
+      <member refid="classOpenMM_1_1Force_1aa6d1d0fd8cad61e7ea37305c6d13a10d" prot="protected" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>getContextImpl</name></member>
+      <member refid="classOpenMM_1_1Force_1a5aca97957c70da1076fcd7cbac340604" prot="public" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>getForceGroup</name></member>
+      <member refid="classOpenMM_1_1Force_1a4dead2c44734956400d0ca8619650890" prot="protected" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>getImplInContext</name></member>
+      <member refid="classOpenMM_1_1HarmonicBondForce_1aa6c65903d12db992f909e6672765eb8e" prot="public" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>getNumBonds</name></member>
+      <member refid="classOpenMM_1_1HarmonicBondForce_1a4680213cfa8c079818b4d226de0ca038" prot="public" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>HarmonicBondForce</name></member>
+      <member refid="classOpenMM_1_1HarmonicBondForce_1a519e89d09191c96a35ff7aa0b4592171" prot="public" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>setBondParameters</name></member>
+      <member refid="classOpenMM_1_1Force_1a53e3829a91825a9f6aa17e5ade713f84" prot="public" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>setForceGroup</name></member>
+      <member refid="classOpenMM_1_1HarmonicBondForce_1a127b80645795287b080629e35292bd47" prot="public" virt="non-virtual"><scope>OpenMM::HarmonicBondForce</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1Force_1a6516b32ebeb95a694f56d93bdf81f4fb" prot="public" virt="virtual"><scope>OpenMM::HarmonicBondForce</scope><name>~Force</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

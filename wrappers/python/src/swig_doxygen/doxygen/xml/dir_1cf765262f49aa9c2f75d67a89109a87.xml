@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_1cf765262f49aa9c2f75d67a89109a87" kind="dir">
+    <compoundname>/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/</compoundname>
+    <innerdir refid="dir_cc2e117f58d919b656f3be8bc3ba4f57">/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/"/>
+  </compounddef>
+</doxygen>

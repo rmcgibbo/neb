@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl" kind="class" prot="public">
+    <compoundname>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</compoundname>
+    <basecompoundref refid="classOpenMM_1_1ForceImpl" prot="public" virt="non-virtual">OpenMM::ForceImpl</basecompoundref>
+    <includes refid="AmoebaGeneralizedKirkwoodForceImpl_8h" local="no">AmoebaGeneralizedKirkwoodForceImpl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a8eca7ab61cf3a04afd637d3c4708f49c" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForce" kindref="compound">AmoebaGeneralizedKirkwoodForce</ref> &amp;</type>
+        <definition>AmoebaGeneralizedKirkwoodForce&amp; OpenMM::AmoebaGeneralizedKirkwoodForceImpl::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" line="66" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1af32ce2f471aa3f14f0a737afd9c2128b" prot="private" static="no" mutable="no">
+        <type>Kernel</type>
+        <definition>Kernel OpenMM::AmoebaGeneralizedKirkwoodForceImpl::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" line="67" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a399090f3d0b9eddab46ded6edb1a5165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaGeneralizedKirkwoodForceImpl::AmoebaGeneralizedKirkwoodForceImpl</definition>
+        <argsstring>(AmoebaGeneralizedKirkwoodForce &amp;owner)</argsstring>
+        <name>AmoebaGeneralizedKirkwoodForceImpl</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForce" kindref="compound">AmoebaGeneralizedKirkwoodForce</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1ab5dc45240f6a1b21818e172ba78d9033" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaGeneralizedKirkwoodForceImpl::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a0a1f85a9c94613577399c1fada6ecb01">initialize</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called after the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> is created and before <ref refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a5a11357f5ba67ef51de40a6dbcbf5dd0" kindref="member">updateContextState()</ref>, calcForces(), or calcEnergy() is called on it. This allows it to do any necessary initialization. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1af6248cf0faa8b17feb78f2ae2ea8f72e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForce" kindref="compound">AmoebaGeneralizedKirkwoodForce</ref> &amp;</type>
+        <definition>AmoebaGeneralizedKirkwoodForce&amp; OpenMM::AmoebaGeneralizedKirkwoodForceImpl::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a766c966d25ad0d8cf287ee07e524a081">getOwner</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object from which this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> was created. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" line="50" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a5a11357f5ba67ef51de40a6dbcbf5dd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaGeneralizedKirkwoodForceImpl::updateContextState</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>updateContextState</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1aae2f5cc793b7071cb6516a02fa736087">updateContextState</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called at the beginning of each time step. It give the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> a chance to modify the state variables (positions, velocities, and parameters) stored in the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> in arbitrary ways before integration is performed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" line="53" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1ae22cc7a33c885e32bd6e40f17ee2d6cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaGeneralizedKirkwoodForceImpl::calcForcesAndEnergy</definition>
+        <argsstring>(ContextImpl &amp;context, bool includeForces, bool includeEnergy, int groups)</argsstring>
+        <name>calcForcesAndEnergy</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a1e2544ac6d58460a79697236e8b758be">calcForcesAndEnergy</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeForces</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeEnergy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>groups</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the force on each particle generated by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> and/or this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>&apos;s contribution to the potential energy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeForces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if forces should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeEnergy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the energy should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>groups</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a set of bit flags for which force groups to include. Group i should be included if (groups&amp;(1&lt;&lt;i)) != 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>this force&apos;s contribution to the potential energy of the system, or 0 if this force does not contribute to potential energy (or if includeEnergy is false) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a71b6eb607ed6f3e2f67b3f8d70140a27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; OpenMM::AmoebaGeneralizedKirkwoodForceImpl::getDefaultParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultParameters</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1adf18979257a14b23dd52dbda9e87c308">getDefaultParameters</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a map containing the default values for all adjustable parameters defined by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>. These parameters and their default values will automatically be added to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" line="57" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a0a647c8fa25f0be1442a6d46681a9fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; OpenMM::AmoebaGeneralizedKirkwoodForceImpl::getKernelNames</definition>
+        <argsstring>()</argsstring>
+        <name>getKernelNames</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a5820facb44adaab79bbb02a3ba5bd79b">getKernelNames</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a56123e13a19c4f7275a31a0b13f05a1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Kernel &amp;</type>
+        <definition>Kernel&amp; OpenMM::AmoebaGeneralizedKirkwoodForceImpl::getKernel</definition>
+        <argsstring>()</argsstring>
+        <name>getKernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" line="61" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1abde1ab0bee573304357c4bf39e547813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaGeneralizedKirkwoodForceImpl::updateParametersInContext</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" line="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the internal implementation of <ref refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForce" kindref="compound">AmoebaGeneralizedKirkwoodForce</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="21">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="20">
+        <label>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="22">
+        <label>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" line="46" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h" bodystart="46" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a399090f3d0b9eddab46ded6edb1a5165" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>AmoebaGeneralizedKirkwoodForceImpl</name></member>
+      <member refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1ae22cc7a33c885e32bd6e40f17ee2d6cb" prot="public" virt="virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>calcForcesAndEnergy</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1aaa19783e47e53df34083cbaadf37e41c" prot="public" virt="virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>getBondedParticles</name></member>
+      <member refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a71b6eb607ed6f3e2f67b3f8d70140a27" prot="public" virt="virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>getDefaultParameters</name></member>
+      <member refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a56123e13a19c4f7275a31a0b13f05a1d" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>getKernel</name></member>
+      <member refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a0a647c8fa25f0be1442a6d46681a9fa5" prot="public" virt="virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1af6248cf0faa8b17feb78f2ae2ea8f72e" prot="public" virt="virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>getOwner</name></member>
+      <member refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1ab5dc45240f6a1b21818e172ba78d9033" prot="public" virt="virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1af32ce2f471aa3f14f0a737afd9c2128b" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>kernel</name></member>
+      <member refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a8eca7ab61cf3a04afd637d3c4708f49c" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>owner</name></member>
+      <member refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a5a11357f5ba67ef51de40a6dbcbf5dd0" prot="public" virt="virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>updateContextState</name></member>
+      <member refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1abde1ab0bee573304357c4bf39e547813" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1a8a2bccbabb2587111b46da67cea8293c" prot="public" virt="virtual"><scope>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</scope><name>~ForceImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

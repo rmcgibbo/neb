@@ -1,0 +1,1497 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1CustomGBForce" kind="class" prot="public">
+    <compoundname>OpenMM::CustomGBForce</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Force" prot="public" virt="non-virtual">OpenMM::Force</basecompoundref>
+    <includes refid="CustomGBForce_8h" local="no">CustomGBForce.h</includes>
+    <innerclass refid="classOpenMM_1_1CustomGBForce_1_1ComputationInfo" prot="private">OpenMM::CustomGBForce::ComputationInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForce_1_1ExclusionInfo" prot="private">OpenMM::CustomGBForce::ExclusionInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForce_1_1FunctionInfo" prot="private">OpenMM::CustomGBForce::FunctionInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForce_1_1GlobalParameterInfo" prot="private">OpenMM::CustomGBForce::GlobalParameterInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForce_1_1ParticleInfo" prot="private">OpenMM::CustomGBForce::ParticleInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForce_1_1PerParticleParameterInfo" prot="private">OpenMM::CustomGBForce::PerParticleParameterInfo</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classOpenMM_1_1CustomGBForce_1a110ab606fe1139bdad872aa925276b93" prot="public" static="no">
+        <name>NonbondedMethod</name>
+        <enumvalue id="classOpenMM_1_1CustomGBForce_1a110ab606fe1139bdad872aa925276b93a60830c8f5552896614932804bf576340" prot="public">
+          <name>NoCutoff</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No cutoff is applied to nonbonded interactions. The full set of N^2 interactions is computed exactly. This necessarily means that periodic boundary conditions cannot be used. This is the default. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1CustomGBForce_1a110ab606fe1139bdad872aa925276b93a93a3892755376521e831fb8c2b5f7b16" prot="public">
+          <name>CutoffNonPeriodic</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Interactions beyond the cutoff distance are ignored. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1CustomGBForce_1a110ab606fe1139bdad872aa925276b93a318af4eb545b8032b4f7831708f3e813" prot="public">
+          <name>CutoffPeriodic</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Periodic boundary conditions are used, so that each particle interacts only with the nearest periodic copy of each other particle. Interactions beyond the cutoff distance are ignored. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an enumeration of the different methods that may be used for handling long range nonbonded forces. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="146" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="146" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="enum" id="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aa" prot="public" static="no">
+        <name>ComputationType</name>
+        <enumvalue id="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aaab2339c5e5c9a8ab8d74f590a66f41e25" prot="public">
+          <name>SingleParticle</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The value is computed independently for each particle, based only on the parameters and computed values for that particle. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aaab717b2c97f373252d6ac2f3b6d1b2f50" prot="public">
+          <name>ParticlePair</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The value is computed as a sum over all pairs of particles, except those which have been added as exclusions. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aaa804dca1f22ea0e2d8253d36dfd3cbe7c" prot="public">
+          <name>ParticlePairNoExclusions</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The value is computed as a sum over all pairs of particles. Unlike ParticlePair, the list of exclusions is ignored and all pairs are included in the sum, even those marked as exclusions. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an enumeration of the different ways in which a computed value or energy term can be calculated. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="165" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="165" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1CustomGBForce_1a8a8f28c3c2b5aaa617db3b70778cac0e" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1CustomGBForce_1a110ab606fe1139bdad872aa925276b93" kindref="member">NonbondedMethod</ref></type>
+        <definition>NonbondedMethod OpenMM::CustomGBForce::nonbondedMethod</definition>
+        <argsstring></argsstring>
+        <name>nonbondedMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="507" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomGBForce_1a9b1119d1df8ef4e0a242589cfcc5a7fd" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::CustomGBForce::cutoffDistance</definition>
+        <argsstring></argsstring>
+        <name>cutoffDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="508" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomGBForce_1a3912e188866541d819c337cc173f7b35" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; PerParticleParameterInfo &gt;</type>
+        <definition>std::vector&lt;PerParticleParameterInfo&gt; OpenMM::CustomGBForce::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="509" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomGBForce_1a57ee49ff391bab77e4da4735608ce091" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; GlobalParameterInfo &gt;</type>
+        <definition>std::vector&lt;GlobalParameterInfo&gt; OpenMM::CustomGBForce::globalParameters</definition>
+        <argsstring></argsstring>
+        <name>globalParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="510" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomGBForce_1ad5178b50866b1162a7c7de6f8274c88d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; ParticleInfo &gt;</type>
+        <definition>std::vector&lt;ParticleInfo&gt; OpenMM::CustomGBForce::particles</definition>
+        <argsstring></argsstring>
+        <name>particles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="511" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomGBForce_1aa51c83c2d8d799a202b6001b66bf6f56" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; ExclusionInfo &gt;</type>
+        <definition>std::vector&lt;ExclusionInfo&gt; OpenMM::CustomGBForce::exclusions</definition>
+        <argsstring></argsstring>
+        <name>exclusions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="512" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomGBForce_1a5ec31ff3628d98021f95c043bcf81151" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; FunctionInfo &gt;</type>
+        <definition>std::vector&lt;FunctionInfo&gt; OpenMM::CustomGBForce::functions</definition>
+        <argsstring></argsstring>
+        <name>functions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="513" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomGBForce_1a1909f6e39920e72ba54636ce2593f67c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; ComputationInfo &gt;</type>
+        <definition>std::vector&lt;ComputationInfo&gt; OpenMM::CustomGBForce::computedValues</definition>
+        <argsstring></argsstring>
+        <name>computedValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="514" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomGBForce_1a930153ddd627ee7e0942e981aa7eaef8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; ComputationInfo &gt;</type>
+        <definition>std::vector&lt;ComputationInfo&gt; OpenMM::CustomGBForce::energyTerms</definition>
+        <argsstring></argsstring>
+        <name>energyTerms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="515" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1aa57834eb2054330b8200ef73c00505a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CustomGBForce::CustomGBForce</definition>
+        <argsstring>()</argsstring>
+        <name>CustomGBForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classOpenMM_1_1CustomGBForce" kindref="compound">CustomGBForce</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a723ebb1248b11eed8273e4fea7ef6c62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::getNumParticles</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumParticles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of particles for which force field parameters have been defined. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="187" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="187" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a422ab02d71a7f6f1a6a630c1d0334db5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::getNumExclusions</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumExclusions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of particle pairs whose interactions should be excluded. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="193" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="193" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a0c1b70187f2175fdcb209e93fa83e6ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::getNumPerParticleParameters</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumPerParticleParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of per-particle parameters that the interaction depends on. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="199" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="199" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a1e90d8280a8ecf334b9d1dee393832c6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::getNumGlobalParameters</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumGlobalParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of global parameters that the interaction depends on. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="205" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="205" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a878ca6756b9dcec77f548def5563cd3b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::getNumFunctions</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumFunctions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of tabulated functions that have been defined. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="211" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="211" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a3342e4756a3dde7cb43c7f16c22a80fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::getNumComputedValues</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumComputedValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of per-particle computed values the interaction depends on. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="217" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="217" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a15466f0a98c7e4fbefe47e9a94e2c7a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::getNumEnergyTerms</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumEnergyTerms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of terms in the energy computation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="223" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="223" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a500b8f720d2fb3edad977b7041f9cbd7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1CustomGBForce_1a110ab606fe1139bdad872aa925276b93" kindref="member">NonbondedMethod</ref></type>
+        <definition>NonbondedMethod OpenMM::CustomGBForce::getNonbondedMethod</definition>
+        <argsstring>() const </argsstring>
+        <name>getNonbondedMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the method used for handling long range nonbonded interactions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a71585932bec920244537ea7516967bf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::setNonbondedMethod</definition>
+        <argsstring>(NonbondedMethod method)</argsstring>
+        <name>setNonbondedMethod</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1CustomGBForce_1a110ab606fe1139bdad872aa925276b93" kindref="member">NonbondedMethod</ref></type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the method used for handling long range nonbonded interactions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1af3ee2ea70e0b9973fd0cdd049c54aab5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::CustomGBForce::getCutoffDistance</definition>
+        <argsstring>() const </argsstring>
+        <name>getCutoffDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the cutoff distance (in nm) being used for nonbonded interactions. If the NonbondedMethod in use is NoCutoff, this value will have no effect.</para><para><simplesect kind="return"><para>the cutoff distance, measured in nm </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a9f2538ad5d89a5e922af967da563c144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::setCutoffDistance</definition>
+        <argsstring>(double distance)</argsstring>
+        <name>setCutoffDistance</name>
+        <param>
+          <type>double</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the cutoff distance (in nm) being used for nonbonded interactions. If the NonbondedMethod in use is NoCutoff, this value will have no effect.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the cutoff distance, measured in nm </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a8a2a8152a2933db3294edd9e912e0a39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::addPerParticleParameter</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>addPerParticleParameter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new per-particle parameter that the interaction may depend on.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the parameter that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a54595513065c7eb1ae12c0fdeb44a801" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; OpenMM::CustomGBForce::getPerParticleParameterName</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getPerParticleParameterName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of a per-particle parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to get the name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the parameter name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a84653640f6946cf059e75eddbcac29ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::setPerParticleParameterName</definition>
+        <argsstring>(int index, const std::string &amp;name)</argsstring>
+        <name>setPerParticleParameterName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the name of a per-particle parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to set the name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1ae91dc47c649128da5bcadd5241cd3dcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::addGlobalParameter</definition>
+        <argsstring>(const std::string &amp;name, double defaultValue)</argsstring>
+        <name>addGlobalParameter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new global parameter that the interaction may depend on.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the default value of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the parameter that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a076e1238ac1af67ad19e083ce22c641f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; OpenMM::CustomGBForce::getGlobalParameterName</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getGlobalParameterName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of a global parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to get the name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the parameter name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a034db6bdea92408396efd21e597fdf6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::setGlobalParameterName</definition>
+        <argsstring>(int index, const std::string &amp;name)</argsstring>
+        <name>setGlobalParameterName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the name of a global parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to set the name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1af3977c68279971728a647ebfae344e2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::CustomGBForce::getGlobalParameterDefaultValue</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getGlobalParameterDefaultValue</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default value of a global parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to get the default value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the parameter default value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1aea15f79514c0a5e2e004a405db538041" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::setGlobalParameterDefaultValue</definition>
+        <argsstring>(int index, double defaultValue)</argsstring>
+        <name>setGlobalParameterDefaultValue</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default value of a global parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to set the default value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the default value of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1ac02a03a34652a483bca7f6eb22f903d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::addParticle</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;parameters)</argsstring>
+        <name>addParticle</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add the nonbonded force parameters for a particle. This should be called once for each particle in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. When it is called for the i&apos;th time, it specifies the parameters for the i&apos;th particle.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of parameters for the new particle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the particle that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1affd47bb2ce3f61eeafdfcca66a2b476d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::getParticleParameters</definition>
+        <argsstring>(int index, std::vector&lt; double &gt; &amp;parameters) const </argsstring>
+        <name>getParticleParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the nonbonded force parameters for a particle.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the particle for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of parameters for the specified particle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1aeafd476c74e3f093eef7dc7e6af59ba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::setParticleParameters</definition>
+        <argsstring>(int index, const std::vector&lt; double &gt; &amp;parameters)</argsstring>
+        <name>setParticleParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the nonbonded force parameters for a particle.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the particle for which to set parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of parameters for the specified particle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1ae5baf85d3ada3f6adcfc436f21361732" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::addComputedValue</definition>
+        <argsstring>(const std::string &amp;name, const std::string &amp;expression, ComputationType type)</argsstring>
+        <name>addComputedValue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>expression</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aa" kindref="member">ComputationType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a computed value to calculate for each particle.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an algebraic expression to evaluate when calculating the computed value. If the ComputationType is SingleParticle, the expression is evaluated independently for each particle, and may depend on its x, y, and z coordinates, as well as the per-particle parameters and previous computed values for that particle. If the ComputationType is ParticlePair or ParticlePairNoExclusions, the expression is evaluated once for every other particle in the system and summed to get the final value. In the latter case, the expression may depend on the distance r between the two particles, and on the per-particle parameters and previous computed values for each of them. Append &quot;1&quot; to a variable name to indicate the parameter for the particle whose value is being calculated, and &quot;2&quot; to indicate the particle it is interacting with. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the method to use for computing this value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="343"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a3d927838fc19c723767bdc103d355b93" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::getComputedValueParameters</definition>
+        <argsstring>(int index, std::string &amp;name, std::string &amp;expression, ComputationType &amp;type) const </argsstring>
+        <name>getComputedValueParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>expression</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aa" kindref="member">ComputationType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the properties of a computed value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the computed value for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an algebraic expression to evaluate when calculating the computed value. If the ComputationType is SingleParticle, the expression is evaluated independently for each particle, and may depend on its x, y, and z coordinates, as well as the per-particle parameters and previous computed values for that particle. If the ComputationType is ParticlePair or ParticlePairNoExclusions, the expression is evaluated once for every other particle in the system and summed to get the final value. In the latter case, the expression may depend on the distance r between the two particles, and on the per-particle parameters and previous computed values for each of them. Append &quot;1&quot; to a variable name to indicate the parameter for the particle whose value is being calculated, and &quot;2&quot; to indicate the particle it is interacting with. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the method to use for computing this value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a3b5db81dec1f9e48e063e004ed705c0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::setComputedValueParameters</definition>
+        <argsstring>(int index, const std::string &amp;name, const std::string &amp;expression, ComputationType type)</argsstring>
+        <name>setComputedValueParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>expression</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aa" kindref="member">ComputationType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the properties of a computed value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the computed value for which to set parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an algebraic expression to evaluate when calculating the computed value. If the ComputationType is SingleParticle, the expression is evaluated independently for each particle, and may depend on its x, y, and z coordinates, as well as the per-particle parameters and previous computed values for that particle. If the ComputationType is ParticlePair or ParticlePairNoExclusions, the expression is evaluated once for every other particle in the system and summed to get the final value. In the latter case, the expression may depend on the distance r between the two particles, and on the per-particle parameters and previous computed values for each of them. Append &quot;1&quot; to a variable name to indicate the parameter for the particle whose value is being calculated, and &quot;2&quot; to indicate the particle it is interacting with. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the method to use for computing this value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a1f67c61de329d86f65e11fe1848efaeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::addEnergyTerm</definition>
+        <argsstring>(const std::string &amp;expression, ComputationType type)</argsstring>
+        <name>addEnergyTerm</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>expression</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aa" kindref="member">ComputationType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a term to the energy computation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an algebraic expression to evaluate when calculating the energy. If the ComputationType is SingleParticle, the expression is evaluated once for each particle, and may depend on its x, y, and z coordinates, as well as the per-particle parameters and computed values for that particle. If the ComputationType is ParticlePair or ParticlePairNoExclusions, the expression is evaluated once for every pair of particles in the system. In the latter case, the expression may depend on the distance r between the two particles, and on the per-particle parameters and computed values for each of them. Append &quot;1&quot; to a variable name to indicate the parameter for the first particle in the pair and &quot;2&quot; to indicate the second particle in the pair. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the method to use for computing this value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1ac9ff2bd0700a77392daadca701c590d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::getEnergyTermParameters</definition>
+        <argsstring>(int index, std::string &amp;expression, ComputationType &amp;type) const </argsstring>
+        <name>getEnergyTermParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>expression</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aa" kindref="member">ComputationType</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the properties of a term to the energy computation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the term for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an algebraic expression to evaluate when calculating the energy. If the ComputationType is SingleParticle, the expression is evaluated once for each particle, and may depend on its x, y, and z coordinates, as well as the per-particle parameters and computed values for that particle. If the ComputationType is ParticlePair or ParticlePairNoExclusions, the expression is evaluated once for every pair of particles in the system. In the latter case, the expression may depend on the distance r between the two particles, and on the per-particle parameters and computed values for each of them. Append &quot;1&quot; to a variable name to indicate the parameter for the first particle in the pair and &quot;2&quot; to indicate the second particle in the pair. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the method to use for computing this value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="412"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a15756f1206611f2ed21879d5f7be760f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::setEnergyTermParameters</definition>
+        <argsstring>(int index, const std::string &amp;expression, ComputationType type)</argsstring>
+        <name>setEnergyTermParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>expression</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aa" kindref="member">ComputationType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the properties of a term to the energy computation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the term for which to set parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an algebraic expression to evaluate when calculating the energy. If the ComputationType is SingleParticle, the expression is evaluated once for each particle, and may depend on its x, y, and z coordinates, as well as the per-particle parameters and computed values for that particle. If the ComputationType is ParticlePair or ParticlePairNoExclusions, the expression is evaluated once for every pair of particles in the system. In the latter case, the expression may depend on the distance r between the two particles, and on the per-particle parameters and computed values for each of them. Append &quot;1&quot; to a variable name to indicate the parameter for the first particle in the pair and &quot;2&quot; to indicate the second particle in the pair. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the method to use for computing this value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="429"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a89c24df047eaa803da6b0d48afdeb03f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::addExclusion</definition>
+        <argsstring>(int particle1, int particle2)</argsstring>
+        <name>addExclusion</name>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a particle pair to the list of interactions that should be excluded.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle in the pair </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle in the pair </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the exclusion that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="437"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a150bb0f058df518e53b42ebeda1687bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::getExclusionParticles</definition>
+        <argsstring>(int index, int &amp;particle1, int &amp;particle2) const </argsstring>
+        <name>getExclusionParticles</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the particles in a pair whose interaction should be excluded.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the exclusion for which to get particle indices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle in the pair </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle in the pair </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="445"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a9da72db3059230749d9766ecc66e169c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::setExclusionParticles</definition>
+        <argsstring>(int index, int particle1, int particle2)</argsstring>
+        <name>setExclusionParticles</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the particles in a pair whose interaction should be excluded.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the exclusion for which to set particle indices </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle in the pair </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle in the pair </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1a33ecd7ad4c5ba82009fc6e3d6db3d165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomGBForce::addFunction</definition>
+        <argsstring>(const std::string &amp;name, const std::vector&lt; double &gt; &amp;values, double min, double max)</argsstring>
+        <name>addFunction</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a tabulated function that may appear in the energy expression.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the function as it appears in expressions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the tabulated values of the function f(x) at uniformly spaced values of x between min and max. The function is assumed to be zero for x &lt; min or x &gt; max. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of the independent variable corresponding to the first element of values </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of the independent variable corresponding to the last element of values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the function that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="464"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1ae862f987d7cde217ce31251380366005" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::getFunctionParameters</definition>
+        <argsstring>(int index, std::string &amp;name, std::vector&lt; double &gt; &amp;values, double &amp;min, double &amp;max) const </argsstring>
+        <name>getFunctionParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the parameters for a tabulated function that may appear in the energy expression.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the function for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the function as it appears in expressions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the tabulated values of the function f(x) at uniformly spaced values of x between min and max. The function is assumed to be zero for x &lt; min or x &gt; max. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of the independent variable corresponding to the first element of values </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of the independent variable corresponding to the last element of values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="475"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1ae71d242310f76735f1dd2731fd5ed027" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::setFunctionParameters</definition>
+        <argsstring>(int index, const std::string &amp;name, const std::vector&lt; double &gt; &amp;values, double min, double max)</argsstring>
+        <name>setFunctionParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the parameters for a tabulated function that may appear in algebraic expressions.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the function for which to set parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the function as it appears in expressions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the tabulated values of the function f(x) at uniformly spaced values of x between min and max. The function is assumed to be zero for x &lt; min or x &gt; max. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of the independent variable corresponding to the first element of values </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of the independent variable corresponding to the last element of values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1aa71854076cb2eae421eba9c2cf0c134c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomGBForce::updateParametersInContext</definition>
+        <argsstring>(Context &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the per-particle parameters in a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> to match those stored in this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object. This method provides an efficient method to update certain parameters in an existing <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> without needing to reinitialize it. Simply call <ref refid="classOpenMM_1_1CustomGBForce_1aeafd476c74e3f093eef7dc7e6af59ba1" kindref="member">setParticleParameters()</ref> to modify this object&apos;s parameters, then call updateParametersInState() to copy them over to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>.</para><para>This method has several limitations. The only information it updates is the values of per-particle parameters. All other aspects of the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> (such as the energy function) are unaffected and can only be changed by reinitializing the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. Also, this method cannot be used to add new particles, only to change the parameters of existing ones. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="497"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1aff711bf387e08aeb29c4e1fb05ad415c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> *</type>
+        <definition>ForceImpl* OpenMM::CustomGBForce::createImpl</definition>
+        <argsstring>()</argsstring>
+        <name>createImpl</name>
+        <reimplements refid="classOpenMM_1_1Force_1ac110723f39368f7eeb0dbb2105771255">createImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is created, it invokes this method on each <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. It should create a new <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> object which can be used by the context for calculating forces. The <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> will be deleted automatically when the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is deleted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="499"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements complex, multiple stage nonbonded interactions between particles. It is designed primarily for implementing Generalized Born implicit solvation models, although it is not strictly limited to that purpose. The interaction is specified as a series of computations, each defined by an arbitrary algebraic expression. It also allows tabulated functions to be defined and used with the computations. It optionally supports periodic boundary conditions and cutoffs for long range interactions.</para><para>The computation consists of calculating some number of per-particle <emphasis>computed values</emphasis>, followed by one or more <emphasis>energy terms</emphasis>. A computed value is a scalar value that is computed for each particle in the system. It may depend on an arbitrary set of global and per-particle parameters, and well as on other computed values that have been calculated before it. Once all computed values have been calculated, the energy terms and their derivatives are evaluated to determine the system energy and particle forces. The energy terms may depend on global parameters, per-particle parameters, and per-particle computed values.</para><para>When specifying a computed value or energy term, you provide an algebraic expression to evaluate and a <emphasis>computation type</emphasis> describing how the expression is to be evaluated. There are two main types of computations:</para><para><itemizedlist>
+<listitem>
+<para><bold>Single Particle</bold>: The expression is evaluated once for each particle in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. In the case of a computed value, this means the value for a particle depends only on other properties of that particle (its position, parameters, and other computed values). In the case of an energy term, it means each particle makes an independent contribution to the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> energy. </para></listitem>
+<listitem>
+<para><bold>Particle Pairs</bold>: The expression is evaluated for every pair of particles in the system. In the case of a computed value, the value for a particular particle is calculated by pairing it with every other particle in the system, evaluating the expression for each pair, and summing them. For an energy term, each particle pair makes an independent contribution to the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> energy. (Note that energy terms are assumed to be symmetric with respect to the two interacting particles, and therefore are evaluated only once per pair. In contrast, expressions for computed values need not be symmetric and therefore are calculated twice for each pair: once when calculating the value for the first particle, and again when calculating the value for the second particle.) </para></listitem>
+</itemizedlist>
+</para><para>Be aware that, although this class is extremely general in the computations it can define, particular Platforms may only support more restricted types of computations. In particular, all currently existing Platforms require that the first computed value <emphasis>must</emphasis> be a particle pair computation, and all computed values after the first <emphasis>must</emphasis> be single particle computations. This is sufficient for most Generalized Born models, but might not permit some other types of calculations to be implemented.</para><para>This is a complicated class to use, and an example may help to clarify it. The following code implements the OBC variant of the GB/SA solvation model, using the ACE approximation to estimate surface area:</para><para><computeroutput><preformatted>
+ CustomGBForce* custom = new <ref refid="classOpenMM_1_1CustomGBForce_1aa57834eb2054330b8200ef73c00505a5" kindref="member">CustomGBForce()</ref>;
+ custom-&gt;addPerParticleParameter(&quot;q&quot;);
+ custom-&gt;addPerParticleParameter(&quot;radius&quot;);
+ custom-&gt;addPerParticleParameter(&quot;scale&quot;);
+ custom-&gt;addGlobalParameter(&quot;solventDielectric&quot;, obc-&gt;getSolventDielectric());
+ custom-&gt;addGlobalParameter(&quot;soluteDielectric&quot;, obc-&gt;getSoluteDielectric());
+ custom-&gt;addComputedValue(&quot;I&quot;, &quot;step(r+sr2-or1)*0.5*(1/L-1/U+0.25*(1/U^2-1/L^2)*(r-sr2*sr2/r)+0.5*log(L/U)/r+C);&quot;
+                               &quot;U=r+sr2;&quot;
+                               &quot;C=2*(1/or1-1/L)*step(sr2-r-or1);&quot;
+                               &quot;L=max(or1, D);&quot;
+                               &quot;D=abs(r-sr2);&quot;
+                               &quot;sr2 = scale2*or2;&quot;
+                               &quot;or1 = radius1-0.009; or2 = radius2-0.009&quot;, <ref refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aaa804dca1f22ea0e2d8253d36dfd3cbe7c" kindref="member">CustomGBForce::ParticlePairNoExclusions</ref>);
+ custom-&gt;addComputedValue(&quot;B&quot;, &quot;1/(1/or-tanh(1*psi-0.8*psi^2+4.85*psi^3)/radius);&quot;
+                               &quot;psi=I*or; or=radius-0.009&quot;, <ref refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aaab2339c5e5c9a8ab8d74f590a66f41e25" kindref="member">CustomGBForce::SingleParticle</ref>);
+ custom-&gt;addEnergyTerm(&quot;28.3919551*(radius+0.14)^2*(radius/B)^6-0.5*138.935456*(1/soluteDielectric-1/solventDielectric)*q^2/B&quot;,
+                       <ref refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aaab2339c5e5c9a8ab8d74f590a66f41e25" kindref="member">CustomGBForce::SingleParticle</ref>);
+ custom-&gt;addEnergyTerm(&quot;-138.935456*(1/soluteDielectric-1/solventDielectric)*q1*q2/f;&quot;
+                       &quot;f=sqrt(r^2+B1*B2*exp(-r^2/(4*B1*B2)))&quot;, <ref refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aaab717b2c97f373252d6ac2f3b6d1b2f50" kindref="member">CustomGBForce::ParticlePair</ref>);
+ </preformatted></computeroutput></para><para>It begins by defining three per-particle parameters (charge, atomic radius, and scale factor) and two global parameters (the dielectric constants for the solute and solvent). It then defines a computed value &quot;I&quot; of type ParticlePair. The expression for evaluating it is a complicated function of the distance between each pair of particles (r), their atomic radii (radius1 and radius2), and their scale factors (scale1 and scale2). Very roughly speaking, it is a measure of the distance between each particle and other nearby particles.</para><para>Next a computation is defined for the Born Radius (B). It is computed independently for each particle, and is a function of that particle&apos;s atomic radius and the intermediate value I defined above.</para><para>Finally, two energy terms are defined. The first one is computed for each particle and represents the surface area term, as well as the self interaction part of the polarization energy. The second term is calculated for each pair of particles, and represents the screening of electrostatic interactions by the solvent.</para><para>After defining the force as shown above, you should then call <ref refid="classOpenMM_1_1CustomGBForce_1ac02a03a34652a483bca7f6eb22f903d9" kindref="member">addParticle()</ref> once for each particle in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> to set the values of its per-particle parameters (q, radius, and scale). The number of particles for which you set parameters must be exactly equal to the number of particles in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>, or else an exception will be thrown when you try to create a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. After a particle has been added, you can modify its parameters by calling <ref refid="classOpenMM_1_1CustomGBForce_1aeafd476c74e3f093eef7dc7e6af59ba1" kindref="member">setParticleParameters()</ref>. This will have no effect on Contexts that already exist unless you call <ref refid="classOpenMM_1_1CustomGBForce_1aa71854076cb2eae421eba9c2cf0c134c" kindref="member">updateParametersInContext()</ref>.</para><para><ref refid="classOpenMM_1_1CustomGBForce" kindref="compound">CustomGBForce</ref> also lets you specify &quot;exclusions&quot;, particular pairs of particles whose interactions should be omitted from calculations. This is most often used for particles that are bonded to each other. Even if you specify exclusions, however, you can use the computation type ParticlePairNoExclusions to indicate that exclusions should not be applied to a particular piece of the computation.</para><para>Expressions may involve the operators + (add), - (subtract), * (multiply), / (divide), and ^ (power), and the following functions: sqrt, exp, log, sin, cos, sec, csc, tan, cot, asin, acos, atan, sinh, cosh, tanh, erf, erfc, min, max, abs, step, delta. All trigonometric functions are defined in radians, and log is the natural logarithm. step(x) = 0 if x is less than 0, 1 otherwise. delta(x) = 1 if x is 0, 0 otherwise. In expressions for particle pair calculations, the names of per-particle parameters and computed values have the suffix &quot;1&quot; or &quot;2&quot; appended to them to indicate the values for the two interacting particles. As seen in the above example, an expression may also involve intermediate quantities that are defined following the main expression, using &quot;;&quot; as a separator.</para><para>In addition, you can call <ref refid="classOpenMM_1_1CustomGBForce_1a33ecd7ad4c5ba82009fc6e3d6db3d165" kindref="member">addFunction()</ref> to define a new function based on tabulated values. You specify a vector of values, and a natural spline is created from them. That function can then appear in expressions. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="207">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="206">
+        <label>OpenMM::CustomGBForce</label>
+        <link refid="classOpenMM_1_1CustomGBForce"/>
+        <childnode refid="207" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="209">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="208">
+        <label>OpenMM::CustomGBForce</label>
+        <link refid="classOpenMM_1_1CustomGBForce"/>
+        <childnode refid="209" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="141" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="141" bodyend="516"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1CustomGBForce_1ae5baf85d3ada3f6adcfc436f21361732" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>addComputedValue</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a1f67c61de329d86f65e11fe1848efaeb" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>addEnergyTerm</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a89c24df047eaa803da6b0d48afdeb03f" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>addExclusion</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a33ecd7ad4c5ba82009fc6e3d6db3d165" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>addFunction</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1ae91dc47c649128da5bcadd5241cd3dcc" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>addGlobalParameter</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1ac02a03a34652a483bca7f6eb22f903d9" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>addParticle</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a8a2a8152a2933db3294edd9e912e0a39" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>addPerParticleParameter</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aa" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>ComputationType</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a1909f6e39920e72ba54636ce2593f67c" prot="private" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>computedValues</name></member>
+      <member refid="classOpenMM_1_1Force_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1aff711bf387e08aeb29c4e1fb05ad415c" prot="protected" virt="virtual"><scope>OpenMM::CustomGBForce</scope><name>createImpl</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1aa57834eb2054330b8200ef73c00505a5" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>CustomGBForce</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a9b1119d1df8ef4e0a242589cfcc5a7fd" prot="private" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>cutoffDistance</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a110ab606fe1139bdad872aa925276b93a93a3892755376521e831fb8c2b5f7b16" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>CutoffNonPeriodic</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a110ab606fe1139bdad872aa925276b93a318af4eb545b8032b4f7831708f3e813" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>CutoffPeriodic</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a930153ddd627ee7e0942e981aa7eaef8" prot="private" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>energyTerms</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1aa51c83c2d8d799a202b6001b66bf6f56" prot="private" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>exclusions</name></member>
+      <member refid="classOpenMM_1_1Force_1a40e75e251ec93d3bc9fc87b96026fbc2" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>Force</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a5ec31ff3628d98021f95c043bcf81151" prot="private" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>functions</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a3d927838fc19c723767bdc103d355b93" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getComputedValueParameters</name></member>
+      <member refid="classOpenMM_1_1Force_1aa6d1d0fd8cad61e7ea37305c6d13a10d" prot="protected" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getContextImpl</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1af3ee2ea70e0b9973fd0cdd049c54aab5" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getCutoffDistance</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1ac9ff2bd0700a77392daadca701c590d4" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getEnergyTermParameters</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a150bb0f058df518e53b42ebeda1687bc" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getExclusionParticles</name></member>
+      <member refid="classOpenMM_1_1Force_1a5aca97957c70da1076fcd7cbac340604" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getForceGroup</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1ae862f987d7cde217ce31251380366005" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getFunctionParameters</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1af3977c68279971728a647ebfae344e2b" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getGlobalParameterDefaultValue</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a076e1238ac1af67ad19e083ce22c641f" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getGlobalParameterName</name></member>
+      <member refid="classOpenMM_1_1Force_1a4dead2c44734956400d0ca8619650890" prot="protected" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getImplInContext</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a500b8f720d2fb3edad977b7041f9cbd7" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getNonbondedMethod</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a3342e4756a3dde7cb43c7f16c22a80fa" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getNumComputedValues</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a15466f0a98c7e4fbefe47e9a94e2c7a3" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getNumEnergyTerms</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a422ab02d71a7f6f1a6a630c1d0334db5" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getNumExclusions</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a878ca6756b9dcec77f548def5563cd3b" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getNumFunctions</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a1e90d8280a8ecf334b9d1dee393832c6" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getNumGlobalParameters</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a723ebb1248b11eed8273e4fea7ef6c62" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getNumParticles</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a0c1b70187f2175fdcb209e93fa83e6ee" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getNumPerParticleParameters</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1affd47bb2ce3f61eeafdfcca66a2b476d" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getParticleParameters</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a54595513065c7eb1ae12c0fdeb44a801" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>getPerParticleParameterName</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a57ee49ff391bab77e4da4735608ce091" prot="private" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>globalParameters</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a110ab606fe1139bdad872aa925276b93a60830c8f5552896614932804bf576340" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>NoCutoff</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a110ab606fe1139bdad872aa925276b93" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>NonbondedMethod</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a8a8f28c3c2b5aaa617db3b70778cac0e" prot="private" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>nonbondedMethod</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a3912e188866541d819c337cc173f7b35" prot="private" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>parameters</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aaab717b2c97f373252d6ac2f3b6d1b2f50" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>ParticlePair</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aaa804dca1f22ea0e2d8253d36dfd3cbe7c" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>ParticlePairNoExclusions</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1ad5178b50866b1162a7c7de6f8274c88d" prot="private" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>particles</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a3b5db81dec1f9e48e063e004ed705c0e" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>setComputedValueParameters</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a9f2538ad5d89a5e922af967da563c144" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>setCutoffDistance</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a15756f1206611f2ed21879d5f7be760f" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>setEnergyTermParameters</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a9da72db3059230749d9766ecc66e169c" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>setExclusionParticles</name></member>
+      <member refid="classOpenMM_1_1Force_1a53e3829a91825a9f6aa17e5ade713f84" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>setForceGroup</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1ae71d242310f76735f1dd2731fd5ed027" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>setFunctionParameters</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1aea15f79514c0a5e2e004a405db538041" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>setGlobalParameterDefaultValue</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a034db6bdea92408396efd21e597fdf6e" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>setGlobalParameterName</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a71585932bec920244537ea7516967bf7" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>setNonbondedMethod</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1aeafd476c74e3f093eef7dc7e6af59ba1" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>setParticleParameters</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a84653640f6946cf059e75eddbcac29ab" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>setPerParticleParameterName</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1a2ed3dffc7e1d64053bfb53f00f0f32aaab2339c5e5c9a8ab8d74f590a66f41e25" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>SingleParticle</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1aa71854076cb2eae421eba9c2cf0c134c" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1Force_1a6516b32ebeb95a694f56d93bdf81f4fb" prot="public" virt="virtual"><scope>OpenMM::CustomGBForce</scope><name>~Force</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

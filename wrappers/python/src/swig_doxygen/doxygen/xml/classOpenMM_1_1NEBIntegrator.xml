@@ -1,0 +1,610 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1NEBIntegrator" kind="class" prot="public">
+    <compoundname>OpenMM::NEBIntegrator</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Integrator" prot="public" virt="non-virtual">OpenMM::Integrator</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1NEBIntegrator_1a13f4a612d0a8643f35272de025c8288d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::NEBIntegrator::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="116" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NEBIntegrator_1aeb4b20dbd8e6c64d9178366b5378207e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::NEBIntegrator::friction</definition>
+        <argsstring></argsstring>
+        <name>friction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="116" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NEBIntegrator_1ac387ef8ff2caf20e5339e4fee9179d78" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::NEBIntegrator::springConstant</definition>
+        <argsstring></argsstring>
+        <name>springConstant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="116" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NEBIntegrator_1a1d6443daa3f928d097cc3ce61c18336d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::NEBIntegrator::stepSize</definition>
+        <argsstring></argsstring>
+        <name>stepSize</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a33185045e1fcb1186e413d182f28e461">stepSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="116" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NEBIntegrator_1a81a43116085f997f8e5e6a5216daa0b2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::NEBIntegrator::numImages</definition>
+        <argsstring></argsstring>
+        <name>numImages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="117" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NEBIntegrator_1a9b77f5f9f01c007d4216e082cd5f86f4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::NEBIntegrator::randomNumberSeed</definition>
+        <argsstring></argsstring>
+        <name>randomNumberSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="117" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NEBIntegrator_1a48082bff44fb94222f6f48b5124dbb04" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OpenMM::NEBIntegrator::forcesAreValid</definition>
+        <argsstring></argsstring>
+        <name>forcesAreValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="118" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NEBIntegrator_1ad1788cf3319f9fb4490ff6206661e1a5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OpenMM::NEBIntegrator::hasSetPosition</definition>
+        <argsstring></argsstring>
+        <name>hasSetPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="118" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NEBIntegrator_1a84645a0fc52b08aa7b81d4d7a66599ee" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OpenMM::NEBIntegrator::hasSetVelocity</definition>
+        <argsstring></argsstring>
+        <name>hasSetVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="118" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NEBIntegrator_1a2d96c855414f466a65d15c60931829c6" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> *</type>
+        <definition>ContextImpl* OpenMM::NEBIntegrator::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1ac9c1c07848ae2c2e8617a949a11070c1">context</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="119" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NEBIntegrator_1af2a32921d5210f4a369b256ee766c857" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> *</type>
+        <definition>Context* OpenMM::NEBIntegrator::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1ab3f6088553343feb8f47ab789e7a09a1">owner</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="120" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NEBIntegrator_1a51449805c88ad02da20a218c10972cd7" prot="private" static="no" mutable="no">
+        <type>Kernel</type>
+        <definition>Kernel OpenMM::NEBIntegrator::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="121" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1a71a943195c83af9f93f396c1a777570b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::NEBIntegrator::NEBIntegrator</definition>
+        <argsstring>(int numImages, double stepSize, double springConstant)</argsstring>
+        <name>NEBIntegrator</name>
+        <param>
+          <type>int</type>
+          <declname>numImages</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>stepSize</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>springConstant</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classOpenMM_1_1NEBIntegrator" kindref="compound">NEBIntegrator</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numImages</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of copies of the system that should be simulated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stepSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the step size with which to integrator the system (in picoseconds) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>springConstant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the spring constant between the images </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1aa6fe132578910b297a4f7420f6509c24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::NEBIntegrator::getNumImages</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumImages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="24" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1a1345aeb371436aecbde3c3ac34cbd993" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::NEBIntegrator::getSpringConstant</definition>
+        <argsstring>() const </argsstring>
+        <name>getSpringConstant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the spring constant, measured in kJ/mol/nm</para><para><simplesect kind="return"><para>spring constant, measured in Kelvin </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="33" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1a0c5c2ad7eca8f5c8d0faf2bb7d9cf041" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::NEBIntegrator::getStepSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getStepSize</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1af2276c5c8926e6350eba13209342d8e9">getStepSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the size of each time step, in picoseconds. If this integrator uses variable time steps, the size of the most recent step is returned.</para><para><simplesect kind="return"><para>the step size, measured in ps </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="41" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1a5b3b540f318f54dcdd2d900f5dbee339" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NEBIntegrator::setSpringConstant</definition>
+        <argsstring>(double k)</argsstring>
+        <name>setSpringConstant</name>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="45" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1a22bd471fb1b950e74df81933001b8d64" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::NEBIntegrator::getRandomNumberSeed</definition>
+        <argsstring>() const </argsstring>
+        <name>getRandomNumberSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="49" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1a8722504f5b5784b5e88fe1fa54060502" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double OpenMM::NEBIntegrator::computeKineticEnergy</definition>
+        <argsstring>()</argsstring>
+        <name>computeKineticEnergy</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a0fd62d5846712eca58341556d48d991c">computeKineticEnergy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the kinetic energy. We&apos;re not going to actually implement this function... </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1aa9f1da7d2fd59af9c0e45374eca9ba48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NEBIntegrator::setRandomNumberSeed</definition>
+        <argsstring>(int seed)</argsstring>
+        <name>setRandomNumberSeed</name>
+        <param>
+          <type>int</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="59" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1ac46c9d779c15c0bf5e7c63113c7b2c7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NEBIntegrator::setPositions</definition>
+        <argsstring>(int copy, const std::vector&lt; Vec3 &gt; &amp;positions)</argsstring>
+        <name>setPositions</name>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the positions of all particles in one copy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the copy for which to set positions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the positions of all particles in the system </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1a9bf092fa754fcee7aee91f438bcf78be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NEBIntegrator::setVelocities</definition>
+        <argsstring>(int copy, const std::vector&lt; Vec3 &gt; &amp;velocities)</argsstring>
+        <name>setVelocities</name>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+          <declname>velocities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the velocities of all particles in one copy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the copy for which to set velocities </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>velocities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the velocities of all particles in the system </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1abfc04c11582e0873bcdedb970145d1fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1State" kindref="compound">State</ref></type>
+        <definition>State OpenMM::NEBIntegrator::getState</definition>
+        <argsstring>(int copy, int types, bool enforcePeriodicBox=false, int groups=0xFFFFFFFF)</argsstring>
+        <name>getState</name>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>types</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enforcePeriodicBox</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>groups</declname>
+          <defval>0xFFFFFFFF</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> object recording the current state information about one copy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the copy for which to retrieve state information </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>types</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the set of data types which should be stored in the <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> object. This should be a union of DataType values, e.g. (State::Positions | State::Velocities). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enforcePeriodicBox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if false, the position of each particle will be whatever position is stored by the integrator, regardless of periodic boundary conditions. If true, particle positions will be translated so the center of every molecule lies in the same periodic box. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>groups</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a set of bit flags for which force groups to include when computing forces and energies. Group i will be included if (groups&amp;(1&lt;&lt;i)) != 0. The default value includes all groups. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1a224ad328f561f443ee48100c338c9e78" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::NEBIntegrator::step</definition>
+        <argsstring>(int steps)</argsstring>
+        <name>step</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a55151232664ae778eb2f0e2e8bbe7b67">step</reimplements>
+        <param>
+          <type>int</type>
+          <declname>steps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advance a simulation through time by taking a series of time steps.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of time steps to take </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="97"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1adb2058e48085e469966d86e2654eb2bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::NEBIntegrator::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a6a2b5bcc61b799be0a37b4a431bdcd7d">initialize</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will be called by the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> when it is created. It informs the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> of what context it will be integrating, and gives it a chance to do any necessary initialization. It will also get called again if the application calls reinitialize() on the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1aba1d3d0f9ce47068333be76ab2317243" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::NEBIntegrator::stateChanged</definition>
+        <argsstring>(State::DataType changed)</argsstring>
+        <name>stateChanged</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1aa41aa4c012de261afa5dda15af4fb721">stateChanged</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933" kindref="member">State::DataType</ref></type>
+          <declname>changed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When the user modifies the state, we need to mark that the forces need to be recalculated. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NEBIntegrator_1a3d68d9164dcb4c818988e5593608e9c3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; OpenMM::NEBIntegrator::getKernelNames</definition>
+        <argsstring>()</argsstring>
+        <name>getKernelNames</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1ab27c6938ff637bef4d7478c90f687af4">getKernelNames</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="411">
+        <label>OpenMM::Integrator</label>
+        <link refid="classOpenMM_1_1Integrator"/>
+      </node>
+      <node id="410">
+        <label>OpenMM::NEBIntegrator</label>
+        <link refid="classOpenMM_1_1NEBIntegrator"/>
+        <childnode refid="411" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="413">
+        <label>OpenMM::Integrator</label>
+        <link refid="classOpenMM_1_1Integrator"/>
+        <childnode refid="414" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="415" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="414">
+        <label>OpenMM::ContextImpl</label>
+        <link refid="classOpenMM_1_1ContextImpl"/>
+      </node>
+      <node id="415">
+        <label>OpenMM::Context</label>
+        <link refid="classOpenMM_1_1Context"/>
+      </node>
+      <node id="412">
+        <label>OpenMM::NEBIntegrator</label>
+        <link refid="classOpenMM_1_1NEBIntegrator"/>
+        <childnode refid="413" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" line="13" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h" bodystart="13" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1Integrator_1a204f42ff795b94be55d0c9ba32261af6" prot="protected" virt="virtual"><scope>OpenMM::NEBIntegrator</scope><name>cleanup</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a8722504f5b5784b5e88fe1fa54060502" prot="public" virt="virtual"><scope>OpenMM::NEBIntegrator</scope><name>computeKineticEnergy</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a2d96c855414f466a65d15c60931829c6" prot="private" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>context</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ac26c806e60ca4a0547680edb68f6e39b" prot="protected" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>Context</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a48082bff44fb94222f6f48b5124dbb04" prot="private" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>forcesAreValid</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1aeb4b20dbd8e6c64d9178366b5378207e" prot="private" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>friction</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a1fedd4737a6b0cd3fd4fd5e7ef1e2c4c" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>getConstraintTolerance</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a3d68d9164dcb4c818988e5593608e9c3" prot="protected" virt="virtual"><scope>OpenMM::NEBIntegrator</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1aa6fe132578910b297a4f7420f6509c24" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>getNumImages</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a22bd471fb1b950e74df81933001b8d64" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>getRandomNumberSeed</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a1345aeb371436aecbde3c3ac34cbd993" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>getSpringConstant</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1abfc04c11582e0873bcdedb970145d1fd" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>getState</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a0c5c2ad7eca8f5c8d0faf2bb7d9cf041" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>getStepSize</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1ad1788cf3319f9fb4490ff6206661e1a5" prot="private" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>hasSetPosition</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a84645a0fc52b08aa7b81d4d7a66599ee" prot="private" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>hasSetVelocity</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1adb2058e48085e469966d86e2654eb2bb" prot="protected" virt="virtual"><scope>OpenMM::NEBIntegrator</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a2732506bfb2afd8e2e9954d08cab1304" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>Integrator</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a51449805c88ad02da20a218c10972cd7" prot="private" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>kernel</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a71a943195c83af9f93f396c1a777570b" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>NEBIntegrator</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a81a43116085f997f8e5e6a5216daa0b2" prot="private" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>numImages</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1af2a32921d5210f4a369b256ee766c857" prot="private" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>owner</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a9b77f5f9f01c007d4216e082cd5f86f4" prot="private" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>randomNumberSeed</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a696e7a244751f5b484ce26036a955723" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>setConstraintTolerance</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1ac46c9d779c15c0bf5e7c63113c7b2c7c" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>setPositions</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1aa9f1da7d2fd59af9c0e45374eca9ba48" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>setRandomNumberSeed</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a5b3b540f318f54dcdd2d900f5dbee339" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>setSpringConstant</name></member>
+      <member refid="classOpenMM_1_1Integrator_1aa88c9270faf1fd3bf022c72b33beeb47" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>setStepSize</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a9bf092fa754fcee7aee91f438bcf78be" prot="public" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>setVelocities</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1ac387ef8ff2caf20e5339e4fee9179d78" prot="private" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>springConstant</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1aba1d3d0f9ce47068333be76ab2317243" prot="protected" virt="virtual"><scope>OpenMM::NEBIntegrator</scope><name>stateChanged</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a224ad328f561f443ee48100c338c9e78" prot="public" virt="virtual"><scope>OpenMM::NEBIntegrator</scope><name>step</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a1d6443daa3f928d097cc3ce61c18336d" prot="private" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>stepSize</name></member>
+      <member refid="classOpenMM_1_1NEBIntegrator_1a13f4a612d0a8643f35272de025c8288d" prot="private" virt="non-virtual"><scope>OpenMM::NEBIntegrator</scope><name>temperature</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a9abbef84d9e2c4e5a3d3139f8fa84fff" prot="public" virt="virtual"><scope>OpenMM::NEBIntegrator</scope><name>~Integrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

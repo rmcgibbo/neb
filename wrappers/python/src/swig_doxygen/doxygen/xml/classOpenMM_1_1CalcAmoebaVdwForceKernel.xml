@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1CalcAmoebaVdwForceKernel" kind="class" prot="public">
+    <compoundname>OpenMM::CalcAmoebaVdwForceKernel</compoundname>
+    <includes refid="amoebaKernels_8h" local="no">amoebaKernels.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaVdwForceKernel_1ad409296260ccd5a33822b756b4eebdb4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string OpenMM::CalcAmoebaVdwForceKernel::Name</definition>
+        <argsstring>()</argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="411" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" bodystart="411" bodyend="413"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaVdwForceKernel_1a431d36336e331100a7a9d6a49d7c37d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CalcAmoebaVdwForceKernel::CalcAmoebaVdwForceKernel</definition>
+        <argsstring>(std::string name, const Platform &amp;platform)</argsstring>
+        <name>CalcAmoebaVdwForceKernel</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Platform" kindref="compound">Platform</ref> &amp;</type>
+          <declname>platform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="415" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" bodystart="415" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaVdwForceKernel_1a324b06670010672c74c6ec38de49ddc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::CalcAmoebaVdwForceKernel::initialize</definition>
+        <argsstring>(const System &amp;system, const AmoebaVdwForce &amp;force)=0</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> &amp;</type>
+          <declname>system</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1AmoebaVdwForce" kindref="compound">AmoebaVdwForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the kernel.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>system</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> this kernel will be applied to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classOpenMM_1_1GBSAOBCForce" kindref="compound">GBSAOBCForce</ref> this kernel will be used for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaVdwForceKernel_1a5172f5d75b45b9f3bc85aef2633abfa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenMM::CalcAmoebaVdwForceKernel::execute</definition>
+        <argsstring>(ContextImpl &amp;context, bool includeForces, bool includeEnergy)=0</argsstring>
+        <name>execute</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeForces</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeEnergy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Execute the kernel to calculate the forces and/or energy.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which to execute this kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeForces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if forces should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeEnergy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the energy should be calculated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the potential energy due to the force </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaVdwForceKernel_1a137bdc356bda6ccfdde1bd1c72c9f035" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::CalcAmoebaVdwForceKernel::copyParametersToContext</definition>
+        <argsstring>(ContextImpl &amp;context, const AmoebaVdwForce &amp;force)=0</argsstring>
+        <name>copyParametersToContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1AmoebaVdwForce" kindref="compound">AmoebaVdwForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy changed parameters over to a context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context to copy parameters to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classOpenMM_1_1AmoebaVdwForce" kindref="compound">AmoebaVdwForce</ref> to copy the parameters from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="441"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This kernel is invoked by <ref refid="classOpenMM_1_1AmoebaVdwForce" kindref="compound">AmoebaVdwForce</ref> to calculate the vdw forces acting on the system and the vdw energy of the system. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="408" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" bodystart="408" bodyend="442"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1CalcAmoebaVdwForceKernel_1a431d36336e331100a7a9d6a49d7c37d4" prot="public" virt="non-virtual"><scope>OpenMM::CalcAmoebaVdwForceKernel</scope><name>CalcAmoebaVdwForceKernel</name></member>
+      <member refid="classOpenMM_1_1CalcAmoebaVdwForceKernel_1a137bdc356bda6ccfdde1bd1c72c9f035" prot="public" virt="pure-virtual"><scope>OpenMM::CalcAmoebaVdwForceKernel</scope><name>copyParametersToContext</name></member>
+      <member refid="classOpenMM_1_1CalcAmoebaVdwForceKernel_1a5172f5d75b45b9f3bc85aef2633abfa4" prot="public" virt="pure-virtual"><scope>OpenMM::CalcAmoebaVdwForceKernel</scope><name>execute</name></member>
+      <member refid="classOpenMM_1_1CalcAmoebaVdwForceKernel_1a324b06670010672c74c6ec38de49ddc4" prot="public" virt="pure-virtual"><scope>OpenMM::CalcAmoebaVdwForceKernel</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1CalcAmoebaVdwForceKernel_1ad409296260ccd5a33822b756b4eebdb4" prot="public" virt="non-virtual"><scope>OpenMM::CalcAmoebaVdwForceKernel</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

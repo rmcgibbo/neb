@@ -1,0 +1,704 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1CustomAngleForce" kind="class" prot="public">
+    <compoundname>OpenMM::CustomAngleForce</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Force" prot="public" virt="non-virtual">OpenMM::Force</basecompoundref>
+    <includes refid="CustomAngleForce_8h" local="no">CustomAngleForce.h</includes>
+    <innerclass refid="classOpenMM_1_1CustomAngleForce_1_1AngleInfo" prot="private">OpenMM::CustomAngleForce::AngleInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomAngleForce_1_1AngleParameterInfo" prot="private">OpenMM::CustomAngleForce::AngleParameterInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomAngleForce_1_1GlobalParameterInfo" prot="private">OpenMM::CustomAngleForce::GlobalParameterInfo</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1CustomAngleForce_1aa29dd3a976242d4493006bfa89d1b8c4" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string OpenMM::CustomAngleForce::energyExpression</definition>
+        <argsstring></argsstring>
+        <name>energyExpression</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="211" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomAngleForce_1a57cdd0357a1d198e663d07c0ae67c1f2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; AngleParameterInfo &gt;</type>
+        <definition>std::vector&lt;AngleParameterInfo&gt; OpenMM::CustomAngleForce::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="212" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomAngleForce_1a2df2728a54478a1047c8eee78feaaa79" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; GlobalParameterInfo &gt;</type>
+        <definition>std::vector&lt;GlobalParameterInfo&gt; OpenMM::CustomAngleForce::globalParameters</definition>
+        <argsstring></argsstring>
+        <name>globalParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="213" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomAngleForce_1a34d1401688b20f7749eb7df329c3d35c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; AngleInfo &gt;</type>
+        <definition>std::vector&lt;AngleInfo&gt; OpenMM::CustomAngleForce::angles</definition>
+        <argsstring></argsstring>
+        <name>angles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="214" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a1e95213d392c1be39403b4cee17d0b87" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CustomAngleForce::CustomAngleForce</definition>
+        <argsstring>(const std::string &amp;energy)</argsstring>
+        <name>CustomAngleForce</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>energy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classOpenMM_1_1CustomAngleForce" kindref="compound">CustomAngleForce</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>energy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an algebraic expression giving the interaction energy between three particles as a function of theta, the angle between them </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a623d3366c4e83a29ef2b28cb1ffc2ceb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomAngleForce::getNumAngles</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumAngles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of angles for which force field parameters have been defined. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="84" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a721bbca70b5df3cafce0cec1161a5a57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomAngleForce::getNumPerAngleParameters</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumPerAngleParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of per-angle parameters that the interaction depends on. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="90" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a7924a73ea8b817d716ffc4551c98a2e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomAngleForce::getNumGlobalParameters</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumGlobalParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of global parameters that the interaction depends on. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="96" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a58767da58e57d11c992affa7fd95aa6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; OpenMM::CustomAngleForce::getEnergyFunction</definition>
+        <argsstring>() const </argsstring>
+        <name>getEnergyFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the algebraic expression that gives the interaction energy for each angle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a23491e2ac8350da29465a74dbb39501d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomAngleForce::setEnergyFunction</definition>
+        <argsstring>(const std::string &amp;energy)</argsstring>
+        <name>setEnergyFunction</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>energy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the algebraic expression that gives the interaction energy for each angle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a615dcc97d712eaa66ddb39e6c27bdf43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomAngleForce::addPerAngleParameter</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>addPerAngleParameter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new per-angle parameter that the interaction may depend on.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the parameter that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1aed406fdc65f646f821d0a026351f14eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; OpenMM::CustomAngleForce::getPerAngleParameterName</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getPerAngleParameterName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of a per-angle parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to get the name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the parameter name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a02d3c2686e8fa098f311abbf9b3655b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomAngleForce::setPerAngleParameterName</definition>
+        <argsstring>(int index, const std::string &amp;name)</argsstring>
+        <name>setPerAngleParameterName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the name of a per-angle parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to set the name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1abb72ef2cd21b442b3fb6f69bf9deaa2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomAngleForce::addGlobalParameter</definition>
+        <argsstring>(const std::string &amp;name, double defaultValue)</argsstring>
+        <name>addGlobalParameter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new global parameter that the interaction may depend on.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the default value of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the parameter that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a4d0798f15c4142ea6e65262047c3a0e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; OpenMM::CustomAngleForce::getGlobalParameterName</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getGlobalParameterName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of a global parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to get the name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the parameter name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a63697fc6567ea904990975a10769e7fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomAngleForce::setGlobalParameterName</definition>
+        <argsstring>(int index, const std::string &amp;name)</argsstring>
+        <name>setGlobalParameterName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the name of a global parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to set the name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a12963d726a2f80f506fedae482905d2f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::CustomAngleForce::getGlobalParameterDefaultValue</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getGlobalParameterDefaultValue</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default value of a global parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to get the default value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the parameter default value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a585532e9938ab5c626ace7ee161ea00a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomAngleForce::setGlobalParameterDefaultValue</definition>
+        <argsstring>(int index, double defaultValue)</argsstring>
+        <name>setGlobalParameterDefaultValue</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default value of a global parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to set the default value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the default value of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a99d6111c79867c537db132be31b746ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomAngleForce::addAngle</definition>
+        <argsstring>(int particle1, int particle2, int particle3, const std::vector&lt; double &gt; &amp;parameters)</argsstring>
+        <name>addAngle</name>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an angle term to the force field.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of parameters for the new angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the angle that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a19fc844bdae4fb21194c76381695b092" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomAngleForce::getAngleParameters</definition>
+        <argsstring>(int index, int &amp;particle1, int &amp;particle2, int &amp;particle3, std::vector&lt; double &gt; &amp;parameters) const </argsstring>
+        <name>getAngleParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the force field parameters for an angle term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the angle for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of parameters for the angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1af1e9e84273982c73da9a8f62531d82a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomAngleForce::setAngleParameters</definition>
+        <argsstring>(int index, int particle1, int particle2, int particle3, const std::vector&lt; double &gt; &amp;parameters)</argsstring>
+        <name>setAngleParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the force field parameters for an angle term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the angle for which to set parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the angle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of parameters for the angle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1ad5dcb851ce988959911d564d370d0c97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomAngleForce::updateParametersInContext</definition>
+        <argsstring>(Context &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the per-angle parameters in a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> to match those stored in this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object. This method provides an efficient method to update certain parameters in an existing <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> without needing to reinitialize it. Simply call <ref refid="classOpenMM_1_1CustomAngleForce_1af1e9e84273982c73da9a8f62531d82a2" kindref="member">setAngleParameters()</ref> to modify this object&apos;s parameters, then call updateParametersInState() to copy them over to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>.</para><para>This method has several limitations. The only information it updates is the values of per-angle parameters. All other aspects of the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> (such as the energy function) are unaffected and can only be changed by reinitializing the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. The set of particles involved in a angle cannot be changed, nor can new angles be added. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="204"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1CustomAngleForce_1a3ad53ab917aef959fd038eeb7ffc5ca9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> *</type>
+        <definition>ForceImpl* OpenMM::CustomAngleForce::createImpl</definition>
+        <argsstring>()</argsstring>
+        <name>createImpl</name>
+        <reimplements refid="classOpenMM_1_1Force_1ac110723f39368f7eeb0dbb2105771255">createImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is created, it invokes this method on each <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. It should create a new <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> object which can be used by the context for calculating forces. The <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> will be deleted automatically when the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is deleted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements interactions between sets of three particles that depend on the angle between them. Unlike <ref refid="classOpenMM_1_1HarmonicAngleForce" kindref="compound">HarmonicAngleForce</ref>, the functional form of the interaction is completely customizable, and may involve arbitrary algebraic expressions. In addition to the angle formed by the particles, it may depend on arbitrary global and per-angle parameters.</para><para>To use this class, create a <ref refid="classOpenMM_1_1CustomAngleForce" kindref="compound">CustomAngleForce</ref> object, passing an algebraic expression to the constructor that defines the interaction energy between each set of particles. The expression may depend on theta, the angle formed by the particles, as well as on any parameters you choose. Then call <ref refid="classOpenMM_1_1CustomAngleForce_1a615dcc97d712eaa66ddb39e6c27bdf43" kindref="member">addPerAngleParameter()</ref> to define per-angle parameters, and <ref refid="classOpenMM_1_1CustomAngleForce_1abb72ef2cd21b442b3fb6f69bf9deaa2d" kindref="member">addGlobalParameter()</ref> to define global parameters. The values of per-angle parameters are specified as part of the system definition, while values of global parameters may be modified during a simulation by calling <ref refid="classOpenMM_1_1Context_1a368b7f53ee35bb151ee686441b7900af" kindref="member">Context::setParameter()</ref>. Finally, call <ref refid="classOpenMM_1_1CustomAngleForce_1a99d6111c79867c537db132be31b746ad" kindref="member">addAngle()</ref> once for each angle. After an angle has been added, you can modify its parameters by calling <ref refid="classOpenMM_1_1CustomAngleForce_1af1e9e84273982c73da9a8f62531d82a2" kindref="member">setAngleParameters()</ref>. This will have no effect on Contexts that already exist unless you call <ref refid="classOpenMM_1_1CustomAngleForce_1ad5dcb851ce988959911d564d370d0c97" kindref="member">updateParametersInContext()</ref>.</para><para>As an example, the following code creates a <ref refid="classOpenMM_1_1CustomAngleForce" kindref="compound">CustomAngleForce</ref> that implements a harmonic potential:</para><para><computeroutput>CustomAngleForce* force = new <ref refid="classOpenMM_1_1CustomAngleForce" kindref="compound">CustomAngleForce</ref>(&quot;0.5*k*(theta-theta0)^2&quot;);</computeroutput></para><para>This force depends on two parameters: the spring constant k and equilibrium angle theta0. The following code defines these parameters:</para><para><computeroutput><preformatted>
+ force-&gt;addPerAngleParameter(&quot;k&quot;);
+ force-&gt;addPerAngleParameter(&quot;theta0&quot;);
+ </preformatted></computeroutput></para><para>Expressions may involve the operators + (add), - (subtract), * (multiply), / (divide), and ^ (power), and the following functions: sqrt, exp, log, sin, cos, sec, csc, tan, cot, asin, acos, atan, sinh, cosh, tanh, erf, erfc, min, max, abs, step, delta. All trigonometric functions are defined in radians, and log is the natural logarithm. step(x) = 0 if x is less than 0, 1 otherwise. delta(x) = 1 if x is 0, 0 otherwise. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="175">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="174">
+        <label>OpenMM::CustomAngleForce</label>
+        <link refid="classOpenMM_1_1CustomAngleForce"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="177">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="176">
+        <label>OpenMM::CustomAngleForce</label>
+        <link refid="classOpenMM_1_1CustomAngleForce"/>
+        <childnode refid="177" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" line="72" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomAngleForce.h" bodystart="72" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a99d6111c79867c537db132be31b746ad" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>addAngle</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1abb72ef2cd21b442b3fb6f69bf9deaa2d" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>addGlobalParameter</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a615dcc97d712eaa66ddb39e6c27bdf43" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>addPerAngleParameter</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a34d1401688b20f7749eb7df329c3d35c" prot="private" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>angles</name></member>
+      <member refid="classOpenMM_1_1Force_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a3ad53ab917aef959fd038eeb7ffc5ca9" prot="protected" virt="virtual"><scope>OpenMM::CustomAngleForce</scope><name>createImpl</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a1e95213d392c1be39403b4cee17d0b87" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>CustomAngleForce</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1aa29dd3a976242d4493006bfa89d1b8c4" prot="private" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>energyExpression</name></member>
+      <member refid="classOpenMM_1_1Force_1a40e75e251ec93d3bc9fc87b96026fbc2" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>Force</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a19fc844bdae4fb21194c76381695b092" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>getAngleParameters</name></member>
+      <member refid="classOpenMM_1_1Force_1aa6d1d0fd8cad61e7ea37305c6d13a10d" prot="protected" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>getContextImpl</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a58767da58e57d11c992affa7fd95aa6b" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>getEnergyFunction</name></member>
+      <member refid="classOpenMM_1_1Force_1a5aca97957c70da1076fcd7cbac340604" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>getForceGroup</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a12963d726a2f80f506fedae482905d2f" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>getGlobalParameterDefaultValue</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a4d0798f15c4142ea6e65262047c3a0e0" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>getGlobalParameterName</name></member>
+      <member refid="classOpenMM_1_1Force_1a4dead2c44734956400d0ca8619650890" prot="protected" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>getImplInContext</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a623d3366c4e83a29ef2b28cb1ffc2ceb" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>getNumAngles</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a7924a73ea8b817d716ffc4551c98a2e1" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>getNumGlobalParameters</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a721bbca70b5df3cafce0cec1161a5a57" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>getNumPerAngleParameters</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1aed406fdc65f646f821d0a026351f14eb" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>getPerAngleParameterName</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a2df2728a54478a1047c8eee78feaaa79" prot="private" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>globalParameters</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a57cdd0357a1d198e663d07c0ae67c1f2" prot="private" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>parameters</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1af1e9e84273982c73da9a8f62531d82a2" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>setAngleParameters</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a23491e2ac8350da29465a74dbb39501d" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>setEnergyFunction</name></member>
+      <member refid="classOpenMM_1_1Force_1a53e3829a91825a9f6aa17e5ade713f84" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>setForceGroup</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a585532e9938ab5c626ace7ee161ea00a" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>setGlobalParameterDefaultValue</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a63697fc6567ea904990975a10769e7fa" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>setGlobalParameterName</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1a02d3c2686e8fa098f311abbf9b3655b3" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>setPerAngleParameterName</name></member>
+      <member refid="classOpenMM_1_1CustomAngleForce_1ad5dcb851ce988959911d564d370d0c97" prot="public" virt="non-virtual"><scope>OpenMM::CustomAngleForce</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1Force_1a6516b32ebeb95a694f56d93bdf81f4fb" prot="public" virt="virtual"><scope>OpenMM::CustomAngleForce</scope><name>~Force</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1CalcAmoebaStretchBendForceKernel" kind="class" prot="public">
+    <compoundname>OpenMM::CalcAmoebaStretchBendForceKernel</compoundname>
+    <includes refid="amoebaKernels_8h" local="no">amoebaKernels.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaStretchBendForceKernel_1a95ece409909e1d6e41e9e3f0b2d64d92" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string OpenMM::CalcAmoebaStretchBendForceKernel::Name</definition>
+        <argsstring>()</argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="213" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" bodystart="213" bodyend="215"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaStretchBendForceKernel_1abd8564368464f58b232a16a72fc4ffcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CalcAmoebaStretchBendForceKernel::CalcAmoebaStretchBendForceKernel</definition>
+        <argsstring>(std::string name, const Platform &amp;platform)</argsstring>
+        <name>CalcAmoebaStretchBendForceKernel</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Platform" kindref="compound">Platform</ref> &amp;</type>
+          <declname>platform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="217" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" bodystart="217" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaStretchBendForceKernel_1a5356220b64938644406fe977bb41f701" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::CalcAmoebaStretchBendForceKernel::initialize</definition>
+        <argsstring>(const System &amp;system, const AmoebaStretchBendForce &amp;force)=0</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> &amp;</type>
+          <declname>system</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1AmoebaStretchBendForce" kindref="compound">AmoebaStretchBendForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the kernel.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>system</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> this kernel will be applied to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the StretchBendForce this kernel will be used for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaStretchBendForceKernel_1ad3c19a7b627e94b2f7b746c5221175c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenMM::CalcAmoebaStretchBendForceKernel::execute</definition>
+        <argsstring>(ContextImpl &amp;context, bool includeForces, bool includeEnergy)=0</argsstring>
+        <name>execute</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeForces</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeEnergy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Execute the kernel to calculate the forces and/or energy.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which to execute this kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeForces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if forces should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeEnergy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the energy should be calculated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the potential energy due to the force </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaStretchBendForceKernel_1ac48628544f7f6602e1c5143fe789db4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::CalcAmoebaStretchBendForceKernel::copyParametersToContext</definition>
+        <argsstring>(ContextImpl &amp;context, const AmoebaStretchBendForce &amp;force)=0</argsstring>
+        <name>copyParametersToContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1AmoebaStretchBendForce" kindref="compound">AmoebaStretchBendForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy changed parameters over to a context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context to copy parameters to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classOpenMM_1_1AmoebaStretchBendForce" kindref="compound">AmoebaStretchBendForce</ref> to copy the parameters from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="243"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This kernel is invoked by AmoebaTorsionForce to calculate the forces acting on the system and the energy of the system. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="209" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" bodystart="209" bodyend="244"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1CalcAmoebaStretchBendForceKernel_1abd8564368464f58b232a16a72fc4ffcd" prot="public" virt="non-virtual"><scope>OpenMM::CalcAmoebaStretchBendForceKernel</scope><name>CalcAmoebaStretchBendForceKernel</name></member>
+      <member refid="classOpenMM_1_1CalcAmoebaStretchBendForceKernel_1ac48628544f7f6602e1c5143fe789db4f" prot="public" virt="pure-virtual"><scope>OpenMM::CalcAmoebaStretchBendForceKernel</scope><name>copyParametersToContext</name></member>
+      <member refid="classOpenMM_1_1CalcAmoebaStretchBendForceKernel_1ad3c19a7b627e94b2f7b746c5221175c4" prot="public" virt="pure-virtual"><scope>OpenMM::CalcAmoebaStretchBendForceKernel</scope><name>execute</name></member>
+      <member refid="classOpenMM_1_1CalcAmoebaStretchBendForceKernel_1a5356220b64938644406fe977bb41f701" prot="public" virt="pure-virtual"><scope>OpenMM::CalcAmoebaStretchBendForceKernel</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1CalcAmoebaStretchBendForceKernel_1a95ece409909e1d6e41e9e3f0b2d64d92" prot="public" virt="non-virtual"><scope>OpenMM::CalcAmoebaStretchBendForceKernel</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

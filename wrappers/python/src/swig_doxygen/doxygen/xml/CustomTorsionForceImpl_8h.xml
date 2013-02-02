@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="CustomTorsionForceImpl_8h" kind="file">
+    <compoundname>CustomTorsionForceImpl.h</compoundname>
+    <includes refid="ForceImpl_8h" local="yes">ForceImpl.h</includes>
+    <includes refid="CustomTorsionForce_8h" local="yes">openmm/CustomTorsionForce.h</includes>
+    <includes local="yes">openmm/Kernel.h</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="504">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomTorsionForceImpl.h</label>
+        <link refid="CustomTorsionForceImpl.h"/>
+        <childnode refid="505" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+      </node>
+      <node id="512">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="506" relation="include">
+        </childnode>
+      </node>
+      <node id="505">
+        <label>ForceImpl.h</label>
+        <link refid="ForceImpl_8h_source"/>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+      </node>
+      <node id="514">
+        <label>cassert</label>
+      </node>
+      <node id="516">
+        <label>openmm/Kernel.h</label>
+      </node>
+      <node id="508">
+        <label>string</label>
+      </node>
+      <node id="507">
+        <label>map</label>
+      </node>
+      <node id="506">
+        <label>openmm/internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="511">
+        <label>openmm/CustomTorsionForce.h</label>
+        <link refid="CustomTorsionForce_8h_source"/>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+      </node>
+      <node id="510">
+        <label>vector</label>
+      </node>
+      <node id="509">
+        <label>utility</label>
+      </node>
+      <node id="515">
+        <label>iosfwd</label>
+      </node>
+      <node id="513">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classOpenMM_1_1CustomTorsionForceImpl" prot="public">OpenMM::CustomTorsionForceImpl</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomTorsionForceImpl.h"/>
+  </compounddef>
+</doxygen>

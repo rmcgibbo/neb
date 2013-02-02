@@ -1,0 +1,451 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1VariableLangevinIntegrator" kind="class" prot="public">
+    <compoundname>OpenMM::VariableLangevinIntegrator</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Integrator" prot="public" virt="non-virtual">OpenMM::Integrator</basecompoundref>
+    <includes refid="VariableLangevinIntegrator_8h" local="no">VariableLangevinIntegrator.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1VariableLangevinIntegrator_1a07c2203c05136634e00401345fb8a168" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::VariableLangevinIntegrator::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="164" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1VariableLangevinIntegrator_1a588b4015a2225172b72e62b92440aa76" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::VariableLangevinIntegrator::friction</definition>
+        <argsstring></argsstring>
+        <name>friction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="164" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1VariableLangevinIntegrator_1a554e144d3c1e4b663a704dc4a04d34db" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::VariableLangevinIntegrator::errorTol</definition>
+        <argsstring></argsstring>
+        <name>errorTol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="164" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1VariableLangevinIntegrator_1acde98ace23048c0f5e0ce113269df083" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::VariableLangevinIntegrator::randomNumberSeed</definition>
+        <argsstring></argsstring>
+        <name>randomNumberSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="165" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1VariableLangevinIntegrator_1aee030718dd8edc2c39027e4321fc2cfa" prot="private" static="no" mutable="no">
+        <type>Kernel</type>
+        <definition>Kernel OpenMM::VariableLangevinIntegrator::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="166" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1a83a450c574877330b9c100a741f4ff90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::VariableLangevinIntegrator::VariableLangevinIntegrator</definition>
+        <argsstring>(double temperature, double frictionCoeff, double errorTol)</argsstring>
+        <name>VariableLangevinIntegrator</name>
+        <param>
+          <type>double</type>
+          <declname>temperature</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>frictionCoeff</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>errorTol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classOpenMM_1_1VariableLangevinIntegrator" kindref="compound">VariableLangevinIntegrator</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>temperature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the temperature of the heat bath (in Kelvin) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frictionCoeff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the friction coefficient which couples the system to the heat bath (in inverse picoseconds) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errorTol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the error tolerance </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1aa524d9fe855a362e7b8011442c10183a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::VariableLangevinIntegrator::getTemperature</definition>
+        <argsstring>() const </argsstring>
+        <name>getTemperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the temperature of the heat bath (in Kelvin).</para><para><simplesect kind="return"><para>the temperature of the heat bath, measured in Kelvin </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="70" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1aff0efc6108cbc0208d3f8fdeeae78f59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableLangevinIntegrator::setTemperature</definition>
+        <argsstring>(double temp)</argsstring>
+        <name>setTemperature</name>
+        <param>
+          <type>double</type>
+          <declname>temp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the temperature of the heat bath (in Kelvin).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>temp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the temperature of the heat bath, measured in Kelvin </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="78" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1ab569423a0357440f91551a6fb3288f9f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::VariableLangevinIntegrator::getFriction</definition>
+        <argsstring>() const </argsstring>
+        <name>getFriction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the friction coefficient which determines how strongly the system is coupled to the heat bath (in inverse ps).</para><para><simplesect kind="return"><para>the friction coefficient, measured in 1/ps </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="87" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1af9535e0a7c3a4c9079eceee8860fee44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableLangevinIntegrator::setFriction</definition>
+        <argsstring>(double coeff)</argsstring>
+        <name>setFriction</name>
+        <param>
+          <type>double</type>
+          <declname>coeff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the friction coefficient which determines how strongly the system is coupled to the heat bath (in inverse ps).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coeff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the friction coefficient, measured in 1/ps </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="96" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1a48076a54c6328597bb4e346c6843d683" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::VariableLangevinIntegrator::getErrorTolerance</definition>
+        <argsstring>() const </argsstring>
+        <name>getErrorTolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the error tolerance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="102" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1ae69c465069208dd396c4604ca97226d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableLangevinIntegrator::setErrorTolerance</definition>
+        <argsstring>(double tol)</argsstring>
+        <name>setErrorTolerance</name>
+        <param>
+          <type>double</type>
+          <declname>tol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the error tolerance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="108" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1ad79a9e3aaef3f369e0e7e16f8b541a78" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::VariableLangevinIntegrator::getRandomNumberSeed</definition>
+        <argsstring>() const </argsstring>
+        <name>getRandomNumberSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the random number seed. See <ref refid="classOpenMM_1_1VariableLangevinIntegrator_1a40461e80a9aac0728d1e2ba28acfe187" kindref="member">setRandomNumberSeed()</ref> for details. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="114" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1a40461e80a9aac0728d1e2ba28acfe187" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableLangevinIntegrator::setRandomNumberSeed</definition>
+        <argsstring>(int seed)</argsstring>
+        <name>setRandomNumberSeed</name>
+        <param>
+          <type>int</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the random number seed. The precise meaning of this parameter is undefined, and is left up to each <ref refid="classOpenMM_1_1Platform" kindref="compound">Platform</ref> to interpret in an appropriate way. It is guaranteed that if two simulations are run with different random number seeds, the sequence of random forces will be different. On the other hand, no guarantees are made about the behavior of simulations that use the same seed. In particular, Platforms are permitted to use non-deterministic algorithms which produce different results on successive runs, even if those runs were initialized identically. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="125" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="125" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1a6fc701469f54895b0a0a524a3eb29676" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableLangevinIntegrator::step</definition>
+        <argsstring>(int steps)</argsstring>
+        <name>step</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a55151232664ae778eb2f0e2e8bbe7b67">step</reimplements>
+        <param>
+          <type>int</type>
+          <declname>steps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advance a simulation through time by taking a series of time steps.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of time steps to take </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1ae4d49aa8fcdc12386a6c7e5bcd155e33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableLangevinIntegrator::stepTo</definition>
+        <argsstring>(double time)</argsstring>
+        <name>stepTo</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advance a simulation through time by taking a series of steps until a specified time is reached. When this method returns, the simulation time will exactly equal the time which was specified. If you call this method and specify a time that is earlier than the current time, it will return without doing anything.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time to which the simulation should be advanced </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1a1d16e30bb73d173d07742e065135ebc5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableLangevinIntegrator::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a6a2b5bcc61b799be0a37b4a431bdcd7d">initialize</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will be called by the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> when it is created. It informs the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> of what context it will be integrating, and gives it a chance to do any necessary initialization. It will also get called again if the application calls reinitialize() on the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1a82eb906f5c374cda0d13a21b8d7788bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableLangevinIntegrator::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a204f42ff795b94be55d0c9ba32261af6">cleanup</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will be called by the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> when it is destroyed to let the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> do any necessary cleanup. It will also get called again if the application calls reinitialize() on the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1aac03fe41c32d739fd625eb92d1c18a13" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; OpenMM::VariableLangevinIntegrator::getKernelNames</definition>
+        <argsstring>()</argsstring>
+        <name>getKernelNames</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1ab27c6938ff637bef4d7478c90f687af4">getKernelNames</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableLangevinIntegrator_1aaf9ad349b92e739a7f6f8a7cb0d06348" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double OpenMM::VariableLangevinIntegrator::computeKineticEnergy</definition>
+        <argsstring>()</argsstring>
+        <name>computeKineticEnergy</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a0fd62d5846712eca58341556d48d991c">computeKineticEnergy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the kinetic energy of the system at the current time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="162"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is an error contolled, variable time step <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> that simulates a <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> using Langevin dynamics. It compares the result of the Langevin integrator to that of an explicit Euler integrator, takes the difference between the two as a measure of the integration error in each time step, and continuously adjusts the step size to keep the error below a specified tolerance. This both improves the stability of the integrator and allows it to take larger steps on average, while still maintaining comparable accuracy to a fixed step size integrator.</para><para>It is best not to think of the error tolerance as having any absolute meaning. It is just an adjustable parameter that affects the step size and integration accuracy. You should try different values to find the largest one that produces a trajectory sufficiently accurate for your purposes. 0.001 is often a good starting point. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="513">
+        <label>OpenMM::Integrator</label>
+        <link refid="classOpenMM_1_1Integrator"/>
+      </node>
+      <node id="512">
+        <label>OpenMM::VariableLangevinIntegrator</label>
+        <link refid="classOpenMM_1_1VariableLangevinIntegrator"/>
+        <childnode refid="513" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="515">
+        <label>OpenMM::Integrator</label>
+        <link refid="classOpenMM_1_1Integrator"/>
+        <childnode refid="516" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="517" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="516">
+        <label>OpenMM::ContextImpl</label>
+        <link refid="classOpenMM_1_1ContextImpl"/>
+      </node>
+      <node id="517">
+        <label>OpenMM::Context</label>
+        <link refid="classOpenMM_1_1Context"/>
+      </node>
+      <node id="514">
+        <label>OpenMM::VariableLangevinIntegrator</label>
+        <link refid="classOpenMM_1_1VariableLangevinIntegrator"/>
+        <childnode refid="515" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" line="55" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableLangevinIntegrator.h" bodystart="55" bodyend="167"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1a82eb906f5c374cda0d13a21b8d7788bb" prot="protected" virt="virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>cleanup</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1aaf9ad349b92e739a7f6f8a7cb0d06348" prot="protected" virt="virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>computeKineticEnergy</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ac26c806e60ca4a0547680edb68f6e39b" prot="protected" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>Context</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ac9c1c07848ae2c2e8617a949a11070c1" prot="protected" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>context</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1a554e144d3c1e4b663a704dc4a04d34db" prot="private" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>errorTol</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1a588b4015a2225172b72e62b92440aa76" prot="private" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>friction</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a1fedd4737a6b0cd3fd4fd5e7ef1e2c4c" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>getConstraintTolerance</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1a48076a54c6328597bb4e346c6843d683" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>getErrorTolerance</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1ab569423a0357440f91551a6fb3288f9f" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>getFriction</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1aac03fe41c32d739fd625eb92d1c18a13" prot="protected" virt="virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1ad79a9e3aaef3f369e0e7e16f8b541a78" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>getRandomNumberSeed</name></member>
+      <member refid="classOpenMM_1_1Integrator_1af2276c5c8926e6350eba13209342d8e9" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>getStepSize</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1aa524d9fe855a362e7b8011442c10183a" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>getTemperature</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1a1d16e30bb73d173d07742e065135ebc5" prot="protected" virt="virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a2732506bfb2afd8e2e9954d08cab1304" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>Integrator</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1aee030718dd8edc2c39027e4321fc2cfa" prot="private" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>kernel</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ab3f6088553343feb8f47ab789e7a09a1" prot="protected" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>owner</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1acde98ace23048c0f5e0ce113269df083" prot="private" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>randomNumberSeed</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a696e7a244751f5b484ce26036a955723" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>setConstraintTolerance</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1ae69c465069208dd396c4604ca97226d4" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>setErrorTolerance</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1af9535e0a7c3a4c9079eceee8860fee44" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>setFriction</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1a40461e80a9aac0728d1e2ba28acfe187" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>setRandomNumberSeed</name></member>
+      <member refid="classOpenMM_1_1Integrator_1aa88c9270faf1fd3bf022c72b33beeb47" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>setStepSize</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1aff0efc6108cbc0208d3f8fdeeae78f59" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>setTemperature</name></member>
+      <member refid="classOpenMM_1_1Integrator_1aa41aa4c012de261afa5dda15af4fb721" prot="protected" virt="virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>stateChanged</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1a6fc701469f54895b0a0a524a3eb29676" prot="public" virt="virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>step</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1ae4d49aa8fcdc12386a6c7e5bcd155e33" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>stepTo</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1a07c2203c05136634e00401345fb8a168" prot="private" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>temperature</name></member>
+      <member refid="classOpenMM_1_1VariableLangevinIntegrator_1a83a450c574877330b9c100a741f4ff90" prot="public" virt="non-virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>VariableLangevinIntegrator</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a9abbef84d9e2c4e5a3d3139f8fa84fff" prot="public" virt="virtual"><scope>OpenMM::VariableLangevinIntegrator</scope><name>~Integrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

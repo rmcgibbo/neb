@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_a1233201d9d1d893eb032fc5db0a4ed7" kind="dir">
+    <compoundname>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/</compoundname>
+    <innerdir refid="dir_c6f97494e804db02a49c7ca27e011c3f">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/</innerdir>
+    <innerfile refid="OpenMM_8h">OpenMM.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/"/>
+  </compounddef>
+</doxygen>

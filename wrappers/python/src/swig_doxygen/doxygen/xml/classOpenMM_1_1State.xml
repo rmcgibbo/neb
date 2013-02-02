@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1State" kind="class" prot="public">
+    <compoundname>OpenMM::State</compoundname>
+    <includes refid="State_8h" local="no">State.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933" prot="public" static="no">
+        <name>DataType</name>
+        <enumvalue id="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933a8a29780edc4c2177e02baf36e831d7a8" prot="public">
+          <name>Positions</name>
+          <initializer>1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933a05a304f7ed317c9984a6a1f00c357495" prot="public">
+          <name>Velocities</name>
+          <initializer>2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933a1883af0eed6c0ceae7369c332b031761" prot="public">
+          <name>Forces</name>
+          <initializer>4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933ab5dd467377521dc7be41b02cc89446a8" prot="public">
+          <name>Energy</name>
+          <initializer>8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933a11cce011312726cfde502edc08fc1aab" prot="public">
+          <name>Parameters</name>
+          <initializer>16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an enumeration of the types of data which may be stored in a <ref refid="classOpenMM_1_1State" kindref="compound">State</ref>. When you create a <ref refid="classOpenMM_1_1State" kindref="compound">State</ref>, use these values to specify which data types it should contain. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="59" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenMM_1_1State_1ac26c806e60ca4a0547680edb68f6e39b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Context</definition>
+        <argsstring></argsstring>
+        <name>Context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="106" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1State_1ad4941a55f6957d0d71e6a898c76b6735" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::State::types</definition>
+        <argsstring></argsstring>
+        <name>types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="114" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1State_1ad8701bd71256d909dba17236b2694dc0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::State::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="115" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1State_1ab6abd8e559cd33b9d5548ed296e36366" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::State::ke</definition>
+        <argsstring></argsstring>
+        <name>ke</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="115" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1State_1a0bda948879680644f4bc720416b56ab3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::State::pe</definition>
+        <argsstring></argsstring>
+        <name>pe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="115" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1State_1a6ce46f3f196f96c9d82a92afaf14d8c1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt;</type>
+        <definition>std::vector&lt;Vec3&gt; OpenMM::State::positions</definition>
+        <argsstring></argsstring>
+        <name>positions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="116" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1State_1a708b8b917a7d01e7f56637132536f6db" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt;</type>
+        <definition>std::vector&lt;Vec3&gt; OpenMM::State::velocities</definition>
+        <argsstring></argsstring>
+        <name>velocities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="117" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1State_1a07e98bf6a071d2d4e30590f0d4e2c9d7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt;</type>
+        <definition>std::vector&lt;Vec3&gt; OpenMM::State::forces</definition>
+        <argsstring></argsstring>
+        <name>forces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="118" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1State_1af4015193d1855d0cf170010740cf739c" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 OpenMM::State::periodicBoxVectors[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>periodicBoxVectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="119" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1State_1aa3136283be41256e063434094dd86fba" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; OpenMM::State::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="120" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1State_1af21f330de304e26a2b055114a324856b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::State::State</definition>
+        <argsstring>()</argsstring>
+        <name>State</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct an empty <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> containing no data. This exists so <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> objects can be used in STL containers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1a7dc0df7bb54484c5cb24c5c37c7db203" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::State::getTime</definition>
+        <argsstring>() const </argsstring>
+        <name>getTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the time for which this <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> was created. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1a3fe53fe487b1089d041a4eda1ea1d0eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt;Vec3&gt;&amp; OpenMM::State::getPositions</definition>
+        <argsstring>() const </argsstring>
+        <name>getPositions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the position of each particle. If this <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> does not contain positions, this will throw an exception. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1aa83d28e56c5a779fe8e5b82cc534e8bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt;Vec3&gt;&amp; OpenMM::State::getVelocities</definition>
+        <argsstring>() const </argsstring>
+        <name>getVelocities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the velocity of each particle. If this <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> does not contain velocities, this will throw an exception. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1aff501e119cb046cc386ab4d41c6319c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt;Vec3&gt;&amp; OpenMM::State::getForces</definition>
+        <argsstring>() const </argsstring>
+        <name>getForces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the force acting on each particle. If this <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> does not contain forces, this will throw an exception. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1aa2ec95df8e57fa6ca039e8a5a703ee6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::State::getKineticEnergy</definition>
+        <argsstring>() const </argsstring>
+        <name>getKineticEnergy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the total kinetic energy of the system. If this <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> does not contain energies, this will throw an exception.</para><para>Note that this may be different from simply mv<superscript>2</superscript>/2 summed over all particles. For example, a leapfrog integrator will store velocities offset by half a step, so they must be adjusted before computing the kinetic energy. This routine returns the kinetic energy at the current time, computed in a way that is appropriate for whatever <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> is being used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1a0c00ff366a483cc761d892960734220e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::State::getPotentialEnergy</definition>
+        <argsstring>() const </argsstring>
+        <name>getPotentialEnergy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the total potential energy of the system. If this <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> does not contain energies, this will throw an exception. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1a0a725b6556232e4f4a37d86a649960dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::State::getPeriodicBoxVectors</definition>
+        <argsstring>(Vec3 &amp;a, Vec3 &amp;b, Vec3 &amp;c) const </argsstring>
+        <name>getPeriodicBoxVectors</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the vectors defining the axes of the periodic box (measured in nm).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on exit, this contains the vector defining the first edge of the periodic box </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on exit, this contains the vector defining the second edge of the periodic box </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on exit, this contains the vector defining the third edge of the periodic box </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1a7e504c022f8ad1d4a34621b3dc92ec86" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; std::string, double &gt; &amp;</type>
+        <definition>const std::map&lt;std::string, double&gt;&amp; OpenMM::State::getParameters</definition>
+        <argsstring>() const </argsstring>
+        <name>getParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a map containing the values of all parameters. If this <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> does not contain parameters, this will throw an exception. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="104"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenMM_1_1State_1a53d1a002b90197e3fe91edba1a8a3979" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::State::State</definition>
+        <argsstring>(double time, int numParticles, int types)</argsstring>
+        <name>State</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numParticles</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>types</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1a0df96799661a6e25d3c85272aaabf531" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+        <definition>std::vector&lt;Vec3&gt;&amp; OpenMM::State::updPositions</definition>
+        <argsstring>()</argsstring>
+        <name>updPositions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1ae16339d31fb6f422f2b77ea8f8b2aaa5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+        <definition>std::vector&lt;Vec3&gt;&amp; OpenMM::State::updVelocities</definition>
+        <argsstring>()</argsstring>
+        <name>updVelocities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1ac0ab33de652cc7777fa3c243515f36c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+        <definition>std::vector&lt;Vec3&gt;&amp; OpenMM::State::updForces</definition>
+        <argsstring>()</argsstring>
+        <name>updForces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1a217a1403e7df2292da63613968bb96e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; std::string, double &gt; &amp;</type>
+        <definition>std::map&lt;std::string, double&gt;&amp; OpenMM::State::updParameters</definition>
+        <argsstring>()</argsstring>
+        <name>updParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1a89741c466a42a7d9348e7dd60b3eae3e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::State::setEnergy</definition>
+        <argsstring>(double ke, double pe)</argsstring>
+        <name>setEnergy</name>
+        <param>
+          <type>double</type>
+          <declname>ke</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>pe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1State_1a1bad54df5f6f0697106cc131b7474b36" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::State::setPeriodicBoxVectors</definition>
+        <argsstring>(const Vec3 &amp;a, const Vec3 &amp;b, const Vec3 &amp;c)</argsstring>
+        <name>setPeriodicBoxVectors</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> object records a snapshot of the current state of a simulation at a point in time. You create it by calling getState() on a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>.</para><para>When a <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> is created, you specify what information should be stored in it. This saves time and memory by only copying in the information that you actually want. This is especially important for forces and energies, since they may need to be calculated. If you query a <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> object for a piece of information which is not available (because it was not requested when the <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> was created), it will throw an exception. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" line="53" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/State.h" bodystart="53" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1State_1ac26c806e60ca4a0547680edb68f6e39b" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>Context</name></member>
+      <member refid="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>DataType</name></member>
+      <member refid="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933ab5dd467377521dc7be41b02cc89446a8" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>Energy</name></member>
+      <member refid="classOpenMM_1_1State_1a07e98bf6a071d2d4e30590f0d4e2c9d7" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>forces</name></member>
+      <member refid="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933a1883af0eed6c0ceae7369c332b031761" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>Forces</name></member>
+      <member refid="classOpenMM_1_1State_1aff501e119cb046cc386ab4d41c6319c8" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>getForces</name></member>
+      <member refid="classOpenMM_1_1State_1aa2ec95df8e57fa6ca039e8a5a703ee6e" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>getKineticEnergy</name></member>
+      <member refid="classOpenMM_1_1State_1a7e504c022f8ad1d4a34621b3dc92ec86" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>getParameters</name></member>
+      <member refid="classOpenMM_1_1State_1a0a725b6556232e4f4a37d86a649960dc" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>getPeriodicBoxVectors</name></member>
+      <member refid="classOpenMM_1_1State_1a3fe53fe487b1089d041a4eda1ea1d0eb" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>getPositions</name></member>
+      <member refid="classOpenMM_1_1State_1a0c00ff366a483cc761d892960734220e" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>getPotentialEnergy</name></member>
+      <member refid="classOpenMM_1_1State_1a7dc0df7bb54484c5cb24c5c37c7db203" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>getTime</name></member>
+      <member refid="classOpenMM_1_1State_1aa83d28e56c5a779fe8e5b82cc534e8bb" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>getVelocities</name></member>
+      <member refid="classOpenMM_1_1State_1ab6abd8e559cd33b9d5548ed296e36366" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>ke</name></member>
+      <member refid="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933a11cce011312726cfde502edc08fc1aab" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>Parameters</name></member>
+      <member refid="classOpenMM_1_1State_1aa3136283be41256e063434094dd86fba" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>parameters</name></member>
+      <member refid="classOpenMM_1_1State_1a0bda948879680644f4bc720416b56ab3" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>pe</name></member>
+      <member refid="classOpenMM_1_1State_1af4015193d1855d0cf170010740cf739c" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>periodicBoxVectors</name></member>
+      <member refid="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933a8a29780edc4c2177e02baf36e831d7a8" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>Positions</name></member>
+      <member refid="classOpenMM_1_1State_1a6ce46f3f196f96c9d82a92afaf14d8c1" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>positions</name></member>
+      <member refid="classOpenMM_1_1State_1a89741c466a42a7d9348e7dd60b3eae3e" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>setEnergy</name></member>
+      <member refid="classOpenMM_1_1State_1a1bad54df5f6f0697106cc131b7474b36" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>setPeriodicBoxVectors</name></member>
+      <member refid="classOpenMM_1_1State_1af21f330de304e26a2b055114a324856b" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>State</name></member>
+      <member refid="classOpenMM_1_1State_1a53d1a002b90197e3fe91edba1a8a3979" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>State</name></member>
+      <member refid="classOpenMM_1_1State_1ad8701bd71256d909dba17236b2694dc0" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>time</name></member>
+      <member refid="classOpenMM_1_1State_1ad4941a55f6957d0d71e6a898c76b6735" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>types</name></member>
+      <member refid="classOpenMM_1_1State_1ac0ab33de652cc7777fa3c243515f36c7" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>updForces</name></member>
+      <member refid="classOpenMM_1_1State_1a217a1403e7df2292da63613968bb96e4" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>updParameters</name></member>
+      <member refid="classOpenMM_1_1State_1a0df96799661a6e25d3c85272aaabf531" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>updPositions</name></member>
+      <member refid="classOpenMM_1_1State_1ae16339d31fb6f422f2b77ea8f8b2aaa5" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>updVelocities</name></member>
+      <member refid="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933a05a304f7ed317c9984a6a1f00c357495" prot="public" virt="non-virtual"><scope>OpenMM::State</scope><name>Velocities</name></member>
+      <member refid="classOpenMM_1_1State_1a708b8b917a7d01e7f56637132536f6db" prot="private" virt="non-virtual"><scope>OpenMM::State</scope><name>velocities</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

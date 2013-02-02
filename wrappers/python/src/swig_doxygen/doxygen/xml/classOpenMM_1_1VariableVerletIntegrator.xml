@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1VariableVerletIntegrator" kind="class" prot="public">
+    <compoundname>OpenMM::VariableVerletIntegrator</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Integrator" prot="public" virt="non-virtual">OpenMM::Integrator</basecompoundref>
+    <includes refid="VariableVerletIntegrator_8h" local="no">VariableVerletIntegrator.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1VariableVerletIntegrator_1ac15c98e2f32b428487736d9c17b37e7b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::VariableVerletIntegrator::errorTol</definition>
+        <argsstring></argsstring>
+        <name>errorTol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" line="117" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1VariableVerletIntegrator_1a033faf45e6ab27eb6c5f235524b2df0c" prot="private" static="no" mutable="no">
+        <type>Kernel</type>
+        <definition>Kernel OpenMM::VariableVerletIntegrator::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" line="118" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1VariableVerletIntegrator_1a23a0765cd9eff655d65cb0dbd10c7fdb" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::VariableVerletIntegrator::VariableVerletIntegrator</definition>
+        <argsstring>(double errorTol)</argsstring>
+        <name>VariableVerletIntegrator</name>
+        <param>
+          <type>double</type>
+          <declname>errorTol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classOpenMM_1_1VariableVerletIntegrator" kindref="compound">VariableVerletIntegrator</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>errorTol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the error tolerance </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableVerletIntegrator_1a0b0f5213874edad13d6d869dc399c415" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::VariableVerletIntegrator::getErrorTolerance</definition>
+        <argsstring>() const </argsstring>
+        <name>getErrorTolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the error tolerance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" line="72" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableVerletIntegrator_1ad687cb9d3af8186d003678e542f578d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableVerletIntegrator::setErrorTolerance</definition>
+        <argsstring>(double tol)</argsstring>
+        <name>setErrorTolerance</name>
+        <param>
+          <type>double</type>
+          <declname>tol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the error tolerance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" line="78" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableVerletIntegrator_1a5a8bbbd9e17d964fb8b25ad842516aac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableVerletIntegrator::step</definition>
+        <argsstring>(int steps)</argsstring>
+        <name>step</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a55151232664ae778eb2f0e2e8bbe7b67">step</reimplements>
+        <param>
+          <type>int</type>
+          <declname>steps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advance a simulation through time by taking a series of time steps.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of time steps to take </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableVerletIntegrator_1a03444bf6ca9cce7e75632173161f2a3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableVerletIntegrator::stepTo</definition>
+        <argsstring>(double time)</argsstring>
+        <name>stepTo</name>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advance a simulation through time by taking a series of steps until a specified time is reached. When this method returns, the simulation time will exactly equal the time which was specified. If you call this method and specify a time that is earlier than the current time, it will return without doing anything.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time to which the simulation should be advanced </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" line="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1VariableVerletIntegrator_1ae56aaf72a292adb5099d5ac054a4fde3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableVerletIntegrator::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a6a2b5bcc61b799be0a37b4a431bdcd7d">initialize</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will be called by the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> when it is created. It informs the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> of what context it will be integrating, and gives it a chance to do any necessary initialization. It will also get called again if the application calls reinitialize() on the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableVerletIntegrator_1a1679178e9139a5d04efd2a1b609f7296" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::VariableVerletIntegrator::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a204f42ff795b94be55d0c9ba32261af6">cleanup</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will be called by the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> when it is destroyed to let the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> do any necessary cleanup. It will also get called again if the application calls reinitialize() on the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableVerletIntegrator_1a959a61f4b1c6f95fd0aeda1c0f51c125" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; OpenMM::VariableVerletIntegrator::getKernelNames</definition>
+        <argsstring>()</argsstring>
+        <name>getKernelNames</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1ab27c6938ff637bef4d7478c90f687af4">getKernelNames</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1VariableVerletIntegrator_1a20e34f6c2a25513363cc005acda2a843" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double OpenMM::VariableVerletIntegrator::computeKineticEnergy</definition>
+        <argsstring>()</argsstring>
+        <name>computeKineticEnergy</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a0fd62d5846712eca58341556d48d991c">computeKineticEnergy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the kinetic energy of the system at the current time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" line="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is an error contolled, variable time step <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> that simulates a <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> using the leap-frog Verlet algorithm. It compares the result of the Verlet integrator to that of an explicit Euler integrator, takes the difference between the two as a measure of the integration error in each time step, and continuously adjusts the step size to keep the error below a specified tolerance. This both improves the stability of the integrator and allows it to take larger steps on average, while still maintaining comparable accuracy to a fixed step size integrator.</para><para>It is best not to think of the error tolerance as having any absolute meaning. It is just an adjustable parameter that affects the step size and integration accuracy. You should try different values to find the largest one that produces a trajectory sufficiently accurate for your purposes. 0.001 is often a good starting point.</para><para>Unlike a fixed step size Verlet integrator, variable step size Verlet is not symplectic. This means that at a given accuracy level, energy is not as precisely conserved over long time periods. This makes it most appropriate for constant temperate simulations. In constant energy simulations where precise energy conservation over long time periods is important, a fixed step size Verlet integrator may be more appropriate. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="519">
+        <label>OpenMM::Integrator</label>
+        <link refid="classOpenMM_1_1Integrator"/>
+      </node>
+      <node id="518">
+        <label>OpenMM::VariableVerletIntegrator</label>
+        <link refid="classOpenMM_1_1VariableVerletIntegrator"/>
+        <childnode refid="519" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="521">
+        <label>OpenMM::Integrator</label>
+        <link refid="classOpenMM_1_1Integrator"/>
+        <childnode refid="522" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="523" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="522">
+        <label>OpenMM::ContextImpl</label>
+        <link refid="classOpenMM_1_1ContextImpl"/>
+      </node>
+      <node id="523">
+        <label>OpenMM::Context</label>
+        <link refid="classOpenMM_1_1Context"/>
+      </node>
+      <node id="520">
+        <label>OpenMM::VariableVerletIntegrator</label>
+        <link refid="classOpenMM_1_1VariableVerletIntegrator"/>
+        <childnode refid="521" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" line="61" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VariableVerletIntegrator.h" bodystart="61" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1VariableVerletIntegrator_1a1679178e9139a5d04efd2a1b609f7296" prot="protected" virt="virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>cleanup</name></member>
+      <member refid="classOpenMM_1_1VariableVerletIntegrator_1a20e34f6c2a25513363cc005acda2a843" prot="protected" virt="virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>computeKineticEnergy</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ac26c806e60ca4a0547680edb68f6e39b" prot="protected" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>Context</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ac9c1c07848ae2c2e8617a949a11070c1" prot="protected" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>context</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1VariableVerletIntegrator_1ac15c98e2f32b428487736d9c17b37e7b" prot="private" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>errorTol</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a1fedd4737a6b0cd3fd4fd5e7ef1e2c4c" prot="public" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>getConstraintTolerance</name></member>
+      <member refid="classOpenMM_1_1VariableVerletIntegrator_1a0b0f5213874edad13d6d869dc399c415" prot="public" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>getErrorTolerance</name></member>
+      <member refid="classOpenMM_1_1VariableVerletIntegrator_1a959a61f4b1c6f95fd0aeda1c0f51c125" prot="protected" virt="virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1Integrator_1af2276c5c8926e6350eba13209342d8e9" prot="public" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>getStepSize</name></member>
+      <member refid="classOpenMM_1_1VariableVerletIntegrator_1ae56aaf72a292adb5099d5ac054a4fde3" prot="protected" virt="virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a2732506bfb2afd8e2e9954d08cab1304" prot="public" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>Integrator</name></member>
+      <member refid="classOpenMM_1_1VariableVerletIntegrator_1a033faf45e6ab27eb6c5f235524b2df0c" prot="private" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>kernel</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ab3f6088553343feb8f47ab789e7a09a1" prot="protected" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>owner</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a696e7a244751f5b484ce26036a955723" prot="public" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>setConstraintTolerance</name></member>
+      <member refid="classOpenMM_1_1VariableVerletIntegrator_1ad687cb9d3af8186d003678e542f578d3" prot="public" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>setErrorTolerance</name></member>
+      <member refid="classOpenMM_1_1Integrator_1aa88c9270faf1fd3bf022c72b33beeb47" prot="public" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>setStepSize</name></member>
+      <member refid="classOpenMM_1_1Integrator_1aa41aa4c012de261afa5dda15af4fb721" prot="protected" virt="virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>stateChanged</name></member>
+      <member refid="classOpenMM_1_1VariableVerletIntegrator_1a5a8bbbd9e17d964fb8b25ad842516aac" prot="public" virt="virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>step</name></member>
+      <member refid="classOpenMM_1_1VariableVerletIntegrator_1a03444bf6ca9cce7e75632173161f2a3e" prot="public" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>stepTo</name></member>
+      <member refid="classOpenMM_1_1VariableVerletIntegrator_1a23a0765cd9eff655d65cb0dbd10c7fdb" prot="public" virt="non-virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>VariableVerletIntegrator</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a9abbef84d9e2c4e5a3d3139f8fa84fff" prot="public" virt="virtual"><scope>OpenMM::VariableVerletIntegrator</scope><name>~Integrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

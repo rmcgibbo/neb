@@ -1,0 +1,511 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1AmoebaTorsionTorsionForce" kind="class" prot="public">
+    <compoundname>OpenMM::AmoebaTorsionTorsionForce</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Force" prot="public" virt="non-virtual">OpenMM::Force</basecompoundref>
+    <includes refid="AmoebaTorsionTorsionForce_8h" local="no">AmoebaTorsionTorsionForce.h</includes>
+    <innerclass refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo" prot="public">OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionInfo" prot="public">OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionInfo</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1a184b5bf59502f2011e6df1da6267aeee" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionInfo" kindref="compound">TorsionTorsionInfo</ref> &gt;</type>
+        <definition>std::vector&lt;TorsionTorsionInfo&gt; OpenMM::AmoebaTorsionTorsionForce::torsionTorsions</definition>
+        <argsstring></argsstring>
+        <name>torsionTorsions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="144" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1a90ca6368b4b2d25a656e0f7181a8213f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo" kindref="compound">TorsionTorsionGridInfo</ref> &gt;</type>
+        <definition>std::vector&lt;TorsionTorsionGridInfo&gt; OpenMM::AmoebaTorsionTorsionForce::torsionTorsionGrids</definition>
+        <argsstring></argsstring>
+        <name>torsionTorsionGrids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="145" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1a3d70c8b8bb4364bac474457114c33d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaTorsionTorsionForce::AmoebaTorsionTorsionForce</definition>
+        <argsstring>(void)</argsstring>
+        <name>AmoebaTorsionTorsionForce</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an <ref refid="classOpenMM_1_1AmoebaTorsionTorsionForce" kindref="compound">AmoebaTorsionTorsionForce</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1ae2cfe3177496661905dfcef73e317003" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaTorsionTorsionForce::getNumTorsionTorsions</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getNumTorsionTorsions</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of torsion-torsion terms in the potential function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="64" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1a2345acba0da7db244d7717bebe2085c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaTorsionTorsionForce::getNumTorsionTorsionGrids</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getNumTorsionTorsionGrids</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of torsion-torsion grids </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="71" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1a4fb2de26c38ed8f7f10a0c92d931607c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaTorsionTorsionForce::addTorsionTorsion</definition>
+        <argsstring>(int particle1, int particle2, int particle3, int particle4, int particle5, int chiralCheckAtomIndex, int gridIndex)</argsstring>
+        <name>addTorsionTorsion</name>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle4</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle5</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>chiralCheckAtomIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gridIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a torsion-torsion term to the force field.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the fourth particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle5</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the fifth particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chiralCheckAtomIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the particle connected to particle3, but not particle2 or particle4 to be used in chirality check </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gridIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index to the grid to be used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the torsion-torsion that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1a0420a1ec97e55338aea61e15275a8b44" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaTorsionTorsionForce::getTorsionTorsionParameters</definition>
+        <argsstring>(int index, int &amp;particle1, int &amp;particle2, int &amp;particle3, int &amp;particle4, int &amp;particle5, int &amp;chiralCheckAtomIndex, int &amp;gridIndex) const </argsstring>
+        <name>getTorsionTorsionParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle4</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle5</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>chiralCheckAtomIndex</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>gridIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the force field parameters for a torsion-torsion term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the torsion-torsion for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the fourth particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle5</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the fifth particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chiralCheckAtomIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the particle connected to particle3, but not particle2 or particle4 to be used in chirality check </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gridIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the grid index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1aa2f986d7fdb27e923db60e79e081b8d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaTorsionTorsionForce::setTorsionTorsionParameters</definition>
+        <argsstring>(int index, int particle1, int particle2, int particle3, int particle4, int particle5, int chiralCheckAtomIndex, int gridIndex)</argsstring>
+        <name>setTorsionTorsionParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle4</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle5</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>chiralCheckAtomIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gridIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the force field parameters for a torsion-torsion term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the torsion-torsion for which to set parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the fourth particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle5</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the fifth particle connected by the torsion-torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chiralCheckAtomIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the particle connected to particle3, but not particle2 or particle4 to be used in chirality check </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gridIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the grid index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1ab29703ba87b65ee0d1ccb0b7c4d1731d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; &amp;</type>
+        <definition>const std::vector&lt;std::vector&lt;std::vector&lt;double&gt; &gt; &gt;&amp; OpenMM::AmoebaTorsionTorsionForce::getTorsionTorsionGrid</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getTorsionTorsionGrid</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the torsion-torsion grid at the specified index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gridIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the grid index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>grid return grid reference </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1a253f00f1145268ceaafe925c61ccc176" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaTorsionTorsionForce::setTorsionTorsionGrid</definition>
+        <argsstring>(int index, const std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; &amp;grid)</argsstring>
+        <name>setTorsionTorsionGrid</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; &amp;</type>
+          <declname>grid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the torsion-torsion grid at the specified index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the torsion-torsion for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>grid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>grid grid[x][y][0] = x value grid[x][y][1] = y value grid[x][y][2] = function value grid[x][y][3] = dfdx value grid[x][y][4] = dfdy value grid[x][y][5] = dfd(xy) value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="137"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1a5a38bda138fe1119d285f7be2ccefcd8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> *</type>
+        <definition>ForceImpl* OpenMM::AmoebaTorsionTorsionForce::createImpl</definition>
+        <argsstring>()</argsstring>
+        <name>createImpl</name>
+        <reimplements refid="classOpenMM_1_1Force_1ac110723f39368f7eeb0dbb2105771255">createImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is created, it invokes this method on each <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. It should create a new <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> object which can be used by the context for calculating forces. The <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> will be deleted automatically when the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is deleted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements the Amoeba torsion-torsion interaction.</para><para>To use it, create an <ref refid="classOpenMM_1_1AmoebaTorsionTorsionForce" kindref="compound">AmoebaTorsionTorsionForce</ref> object then call <ref refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1a4fb2de26c38ed8f7f10a0c92d931607c" kindref="member">addTorsionTorsion()</ref> once for each torsion-torsion. After a torsion-torsion has been added, you can modify its force field parameters by calling <ref refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1aa2f986d7fdb27e923db60e79e081b8d8" kindref="member">setTorsionTorsionParameters()</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="65">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="64">
+        <label>OpenMM::AmoebaTorsionTorsionForce</label>
+        <link refid="classOpenMM_1_1AmoebaTorsionTorsionForce"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="67">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="66">
+        <label>OpenMM::AmoebaTorsionTorsionForce</label>
+        <link refid="classOpenMM_1_1AmoebaTorsionTorsionForce"/>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="53" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="53" bodyend="146"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1a4fb2de26c38ed8f7f10a0c92d931607c" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>addTorsionTorsion</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1a3d70c8b8bb4364bac474457114c33d8d" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>AmoebaTorsionTorsionForce</name></member>
+      <member refid="classOpenMM_1_1Force_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1a5a38bda138fe1119d285f7be2ccefcd8" prot="protected" virt="virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>createImpl</name></member>
+      <member refid="classOpenMM_1_1Force_1a40e75e251ec93d3bc9fc87b96026fbc2" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>Force</name></member>
+      <member refid="classOpenMM_1_1Force_1aa6d1d0fd8cad61e7ea37305c6d13a10d" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>getContextImpl</name></member>
+      <member refid="classOpenMM_1_1Force_1a5aca97957c70da1076fcd7cbac340604" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>getForceGroup</name></member>
+      <member refid="classOpenMM_1_1Force_1a4dead2c44734956400d0ca8619650890" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>getImplInContext</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1a2345acba0da7db244d7717bebe2085c2" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>getNumTorsionTorsionGrids</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1ae2cfe3177496661905dfcef73e317003" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>getNumTorsionTorsions</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1ab29703ba87b65ee0d1ccb0b7c4d1731d" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>getTorsionTorsionGrid</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1a0420a1ec97e55338aea61e15275a8b44" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>getTorsionTorsionParameters</name></member>
+      <member refid="classOpenMM_1_1Force_1a53e3829a91825a9f6aa17e5ade713f84" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>setForceGroup</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1a253f00f1145268ceaafe925c61ccc176" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>setTorsionTorsionGrid</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1aa2f986d7fdb27e923db60e79e081b8d8" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>setTorsionTorsionParameters</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1a90ca6368b4b2d25a656e0f7181a8213f" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>torsionTorsionGrids</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1a184b5bf59502f2011e6df1da6267aeee" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>torsionTorsions</name></member>
+      <member refid="classOpenMM_1_1Force_1a6516b32ebeb95a694f56d93bdf81f4fb" prot="public" virt="virtual"><scope>OpenMM::AmoebaTorsionTorsionForce</scope><name>~Force</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

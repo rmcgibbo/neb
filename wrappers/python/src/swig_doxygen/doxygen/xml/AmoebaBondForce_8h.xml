@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="AmoebaBondForce_8h" kind="file">
+    <compoundname>AmoebaBondForce.h</compoundname>
+    <includes refid="Force_8h" local="yes">openmm/Force.h</includes>
+    <includes refid="Vec3_8h" local="yes">openmm/Vec3.h</includes>
+    <includes refid="windowsExportAmoeba_8h" local="yes">internal/windowsExportAmoeba.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="AmoebaBondForceImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaBondForceImpl.h</includedby>
+    <includedby refid="OpenMMAmoeba_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/OpenMMAmoeba.h</includedby>
+    <incdepgraph>
+      <node id="1004">
+        <label>openmm/Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="1005" relation="include">
+        </childnode>
+      </node>
+      <node id="1003">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaBondForce.h</label>
+        <link refid="AmoebaBondForce.h"/>
+        <childnode refid="1004" relation="include">
+        </childnode>
+        <childnode refid="1006" relation="include">
+        </childnode>
+        <childnode refid="1009" relation="include">
+        </childnode>
+        <childnode refid="1010" relation="include">
+        </childnode>
+        <childnode refid="1011" relation="include">
+        </childnode>
+      </node>
+      <node id="1007">
+        <label>cassert</label>
+      </node>
+      <node id="1010">
+        <label>map</label>
+      </node>
+      <node id="1005">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="1011">
+        <label>vector</label>
+      </node>
+      <node id="1008">
+        <label>iosfwd</label>
+      </node>
+      <node id="1009">
+        <label>internal/windowsExportAmoeba.h</label>
+        <link refid="windowsExportAmoeba_8h_source"/>
+      </node>
+      <node id="1006">
+        <label>openmm/Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="1007" relation="include">
+        </childnode>
+        <childnode refid="1008" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1013">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaBondForceImpl.h</label>
+        <link refid="AmoebaBondForceImpl_8h_source"/>
+      </node>
+      <node id="1012">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaBondForce.h</label>
+        <link refid="AmoebaBondForce.h"/>
+        <childnode refid="1013" relation="include">
+        </childnode>
+        <childnode refid="1014" relation="include">
+        </childnode>
+      </node>
+      <node id="1015">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h</label>
+        <link refid="amoebaKernels_8h_source"/>
+      </node>
+      <node id="1014">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/OpenMMAmoeba.h</label>
+        <link refid="OpenMMAmoeba_8h_source"/>
+        <childnode refid="1015" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1AmoebaBondForce" prot="public">OpenMM::AmoebaBondForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaBondForce_1_1BondInfo" prot="public">OpenMM::AmoebaBondForce::BondInfo</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaBondForce.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="CMAPTorsionForce_8h" kind="file">
+    <compoundname>CMAPTorsionForce.h</compoundname>
+    <includes refid="Force_8h" local="yes">Force.h</includes>
+    <includes refid="Vec3_8h" local="yes">Vec3.h</includes>
+    <includes local="no">vector</includes>
+    <includes refid="windowsExport_8h" local="yes">internal/windowsExport.h</includes>
+    <includedby refid="CMAPTorsionForceImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMAPTorsionForceImpl.h</includedby>
+    <includedby refid="OpenMM_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</includedby>
+    <incdepgraph>
+      <node id="82">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>cassert</label>
+      </node>
+      <node id="83">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="87">
+        <label>vector</label>
+      </node>
+      <node id="86">
+        <label>iosfwd</label>
+      </node>
+      <node id="84">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CMAPTorsionForce.h</label>
+        <link refid="CMAPTorsionForce.h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="89">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CMAPTorsionForceImpl.h</label>
+        <link refid="CMAPTorsionForceImpl_8h_source"/>
+      </node>
+      <node id="90">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</label>
+        <link refid="OpenMM_8h_source"/>
+      </node>
+      <node id="88">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CMAPTorsionForce.h</label>
+        <link refid="CMAPTorsionForce.h"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1CMAPTorsionForce" prot="public">OpenMM::CMAPTorsionForce</innerclass>
+    <innerclass refid="classOpenMM_1_1CMAPTorsionForce_1_1MapInfo" prot="private">OpenMM::CMAPTorsionForce::MapInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CMAPTorsionForce_1_1CMAPTorsionInfo" prot="private">OpenMM::CMAPTorsionForce::CMAPTorsionInfo</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CMAPTorsionForce.h"/>
+  </compounddef>
+</doxygen>

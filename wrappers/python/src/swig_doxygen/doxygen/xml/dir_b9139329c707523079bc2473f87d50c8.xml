@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_b9139329c707523079bc2473f87d50c8" kind="dir">
+    <compoundname>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/</compoundname>
+    <innerdir refid="dir_711d12fa067bb8b87fa27f665418914f">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,737 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1CustomTorsionForce" kind="class" prot="public">
+    <compoundname>OpenMM::CustomTorsionForce</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Force" prot="public" virt="non-virtual">OpenMM::Force</basecompoundref>
+    <includes refid="CustomTorsionForce_8h" local="no">CustomTorsionForce.h</includes>
+    <innerclass refid="classOpenMM_1_1CustomTorsionForce_1_1GlobalParameterInfo" prot="private">OpenMM::CustomTorsionForce::GlobalParameterInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomTorsionForce_1_1TorsionInfo" prot="private">OpenMM::CustomTorsionForce::TorsionInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomTorsionForce_1_1TorsionParameterInfo" prot="private">OpenMM::CustomTorsionForce::TorsionParameterInfo</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1CustomTorsionForce_1ad77b529ee9b173603eec0a11059b7592" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string OpenMM::CustomTorsionForce::energyExpression</definition>
+        <argsstring></argsstring>
+        <name>energyExpression</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="214" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomTorsionForce_1aceb9f1d5786d066a755e9ce8d3429c4b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; TorsionParameterInfo &gt;</type>
+        <definition>std::vector&lt;TorsionParameterInfo&gt; OpenMM::CustomTorsionForce::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="215" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomTorsionForce_1af2063607512a5a3327d87dac5b1f79e7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; GlobalParameterInfo &gt;</type>
+        <definition>std::vector&lt;GlobalParameterInfo&gt; OpenMM::CustomTorsionForce::globalParameters</definition>
+        <argsstring></argsstring>
+        <name>globalParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="216" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomTorsionForce_1ac1292c6993970f7940e62a0117137a03" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; TorsionInfo &gt;</type>
+        <definition>std::vector&lt;TorsionInfo&gt; OpenMM::CustomTorsionForce::torsions</definition>
+        <argsstring></argsstring>
+        <name>torsions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="217" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1ae425ffc435303213c75435c2611850f3" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CustomTorsionForce::CustomTorsionForce</definition>
+        <argsstring>(const std::string &amp;energy)</argsstring>
+        <name>CustomTorsionForce</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>energy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classOpenMM_1_1CustomTorsionForce" kindref="compound">CustomTorsionForce</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>energy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an algebraic expression giving the interaction energy between three particles as a function of theta, the torsion angle between them </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1a79074e1cdc7ebf407f1defb31de37e02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomTorsionForce::getNumTorsions</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumTorsions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of torsions for which force field parameters have been defined. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="84" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1a11406ebc52fda084988fc84e5e7e5bdf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomTorsionForce::getNumPerTorsionParameters</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumPerTorsionParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of per-torsion parameters that the interaction depends on. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="90" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1ac497734ca3f04f344bfc4562d1e7ba08" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomTorsionForce::getNumGlobalParameters</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumGlobalParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of global parameters that the interaction depends on. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="96" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1a449b048e1a7dd7eb012cd79ab19f7899" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; OpenMM::CustomTorsionForce::getEnergyFunction</definition>
+        <argsstring>() const </argsstring>
+        <name>getEnergyFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the algebraic expression that gives the interaction energy for each torsion </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1afa3802d29ab4d1e96663846509e43031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomTorsionForce::setEnergyFunction</definition>
+        <argsstring>(const std::string &amp;energy)</argsstring>
+        <name>setEnergyFunction</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>energy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the algebraic expression that gives the interaction energy for each torsion </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1a0826fdaf2b589c32d2c59dac8b7a185d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomTorsionForce::addPerTorsionParameter</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>addPerTorsionParameter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new per-torsion parameter that the interaction may depend on.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the parameter that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1afdc5b5e165982fdceb9344915b6390d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; OpenMM::CustomTorsionForce::getPerTorsionParameterName</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getPerTorsionParameterName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of a per-torsion parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to get the name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the parameter name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1a1ae872eae7405d728fadbb39bfb38d6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomTorsionForce::setPerTorsionParameterName</definition>
+        <argsstring>(int index, const std::string &amp;name)</argsstring>
+        <name>setPerTorsionParameterName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the name of a per-torsion parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to set the name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1a5889bc97d40723e649e5de789e28357f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomTorsionForce::addGlobalParameter</definition>
+        <argsstring>(const std::string &amp;name, double defaultValue)</argsstring>
+        <name>addGlobalParameter</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new global parameter that the interaction may depend on.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the default value of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the parameter that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1a7e1e4b8c4e23c32e1ed92eb451274c3b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; OpenMM::CustomTorsionForce::getGlobalParameterName</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getGlobalParameterName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of a global parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to get the name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the parameter name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1a0f7728a3a7de3e5d6ff79cd3b0856e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomTorsionForce::setGlobalParameterName</definition>
+        <argsstring>(int index, const std::string &amp;name)</argsstring>
+        <name>setGlobalParameterName</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the name of a global parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to set the name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1ade06e61af5050a44a6fa28c21f5f0b54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::CustomTorsionForce::getGlobalParameterDefaultValue</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getGlobalParameterDefaultValue</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default value of a global parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to get the default value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the parameter default value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1a78f22e87f4b432343dabb0361e1fc77a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomTorsionForce::setGlobalParameterDefaultValue</definition>
+        <argsstring>(int index, double defaultValue)</argsstring>
+        <name>setGlobalParameterDefaultValue</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the default value of a global parameter.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parameter for which to set the default value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the default value of the parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1a255ef1d7210955f4a7fcd20d5f037073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::CustomTorsionForce::addTorsion</definition>
+        <argsstring>(int particle1, int particle2, int particle3, int particle4, const std::vector&lt; double &gt; &amp;parameters)</argsstring>
+        <name>addTorsion</name>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle4</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a torsion term to the force field.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the fourth particle connected by the torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of parameters for the new torsion </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the torsion that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1accc8fb5846d32ddc8df32c41b6c36e81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomTorsionForce::getTorsionParameters</definition>
+        <argsstring>(int index, int &amp;particle1, int &amp;particle2, int &amp;particle3, int &amp;particle4, std::vector&lt; double &gt; &amp;parameters) const </argsstring>
+        <name>getTorsionParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle4</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the force field parameters for a torsion term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the torsion for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the fourth particle connected by the torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of parameters for the torsion </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1ad9165c0824b2bae4f9a487056a948e7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomTorsionForce::setTorsionParameters</definition>
+        <argsstring>(int index, int particle1, int particle2, int particle3, int particle4, const std::vector&lt; double &gt; &amp;parameters)</argsstring>
+        <name>setTorsionParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle4</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the force field parameters for a torsion term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the torsion for which to set parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the fourth particle connected by the torsion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of parameters for the torsion </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1a174e2da0108cace605b0b2014f368f5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomTorsionForce::updateParametersInContext</definition>
+        <argsstring>(Context &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the per-torsion parameters in a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> to match those stored in this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object. This method provides an efficient method to update certain parameters in an existing <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> without needing to reinitialize it. Simply call <ref refid="classOpenMM_1_1CustomTorsionForce_1ad9165c0824b2bae4f9a487056a948e7b" kindref="member">setTorsionParameters()</ref> to modify this object&apos;s parameters, then call updateParametersInState() to copy them over to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>.</para><para>This method has several limitations. The only information it updates is the values of per-torsion parameters. All other aspects of the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> (such as the energy function) are unaffected and can only be changed by reinitializing the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. The set of particles involved in a torsion cannot be changed, nor can new torsions be added. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="207"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1CustomTorsionForce_1a0deaa96e400db430261c8f4a4a9c2899" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> *</type>
+        <definition>ForceImpl* OpenMM::CustomTorsionForce::createImpl</definition>
+        <argsstring>()</argsstring>
+        <name>createImpl</name>
+        <reimplements refid="classOpenMM_1_1Force_1ac110723f39368f7eeb0dbb2105771255">createImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is created, it invokes this method on each <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. It should create a new <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> object which can be used by the context for calculating forces. The <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> will be deleted automatically when the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is deleted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="209"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements interactions between sets of four particles that depend on the torsion angle between them. Unlike <ref refid="classOpenMM_1_1PeriodicTorsionForce" kindref="compound">PeriodicTorsionForce</ref>, the functional form of the interaction is completely customizable, and may involve arbitrary algebraic expressions. In addition to the angle formed by the particles, it may depend on arbitrary global and per-torsion parameters.</para><para>To use this class, create a <ref refid="classOpenMM_1_1CustomTorsionForce" kindref="compound">CustomTorsionForce</ref> object, passing an algebraic expression to the constructor that defines the interaction energy between each set of particles. The expression may depend on theta, the torsion angle formed by the particles, as well as on any parameters you choose. Then call <ref refid="classOpenMM_1_1CustomTorsionForce_1a0826fdaf2b589c32d2c59dac8b7a185d" kindref="member">addPerTorsionParameter()</ref> to define per-torsion parameters, and <ref refid="classOpenMM_1_1CustomTorsionForce_1a5889bc97d40723e649e5de789e28357f" kindref="member">addGlobalParameter()</ref> to define global parameters. The values of per-torsion parameters are specified as part of the system definition, while values of global parameters may be modified during a simulation by calling <ref refid="classOpenMM_1_1Context_1a368b7f53ee35bb151ee686441b7900af" kindref="member">Context::setParameter()</ref>. Finally, call <ref refid="classOpenMM_1_1CustomTorsionForce_1a255ef1d7210955f4a7fcd20d5f037073" kindref="member">addTorsion()</ref> once for each torsion. After an torsion has been added, you can modify its parameters by calling <ref refid="classOpenMM_1_1CustomTorsionForce_1ad9165c0824b2bae4f9a487056a948e7b" kindref="member">setTorsionParameters()</ref>. This will have no effect on Contexts that already exist unless you call <ref refid="classOpenMM_1_1CustomTorsionForce_1a174e2da0108cace605b0b2014f368f5c" kindref="member">updateParametersInContext()</ref>.</para><para>As an example, the following code creates a <ref refid="classOpenMM_1_1CustomTorsionForce" kindref="compound">CustomTorsionForce</ref> that implements a harmonic potential:</para><para><computeroutput>CustomTorsionForce* force = new <ref refid="classOpenMM_1_1CustomTorsionForce" kindref="compound">CustomTorsionForce</ref>(&quot;0.5*k*(theta-theta0)^2&quot;);</computeroutput></para><para>This force depends on two parameters: the spring constant k and equilibrium angle theta0. The following code defines these parameters:</para><para><computeroutput><preformatted>
+ force-&gt;addPerTorsionParameter(&quot;k&quot;);
+ force-&gt;addPerTorsionParameter(&quot;theta0&quot;);
+ </preformatted></computeroutput></para><para>Expressions may involve the operators + (add), - (subtract), * (multiply), / (divide), and ^ (power), and the following functions: sqrt, exp, log, sin, cos, sec, csc, tan, cot, asin, acos, atan, sinh, cosh, tanh, erf, erfc, min, max, abs, step, delta. All trigonometric functions are defined in radians, and log is the natural logarithm. step(x) = 0 if x is less than 0, 1 otherwise. delta(x) = 1 if x is 0, 0 otherwise. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="237">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="236">
+        <label>OpenMM::CustomTorsionForce</label>
+        <link refid="classOpenMM_1_1CustomTorsionForce"/>
+        <childnode refid="237" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="239">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="238">
+        <label>OpenMM::CustomTorsionForce</label>
+        <link refid="classOpenMM_1_1CustomTorsionForce"/>
+        <childnode refid="239" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" line="72" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomTorsionForce.h" bodystart="72" bodyend="218"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1a5889bc97d40723e649e5de789e28357f" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>addGlobalParameter</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1a0826fdaf2b589c32d2c59dac8b7a185d" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>addPerTorsionParameter</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1a255ef1d7210955f4a7fcd20d5f037073" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>addTorsion</name></member>
+      <member refid="classOpenMM_1_1Force_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1a0deaa96e400db430261c8f4a4a9c2899" prot="protected" virt="virtual"><scope>OpenMM::CustomTorsionForce</scope><name>createImpl</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1ae425ffc435303213c75435c2611850f3" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>CustomTorsionForce</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1ad77b529ee9b173603eec0a11059b7592" prot="private" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>energyExpression</name></member>
+      <member refid="classOpenMM_1_1Force_1a40e75e251ec93d3bc9fc87b96026fbc2" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>Force</name></member>
+      <member refid="classOpenMM_1_1Force_1aa6d1d0fd8cad61e7ea37305c6d13a10d" prot="protected" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>getContextImpl</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1a449b048e1a7dd7eb012cd79ab19f7899" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>getEnergyFunction</name></member>
+      <member refid="classOpenMM_1_1Force_1a5aca97957c70da1076fcd7cbac340604" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>getForceGroup</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1ade06e61af5050a44a6fa28c21f5f0b54" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>getGlobalParameterDefaultValue</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1a7e1e4b8c4e23c32e1ed92eb451274c3b" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>getGlobalParameterName</name></member>
+      <member refid="classOpenMM_1_1Force_1a4dead2c44734956400d0ca8619650890" prot="protected" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>getImplInContext</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1ac497734ca3f04f344bfc4562d1e7ba08" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>getNumGlobalParameters</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1a11406ebc52fda084988fc84e5e7e5bdf" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>getNumPerTorsionParameters</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1a79074e1cdc7ebf407f1defb31de37e02" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>getNumTorsions</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1afdc5b5e165982fdceb9344915b6390d5" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>getPerTorsionParameterName</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1accc8fb5846d32ddc8df32c41b6c36e81" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>getTorsionParameters</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1af2063607512a5a3327d87dac5b1f79e7" prot="private" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>globalParameters</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1aceb9f1d5786d066a755e9ce8d3429c4b" prot="private" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>parameters</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1afa3802d29ab4d1e96663846509e43031" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>setEnergyFunction</name></member>
+      <member refid="classOpenMM_1_1Force_1a53e3829a91825a9f6aa17e5ade713f84" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>setForceGroup</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1a78f22e87f4b432343dabb0361e1fc77a" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>setGlobalParameterDefaultValue</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1a0f7728a3a7de3e5d6ff79cd3b0856e20" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>setGlobalParameterName</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1a1ae872eae7405d728fadbb39bfb38d6f" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>setPerTorsionParameterName</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1ad9165c0824b2bae4f9a487056a948e7b" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>setTorsionParameters</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1ac1292c6993970f7940e62a0117137a03" prot="private" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>torsions</name></member>
+      <member refid="classOpenMM_1_1CustomTorsionForce_1a174e2da0108cace605b0b2014f368f5c" prot="public" virt="non-virtual"><scope>OpenMM::CustomTorsionForce</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1Force_1a6516b32ebeb95a694f56d93bdf81f4fb" prot="public" virt="virtual"><scope>OpenMM::CustomTorsionForce</scope><name>~Force</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

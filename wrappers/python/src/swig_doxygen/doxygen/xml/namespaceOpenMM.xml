@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="namespaceOpenMM" kind="namespace">
+    <compoundname>OpenMM</compoundname>
+    <innerclass refid="classOpenMM_1_1AndersenThermostat" prot="public">OpenMM::AndersenThermostat</innerclass>
+    <innerclass refid="classOpenMM_1_1BrownianIntegrator" prot="public">OpenMM::BrownianIntegrator</innerclass>
+    <innerclass refid="classOpenMM_1_1CMAPTorsionForce" prot="public">OpenMM::CMAPTorsionForce</innerclass>
+    <innerclass refid="classOpenMM_1_1CMMotionRemover" prot="public">OpenMM::CMMotionRemover</innerclass>
+    <innerclass refid="classOpenMM_1_1Context" prot="public">OpenMM::Context</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomAngleForce" prot="public">OpenMM::CustomAngleForce</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomBondForce" prot="public">OpenMM::CustomBondForce</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomCompoundBondForce" prot="public">OpenMM::CustomCompoundBondForce</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomExternalForce" prot="public">OpenMM::CustomExternalForce</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForce" prot="public">OpenMM::CustomGBForce</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomHbondForce" prot="public">OpenMM::CustomHbondForce</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomIntegrator" prot="public">OpenMM::CustomIntegrator</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomNonbondedForce" prot="public">OpenMM::CustomNonbondedForce</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomTorsionForce" prot="public">OpenMM::CustomTorsionForce</innerclass>
+    <innerclass refid="classOpenMM_1_1Force" prot="public">OpenMM::Force</innerclass>
+    <innerclass refid="classOpenMM_1_1GBSAOBCForce" prot="public">OpenMM::GBSAOBCForce</innerclass>
+    <innerclass refid="classOpenMM_1_1GBVIForce" prot="public">OpenMM::GBVIForce</innerclass>
+    <innerclass refid="classOpenMM_1_1HarmonicAngleForce" prot="public">OpenMM::HarmonicAngleForce</innerclass>
+    <innerclass refid="classOpenMM_1_1HarmonicBondForce" prot="public">OpenMM::HarmonicBondForce</innerclass>
+    <innerclass refid="classOpenMM_1_1Integrator" prot="public">OpenMM::Integrator</innerclass>
+    <innerclass refid="classOpenMM_1_1AndersenThermostatImpl" prot="public">OpenMM::AndersenThermostatImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1CMAPTorsionForceImpl" prot="public">OpenMM::CMAPTorsionForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1CMMotionRemoverImpl" prot="public">OpenMM::CMMotionRemoverImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1ContextImpl" prot="public">OpenMM::ContextImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomAngleForceImpl" prot="public">OpenMM::CustomAngleForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomBondForceImpl" prot="public">OpenMM::CustomBondForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomCompoundBondForceImpl" prot="public">OpenMM::CustomCompoundBondForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomExternalForceImpl" prot="public">OpenMM::CustomExternalForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForceImpl" prot="public">OpenMM::CustomGBForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomHbondForceImpl" prot="public">OpenMM::CustomHbondForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomNonbondedForceImpl" prot="public">OpenMM::CustomNonbondedForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomTorsionForceImpl" prot="public">OpenMM::CustomTorsionForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1ForceImpl" prot="public">OpenMM::ForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1GBSAOBCForceImpl" prot="public">OpenMM::GBSAOBCForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1GBVIForceImpl" prot="public">OpenMM::GBVIForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1HarmonicAngleForceImpl" prot="public">OpenMM::HarmonicAngleForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1HarmonicBondForceImpl" prot="public">OpenMM::HarmonicBondForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1MonteCarloBarostatImpl" prot="public">OpenMM::MonteCarloBarostatImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1NonbondedForceImpl" prot="public">OpenMM::NonbondedForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1PeriodicTorsionForceImpl" prot="public">OpenMM::PeriodicTorsionForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1RBTorsionForceImpl" prot="public">OpenMM::RBTorsionForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1SplineFitter" prot="public">OpenMM::SplineFitter</innerclass>
+    <innerclass refid="classOpenMM_1_1LangevinIntegrator" prot="public">OpenMM::LangevinIntegrator</innerclass>
+    <innerclass refid="classOpenMM_1_1LocalEnergyMinimizer" prot="public">OpenMM::LocalEnergyMinimizer</innerclass>
+    <innerclass refid="classOpenMM_1_1MonteCarloBarostat" prot="public">OpenMM::MonteCarloBarostat</innerclass>
+    <innerclass refid="classOpenMM_1_1NonbondedForce" prot="public">OpenMM::NonbondedForce</innerclass>
+    <innerclass refid="classOpenMM_1_1OpenMMException" prot="public">OpenMM::OpenMMException</innerclass>
+    <innerclass refid="classOpenMM_1_1PeriodicTorsionForce" prot="public">OpenMM::PeriodicTorsionForce</innerclass>
+    <innerclass refid="classOpenMM_1_1RBTorsionForce" prot="public">OpenMM::RBTorsionForce</innerclass>
+    <innerclass refid="classOpenMM_1_1State" prot="public">OpenMM::State</innerclass>
+    <innerclass refid="classOpenMM_1_1System" prot="public">OpenMM::System</innerclass>
+    <innerclass refid="classOpenMM_1_1VariableLangevinIntegrator" prot="public">OpenMM::VariableLangevinIntegrator</innerclass>
+    <innerclass refid="classOpenMM_1_1VariableVerletIntegrator" prot="public">OpenMM::VariableVerletIntegrator</innerclass>
+    <innerclass refid="classOpenMM_1_1Vec3" prot="public">OpenMM::Vec3</innerclass>
+    <innerclass refid="classOpenMM_1_1VerletIntegrator" prot="public">OpenMM::VerletIntegrator</innerclass>
+    <innerclass refid="classOpenMM_1_1VirtualSite" prot="public">OpenMM::VirtualSite</innerclass>
+    <innerclass refid="classOpenMM_1_1TwoParticleAverageSite" prot="public">OpenMM::TwoParticleAverageSite</innerclass>
+    <innerclass refid="classOpenMM_1_1ThreeParticleAverageSite" prot="public">OpenMM::ThreeParticleAverageSite</innerclass>
+    <innerclass refid="classOpenMM_1_1OutOfPlaneSite" prot="public">OpenMM::OutOfPlaneSite</innerclass>
+    <innerclass refid="classOpenMM_1_1Platform" prot="public">OpenMM::Platform</innerclass>
+    <innerclass refid="classOpenMM_1_1SerializationNode" prot="public">OpenMM::SerializationNode</innerclass>
+    <innerclass refid="classOpenMM_1_1SerializationProxy" prot="public">OpenMM::SerializationProxy</innerclass>
+    <innerclass refid="classOpenMM_1_1XmlSerializer" prot="public">OpenMM::XmlSerializer</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaAngleForce" prot="public">OpenMM::AmoebaAngleForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaBondForce" prot="public">OpenMM::AmoebaBondForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForce" prot="public">OpenMM::AmoebaGeneralizedKirkwoodForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaInPlaneAngleForce" prot="public">OpenMM::AmoebaInPlaneAngleForce</innerclass>
+    <innerclass refid="classOpenMM_1_1CalcAmoebaBondForceKernel" prot="public">OpenMM::CalcAmoebaBondForceKernel</innerclass>
+    <innerclass refid="classOpenMM_1_1CalcAmoebaAngleForceKernel" prot="public">OpenMM::CalcAmoebaAngleForceKernel</innerclass>
+    <innerclass refid="classOpenMM_1_1CalcAmoebaInPlaneAngleForceKernel" prot="public">OpenMM::CalcAmoebaInPlaneAngleForceKernel</innerclass>
+    <innerclass refid="classOpenMM_1_1CalcAmoebaPiTorsionForceKernel" prot="public">OpenMM::CalcAmoebaPiTorsionForceKernel</innerclass>
+    <innerclass refid="classOpenMM_1_1CalcAmoebaStretchBendForceKernel" prot="public">OpenMM::CalcAmoebaStretchBendForceKernel</innerclass>
+    <innerclass refid="classOpenMM_1_1CalcAmoebaOutOfPlaneBendForceKernel" prot="public">OpenMM::CalcAmoebaOutOfPlaneBendForceKernel</innerclass>
+    <innerclass refid="classOpenMM_1_1CalcAmoebaTorsionTorsionForceKernel" prot="public">OpenMM::CalcAmoebaTorsionTorsionForceKernel</innerclass>
+    <innerclass refid="classOpenMM_1_1CalcAmoebaMultipoleForceKernel" prot="public">OpenMM::CalcAmoebaMultipoleForceKernel</innerclass>
+    <innerclass refid="classOpenMM_1_1CalcAmoebaGeneralizedKirkwoodForceKernel" prot="public">OpenMM::CalcAmoebaGeneralizedKirkwoodForceKernel</innerclass>
+    <innerclass refid="classOpenMM_1_1CalcAmoebaVdwForceKernel" prot="public">OpenMM::CalcAmoebaVdwForceKernel</innerclass>
+    <innerclass refid="classOpenMM_1_1CalcAmoebaWcaDispersionForceKernel" prot="public">OpenMM::CalcAmoebaWcaDispersionForceKernel</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaMultipoleForce" prot="public">OpenMM::AmoebaMultipoleForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaOutOfPlaneBendForce" prot="public">OpenMM::AmoebaOutOfPlaneBendForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaPiTorsionForce" prot="public">OpenMM::AmoebaPiTorsionForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaStretchBendForce" prot="public">OpenMM::AmoebaStretchBendForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaTorsionTorsionForce" prot="public">OpenMM::AmoebaTorsionTorsionForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaVdwForce" prot="public">OpenMM::AmoebaVdwForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaWcaDispersionForce" prot="public">OpenMM::AmoebaWcaDispersionForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaAngleForceImpl" prot="public">OpenMM::AmoebaAngleForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaBondForceImpl" prot="public">OpenMM::AmoebaBondForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl" prot="public">OpenMM::AmoebaGeneralizedKirkwoodForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaInPlaneAngleForceImpl" prot="public">OpenMM::AmoebaInPlaneAngleForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaMultipoleForceImpl" prot="public">OpenMM::AmoebaMultipoleForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaOutOfPlaneBendForceImpl" prot="public">OpenMM::AmoebaOutOfPlaneBendForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaPiTorsionForceImpl" prot="public">OpenMM::AmoebaPiTorsionForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaStretchBendForceImpl" prot="public">OpenMM::AmoebaStretchBendForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaTorsionTorsionForceImpl" prot="public">OpenMM::AmoebaTorsionTorsionForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaVdwForceImpl" prot="public">OpenMM::AmoebaVdwForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaWcaDispersionForceImpl" prot="public">OpenMM::AmoebaWcaDispersionForceImpl</innerclass>
+    <innerclass refid="classOpenMM_1_1RPMDIntegrator" prot="public">OpenMM::RPMDIntegrator</innerclass>
+    <innerclass refid="classOpenMM_1_1IntegrateRPMDStepKernel" prot="public">OpenMM::IntegrateRPMDStepKernel</innerclass>
+    <innerclass refid="classOpenMM_1_1NEBIntegrator" prot="public">OpenMM::NEBIntegrator</innerclass>
+    <innerclass refid="classOpenMM_1_1IntegrateNEBStepKernel" prot="public">OpenMM::IntegrateNEBStepKernel</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceOpenMM_1aac046adc4da6c323c3f3f4c8c5bf187a" prot="public" static="no">
+        <type>std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt;</type>
+        <definition>typedef std::vector&lt; std::vector&lt; std::vector&lt;double&gt; &gt; &gt; OpenMM::TorsionTorsionGrid</definition>
+        <argsstring></argsstring>
+        <name>TorsionTorsionGrid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="43" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceOpenMM_1a60291ffad3e9d17e219ce6c9289b4b98" prot="public" static="no">
+        <type>std::vector&lt; std::vector&lt; std::vector&lt; float &gt; &gt; &gt;</type>
+        <definition>typedef std::vector&lt; std::vector&lt; std::vector&lt;float&gt; &gt; &gt; OpenMM::TorsionTorsionGridFloat</definition>
+        <argsstring></argsstring>
+        <name>TorsionTorsionGridFloat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="44" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceOpenMM_1ab3deeabf7fe225879749dd11af82b892" prot="public" static="no" mutable="no">
+        <type>class OPENMM_EXPORT</type>
+        <definition>class OPENMM_EXPORT OpenMM::Force</definition>
+        <argsstring></argsstring>
+        <name>Force</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/System.h" line="41" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/System.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceOpenMM_1a5b07d16fbc75f18cf78e0a9266c2ad2a" prot="public" static="no" mutable="no">
+        <type>class OPENMM_EXPORT</type>
+        <definition>class OPENMM_EXPORT OpenMM::VirtualSite</definition>
+        <argsstring></argsstring>
+        <name>VirtualSite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/System.h" line="42" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/System.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceOpenMM_1a5ba1bfe507f2f724ea83d813a41ab0f7" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double OpenMM::NmPerAngstrom</definition>
+        <argsstring></argsstring>
+        <name>NmPerAngstrom</name>
+        <initializer> 0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of nanometers in an Angstrom. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" line="57" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceOpenMM_1a02bbb4ad716b0583798821edbabc9c7b" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double OpenMM::AngstromsPerNm</definition>
+        <argsstring></argsstring>
+        <name>AngstromsPerNm</name>
+        <initializer> 10.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of Angstroms in a nanometer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" line="61" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceOpenMM_1a208c5c79f77c20e5bdc47b8c805848c6" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double OpenMM::PsPerFs</definition>
+        <argsstring></argsstring>
+        <name>PsPerFs</name>
+        <initializer> 0.001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of picoseconds in a femtosecond. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" line="65" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceOpenMM_1a30c933036f00676fd2a33211db4a2da2" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double OpenMM::FsPerPs</definition>
+        <argsstring></argsstring>
+        <name>FsPerPs</name>
+        <initializer> 1000.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of femtoseconds in a picosecond. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" line="69" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceOpenMM_1aa3247aab3f9ae2f5065986e65818672f" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double OpenMM::KJPerKcal</definition>
+        <argsstring></argsstring>
+        <name>KJPerKcal</name>
+        <initializer> 4.184</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of kJ in a kcal. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" line="73" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceOpenMM_1a6e21bc64c08ccd1a3b207d69b6a95ccf" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double OpenMM::KcalPerKJ</definition>
+        <argsstring></argsstring>
+        <name>KcalPerKJ</name>
+        <initializer> 1.0/4.184</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of kcal in a kJ. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" line="77" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceOpenMM_1ae4f929ff49aa551f2d337b1e8aea01e8" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double OpenMM::RadiansPerDegree</definition>
+        <argsstring></argsstring>
+        <name>RadiansPerDegree</name>
+        <initializer> 3.1415926535897932385/180.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of radians in a degree. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" line="81" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceOpenMM_1a84346b7e73ef098536f307919ae6291f" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double OpenMM::DegreesPerRadian</definition>
+        <argsstring></argsstring>
+        <name>DegreesPerRadian</name>
+        <initializer> 180.0/3.1415926535897932385</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of degrees in a radian. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" line="85" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceOpenMM_1a0531747891f557c355b7a5ae47200cfb" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double OpenMM::SigmaPerVdwRadius</definition>
+        <argsstring></argsstring>
+        <name>SigmaPerVdwRadius</name>
+        <initializer> 1.7817974362806786095</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>L-J sigma per unit van der Waals radius: 2/(2^1/6). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" line="89" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceOpenMM_1aa81411614b73dea23aea4ce48d6dc63c" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double OpenMM::VdwRadiusPerSigma</definition>
+        <argsstring></argsstring>
+        <name>VdwRadiusPerSigma</name>
+        <initializer> .56123102415468649070</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>van der Waals radius per unit L-J sigma: (2^1/6)/2. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" line="93" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Units.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceOpenMM_1a22891f891028f3550b16b5a1f1c9c134" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void OPENMM_EXPORT</type>
+        <definition>void OPENMM_EXPORT OpenMM::throwException</definition>
+        <argsstring>(const char *file, int line, const std::string &amp;details)</argsstring>
+        <name>throwException</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>details</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenMM_1a9a410da4097c68e2f8dce192bcd2185e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class CHAR</type>
+          </param>
+          <param>
+            <type>class TRAITS</type>
+          </param>
+        </templateparamlist>
+        <type>std::basic_ostream&lt; CHAR, TRAITS &gt; &amp;</type>
+        <definition>std::basic_ostream&lt;CHAR,TRAITS&gt;&amp; OpenMM::operator&lt;&lt;</definition>
+        <argsstring>(std::basic_ostream&lt; CHAR, TRAITS &gt; &amp;o, const Vec3 &amp;v)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::basic_ostream&lt; CHAR, TRAITS &gt; &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="146" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This file provides a variety of macros useful in test cases. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/AndersenThermostat.h" line="39"/>
+  </compounddef>
+</doxygen>

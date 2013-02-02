@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="CustomCompoundBondForce_8h" kind="file">
+    <compoundname>CustomCompoundBondForce.h</compoundname>
+    <includes refid="Force_8h" local="yes">Force.h</includes>
+    <includes refid="Vec3_8h" local="yes">Vec3.h</includes>
+    <includes local="no">vector</includes>
+    <includes refid="windowsExport_8h" local="yes">internal/windowsExport.h</includes>
+    <includedby refid="CustomCompoundBondForceImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomCompoundBondForceImpl.h</includedby>
+    <includedby refid="OpenMM_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</includedby>
+    <incdepgraph>
+      <node id="136">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>cassert</label>
+      </node>
+      <node id="137">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="141">
+        <label>vector</label>
+      </node>
+      <node id="140">
+        <label>iosfwd</label>
+      </node>
+      <node id="138">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomCompoundBondForce.h</label>
+        <link refid="CustomCompoundBondForce.h"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="143">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomCompoundBondForceImpl.h</label>
+        <link refid="CustomCompoundBondForceImpl_8h_source"/>
+      </node>
+      <node id="144">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</label>
+        <link refid="OpenMM_8h_source"/>
+      </node>
+      <node id="142">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomCompoundBondForce.h</label>
+        <link refid="CustomCompoundBondForce.h"/>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1CustomCompoundBondForce" prot="public">OpenMM::CustomCompoundBondForce</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomCompoundBondForce_1_1BondInfo" prot="private">OpenMM::CustomCompoundBondForce::BondInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomCompoundBondForce_1_1BondParameterInfo" prot="private">OpenMM::CustomCompoundBondForce::BondParameterInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomCompoundBondForce_1_1GlobalParameterInfo" prot="private">OpenMM::CustomCompoundBondForce::GlobalParameterInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomCompoundBondForce_1_1FunctionInfo" prot="private">OpenMM::CustomCompoundBondForce::FunctionInfo</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomCompoundBondForce.h"/>
+  </compounddef>
+</doxygen>

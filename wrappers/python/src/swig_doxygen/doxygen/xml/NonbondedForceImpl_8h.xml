@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="NonbondedForceImpl_8h" kind="file">
+    <compoundname>NonbondedForceImpl.h</compoundname>
+    <includes refid="ForceImpl_8h" local="yes">ForceImpl.h</includes>
+    <includes refid="NonbondedForce_8h" local="yes">openmm/NonbondedForce.h</includes>
+    <includes local="yes">openmm/Kernel.h</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">set</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="637">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="623" relation="include">
+        </childnode>
+      </node>
+      <node id="622">
+        <label>ForceImpl.h</label>
+        <link refid="ForceImpl_8h_source"/>
+        <childnode refid="623" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+        <childnode refid="625" relation="include">
+        </childnode>
+        <childnode refid="626" relation="include">
+        </childnode>
+        <childnode refid="627" relation="include">
+        </childnode>
+      </node>
+      <node id="633">
+        <label>cassert</label>
+      </node>
+      <node id="639">
+        <label>openmm/Kernel.h</label>
+      </node>
+      <node id="625">
+        <label>string</label>
+      </node>
+      <node id="624">
+        <label>map</label>
+      </node>
+      <node id="631">
+        <label>State.h</label>
+        <link refid="State_8h_source"/>
+        <childnode refid="632" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+        <childnode refid="627" relation="include">
+        </childnode>
+        <childnode refid="623" relation="include">
+        </childnode>
+      </node>
+      <node id="623">
+        <label>openmm/internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="629">
+        <label>Context.h</label>
+        <link refid="Context_8h_source"/>
+        <childnode refid="630" relation="include">
+        </childnode>
+        <childnode refid="631" relation="include">
+        </childnode>
+        <childnode refid="635" relation="include">
+        </childnode>
+        <childnode refid="636" relation="include">
+        </childnode>
+        <childnode refid="634" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+        <childnode refid="625" relation="include">
+        </childnode>
+        <childnode refid="627" relation="include">
+        </childnode>
+        <childnode refid="623" relation="include">
+        </childnode>
+      </node>
+      <node id="636">
+        <label>ctime</label>
+      </node>
+      <node id="621">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h</label>
+        <link refid="NonbondedForceImpl.h"/>
+        <childnode refid="622" relation="include">
+        </childnode>
+        <childnode refid="628" relation="include">
+        </childnode>
+        <childnode refid="639" relation="include">
+        </childnode>
+        <childnode refid="626" relation="include">
+        </childnode>
+        <childnode refid="638" relation="include">
+        </childnode>
+        <childnode refid="625" relation="include">
+        </childnode>
+      </node>
+      <node id="627">
+        <label>vector</label>
+      </node>
+      <node id="626">
+        <label>utility</label>
+      </node>
+      <node id="628">
+        <label>openmm/NonbondedForce.h</label>
+        <link refid="NonbondedForce_8h_source"/>
+        <childnode refid="629" relation="include">
+        </childnode>
+        <childnode refid="637" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+        <childnode refid="638" relation="include">
+        </childnode>
+        <childnode refid="626" relation="include">
+        </childnode>
+        <childnode refid="627" relation="include">
+        </childnode>
+        <childnode refid="623" relation="include">
+        </childnode>
+      </node>
+      <node id="634">
+        <label>iosfwd</label>
+      </node>
+      <node id="635">
+        <label>System.h</label>
+        <link refid="System_8h_source"/>
+        <childnode refid="632" relation="include">
+        </childnode>
+        <childnode refid="627" relation="include">
+        </childnode>
+        <childnode refid="623" relation="include">
+        </childnode>
+      </node>
+      <node id="632">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="633" relation="include">
+        </childnode>
+        <childnode refid="634" relation="include">
+        </childnode>
+      </node>
+      <node id="630">
+        <label>Integrator.h</label>
+        <link refid="Integrator_8h_source"/>
+        <childnode refid="631" relation="include">
+        </childnode>
+        <childnode refid="632" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+        <childnode refid="627" relation="include">
+        </childnode>
+        <childnode refid="623" relation="include">
+        </childnode>
+      </node>
+      <node id="638">
+        <label>set</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classOpenMM_1_1NonbondedForceImpl" prot="public">OpenMM::NonbondedForceImpl</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h"/>
+  </compounddef>
+</doxygen>

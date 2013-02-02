@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="AmoebaOutOfPlaneBendForce_8h" kind="file">
+    <compoundname>AmoebaOutOfPlaneBendForce.h</compoundname>
+    <includes refid="Force_8h" local="yes">openmm/Force.h</includes>
+    <includes refid="windowsExportAmoeba_8h" local="yes">internal/windowsExportAmoeba.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="AmoebaOutOfPlaneBendForceImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaOutOfPlaneBendForceImpl.h</includedby>
+    <includedby refid="OpenMMAmoeba_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/OpenMMAmoeba.h</includedby>
+    <incdepgraph>
+      <node id="1082">
+        <label>openmm/Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="1083" relation="include">
+        </childnode>
+      </node>
+      <node id="1083">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="1081">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaOutOfPlaneBendForce.h</label>
+        <link refid="AmoebaOutOfPlaneBendForce.h"/>
+        <childnode refid="1082" relation="include">
+        </childnode>
+        <childnode refid="1084" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+      </node>
+      <node id="1085">
+        <label>vector</label>
+      </node>
+      <node id="1084">
+        <label>internal/windowsExportAmoeba.h</label>
+        <link refid="windowsExportAmoeba_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1087">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaOutOfPlaneBendForceImpl.h</label>
+        <link refid="AmoebaOutOfPlaneBendForceImpl_8h_source"/>
+      </node>
+      <node id="1089">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h</label>
+        <link refid="amoebaKernels_8h_source"/>
+      </node>
+      <node id="1088">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/OpenMMAmoeba.h</label>
+        <link refid="OpenMMAmoeba_8h_source"/>
+        <childnode refid="1089" relation="include">
+        </childnode>
+      </node>
+      <node id="1086">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaOutOfPlaneBendForce.h</label>
+        <link refid="AmoebaOutOfPlaneBendForce.h"/>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1AmoebaOutOfPlaneBendForce" prot="public">OpenMM::AmoebaOutOfPlaneBendForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaOutOfPlaneBendForce_1_1OutOfPlaneBendInfo" prot="public">OpenMM::AmoebaOutOfPlaneBendForce::OutOfPlaneBendInfo</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaOutOfPlaneBendForce.h"/>
+  </compounddef>
+</doxygen>

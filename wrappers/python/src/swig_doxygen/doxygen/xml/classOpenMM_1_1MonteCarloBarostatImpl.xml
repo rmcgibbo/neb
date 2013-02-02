@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1MonteCarloBarostatImpl" kind="class" prot="public">
+    <compoundname>OpenMM::MonteCarloBarostatImpl</compoundname>
+    <basecompoundref refid="classOpenMM_1_1ForceImpl" prot="public" virt="non-virtual">OpenMM::ForceImpl</basecompoundref>
+    <includes refid="MonteCarloBarostatImpl_8h" local="no">MonteCarloBarostatImpl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1MonteCarloBarostatImpl_1a59495ccc19e7a6f55cfa561fab75d192" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1MonteCarloBarostat" kindref="compound">MonteCarloBarostat</ref> &amp;</type>
+        <definition>MonteCarloBarostat&amp; OpenMM::MonteCarloBarostatImpl::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="62" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1MonteCarloBarostatImpl_1a7032284e92835c6bbf7688280faa84e4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::MonteCarloBarostatImpl::step</definition>
+        <argsstring></argsstring>
+        <name>step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="63" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1MonteCarloBarostatImpl_1acd32121415c1957c61c0a4582aff35ae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::MonteCarloBarostatImpl::numAttempted</definition>
+        <argsstring></argsstring>
+        <name>numAttempted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="63" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1MonteCarloBarostatImpl_1ad7d1171629df65a654dbf1a1fef373a2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::MonteCarloBarostatImpl::numAccepted</definition>
+        <argsstring></argsstring>
+        <name>numAccepted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="63" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1MonteCarloBarostatImpl_1a27ea84a2db598c9aa0e1f9017383b97c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::MonteCarloBarostatImpl::volumeScale</definition>
+        <argsstring></argsstring>
+        <name>volumeScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="64" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1MonteCarloBarostatImpl_1a76dae739fbec7e41c0f440790d5204e6" prot="private" static="no" mutable="no">
+        <type>OpenMM_SFMT::SFMT</type>
+        <definition>OpenMM_SFMT::SFMT OpenMM::MonteCarloBarostatImpl::random</definition>
+        <argsstring></argsstring>
+        <name>random</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="65" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1MonteCarloBarostatImpl_1a797e786e004ef68ade70f9e3c429bef7" prot="private" static="no" mutable="no">
+        <type>Kernel</type>
+        <definition>Kernel OpenMM::MonteCarloBarostatImpl::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="66" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostatImpl_1aa0ed47222858b9aed5f036842ecfeff1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::MonteCarloBarostatImpl::MonteCarloBarostatImpl</definition>
+        <argsstring>(MonteCarloBarostat &amp;owner)</argsstring>
+        <name>MonteCarloBarostatImpl</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1MonteCarloBarostat" kindref="compound">MonteCarloBarostat</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostatImpl_1a1c012e0ca1e4b33391ca947a170205dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::MonteCarloBarostatImpl::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a0a1f85a9c94613577399c1fada6ecb01">initialize</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called after the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> is created and before <ref refid="classOpenMM_1_1MonteCarloBarostatImpl_1aa18218b873e73a0a578602e4c332c463" kindref="member">updateContextState()</ref>, calcForces(), or calcEnergy() is called on it. This allows it to do any necessary initialization. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostatImpl_1a2fce4a4f9deddda131f35844ad85472d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenMM_1_1MonteCarloBarostat" kindref="compound">MonteCarloBarostat</ref> &amp;</type>
+        <definition>MonteCarloBarostat&amp; OpenMM::MonteCarloBarostatImpl::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a766c966d25ad0d8cf287ee07e524a081">getOwner</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object from which this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> was created. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="51" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostatImpl_1aa18218b873e73a0a578602e4c332c463" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::MonteCarloBarostatImpl::updateContextState</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>updateContextState</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1aae2f5cc793b7071cb6516a02fa736087">updateContextState</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called at the beginning of each time step. It give the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> a chance to modify the state variables (positions, velocities, and parameters) stored in the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> in arbitrary ways before integration is performed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostatImpl_1a0de846c072c4945051ac916e4b92739f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double OpenMM::MonteCarloBarostatImpl::calcForcesAndEnergy</definition>
+        <argsstring>(ContextImpl &amp;context, bool includeForces, bool includeEnergy, int groups)</argsstring>
+        <name>calcForcesAndEnergy</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a1e2544ac6d58460a79697236e8b758be">calcForcesAndEnergy</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeForces</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeEnergy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>groups</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the force on each particle generated by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> and/or this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>&apos;s contribution to the potential energy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeForces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if forces should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeEnergy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the energy should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>groups</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a set of bit flags for which force groups to include. Group i should be included if (groups&amp;(1&lt;&lt;i)) != 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>this force&apos;s contribution to the potential energy of the system, or 0 if this force does not contribute to potential energy (or if includeEnergy is false) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="55" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostatImpl_1a84fe81a02763f5efd676c7f7713dbd66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; OpenMM::MonteCarloBarostatImpl::getDefaultParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultParameters</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1adf18979257a14b23dd52dbda9e87c308">getDefaultParameters</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a map containing the default values for all adjustable parameters defined by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>. These parameters and their default values will automatically be added to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostatImpl_1ac1db501f6b831d71dfae92e199296420" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; OpenMM::MonteCarloBarostatImpl::getKernelNames</definition>
+        <argsstring>()</argsstring>
+        <name>getKernelNames</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a5820facb44adaab79bbb02a3ba5bd79b">getKernelNames</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the internal implementation of <ref refid="classOpenMM_1_1MonteCarloBarostat" kindref="compound">MonteCarloBarostat</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="405">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="404">
+        <label>OpenMM::MonteCarloBarostatImpl</label>
+        <link refid="classOpenMM_1_1MonteCarloBarostatImpl"/>
+        <childnode refid="405" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="407">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="406">
+        <label>OpenMM::MonteCarloBarostatImpl</label>
+        <link refid="classOpenMM_1_1MonteCarloBarostatImpl"/>
+        <childnode refid="407" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" line="47" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h" bodystart="47" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1a0de846c072c4945051ac916e4b92739f" prot="public" virt="virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>calcForcesAndEnergy</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1aaa19783e47e53df34083cbaadf37e41c" prot="public" virt="virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>getBondedParticles</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1a84fe81a02763f5efd676c7f7713dbd66" prot="public" virt="virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>getDefaultParameters</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1ac1db501f6b831d71dfae92e199296420" prot="public" virt="virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1a2fce4a4f9deddda131f35844ad85472d" prot="public" virt="virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>getOwner</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1a1c012e0ca1e4b33391ca947a170205dd" prot="public" virt="virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1a797e786e004ef68ade70f9e3c429bef7" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>kernel</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1aa0ed47222858b9aed5f036842ecfeff1" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>MonteCarloBarostatImpl</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1ad7d1171629df65a654dbf1a1fef373a2" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>numAccepted</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1acd32121415c1957c61c0a4582aff35ae" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>numAttempted</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1a59495ccc19e7a6f55cfa561fab75d192" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>owner</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1a76dae739fbec7e41c0f440790d5204e6" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>random</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1a7032284e92835c6bbf7688280faa84e4" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>step</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1aa18218b873e73a0a578602e4c332c463" prot="public" virt="virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>updateContextState</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostatImpl_1a27ea84a2db598c9aa0e1f9017383b97c" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>volumeScale</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1a8a2bccbabb2587111b46da67cea8293c" prot="public" virt="virtual"><scope>OpenMM::MonteCarloBarostatImpl</scope><name>~ForceImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

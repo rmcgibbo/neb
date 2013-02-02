@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_ac543d7472aba282f64e49797772ae15" kind="dir">
+    <compoundname>/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/</compoundname>
+    <innerfile refid="NEBIntegrator_8h">NEBIntegrator.h</innerfile>
+    <innerfile refid="NEBKerenls_8h">NEBKerenls.h</innerfile>
+    <innerfile refid="NEBKernels_8h">NEBKernels.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/"/>
+  </compounddef>
+</doxygen>

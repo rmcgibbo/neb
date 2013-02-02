@@ -1,0 +1,589 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1ForceImpl" kind="class" prot="public">
+    <compoundname>OpenMM::ForceImpl</compoundname>
+    <derivedcompoundref refid="classOpenMM_1_1AmoebaAngleForceImpl" prot="public" virt="non-virtual">OpenMM::AmoebaAngleForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1AmoebaBondForceImpl" prot="public" virt="non-virtual">OpenMM::AmoebaBondForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl" prot="public" virt="non-virtual">OpenMM::AmoebaGeneralizedKirkwoodForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1AmoebaInPlaneAngleForceImpl" prot="public" virt="non-virtual">OpenMM::AmoebaInPlaneAngleForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1AmoebaMultipoleForceImpl" prot="public" virt="non-virtual">OpenMM::AmoebaMultipoleForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1AmoebaOutOfPlaneBendForceImpl" prot="public" virt="non-virtual">OpenMM::AmoebaOutOfPlaneBendForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1AmoebaPiTorsionForceImpl" prot="public" virt="non-virtual">OpenMM::AmoebaPiTorsionForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1AmoebaStretchBendForceImpl" prot="public" virt="non-virtual">OpenMM::AmoebaStretchBendForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1AmoebaTorsionTorsionForceImpl" prot="public" virt="non-virtual">OpenMM::AmoebaTorsionTorsionForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1AmoebaVdwForceImpl" prot="public" virt="non-virtual">OpenMM::AmoebaVdwForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1AmoebaWcaDispersionForceImpl" prot="public" virt="non-virtual">OpenMM::AmoebaWcaDispersionForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1AndersenThermostatImpl" prot="public" virt="non-virtual">OpenMM::AndersenThermostatImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1CMAPTorsionForceImpl" prot="public" virt="non-virtual">OpenMM::CMAPTorsionForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1CMMotionRemoverImpl" prot="public" virt="non-virtual">OpenMM::CMMotionRemoverImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1CustomAngleForceImpl" prot="public" virt="non-virtual">OpenMM::CustomAngleForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1CustomBondForceImpl" prot="public" virt="non-virtual">OpenMM::CustomBondForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1CustomCompoundBondForceImpl" prot="public" virt="non-virtual">OpenMM::CustomCompoundBondForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1CustomExternalForceImpl" prot="public" virt="non-virtual">OpenMM::CustomExternalForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1CustomGBForceImpl" prot="public" virt="non-virtual">OpenMM::CustomGBForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1CustomHbondForceImpl" prot="public" virt="non-virtual">OpenMM::CustomHbondForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1CustomNonbondedForceImpl" prot="public" virt="non-virtual">OpenMM::CustomNonbondedForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1CustomTorsionForceImpl" prot="public" virt="non-virtual">OpenMM::CustomTorsionForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1GBSAOBCForceImpl" prot="public" virt="non-virtual">OpenMM::GBSAOBCForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1GBVIForceImpl" prot="public" virt="non-virtual">OpenMM::GBVIForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1HarmonicAngleForceImpl" prot="public" virt="non-virtual">OpenMM::HarmonicAngleForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1HarmonicBondForceImpl" prot="public" virt="non-virtual">OpenMM::HarmonicBondForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1MonteCarloBarostatImpl" prot="public" virt="non-virtual">OpenMM::MonteCarloBarostatImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1NonbondedForceImpl" prot="public" virt="non-virtual">OpenMM::NonbondedForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1PeriodicTorsionForceImpl" prot="public" virt="non-virtual">OpenMM::PeriodicTorsionForceImpl</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1RBTorsionForceImpl" prot="public" virt="non-virtual">OpenMM::RBTorsionForceImpl</derivedcompoundref>
+    <includes refid="ForceImpl_8h" local="no">ForceImpl.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1ForceImpl_1a8a2bccbabb2587111b46da67cea8293c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual OpenMM::ForceImpl::~ForceImpl</definition>
+        <argsstring>()</argsstring>
+        <name>~ForceImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ForceImpl.h" line="59" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ForceImpl.h" bodystart="59" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1ForceImpl_1a0a1f85a9c94613577399c1fada6ecb01" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::ForceImpl::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)=0</argsstring>
+        <name>initialize</name>
+        <reimplementedby refid="classOpenMM_1_1CMMotionRemoverImpl_1a313cdcf88d449d798efd48abcd8e9165">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1ab5dc45240f6a1b21818e172ba78d9033">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1GBVIForceImpl_1a69c6a44be37f8fed33b13a0315da1eea">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1GBSAOBCForceImpl_1a59c091bf25ae649afb0af0a529c87ce2">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1MonteCarloBarostatImpl_1a1c012e0ca1e4b33391ca947a170205dd">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaTorsionTorsionForceImpl_1a3251d249fe82a39818abaa0882cf2d41">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CMAPTorsionForceImpl_1a7bff8df68842ca1d51664d21a7431aba">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AndersenThermostatImpl_1a22e5e26563ee7f2cb98336ef6872aef0">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaWcaDispersionForceImpl_1a33f2257eafb091e3c88c3309dd7a143f">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaStretchBendForceImpl_1a925d911f18bb44643b0ccd0ed102f2c3">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaPiTorsionForceImpl_1ad70f41cda27d0e4a06dfb720f765ffb5">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaOutOfPlaneBendForceImpl_1ace1e3eeea9feb76cf6b8517b0df78f49">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1acf8c0db01455a8e480003aad275758fd">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaInPlaneAngleForceImpl_1ab47adfe6aba47007926c64884e9133cf">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaAngleForceImpl_1a7986e92be5f8ea4e85624d44bbdef4d8">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1RBTorsionForceImpl_1a368547945a034e58e04676a491d6328d">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1PeriodicTorsionForceImpl_1a329fa3333600d1b16b1a5f12ef0d9b7a">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicBondForceImpl_1a48216db1c92cddfb90aeb649da05fc32">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicAngleForceImpl_1a2528928373582beb38325a73653314e9">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomTorsionForceImpl_1aa049c059f86a2e83d374e07d1e4a82a5">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomNonbondedForceImpl_1a0eddf03a6640b8dff799157e1722b5a4">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomGBForceImpl_1ae0b1c58eceeb1766eb64f4e93fb40f67">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomExternalForceImpl_1a592b735d9be465526fbb45404c4904df">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomBondForceImpl_1af8576f105627c440c8d71a7d7e3ca8ee">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomAngleForceImpl_1af0ab485f33df886c514a3a7b0337b9e6">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaBondForceImpl_1a40702a85ba42c294977ff3718315baad">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaVdwForceImpl_1af6e936cb0d4edd732f55fd6628b114f7">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1NonbondedForceImpl_1ae2741c6138f63c8ebea173a82b1f22e9">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomHbondForceImpl_1ae5a93811802e1d01c6efd5801d45955b">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomCompoundBondForceImpl_1a1f182b11df7f3ac74f38b4be800f81f9">initialize</reimplementedby>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called after the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> is created and before <ref refid="classOpenMM_1_1ForceImpl_1aae2f5cc793b7071cb6516a02fa736087" kindref="member">updateContextState()</ref>, calcForces(), or calcEnergy() is called on it. This allows it to do any necessary initialization. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ForceImpl.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1ForceImpl_1a766c966d25ad0d8cf287ee07e524a081" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> &amp;</type>
+        <definition>virtual Force&amp; OpenMM::ForceImpl::getOwner</definition>
+        <argsstring>()=0</argsstring>
+        <name>getOwner</name>
+        <reimplementedby refid="classOpenMM_1_1CMMotionRemoverImpl_1abd9857ee78c7f0361709adfb7a79035c">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1af6248cf0faa8b17feb78f2ae2ea8f72e">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1GBVIForceImpl_1aeb7638ca7271a0126eed85e6e249c7b7">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1GBSAOBCForceImpl_1a3239197b83e1406a9a00cebe47750c2e">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1MonteCarloBarostatImpl_1a2fce4a4f9deddda131f35844ad85472d">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaTorsionTorsionForceImpl_1afff3a652f189a7c848dafe3ee9d3b18c">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CMAPTorsionForceImpl_1a45a0b5c3fd748027c5a07579f6028677">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AndersenThermostatImpl_1a9767b17bcccac9bd34548e47fc6dff5d">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaWcaDispersionForceImpl_1ac1e61de097f21fbe0d95dc8327cad242">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaStretchBendForceImpl_1a48de771f540a2c61894ff2b18bd4cbbf">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaPiTorsionForceImpl_1afd0a434f8d93bbcf08ccbe13f3a8bc27">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaOutOfPlaneBendForceImpl_1a309e2b161b41ce49d3417c1e67865481">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a692a58b0cea2040d13fb791e446fa6a0">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaInPlaneAngleForceImpl_1a4bb235207407d4f3720152dd064ca418">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaAngleForceImpl_1a92248f55c7511fbc9fdf525edb62542b">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1RBTorsionForceImpl_1a225a42c4694f85e6763e8506965299fa">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1PeriodicTorsionForceImpl_1a0197d821a2487ab0eca5e17be1dfcc17">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicBondForceImpl_1acbf607c43a229ab062743ec6d068314c">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicAngleForceImpl_1a4f104c2318055c7f421722c8385e1002">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomTorsionForceImpl_1a55b6d10a751a4268a6ec6a9f43d01c9b">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomNonbondedForceImpl_1a5ad5c15e97b3c1d2308b224b715ddf78">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomGBForceImpl_1aaa9aec00888931c11879dd084fd61a42">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomExternalForceImpl_1a78291875b548f44e9e7ec38e112457f6">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomBondForceImpl_1a601c0c73a9a0848df6d0dea8569ca437">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomAngleForceImpl_1a38a2df971c68f5368d44fac4dfd74c67">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaBondForceImpl_1ac523580b8f6d65ac93672503cd500d3d">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaVdwForceImpl_1aa169f4b3d2efa25105cc570e03ce9493">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1NonbondedForceImpl_1a47082a9fcfcf7cbbda361339172bed6c">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomHbondForceImpl_1a1e8d245dc1054fef37ff067306437ca6">getOwner</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomCompoundBondForceImpl_1a66f3abab0df9dc7b8f6194574c52f2e9">getOwner</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object from which this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> was created. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ForceImpl.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1ForceImpl_1aae2f5cc793b7071cb6516a02fa736087" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::ForceImpl::updateContextState</definition>
+        <argsstring>(ContextImpl &amp;context)=0</argsstring>
+        <name>updateContextState</name>
+        <reimplementedby refid="classOpenMM_1_1CMMotionRemoverImpl_1a18edb48051188aed459774402c3968cf">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a5a11357f5ba67ef51de40a6dbcbf5dd0">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1GBSAOBCForceImpl_1ab5246c4d7e07bd00ae6f8f0474845130">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1MonteCarloBarostatImpl_1aa18218b873e73a0a578602e4c332c463">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaTorsionTorsionForceImpl_1a46652f018b0e38329691abec8518f4a8">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CMAPTorsionForceImpl_1a0fb3e35dd213d51b7b3b801415ddd0e4">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AndersenThermostatImpl_1a88c53288ad9797892d6658a4995fb7f2">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaWcaDispersionForceImpl_1a21e8569d728ab35dd55357d56364987e">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaStretchBendForceImpl_1aeac2ffab37f4bbaa989f9455385c9160">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaPiTorsionForceImpl_1a288a5060f4183e44992e1486d0ad488f">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaOutOfPlaneBendForceImpl_1a545fa280270eeafe13f96c5b26d7f9b8">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a2f844d91bef6a17a071f70330d424183">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaInPlaneAngleForceImpl_1ae3a0776cefdc3e39c408fdba90bc2966">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaAngleForceImpl_1a27a8814dc2c63afd9f4af60b65379501">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1RBTorsionForceImpl_1a59fe65d8eaf0e040c2858bf140d178b5">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1PeriodicTorsionForceImpl_1aeca562670b2259743e68b152f99d689b">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicBondForceImpl_1a2c965caa9668ee96c1d6a747b27945f8">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicAngleForceImpl_1a1abdcf086fae1f3a829d1c7709b8dd5a">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomTorsionForceImpl_1a2a63a4f9b94db7860506457430daabd3">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomNonbondedForceImpl_1ac11b10ca1687ed322ef8a860373f7695">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomGBForceImpl_1a81f6c53d4e07916ed7d76fe0e20d7101">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomExternalForceImpl_1a8052d73b83e259e23704ceac632595bc">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomBondForceImpl_1a6be3062eb9e14a49e81f68774ccea04b">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomAngleForceImpl_1a2f8c4aece41d1d6b71a0ac48cbba2d95">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaBondForceImpl_1a3410201270315bcf31e53c6a71982cea">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaVdwForceImpl_1aa8aae60cdb1c93d21b7f080805092589">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1NonbondedForceImpl_1a19ee2d1b6ec599671fd49914e7900e61">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomHbondForceImpl_1ada8d47078b763f01a32d3d32317b70d0">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomCompoundBondForceImpl_1a1e8cc9511355f9bb30e142e95bdefd74">updateContextState</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1GBVIForceImpl_1a2af1c42cd45f3b3de5ecd4ce03c671b1">updateContextState</reimplementedby>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called at the beginning of each time step. It give the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> a chance to modify the state variables (positions, velocities, and parameters) stored in the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> in arbitrary ways before integration is performed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ForceImpl.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1ForceImpl_1a1e2544ac6d58460a79697236e8b758be" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenMM::ForceImpl::calcForcesAndEnergy</definition>
+        <argsstring>(ContextImpl &amp;context, bool includeForces, bool includeEnergy, int groups)=0</argsstring>
+        <name>calcForcesAndEnergy</name>
+        <reimplementedby refid="classOpenMM_1_1CMMotionRemoverImpl_1ac920c08c02e0a3c02712d293a996b8f9">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1MonteCarloBarostatImpl_1a0de846c072c4945051ac916e4b92739f">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1ae22cc7a33c885e32bd6e40f17ee2d6cb">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1GBSAOBCForceImpl_1a44bdc15359a3a19dcb234b0c6a797a36">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AndersenThermostatImpl_1a5e5aedd54d6a8d16822e1346b86e4caa">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaTorsionTorsionForceImpl_1a770b7c8ca8a80c645440333309b5e639">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CMAPTorsionForceImpl_1a3092ef9e4712d0fee814defe3c5a8c08">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaWcaDispersionForceImpl_1a42acb9ec9c92caffb112681d8129462e">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaStretchBendForceImpl_1a63905ec870d98d68947373d21b7f3a17">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaPiTorsionForceImpl_1ac9574839238c68dceb5422b8a8ccb625">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaOutOfPlaneBendForceImpl_1a667c70ca868162536d36ab3c7d669ad6">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a226de06d2a03c8242dd95b6c0d6c6162">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaInPlaneAngleForceImpl_1a5a30315f95c7e6de55ff5fa7cf5fb257">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaAngleForceImpl_1a4d91591dc6c9eff3d4ae2dce1a2d4b7c">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1RBTorsionForceImpl_1a6cf575efdef9110a54debd13a0fe9520">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1PeriodicTorsionForceImpl_1a1a929e4989edf140986e7844c04cba3f">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicBondForceImpl_1afc31263ba2f9089ca9212b3f373f162b">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicAngleForceImpl_1a5402c558293e6c6e98cb38b367c33ec6">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomTorsionForceImpl_1a656d27e286e4b05a9ac6e38b54530d91">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomNonbondedForceImpl_1aaf495af754a22941190a6dda14da3fe9">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomGBForceImpl_1aaa524264b5e65c3d4eedace5d28f99b3">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomExternalForceImpl_1ab0a4a58c9f9120cd0693972384956ec3">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomBondForceImpl_1a8897689ebd5ada6df3afb2219dfc5fd4">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomAngleForceImpl_1aa4529bb78d6abd2da991cc877f12b61c">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaBondForceImpl_1ad6eb03d1285aa0dfa367d8783343729a">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaVdwForceImpl_1a3d92dc187a7dd6c4f658b5433a259dfb">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1NonbondedForceImpl_1a6bfd1f9f67cfe82b436519f08c0df6f0">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomHbondForceImpl_1a1db55f2af6bc140ec155f2aeff79bed2">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomCompoundBondForceImpl_1a1b345a0a41d67613cf6700be83aa8696">calcForcesAndEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1GBVIForceImpl_1a153197ad7ce80d9c73c8e69304f347c9">calcForcesAndEnergy</reimplementedby>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeForces</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeEnergy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>groups</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the force on each particle generated by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> and/or this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>&apos;s contribution to the potential energy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeForces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if forces should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeEnergy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the energy should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>groups</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a set of bit flags for which force groups to include. Group i should be included if (groups&amp;(1&lt;&lt;i)) != 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>this force&apos;s contribution to the potential energy of the system, or 0 if this force does not contribute to potential energy (or if includeEnergy is false) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ForceImpl.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1ForceImpl_1adf18979257a14b23dd52dbda9e87c308" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>virtual std::map&lt;std::string, double&gt; OpenMM::ForceImpl::getDefaultParameters</definition>
+        <argsstring>()=0</argsstring>
+        <name>getDefaultParameters</name>
+        <reimplementedby refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a71b6eb607ed6f3e2f67b3f8d70140a27">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1GBSAOBCForceImpl_1ab02935999a3521b6d835e35615bbf1e9">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CMMotionRemoverImpl_1a41ddec26ad2ae4183b1ebdba0fc5c093">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaTorsionTorsionForceImpl_1a297a9689ec62a867a3576895b3aa9b30">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1MonteCarloBarostatImpl_1a84fe81a02763f5efd676c7f7713dbd66">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CMAPTorsionForceImpl_1a5c9b60590b34a46d7a199a417d7ef31c">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaWcaDispersionForceImpl_1ae0e172a2dfd2c02e4f884d85442b0add">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaStretchBendForceImpl_1a5810f710b0672be4a9115da30884913b">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaPiTorsionForceImpl_1ac047957268b5cc9be3fbd48ce214c286">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaOutOfPlaneBendForceImpl_1ab703f1f3c3022cda2b4599ce3a63f92b">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a859eedf12483f8786b8be117bde23f74">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaInPlaneAngleForceImpl_1a089e615b440b6d88a18198ea37c8e3f4">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaAngleForceImpl_1ad717b2d1bb2315ddeabdd74c69b161ab">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1RBTorsionForceImpl_1aa8d53f25d69e8635e8e2bf12af6edf32">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1PeriodicTorsionForceImpl_1af3b4d625ed005ca5640ae69999c5416f">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicBondForceImpl_1a0d8c4147935c62d80b9d5a8da4e85373">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicAngleForceImpl_1a60e253acca25e8da1515e5e39b682152">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomTorsionForceImpl_1a5956c87b46366f863d1cc063442c6099">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomNonbondedForceImpl_1ab403125e9b1844530abf28f0a64d6370">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomGBForceImpl_1ad89e451e3e0cb05ea2f47acbcdfda98d">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomExternalForceImpl_1a731a9d68687f57e3160a4d54b8d9c43f">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomBondForceImpl_1a8afafb2e14ea71064f1adff34b50d864">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomAngleForceImpl_1ab1efea888cf4215f8ab3956a9e9a2d75">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AndersenThermostatImpl_1a4785296e1eda933e699c4f949bda9151">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaBondForceImpl_1acb35f05aad649caee3da0cc6af28b988">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaVdwForceImpl_1acf46b73bb6627385b7a8d2e5cedd606d">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1NonbondedForceImpl_1a5252b5943e2adc1dc46f500864fb7b05">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomHbondForceImpl_1a4d78807ce61af91065f526571dacf16a">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomCompoundBondForceImpl_1a41de9b5d0d7e4b2ea5aa82dc56cfe115">getDefaultParameters</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1GBVIForceImpl_1a656d350798cdd03e96e2ea29e3fba2e6">getDefaultParameters</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a map containing the default values for all adjustable parameters defined by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>. These parameters and their default values will automatically be added to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ForceImpl.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1ForceImpl_1a5820facb44adaab79bbb02a3ba5bd79b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>virtual std::vector&lt;std::string&gt; OpenMM::ForceImpl::getKernelNames</definition>
+        <argsstring>()=0</argsstring>
+        <name>getKernelNames</name>
+        <reimplementedby refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl_1a0a647c8fa25f0be1442a6d46681a9fa5">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1MonteCarloBarostatImpl_1ac1db501f6b831d71dfae92e199296420">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1GBSAOBCForceImpl_1ab50a1367e7e5d859645c653397d1b649">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CMMotionRemoverImpl_1aabde8c28e00c89a1bfb1dfeec9bd0dbe">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomTorsionForceImpl_1aa44e6e40a805fa57416bd5d133bd99e7">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomNonbondedForceImpl_1a92b17ebb31bf45764680ed33a0e6a752">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomGBForceImpl_1ac93165c4ae4e532fada62f6bc3cdf88b">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomExternalForceImpl_1a989a0b981513b1df35fd73878f9dfc0e">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomBondForceImpl_1ace8580adf165938d28ab70f1ac68f703">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomAngleForceImpl_1ad0138ed3506529523d0b94a180f78d97">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AndersenThermostatImpl_1a6c7318457050fe60d9420bd1b2726824">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaTorsionTorsionForceImpl_1a9ed4367017f894858315b6f37030b826">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CMAPTorsionForceImpl_1a879b648491112e505286cdcae2c21354">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaWcaDispersionForceImpl_1a2c4966c9d4fa0b635fc6ee4a41d5ca04">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaStretchBendForceImpl_1a1575a7cb0dbefe4abf6e2706d0db124d">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaPiTorsionForceImpl_1a12ad8a87e9d792e638c069d040c27656">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaOutOfPlaneBendForceImpl_1a131dc580f68b6b368cc5ad35866b3fb9">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a83bd355f4d22b8663236ee90454f2fcd">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaInPlaneAngleForceImpl_1ad11de50fcfe71524deed61f21dbf6488">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaAngleForceImpl_1a537ecede7b4cd100b6aaac51d693a0f9">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1RBTorsionForceImpl_1aea8fecb86203ac846cff02a5cd5b2380">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1PeriodicTorsionForceImpl_1a1bf0cc95c9b9fa0a10938b227e160966">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicBondForceImpl_1a188ff9ea68493273df39075abcc6e5ba">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicAngleForceImpl_1a306efa50df925491090dd96b1fd3f6b5">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaBondForceImpl_1a3a9dd3c9e57930537857c1afd513f0be">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomHbondForceImpl_1a4cc5063fde59a438c5172736df8f710e">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomCompoundBondForceImpl_1ac0b2860db62b36190b6cdbf9a94a2407">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaVdwForceImpl_1adba9fc6cd56f7ff4bc2277ef859a0992">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1NonbondedForceImpl_1a0422c32a8dc4e625abb4231cc0f4a68d">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1GBVIForceImpl_1af6f081fee0fa8d6068019d964b8d3fe2">getKernelNames</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ForceImpl.h" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1ForceImpl_1aaa19783e47e53df34083cbaadf37e41c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::vector&lt; std::pair&lt; int, int &gt; &gt;</type>
+        <definition>virtual std::vector&lt;std::pair&lt;int, int&gt; &gt; OpenMM::ForceImpl::getBondedParticles</definition>
+        <argsstring>() const </argsstring>
+        <name>getBondedParticles</name>
+        <reimplementedby refid="classOpenMM_1_1CustomBondForceImpl_1ab21643267f0125c2072d3ddedcf8ca06">getBondedParticles</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1HarmonicBondForceImpl_1a513d9ff19f12347da30587e253f4fcc7">getBondedParticles</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1AmoebaBondForceImpl_1a6c7a04269f3e6cb3bf422dad37b47177">getBondedParticles</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get pairs of particles connected by bonds by this force. This is used to determine which particles are part of the same molecule. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ForceImpl.h" line="104" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ForceImpl.h" bodystart="104" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> provides the internal implementation of a <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref>. When a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is created for a <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>, it creates a <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> for each <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. The <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> is permitted to cache information from the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> or <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> which is needed to apply the force efficiently. If the user calls reinitialize() on the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>, all <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> objects it had previously created are deleted and recreated from scratch.</para><para>This is an abstract class. Each <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> subclass is responsible for defining its own <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> subclass. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="308">
+        <label>OpenMM::GBVIForceImpl</label>
+        <link refid="classOpenMM_1_1GBVIForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="306">
+        <label>OpenMM::CustomTorsionForceImpl</label>
+        <link refid="classOpenMM_1_1CustomTorsionForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>OpenMM::MonteCarloBarostatImpl</label>
+        <link refid="classOpenMM_1_1MonteCarloBarostatImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>OpenMM::AmoebaInPlaneAngleForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaInPlaneAngleForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>OpenMM::AmoebaGeneralizedKirkwoodForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>OpenMM::CustomNonbondedForceImpl</label>
+        <link refid="classOpenMM_1_1CustomNonbondedForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="307">
+        <label>OpenMM::GBSAOBCForceImpl</label>
+        <link refid="classOpenMM_1_1GBSAOBCForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>OpenMM::HarmonicAngleForceImpl</label>
+        <link refid="classOpenMM_1_1HarmonicAngleForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>OpenMM::AmoebaBondForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaBondForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>OpenMM::AmoebaVdwForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaVdwForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>OpenMM::HarmonicBondForceImpl</label>
+        <link refid="classOpenMM_1_1HarmonicBondForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>OpenMM::AmoebaPiTorsionForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaPiTorsionForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>OpenMM::CustomHbondForceImpl</label>
+        <link refid="classOpenMM_1_1CustomHbondForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>OpenMM::PeriodicTorsionForceImpl</label>
+        <link refid="classOpenMM_1_1PeriodicTorsionForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>OpenMM::AndersenThermostatImpl</label>
+        <link refid="classOpenMM_1_1AndersenThermostatImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>OpenMM::RBTorsionForceImpl</label>
+        <link refid="classOpenMM_1_1RBTorsionForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>OpenMM::CustomExternalForceImpl</label>
+        <link refid="classOpenMM_1_1CustomExternalForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>OpenMM::AmoebaAngleForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaAngleForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>OpenMM::CustomCompoundBondForceImpl</label>
+        <link refid="classOpenMM_1_1CustomCompoundBondForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>OpenMM::AmoebaOutOfPlaneBendForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaOutOfPlaneBendForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>OpenMM::CustomGBForceImpl</label>
+        <link refid="classOpenMM_1_1CustomGBForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>OpenMM::AmoebaStretchBendForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaStretchBendForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>OpenMM::AmoebaWcaDispersionForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaWcaDispersionForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>OpenMM::CMMotionRemoverImpl</label>
+        <link refid="classOpenMM_1_1CMMotionRemoverImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>OpenMM::CustomBondForceImpl</label>
+        <link refid="classOpenMM_1_1CustomBondForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>OpenMM::AmoebaTorsionTorsionForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaTorsionTorsionForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>OpenMM::CMAPTorsionForceImpl</label>
+        <link refid="classOpenMM_1_1CMAPTorsionForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>OpenMM::AmoebaMultipoleForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaMultipoleForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>OpenMM::NonbondedForceImpl</label>
+        <link refid="classOpenMM_1_1NonbondedForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>OpenMM::CustomAngleForceImpl</label>
+        <link refid="classOpenMM_1_1CustomAngleForceImpl"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ForceImpl.h" line="57" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ForceImpl.h" bodystart="57" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1ForceImpl_1a1e2544ac6d58460a79697236e8b758be" prot="public" virt="pure-virtual"><scope>OpenMM::ForceImpl</scope><name>calcForcesAndEnergy</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1aaa19783e47e53df34083cbaadf37e41c" prot="public" virt="virtual"><scope>OpenMM::ForceImpl</scope><name>getBondedParticles</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1adf18979257a14b23dd52dbda9e87c308" prot="public" virt="pure-virtual"><scope>OpenMM::ForceImpl</scope><name>getDefaultParameters</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1a5820facb44adaab79bbb02a3ba5bd79b" prot="public" virt="pure-virtual"><scope>OpenMM::ForceImpl</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1a766c966d25ad0d8cf287ee07e524a081" prot="public" virt="pure-virtual"><scope>OpenMM::ForceImpl</scope><name>getOwner</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1a0a1f85a9c94613577399c1fada6ecb01" prot="public" virt="pure-virtual"><scope>OpenMM::ForceImpl</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1aae2f5cc793b7071cb6516a02fa736087" prot="public" virt="pure-virtual"><scope>OpenMM::ForceImpl</scope><name>updateContextState</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1a8a2bccbabb2587111b46da67cea8293c" prot="public" virt="virtual"><scope>OpenMM::ForceImpl</scope><name>~ForceImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

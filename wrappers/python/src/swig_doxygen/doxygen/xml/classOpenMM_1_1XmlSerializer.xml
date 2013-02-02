@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1XmlSerializer" kind="class" prot="public">
+    <compoundname>OpenMM::XmlSerializer</compoundname>
+    <includes refid="XmlSerializer_8h" local="no">XmlSerializer.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1XmlSerializer_1ad451070a4e6aef0b642964f2a650ae3d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void OpenMM::XmlSerializer::serialize</definition>
+        <argsstring>(const T *object, const std::string &amp;rootName, std::ostream &amp;stream)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>const T *</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>rootName</declname>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Serialize an object as XML.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the object to serialize </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rootName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name to use for the root node of the XML document </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an output stream to write the XML to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h" line="59" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h" bodystart="59" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1XmlSerializer_1a3aba4aef8726d723b068c58a46583887" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>static T* OpenMM::XmlSerializer::deserialize</definition>
+        <argsstring>(std::istream &amp;stream)</argsstring>
+        <name>deserialize</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reconstruct an object that has been serialized as XML.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an input stream to read the XML from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the newly created object. The caller assumes ownership of the object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h" line="76" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1XmlSerializer_1af8d16e9bef95a9b7a81c688f8d0e752e" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenMM::XmlSerializer::serialize</definition>
+        <argsstring>(const SerializationNode &amp;node, std::ostream &amp;stream)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1SerializationNode" kindref="compound">SerializationNode</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1XmlSerializer_1ad9828af88551027ac0d81280721a6a1a" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* OpenMM::XmlSerializer::deserializeStream</definition>
+        <argsstring>(std::istream &amp;stream)</argsstring>
+        <name>deserializeStream</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1XmlSerializer_1ad5cb4d411a00426ef65d5a601ca35b56" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TiXmlElement *</type>
+        <definition>static TiXmlElement* OpenMM::XmlSerializer::encodeNode</definition>
+        <argsstring>(const SerializationNode &amp;node)</argsstring>
+        <name>encodeNode</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1SerializationNode" kindref="compound">SerializationNode</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1XmlSerializer_1a6586c0b200cedf6203133ee36d3be603" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenMM::XmlSerializer::decodeNode</definition>
+        <argsstring>(SerializationNode &amp;node, const TiXmlElement &amp;element)</argsstring>
+        <name>decodeNode</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1SerializationNode" kindref="compound">SerializationNode</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const TiXmlElement &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h" line="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classOpenMM_1_1XmlSerializer" kindref="compound">XmlSerializer</ref> is used for serializing objects as XML, and for reconstructing them again. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h" line="49" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h" bodystart="49" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1XmlSerializer_1a6586c0b200cedf6203133ee36d3be603" prot="private" virt="non-virtual"><scope>OpenMM::XmlSerializer</scope><name>decodeNode</name></member>
+      <member refid="classOpenMM_1_1XmlSerializer_1a3aba4aef8726d723b068c58a46583887" prot="public" virt="non-virtual"><scope>OpenMM::XmlSerializer</scope><name>deserialize</name></member>
+      <member refid="classOpenMM_1_1XmlSerializer_1ad9828af88551027ac0d81280721a6a1a" prot="private" virt="non-virtual"><scope>OpenMM::XmlSerializer</scope><name>deserializeStream</name></member>
+      <member refid="classOpenMM_1_1XmlSerializer_1ad5cb4d411a00426ef65d5a601ca35b56" prot="private" virt="non-virtual"><scope>OpenMM::XmlSerializer</scope><name>encodeNode</name></member>
+      <member refid="classOpenMM_1_1XmlSerializer_1ad451070a4e6aef0b642964f2a650ae3d" prot="public" virt="non-virtual"><scope>OpenMM::XmlSerializer</scope><name>serialize</name></member>
+      <member refid="classOpenMM_1_1XmlSerializer_1af8d16e9bef95a9b7a81c688f8d0e752e" prot="private" virt="non-virtual"><scope>OpenMM::XmlSerializer</scope><name>serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

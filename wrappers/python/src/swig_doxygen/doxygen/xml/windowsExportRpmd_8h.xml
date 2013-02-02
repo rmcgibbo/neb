@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="windowsExportRpmd_8h" kind="file">
+    <compoundname>windowsExportRpmd.h</compoundname>
+    <includedby refid="RPMDIntegrator_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h</includedby>
+    <invincdepgraph>
+      <node id="1383">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/internal/windowsExportRpmd.h</label>
+        <link refid="windowsExportRpmd.h"/>
+        <childnode refid="1384" relation="include">
+        </childnode>
+      </node>
+      <node id="1385">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h</label>
+        <link refid="RpmdKernels_8h_source"/>
+      </node>
+      <node id="1384">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h</label>
+        <link refid="RPMDIntegrator_8h_source"/>
+        <childnode refid="1385" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="windowsExportRpmd_8h_1a444d41dc17e309cc048659ec68734f74" prot="public" static="no">
+        <name>OPENMM_EXPORT_RPMD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/internal/windowsExportRpmd.h" line="38" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/internal/windowsExportRpmd.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/internal/windowsExportRpmd.h"/>
+  </compounddef>
+</doxygen>

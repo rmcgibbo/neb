@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1Vec3" kind="class" prot="public">
+    <compoundname>OpenMM::Vec3</compoundname>
+    <includes refid="Vec3_8h" local="no">Vec3.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1Vec3_1ade7b571d539921cb25667286d8f689c6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::Vec3::data[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="142" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1ad902e2d10c709ca23359a150f25e89ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::Vec3::Vec3</definition>
+        <argsstring>()</argsstring>
+        <name>Vec3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> whose elements are all 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="50" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1a9f8fe161d793660acb269b6cbc74e7ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::Vec3::Vec3</definition>
+        <argsstring>(double x, double y, double z)</argsstring>
+        <name>Vec3</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> with specified x, y, and z components. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="56" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1a97aa4ec8014ffae00a799b4582327d9d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::Vec3::operator[]</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="61" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1a2a4983e52af60526a7717ea134949c7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; OpenMM::Vec3::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="65" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1a59f9eb8235a558ecf83072150e016b9f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenMM::Vec3::operator==</definition>
+        <argsstring>(const Vec3 &amp;rhs) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="70" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1a2b85ae2281ee6e891686881a509b8dd0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenMM::Vec3::operator!=</definition>
+        <argsstring>(const Vec3 &amp;rhs) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="74" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1aca15956997441db9c10a2eb7d20342ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 OpenMM::Vec3::operator+</definition>
+        <argsstring>() const </argsstring>
+        <name>operator+</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="81" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1aca034234a1f11c4986d9890828b0b353" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 OpenMM::Vec3::operator+</definition>
+        <argsstring>(const Vec3 &amp;rhs) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="86" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1a3b630118510664f17ef74ab602dd9bb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+        <definition>Vec3&amp; OpenMM::Vec3::operator+=</definition>
+        <argsstring>(const Vec3 &amp;rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="91" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="91" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1a05a529e2bf5f4f3843a535453e13b8f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 OpenMM::Vec3::operator-</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="99" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1a1908a4c46a62f0e7ef57a6be6c64f0d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 OpenMM::Vec3::operator-</definition>
+        <argsstring>(const Vec3 &amp;rhs) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="105" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1a7373e476e0c0afc0b11877932fa00364" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+        <definition>Vec3&amp; OpenMM::Vec3::operator-=</definition>
+        <argsstring>(const Vec3 &amp;rhs)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="110" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="110" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1a067edfc4863fd1274a5929da0c97fef3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 OpenMM::Vec3::operator*</definition>
+        <argsstring>(double rhs) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>double</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="118" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1ae460893954a0b538133362a4eceb77d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+        <definition>Vec3&amp; OpenMM::Vec3::operator*=</definition>
+        <argsstring>(double rhs)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>double</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="123" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="123" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1abbf7462a865992522ffa02c0dfc37373" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::Vec3::dot</definition>
+        <argsstring>(const Vec3 &amp;rhs) const </argsstring>
+        <name>dot</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="131" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Vec3_1afdca30e4ecad3d901278efc925f02832" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 OpenMM::Vec3::cross</definition>
+        <argsstring>(const Vec3 &amp;rhs) const </argsstring>
+        <name>cross</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="137" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="137" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class represents a three component vector. It is used for storing positions, velocities, and forces. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" line="45" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Vec3.h" bodystart="45" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1Vec3_1afdca30e4ecad3d901278efc925f02832" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>cross</name></member>
+      <member refid="classOpenMM_1_1Vec3_1ade7b571d539921cb25667286d8f689c6" prot="private" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>data</name></member>
+      <member refid="classOpenMM_1_1Vec3_1abbf7462a865992522ffa02c0dfc37373" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>dot</name></member>
+      <member refid="classOpenMM_1_1Vec3_1a2b85ae2281ee6e891686881a509b8dd0" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>operator!=</name></member>
+      <member refid="classOpenMM_1_1Vec3_1a067edfc4863fd1274a5929da0c97fef3" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>operator*</name></member>
+      <member refid="classOpenMM_1_1Vec3_1ae460893954a0b538133362a4eceb77d3" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>operator*=</name></member>
+      <member refid="classOpenMM_1_1Vec3_1aca15956997441db9c10a2eb7d20342ce" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>operator+</name></member>
+      <member refid="classOpenMM_1_1Vec3_1aca034234a1f11c4986d9890828b0b353" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>operator+</name></member>
+      <member refid="classOpenMM_1_1Vec3_1a3b630118510664f17ef74ab602dd9bb3" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>operator+=</name></member>
+      <member refid="classOpenMM_1_1Vec3_1a05a529e2bf5f4f3843a535453e13b8f9" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>operator-</name></member>
+      <member refid="classOpenMM_1_1Vec3_1a1908a4c46a62f0e7ef57a6be6c64f0d9" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>operator-</name></member>
+      <member refid="classOpenMM_1_1Vec3_1a7373e476e0c0afc0b11877932fa00364" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>operator-=</name></member>
+      <member refid="classOpenMM_1_1Vec3_1a59f9eb8235a558ecf83072150e016b9f" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>operator==</name></member>
+      <member refid="classOpenMM_1_1Vec3_1a97aa4ec8014ffae00a799b4582327d9d" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>operator[]</name></member>
+      <member refid="classOpenMM_1_1Vec3_1a2a4983e52af60526a7717ea134949c7f" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>operator[]</name></member>
+      <member refid="classOpenMM_1_1Vec3_1ad902e2d10c709ca23359a150f25e89ef" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>Vec3</name></member>
+      <member refid="classOpenMM_1_1Vec3_1a9f8fe161d793660acb269b6cbc74e7ce" prot="public" virt="non-virtual"><scope>OpenMM::Vec3</scope><name>Vec3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

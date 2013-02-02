@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="MonteCarloBarostat_8h" kind="file">
+    <compoundname>MonteCarloBarostat.h</compoundname>
+    <includes refid="Force_8h" local="yes">Force.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="windowsExport_8h" local="yes">internal/windowsExport.h</includes>
+    <includedby refid="MonteCarloBarostatImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h</includedby>
+    <includedby refid="OpenMM_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</includedby>
+    <incdepgraph>
+      <node id="794">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="795" relation="include">
+        </childnode>
+      </node>
+      <node id="796">
+        <label>string</label>
+      </node>
+      <node id="795">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="793">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h</label>
+        <link refid="MonteCarloBarostat.h"/>
+        <childnode refid="794" relation="include">
+        </childnode>
+        <childnode refid="796" relation="include">
+        </childnode>
+        <childnode refid="795" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="799">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</label>
+        <link refid="OpenMM_8h_source"/>
+      </node>
+      <node id="798">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/MonteCarloBarostatImpl.h</label>
+        <link refid="MonteCarloBarostatImpl_8h_source"/>
+      </node>
+      <node id="797">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h</label>
+        <link refid="MonteCarloBarostat.h"/>
+        <childnode refid="798" relation="include">
+        </childnode>
+        <childnode refid="799" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1MonteCarloBarostat" prot="public">OpenMM::MonteCarloBarostat</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h"/>
+  </compounddef>
+</doxygen>

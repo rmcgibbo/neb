@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="ContextImpl_8h" kind="file">
+    <compoundname>ContextImpl.h</compoundname>
+    <includes local="yes">openmm/Kernel.h</includes>
+    <includes refid="Platform_8h" local="yes">openmm/Platform.h</includes>
+    <includes refid="Vec3_8h" local="yes">openmm/Vec3.h</includes>
+    <includes local="no">iosfwd</includes>
+    <includes local="no">map</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="386">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ContextImpl.h</label>
+        <link refid="ContextImpl.h"/>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+      </node>
+      <node id="394">
+        <label>cassert</label>
+      </node>
+      <node id="387">
+        <label>openmm/Kernel.h</label>
+      </node>
+      <node id="390">
+        <label>string</label>
+      </node>
+      <node id="389">
+        <label>map</label>
+      </node>
+      <node id="392">
+        <label>openmm/internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="388">
+        <label>openmm/Platform.h</label>
+        <link refid="Platform_8h_source"/>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>vector</label>
+      </node>
+      <node id="395">
+        <label>iosfwd</label>
+      </node>
+      <node id="393">
+        <label>openmm/Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classOpenMM_1_1ContextImpl" prot="public">OpenMM::ContextImpl</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/ContextImpl.h"/>
+  </compounddef>
+</doxygen>

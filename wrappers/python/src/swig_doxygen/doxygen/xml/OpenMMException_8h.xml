@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="OpenMMException_8h" kind="file">
+    <compoundname>OpenMMException.h</compoundname>
+    <includes local="no">exception</includes>
+    <includes local="no">string</includes>
+    <includedby refid="OpenMM_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</includedby>
+    <includedby refid="SerializationNode_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/SerializationNode.h</includedby>
+    <includedby refid="XmlSerializer_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h</includedby>
+    <includedby refid="AmoebaMultipoleForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaMultipoleForce.h</includedby>
+    <incdepgraph>
+      <node id="821">
+        <label>string</label>
+      </node>
+      <node id="820">
+        <label>exception</label>
+      </node>
+      <node id="819">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/OpenMMException.h</label>
+        <link refid="OpenMMException.h"/>
+        <childnode refid="820" relation="include">
+        </childnode>
+        <childnode refid="821" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="826">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaMultipoleForce.h</label>
+        <link refid="AmoebaMultipoleForce_8h_source"/>
+        <childnode refid="827" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+      </node>
+      <node id="827">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h</label>
+        <link refid="AmoebaMultipoleForceImpl_8h_source"/>
+      </node>
+      <node id="825">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h</label>
+        <link refid="XmlSerializer_8h_source"/>
+      </node>
+      <node id="829">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h</label>
+        <link refid="amoebaKernels_8h_source"/>
+      </node>
+      <node id="828">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/OpenMMAmoeba.h</label>
+        <link refid="OpenMMAmoeba_8h_source"/>
+        <childnode refid="829" relation="include">
+        </childnode>
+      </node>
+      <node id="823">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</label>
+        <link refid="OpenMM_8h_source"/>
+      </node>
+      <node id="822">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/OpenMMException.h</label>
+        <link refid="OpenMMException.h"/>
+        <childnode refid="823" relation="include">
+        </childnode>
+        <childnode refid="824" relation="include">
+        </childnode>
+        <childnode refid="825" relation="include">
+        </childnode>
+        <childnode refid="826" relation="include">
+        </childnode>
+      </node>
+      <node id="824">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/SerializationNode.h</label>
+        <link refid="SerializationNode_8h_source"/>
+        <childnode refid="825" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1OpenMMException" prot="public">OpenMM::OpenMMException</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/OpenMMException.h"/>
+  </compounddef>
+</doxygen>

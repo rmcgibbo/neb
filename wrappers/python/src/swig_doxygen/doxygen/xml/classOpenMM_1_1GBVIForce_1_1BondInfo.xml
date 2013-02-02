@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1GBVIForce_1_1BondInfo" kind="class" prot="private">
+    <compoundname>OpenMM::GBVIForce::BondInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1GBVIForce_1_1BondInfo_1aee00cce9f351005f6a94379292d29b20" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::GBVIForce::BondInfo::particle1</definition>
+        <argsstring></argsstring>
+        <name>particle1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" line="266" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1GBVIForce_1_1BondInfo_1adbc6476f42dfc58ce6ad51660bb6c44d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::GBVIForce::BondInfo::particle2</definition>
+        <argsstring></argsstring>
+        <name>particle2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" line="266" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1GBVIForce_1_1BondInfo_1a086198607d22fa28b35cee4be96cec11" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::GBVIForce::BondInfo::bondLength</definition>
+        <argsstring></argsstring>
+        <name>bondLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" line="267" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1GBVIForce_1_1BondInfo_1afe001e96a326f8b606534b85baf2a798" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::GBVIForce::BondInfo::BondInfo</definition>
+        <argsstring>()</argsstring>
+        <name>BondInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" line="268" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" bodystart="268" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1GBVIForce_1_1BondInfo_1a9dca557bb9a415674e8c674b526112b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::GBVIForce::BondInfo::BondInfo</definition>
+        <argsstring>(int atomIndex1, int atomIndex2, double bondLength)</argsstring>
+        <name>BondInfo</name>
+        <param>
+          <type>int</type>
+          <declname>atomIndex1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>atomIndex2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bondLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" line="274" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" bodystart="273" bodyend="275"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is an internal class used to record information about a bond. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" line="264" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" bodystart="264" bodyend="276"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1GBVIForce_1_1BondInfo_1afe001e96a326f8b606534b85baf2a798" prot="public" virt="non-virtual"><scope>OpenMM::GBVIForce::BondInfo</scope><name>BondInfo</name></member>
+      <member refid="classOpenMM_1_1GBVIForce_1_1BondInfo_1a9dca557bb9a415674e8c674b526112b1" prot="public" virt="non-virtual"><scope>OpenMM::GBVIForce::BondInfo</scope><name>BondInfo</name></member>
+      <member refid="classOpenMM_1_1GBVIForce_1_1BondInfo_1a086198607d22fa28b35cee4be96cec11" prot="public" virt="non-virtual"><scope>OpenMM::GBVIForce::BondInfo</scope><name>bondLength</name></member>
+      <member refid="classOpenMM_1_1GBVIForce_1_1BondInfo_1aee00cce9f351005f6a94379292d29b20" prot="public" virt="non-virtual"><scope>OpenMM::GBVIForce::BondInfo</scope><name>particle1</name></member>
+      <member refid="classOpenMM_1_1GBVIForce_1_1BondInfo_1adbc6476f42dfc58ce6ad51660bb6c44d" prot="public" virt="non-virtual"><scope>OpenMM::GBVIForce::BondInfo</scope><name>particle2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

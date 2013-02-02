@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1AmoebaVdwForceImpl" kind="class" prot="public">
+    <compoundname>OpenMM::AmoebaVdwForceImpl</compoundname>
+    <basecompoundref refid="classOpenMM_1_1ForceImpl" prot="public" virt="non-virtual">OpenMM::ForceImpl</basecompoundref>
+    <includes refid="AmoebaVdwForceImpl_8h" local="no">AmoebaVdwForceImpl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForceImpl_1a022b94fc7f6534a75bcb2f494f6d794a" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1AmoebaVdwForce" kindref="compound">AmoebaVdwForce</ref> &amp;</type>
+        <definition>AmoebaVdwForce&amp; OpenMM::AmoebaVdwForceImpl::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="73" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForceImpl_1a6978303002801b18dac17a1925892f88" prot="private" static="no" mutable="no">
+        <type>Kernel</type>
+        <definition>Kernel OpenMM::AmoebaVdwForceImpl::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="74" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForceImpl_1a074aa7925716d2c0b88498bafea32172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaVdwForceImpl::AmoebaVdwForceImpl</definition>
+        <argsstring>(AmoebaVdwForce &amp;owner)</argsstring>
+        <name>AmoebaVdwForceImpl</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1AmoebaVdwForce" kindref="compound">AmoebaVdwForce</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForceImpl_1af62a43c4e1ab3f00adb0adf93b838b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaVdwForceImpl::~AmoebaVdwForceImpl</definition>
+        <argsstring>()</argsstring>
+        <name>~AmoebaVdwForceImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForceImpl_1af6e936cb0d4edd732f55fd6628b114f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForceImpl::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a0a1f85a9c94613577399c1fada6ecb01">initialize</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called after the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> is created and before <ref refid="classOpenMM_1_1AmoebaVdwForceImpl_1aa8aae60cdb1c93d21b7f080805092589" kindref="member">updateContextState()</ref>, calcForces(), or calcEnergy() is called on it. This allows it to do any necessary initialization. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForceImpl_1aa169f4b3d2efa25105cc570e03ce9493" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenMM_1_1AmoebaVdwForce" kindref="compound">AmoebaVdwForce</ref> &amp;</type>
+        <definition>AmoebaVdwForce&amp; OpenMM::AmoebaVdwForceImpl::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a766c966d25ad0d8cf287ee07e524a081">getOwner</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object from which this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> was created. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="55" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForceImpl_1aa8aae60cdb1c93d21b7f080805092589" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForceImpl::updateContextState</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>updateContextState</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1aae2f5cc793b7071cb6516a02fa736087">updateContextState</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called at the beginning of each time step. It give the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> a chance to modify the state variables (positions, velocities, and parameters) stored in the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> in arbitrary ways before integration is performed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="58" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForceImpl_1a3d92dc187a7dd6c4f658b5433a259dfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaVdwForceImpl::calcForcesAndEnergy</definition>
+        <argsstring>(ContextImpl &amp;context, bool includeForces, bool includeEnergy, int groups)</argsstring>
+        <name>calcForcesAndEnergy</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a1e2544ac6d58460a79697236e8b758be">calcForcesAndEnergy</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeForces</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeEnergy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>groups</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the force on each particle generated by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> and/or this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>&apos;s contribution to the potential energy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeForces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if forces should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeEnergy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the energy should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>groups</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a set of bit flags for which force groups to include. Group i should be included if (groups&amp;(1&lt;&lt;i)) != 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>this force&apos;s contribution to the potential energy of the system, or 0 if this force does not contribute to potential energy (or if includeEnergy is false) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForceImpl_1acf46b73bb6627385b7a8d2e5cedd606d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; OpenMM::AmoebaVdwForceImpl::getDefaultParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultParameters</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1adf18979257a14b23dd52dbda9e87c308">getDefaultParameters</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a map containing the default values for all adjustable parameters defined by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>. These parameters and their default values will automatically be added to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="62" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForceImpl_1adba9fc6cd56f7ff4bc2277ef859a0992" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; OpenMM::AmoebaVdwForceImpl::getKernelNames</definition>
+        <argsstring>()</argsstring>
+        <name>getKernelNames</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a5820facb44adaab79bbb02a3ba5bd79b">getKernelNames</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForceImpl_1a09dfc0bb751c8f565575f7c7df4c1945" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForceImpl::updateParametersInContext</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForceImpl_1ac03cc18c2449c1e0fbb880f4416570f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double OpenMM::AmoebaVdwForceImpl::calcDispersionCorrection</definition>
+        <argsstring>(const System &amp;system, const AmoebaVdwForce &amp;force)</argsstring>
+        <name>calcDispersionCorrection</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> &amp;</type>
+          <declname>system</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1AmoebaVdwForce" kindref="compound">AmoebaVdwForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the coefficient which, when divided by the periodic box volume, gives the long range dispersion correction to the energy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the internal implementation of <ref refid="classOpenMM_1_1AmoebaVdwForce" kindref="compound">AmoebaVdwForce</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="77">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="76">
+        <label>OpenMM::AmoebaVdwForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaVdwForceImpl"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="79">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="78">
+        <label>OpenMM::AmoebaVdwForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaVdwForceImpl"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" line="50" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h" bodystart="50" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1AmoebaVdwForceImpl_1a074aa7925716d2c0b88498bafea32172" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>AmoebaVdwForceImpl</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForceImpl_1ac03cc18c2449c1e0fbb880f4416570f5" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>calcDispersionCorrection</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForceImpl_1a3d92dc187a7dd6c4f658b5433a259dfb" prot="public" virt="virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>calcForcesAndEnergy</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1aaa19783e47e53df34083cbaadf37e41c" prot="public" virt="virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>getBondedParticles</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForceImpl_1acf46b73bb6627385b7a8d2e5cedd606d" prot="public" virt="virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>getDefaultParameters</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForceImpl_1adba9fc6cd56f7ff4bc2277ef859a0992" prot="public" virt="virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForceImpl_1aa169f4b3d2efa25105cc570e03ce9493" prot="public" virt="virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>getOwner</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForceImpl_1af6e936cb0d4edd732f55fd6628b114f7" prot="public" virt="virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForceImpl_1a6978303002801b18dac17a1925892f88" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>kernel</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForceImpl_1a022b94fc7f6534a75bcb2f494f6d794a" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>owner</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForceImpl_1aa8aae60cdb1c93d21b7f080805092589" prot="public" virt="virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>updateContextState</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForceImpl_1a09dfc0bb751c8f565575f7c7df4c1945" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForceImpl_1af62a43c4e1ab3f00adb0adf93b838b01" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>~AmoebaVdwForceImpl</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1a8a2bccbabb2587111b46da67cea8293c" prot="public" virt="virtual"><scope>OpenMM::AmoebaVdwForceImpl</scope><name>~ForceImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

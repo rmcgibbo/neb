@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo" kind="class" prot="private">
+    <compoundname>OpenMM::CustomHbondForce::FunctionInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo_1a79de9ccdcb07084ba950a6be92dce5c3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string OpenMM::CustomHbondForce::FunctionInfo::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" line="501" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo_1a870d496ca64f349bf192eef2c7c72354" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OpenMM::CustomHbondForce::FunctionInfo::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" line="502" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo_1adaec97054493ea6e5aefd1e670d9bf3c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::CustomHbondForce::FunctionInfo::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" line="503" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo_1a455b0ad13e1ae3d3366f1b427896ff97" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::CustomHbondForce::FunctionInfo::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" line="503" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo_1afbfade826a450bc25e27a793e62f7899" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CustomHbondForce::FunctionInfo::FunctionInfo</definition>
+        <argsstring>()</argsstring>
+        <name>FunctionInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" line="504" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" bodystart="504" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo_1a26c566a42daa0d231cfce10897f6e8a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CustomHbondForce::FunctionInfo::FunctionInfo</definition>
+        <argsstring>(const std::string &amp;name, const std::vector&lt; double &gt; &amp;values, double min, double max)</argsstring>
+        <name>FunctionInfo</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" line="507" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" bodystart="506" bodyend="508"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is an internal class used to record information about a tabulated function. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" line="499" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomHbondForce.h" bodystart="499" bodyend="509"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo_1afbfade826a450bc25e27a793e62f7899" prot="public" virt="non-virtual"><scope>OpenMM::CustomHbondForce::FunctionInfo</scope><name>FunctionInfo</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo_1a26c566a42daa0d231cfce10897f6e8a2" prot="public" virt="non-virtual"><scope>OpenMM::CustomHbondForce::FunctionInfo</scope><name>FunctionInfo</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo_1a455b0ad13e1ae3d3366f1b427896ff97" prot="public" virt="non-virtual"><scope>OpenMM::CustomHbondForce::FunctionInfo</scope><name>max</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo_1adaec97054493ea6e5aefd1e670d9bf3c" prot="public" virt="non-virtual"><scope>OpenMM::CustomHbondForce::FunctionInfo</scope><name>min</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo_1a79de9ccdcb07084ba950a6be92dce5c3" prot="public" virt="non-virtual"><scope>OpenMM::CustomHbondForce::FunctionInfo</scope><name>name</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForce_1_1FunctionInfo_1a870d496ca64f349bf192eef2c7c72354" prot="public" virt="non-virtual"><scope>OpenMM::CustomHbondForce::FunctionInfo</scope><name>values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

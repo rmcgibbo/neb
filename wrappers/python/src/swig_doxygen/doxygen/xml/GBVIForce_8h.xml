@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="GBVIForce_8h" kind="file">
+    <compoundname>GBVIForce.h</compoundname>
+    <includes refid="Force_8h" local="yes">Force.h</includes>
+    <includes local="no">vector</includes>
+    <includes refid="windowsExport_8h" local="yes">internal/windowsExport.h</includes>
+    <includedby refid="GBVIForceImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/GBVIForceImpl.h</includedby>
+    <includedby refid="OpenMM_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</includedby>
+    <incdepgraph>
+      <node id="290">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h</label>
+        <link refid="GBVIForce.h"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="293">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="294">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h</label>
+        <link refid="GBVIForce.h"/>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/GBVIForceImpl.h</label>
+        <link refid="GBVIForceImpl_8h_source"/>
+      </node>
+      <node id="296">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</label>
+        <link refid="OpenMM_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1GBVIForce" prot="public">OpenMM::GBVIForce</innerclass>
+    <innerclass refid="classOpenMM_1_1GBVIForce_1_1ParticleInfo" prot="private">OpenMM::GBVIForce::ParticleInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1GBVIForce_1_1BondInfo" prot="private">OpenMM::GBVIForce::BondInfo</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h"/>
+  </compounddef>
+</doxygen>

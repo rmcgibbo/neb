@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo" kind="class" prot="public">
+    <compoundname>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1a298d6665c26e172bca75e4a141ffe661" prot="private" static="no" mutable="no">
+        <type>TorsionTorsionGrid</type>
+        <definition>TorsionTorsionGrid OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo::_grid</definition>
+        <argsstring></argsstring>
+        <name>_grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="215" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1a2450d9e5a367809d8465f1929b57d011" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo::_size[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="216" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1ad0957661a9e493d01892178364b9481a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo::_startValues[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>_startValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="217" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1ac01dbf0fcd229d84c3dcb256ee27ab05" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo::_spacing[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>_spacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="218" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1a6f13f49b4e404a9254240cad03d3b500" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo::TorsionTorsionGridInfo</definition>
+        <argsstring>()</argsstring>
+        <name>TorsionTorsionGridInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="170" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="170" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1a05fdd5f5d2ecd82575a15e0622b52954" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo::TorsionTorsionGridInfo</definition>
+        <argsstring>(const TorsionTorsionGrid &amp;grid)</argsstring>
+        <name>TorsionTorsionGridInfo</name>
+        <param>
+          <type>const TorsionTorsionGrid &amp;</type>
+          <declname>grid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="176" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="176" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1afee0365624ffb38290b51c8f503402ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const TorsionTorsionGrid &amp;</type>
+        <definition>const TorsionTorsionGrid&amp; OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo::getTorsionTorsionGrid</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getTorsionTorsionGrid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="200" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="200" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1ac254f54c67153ec5826f4fb715253f96" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo::getDimensionSize</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getDimensionSize</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="203" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1abb9d62e5bdb3fa1e1c9fc6ae8bf2bc41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo::getStartValue</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getStartValue</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="206" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="206" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1a5e723b4ffa9539e55c675af6dd932eeb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo::getSpacing</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getSpacing</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="209" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="209" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" line="166" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h" bodystart="166" bodyend="219"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1a298d6665c26e172bca75e4a141ffe661" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo</scope><name>_grid</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1a2450d9e5a367809d8465f1929b57d011" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo</scope><name>_size</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1ac01dbf0fcd229d84c3dcb256ee27ab05" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo</scope><name>_spacing</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1ad0957661a9e493d01892178364b9481a" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo</scope><name>_startValues</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1ac254f54c67153ec5826f4fb715253f96" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo</scope><name>getDimensionSize</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1a5e723b4ffa9539e55c675af6dd932eeb" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo</scope><name>getSpacing</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1abb9d62e5bdb3fa1e1c9fc6ae8bf2bc41" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo</scope><name>getStartValue</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1afee0365624ffb38290b51c8f503402ef" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo</scope><name>getTorsionTorsionGrid</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1a6f13f49b4e404a9254240cad03d3b500" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo</scope><name>TorsionTorsionGridInfo</name></member>
+      <member refid="classOpenMM_1_1AmoebaTorsionTorsionForce_1_1TorsionTorsionGridInfo_1a05fdd5f5d2ecd82575a15e0622b52954" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaTorsionTorsionForce::TorsionTorsionGridInfo</scope><name>TorsionTorsionGridInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

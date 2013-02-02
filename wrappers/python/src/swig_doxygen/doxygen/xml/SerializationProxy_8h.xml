@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="SerializationProxy_8h" kind="file">
+    <compoundname>SerializationProxy.h</compoundname>
+    <includes refid="windowsExport_8h" local="yes">openmm/internal/windowsExport.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <includes local="no">typeinfo</includes>
+    <includedby refid="SerializationNode_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/SerializationNode.h</includedby>
+    <includedby refid="XmlSerializer_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h</includedby>
+    <incdepgraph>
+      <node id="1429">
+        <label>string</label>
+      </node>
+      <node id="1428">
+        <label>map</label>
+      </node>
+      <node id="1427">
+        <label>openmm/internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="1430">
+        <label>typeinfo</label>
+      </node>
+      <node id="1426">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/SerializationProxy.h</label>
+        <link refid="SerializationProxy.h"/>
+        <childnode refid="1427" relation="include">
+        </childnode>
+        <childnode refid="1428" relation="include">
+        </childnode>
+        <childnode refid="1429" relation="include">
+        </childnode>
+        <childnode refid="1430" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1433">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/XmlSerializer.h</label>
+        <link refid="XmlSerializer_8h_source"/>
+      </node>
+      <node id="1432">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/SerializationNode.h</label>
+        <link refid="SerializationNode_8h_source"/>
+        <childnode refid="1433" relation="include">
+        </childnode>
+      </node>
+      <node id="1431">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/SerializationProxy.h</label>
+        <link refid="SerializationProxy.h"/>
+        <childnode refid="1432" relation="include">
+        </childnode>
+        <childnode refid="1433" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1SerializationProxy" prot="public">OpenMM::SerializationProxy</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/serialization/include/openmm/serialization/SerializationProxy.h"/>
+  </compounddef>
+</doxygen>

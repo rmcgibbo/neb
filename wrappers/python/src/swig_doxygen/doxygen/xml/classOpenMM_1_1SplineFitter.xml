@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1SplineFitter" kind="class" prot="public">
+    <compoundname>OpenMM::SplineFitter</compoundname>
+    <includes refid="SplineFitter_8h" local="no">SplineFitter.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1SplineFitter_1ac1d90155c158e034251a9ac74117d509" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenMM::SplineFitter::createNaturalSpline</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y, std::vector&lt; double &gt; &amp;deriv)</argsstring>
+        <name>createNaturalSpline</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>deriv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fit a natural cubic spline to a set of data points. The resulting spline interpolates all the data points, has a continuous second derivative everywhere, and has a second derivative of 0 at its end points.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the values of the independent variable at the data points to interpolate. They must be strictly increasing: x[i] &gt; x[i-1]. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the values of the dependent variable at the data points to interpolate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deriv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on exit, this contains the second derivative of the spline at each of the data points </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/SplineFitter.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1SplineFitter_1aae50f499c2c62908838b8664b71571cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenMM::SplineFitter::createPeriodicSpline</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y, std::vector&lt; double &gt; &amp;deriv)</argsstring>
+        <name>createPeriodicSpline</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>deriv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fit a periodic cubic spline to a set of data points. The resulting spline interpolates all the data points, has a continuous second derivative everywhere, and has identical second derivatives at the end points.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the values of the independent variable at the data points to interpolate. They must be strictly increasing: x[i] &gt; x[i-1]. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the values of the dependent variable at the data points to interpolate. The first and last entries must be identical. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deriv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on exit, this contains the second derivative of the spline at each of the data points </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/SplineFitter.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1SplineFitter_1af3d5ea5e709184cb16e3f578150cbe2e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double OpenMM::SplineFitter::evaluateSpline</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y, const std::vector&lt; double &gt; &amp;deriv, double t)</argsstring>
+        <name>evaluateSpline</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>deriv</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evaluate a spline generated by one of the other methods in this class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the values of the independent variable at the data points to interpolate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the values of the dependent variable at the data points to interpolate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deriv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the vector of second derivatives that was calculated by one of the other methods </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of the independent variable at which to evaluate the spline </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the value of the spline at the specified point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/SplineFitter.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1SplineFitter_1aecf84441417016ab78837cf6254fd72d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double OpenMM::SplineFitter::evaluateSplineDerivative</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y, const std::vector&lt; double &gt; &amp;deriv, double t)</argsstring>
+        <name>evaluateSplineDerivative</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>deriv</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evaluate the derivative of a spline generated by one of the other methods in this class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the values of the independent variable at the data points to interpolate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the values of the dependent variable at the data points to interpolate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deriv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the vector of second derivatives that was calculated by one of the other methods </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of the independent variable at which to evaluate the spline </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the value of the spline&apos;s derivative at the specified point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/SplineFitter.h" line="88"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1SplineFitter_1a4ab34b133f3213982952396a70d7a546" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenMM::SplineFitter::solveTridiagonalMatrix</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;a, const std::vector&lt; double &gt; &amp;b, const std::vector&lt; double &gt; &amp;c, const std::vector&lt; double &gt; &amp;rhs, std::vector&lt; double &gt; &amp;sol)</argsstring>
+        <name>solveTridiagonalMatrix</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>sol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/SplineFitter.h" line="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classOpenMM_1_1SplineFitter" kindref="compound">SplineFitter</ref> provides routines for performing cubic spline interpolation. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/SplineFitter.h" line="44" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/SplineFitter.h" bodystart="44" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1SplineFitter_1ac1d90155c158e034251a9ac74117d509" prot="public" virt="non-virtual"><scope>OpenMM::SplineFitter</scope><name>createNaturalSpline</name></member>
+      <member refid="classOpenMM_1_1SplineFitter_1aae50f499c2c62908838b8664b71571cc" prot="public" virt="non-virtual"><scope>OpenMM::SplineFitter</scope><name>createPeriodicSpline</name></member>
+      <member refid="classOpenMM_1_1SplineFitter_1af3d5ea5e709184cb16e3f578150cbe2e" prot="public" virt="non-virtual"><scope>OpenMM::SplineFitter</scope><name>evaluateSpline</name></member>
+      <member refid="classOpenMM_1_1SplineFitter_1aecf84441417016ab78837cf6254fd72d" prot="public" virt="non-virtual"><scope>OpenMM::SplineFitter</scope><name>evaluateSplineDerivative</name></member>
+      <member refid="classOpenMM_1_1SplineFitter_1a4ab34b133f3213982952396a70d7a546" prot="private" virt="non-virtual"><scope>OpenMM::SplineFitter</scope><name>solveTridiagonalMatrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

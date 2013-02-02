@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1MonteCarloBarostat" kind="class" prot="public">
+    <compoundname>OpenMM::MonteCarloBarostat</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Force" prot="public" virt="non-virtual">OpenMM::Force</basecompoundref>
+    <includes refid="MonteCarloBarostat_8h" local="no">MonteCarloBarostat.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1MonteCarloBarostat_1ae1036ee8ea15b22ef6c97da0f909bc51" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::MonteCarloBarostat::defaultPressure</definition>
+        <argsstring></argsstring>
+        <name>defaultPressure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="124" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1MonteCarloBarostat_1ab3ef3fbb46fd6749f3e1621679100e02" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::MonteCarloBarostat::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="124" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1MonteCarloBarostat_1a568209da7a993df2764ae92286a3a739" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::MonteCarloBarostat::frequency</definition>
+        <argsstring></argsstring>
+        <name>frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="125" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1MonteCarloBarostat_1ac274e8ece30e1f1c7751a20a1f56a09d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::MonteCarloBarostat::randomNumberSeed</definition>
+        <argsstring></argsstring>
+        <name>randomNumberSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="125" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostat_1ae3ba093d781606ff58ef72750d486739" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; OpenMM::MonteCarloBarostat::Pressure</definition>
+        <argsstring>()</argsstring>
+        <name>Pressure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the name of the parameter which stores the current pressure acting on the system (in bar). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="57" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostat_1aa06d1c68c85e887104dd70f825da0d21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::MonteCarloBarostat::MonteCarloBarostat</definition>
+        <argsstring>(double defaultPressure, double temperature, int frequency=25)</argsstring>
+        <name>MonteCarloBarostat</name>
+        <param>
+          <type>double</type>
+          <declname>defaultPressure</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>temperature</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frequency</declname>
+          <defval>25</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classOpenMM_1_1MonteCarloBarostat" kindref="compound">MonteCarloBarostat</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>defaultPressure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the default pressure acting on the system (in bar) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temperature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the temperature at which the system is being maintained (in Kelvin) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frequency at which Monte Carlo pressure changes should be attempted (in time steps) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostat_1a3b08e4045fb0a7d9d124911364eb140d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::MonteCarloBarostat::getDefaultPressure</definition>
+        <argsstring>() const </argsstring>
+        <name>getDefaultPressure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default pressure acting on the system (in bar).</para><para><simplesect kind="return"><para>the default pressure acting on the system, measured in bar. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="74" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostat_1ad0dbc6528b38238208e991d1a2e5af3e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::MonteCarloBarostat::getFrequency</definition>
+        <argsstring>() const </argsstring>
+        <name>getFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the frequency (in time steps) at which Monte Carlo pressure changes should be attempted. If this is set to 0, the barostat is disabled. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="81" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostat_1ab30db881d612574ad2f5a9b1356f30b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::MonteCarloBarostat::setFrequency</definition>
+        <argsstring>(int freq)</argsstring>
+        <name>setFrequency</name>
+        <param>
+          <type>int</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the frequency (in time steps) at which Monte Carlo pressure changes should be attempted. If this is set to 0, the barostat is disabled. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="88" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostat_1a0bb73d059c9aa580d4c71c8be531ebb8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::MonteCarloBarostat::getTemperature</definition>
+        <argsstring>() const </argsstring>
+        <name>getTemperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the temperature at which the system is being maintained, measured in Kelvin. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="94" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostat_1a469324a682966124b7f80d7d3db762b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::MonteCarloBarostat::setTemperature</definition>
+        <argsstring>(double temp)</argsstring>
+        <name>setTemperature</name>
+        <param>
+          <type>double</type>
+          <declname>temp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the temperature at which the system is being maintained.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>temp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the system temperature, measured in Kelvin. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="102" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostat_1ae5e71ac2b9ef18369d9e0b03d5d01ca1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::MonteCarloBarostat::getRandomNumberSeed</definition>
+        <argsstring>() const </argsstring>
+        <name>getRandomNumberSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the random number seed. See <ref refid="classOpenMM_1_1MonteCarloBarostat_1a3c2a8f3e145d83369f3a69352ab3efd6" kindref="member">setRandomNumberSeed()</ref> for details. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="108" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostat_1a3c2a8f3e145d83369f3a69352ab3efd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::MonteCarloBarostat::setRandomNumberSeed</definition>
+        <argsstring>(int seed)</argsstring>
+        <name>setRandomNumberSeed</name>
+        <param>
+          <type>int</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the random number seed. It is guaranteed that if two simulations are run with different random number seeds, the sequence of Monte Carlo steps will be different. On the other hand, no guarantees are made about the behavior of simulations that use the same seed. In particular, Platforms are permitted to use non-deterministic algorithms which produce different results on successive runs, even if those runs were initialized identically. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="118" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="118" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostat_1a04194289bc6a3489989cdcf6c343796c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> *</type>
+        <definition>ForceImpl* OpenMM::MonteCarloBarostat::createImpl</definition>
+        <argsstring>()</argsstring>
+        <name>createImpl</name>
+        <reimplements refid="classOpenMM_1_1Force_1ac110723f39368f7eeb0dbb2105771255">createImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is created, it invokes this method on each <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. It should create a new <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> object which can be used by the context for calculating forces. The <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> will be deleted automatically when the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is deleted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="122"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostat_1a8c0fca062eb2a05fa451dacac071d086" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::MonteCarloBarostat::GetTemperature</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTemperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="127" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="127" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1MonteCarloBarostat_1a80cfa136f6159ebb151d9ff61b73fcf5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::MonteCarloBarostat::SetTemperature</definition>
+        <argsstring>(double temperature)</argsstring>
+        <name>SetTemperature</name>
+        <param>
+          <type>double</type>
+          <declname>temperature</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="131" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="131" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class uses a Monte Carlo algorithm to adjust the size of the periodic box, simulating the effect of constant pressure.</para><para>This class assumes the simulation is also being run at constant temperature, and requires you to specify the system temperature (since it affects the acceptance probability for Monte Carlo moves). It does not actually perform temperature regulation, however. You must use another mechanism along with it to maintain the temperature, such as <ref refid="classOpenMM_1_1LangevinIntegrator" kindref="compound">LangevinIntegrator</ref> or <ref refid="classOpenMM_1_1AndersenThermostat" kindref="compound">AndersenThermostat</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="401">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="400">
+        <label>OpenMM::MonteCarloBarostat</label>
+        <link refid="classOpenMM_1_1MonteCarloBarostat"/>
+        <childnode refid="401" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="403">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="402">
+        <label>OpenMM::MonteCarloBarostat</label>
+        <link refid="classOpenMM_1_1MonteCarloBarostat"/>
+        <childnode refid="403" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" line="51" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/MonteCarloBarostat.h" bodystart="51" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1Force_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1a04194289bc6a3489989cdcf6c343796c" prot="protected" virt="virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>createImpl</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1ae1036ee8ea15b22ef6c97da0f909bc51" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>defaultPressure</name></member>
+      <member refid="classOpenMM_1_1Force_1a40e75e251ec93d3bc9fc87b96026fbc2" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>Force</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1a568209da7a993df2764ae92286a3a739" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>frequency</name></member>
+      <member refid="classOpenMM_1_1Force_1aa6d1d0fd8cad61e7ea37305c6d13a10d" prot="protected" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>getContextImpl</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1a3b08e4045fb0a7d9d124911364eb140d" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>getDefaultPressure</name></member>
+      <member refid="classOpenMM_1_1Force_1a5aca97957c70da1076fcd7cbac340604" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>getForceGroup</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1ad0dbc6528b38238208e991d1a2e5af3e" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>getFrequency</name></member>
+      <member refid="classOpenMM_1_1Force_1a4dead2c44734956400d0ca8619650890" prot="protected" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>getImplInContext</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1ae5e71ac2b9ef18369d9e0b03d5d01ca1" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>getRandomNumberSeed</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1a0bb73d059c9aa580d4c71c8be531ebb8" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>getTemperature</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1a8c0fca062eb2a05fa451dacac071d086" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>GetTemperature</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1aa06d1c68c85e887104dd70f825da0d21" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>MonteCarloBarostat</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1ae3ba093d781606ff58ef72750d486739" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>Pressure</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1ac274e8ece30e1f1c7751a20a1f56a09d" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>randomNumberSeed</name></member>
+      <member refid="classOpenMM_1_1Force_1a53e3829a91825a9f6aa17e5ade713f84" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>setForceGroup</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1ab30db881d612574ad2f5a9b1356f30b0" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>setFrequency</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1a3c2a8f3e145d83369f3a69352ab3efd6" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>setRandomNumberSeed</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1a80cfa136f6159ebb151d9ff61b73fcf5" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>SetTemperature</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1a469324a682966124b7f80d7d3db762b6" prot="public" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>setTemperature</name></member>
+      <member refid="classOpenMM_1_1MonteCarloBarostat_1ab3ef3fbb46fd6749f3e1621679100e02" prot="private" virt="non-virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>temperature</name></member>
+      <member refid="classOpenMM_1_1Force_1a6516b32ebeb95a694f56d93bdf81f4fb" prot="public" virt="virtual"><scope>OpenMM::MonteCarloBarostat</scope><name>~Force</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_6aa2aa367e4f9e79b13d9f15aa25d9fc" kind="dir">
+    <compoundname>/home/rmcgibbo/OpenMM5.0-Source/plugins/</compoundname>
+    <innerdir refid="dir_de94dd6a31a95e28872a5415e38f7939">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/</innerdir>
+    <innerdir refid="dir_6b3e543fec239f339e4ffdc79f911b3b">/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/</innerdir>
+    <innerdir refid="dir_c94d0d08fbaa80e16603869fbfdb7310">/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/"/>
+  </compounddef>
+</doxygen>

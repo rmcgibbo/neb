@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1GBVIForce_1_1ParticleInfo" kind="class" prot="private">
+    <compoundname>OpenMM::GBVIForce::ParticleInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1GBVIForce_1_1ParticleInfo_1af249347ffbd2123677eb8d1365cf5d8d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::GBVIForce::ParticleInfo::charge</definition>
+        <argsstring></argsstring>
+        <name>charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" line="251" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1GBVIForce_1_1ParticleInfo_1a8647b02ce22046cb0663da6a0f982b58" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::GBVIForce::ParticleInfo::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" line="251" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1GBVIForce_1_1ParticleInfo_1a30de050f315562833dbf93d9c79905c9" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::GBVIForce::ParticleInfo::gamma</definition>
+        <argsstring></argsstring>
+        <name>gamma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" line="251" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1GBVIForce_1_1ParticleInfo_1a6e2813f8c27e30ffae399ec53f497e94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::GBVIForce::ParticleInfo::ParticleInfo</definition>
+        <argsstring>()</argsstring>
+        <name>ParticleInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" line="252" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" bodystart="252" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1GBVIForce_1_1ParticleInfo_1aec35a9b57ad09731b5bf5000232baf3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::GBVIForce::ParticleInfo::ParticleInfo</definition>
+        <argsstring>(double charge, double radius, double gamma)</argsstring>
+        <name>ParticleInfo</name>
+        <param>
+          <type>double</type>
+          <declname>charge</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" line="256" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" bodystart="255" bodyend="257"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is an internal class used to record information about a particle. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" line="249" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/GBVIForce.h" bodystart="249" bodyend="258"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1GBVIForce_1_1ParticleInfo_1af249347ffbd2123677eb8d1365cf5d8d" prot="public" virt="non-virtual"><scope>OpenMM::GBVIForce::ParticleInfo</scope><name>charge</name></member>
+      <member refid="classOpenMM_1_1GBVIForce_1_1ParticleInfo_1a30de050f315562833dbf93d9c79905c9" prot="public" virt="non-virtual"><scope>OpenMM::GBVIForce::ParticleInfo</scope><name>gamma</name></member>
+      <member refid="classOpenMM_1_1GBVIForce_1_1ParticleInfo_1a6e2813f8c27e30ffae399ec53f497e94" prot="public" virt="non-virtual"><scope>OpenMM::GBVIForce::ParticleInfo</scope><name>ParticleInfo</name></member>
+      <member refid="classOpenMM_1_1GBVIForce_1_1ParticleInfo_1aec35a9b57ad09731b5bf5000232baf3a" prot="public" virt="non-virtual"><scope>OpenMM::GBVIForce::ParticleInfo</scope><name>ParticleInfo</name></member>
+      <member refid="classOpenMM_1_1GBVIForce_1_1ParticleInfo_1a8647b02ce22046cb0663da6a0f982b58" prot="public" virt="non-virtual"><scope>OpenMM::GBVIForce::ParticleInfo</scope><name>radius</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

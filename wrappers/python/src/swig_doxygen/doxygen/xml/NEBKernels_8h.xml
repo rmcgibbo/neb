@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="NEBKernels_8h" kind="file">
+    <compoundname>NEBKernels.h</compoundname>
+    <includes refid="NEBIntegrator_8h" local="yes">openmm/NEBIntegrator.h</includes>
+    <includes refid="Platform_8h" local="yes">openmm/Platform.h</includes>
+    <includes refid="System_8h" local="yes">openmm/System.h</includes>
+    <includes refid="Vec3_8h" local="yes">openmm/Vec3.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="1367">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBKernels.h</label>
+        <link refid="NEBKernels.h"/>
+        <childnode refid="1368" relation="include">
+        </childnode>
+        <childnode refid="1378" relation="include">
+        </childnode>
+        <childnode refid="1380" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1379" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+      </node>
+      <node id="1372">
+        <label>cassert</label>
+      </node>
+      <node id="1377">
+        <label>openmm/Kernel.h</label>
+      </node>
+      <node id="1379">
+        <label>string</label>
+      </node>
+      <node id="1374">
+        <label>map</label>
+      </node>
+      <node id="1370">
+        <label>State.h</label>
+        <link refid="State_8h_source"/>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+      </node>
+      <node id="1376">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="1378">
+        <label>openmm/Platform.h</label>
+        <link refid="Platform_8h_source"/>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1379" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+      </node>
+      <node id="1375">
+        <label>vector</label>
+      </node>
+      <node id="1373">
+        <label>iosfwd</label>
+      </node>
+      <node id="1380">
+        <label>openmm/System.h</label>
+        <link refid="System_8h_source"/>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+      </node>
+      <node id="1368">
+        <label>openmm/NEBIntegrator.h</label>
+        <link refid="NEBIntegrator_8h_source"/>
+        <childnode refid="1369" relation="include">
+        </childnode>
+        <childnode refid="1377" relation="include">
+        </childnode>
+        <childnode refid="1370" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+      </node>
+      <node id="1371">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="1372" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+      </node>
+      <node id="1369">
+        <label>openmm/Integrator.h</label>
+        <link refid="Integrator_8h_source"/>
+        <childnode refid="1370" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classOpenMM_1_1IntegrateNEBStepKernel" prot="public">OpenMM::IntegrateNEBStepKernel</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBKernels.h"/>
+  </compounddef>
+</doxygen>

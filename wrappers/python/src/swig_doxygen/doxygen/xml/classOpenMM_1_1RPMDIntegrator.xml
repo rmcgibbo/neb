@@ -1,0 +1,627 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1RPMDIntegrator" kind="class" prot="public">
+    <compoundname>OpenMM::RPMDIntegrator</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Integrator" prot="public" virt="non-virtual">OpenMM::Integrator</basecompoundref>
+    <includes refid="RPMDIntegrator_8h" local="no">RPMDIntegrator.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1RPMDIntegrator_1a3fe846024f14cbfce4927a9ceb22256b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::RPMDIntegrator::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="183" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1RPMDIntegrator_1ab3fb974086f593acfceb7922d7494d5d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::RPMDIntegrator::friction</definition>
+        <argsstring></argsstring>
+        <name>friction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="183" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1RPMDIntegrator_1ab718f22af2da80ea0e5b3e06e53450d3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::RPMDIntegrator::numCopies</definition>
+        <argsstring></argsstring>
+        <name>numCopies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="184" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1RPMDIntegrator_1a700b1a588d7ebdae7c3aed9b1bf7c485" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::RPMDIntegrator::randomNumberSeed</definition>
+        <argsstring></argsstring>
+        <name>randomNumberSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="184" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1RPMDIntegrator_1a2400c03ee4a144db26f74cbbd911d08d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OpenMM::RPMDIntegrator::forcesAreValid</definition>
+        <argsstring></argsstring>
+        <name>forcesAreValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="185" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1RPMDIntegrator_1ae65f83b32f9e694f8f6b9f23bf5811be" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OpenMM::RPMDIntegrator::hasSetPosition</definition>
+        <argsstring></argsstring>
+        <name>hasSetPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="185" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1RPMDIntegrator_1a85356720334e7aa1cfb3dc12e4e2ee73" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OpenMM::RPMDIntegrator::hasSetVelocity</definition>
+        <argsstring></argsstring>
+        <name>hasSetVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="185" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1RPMDIntegrator_1ac33944d25df609584d5ee25ad05ac52c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OpenMM::RPMDIntegrator::isFirstStep</definition>
+        <argsstring></argsstring>
+        <name>isFirstStep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="185" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1RPMDIntegrator_1a2fafe0838b1656839c06e908d2580e6c" prot="private" static="no" mutable="no">
+        <type>Kernel</type>
+        <definition>Kernel OpenMM::RPMDIntegrator::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="186" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1a2fab5e330f9d1c16241d98878aaba342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::RPMDIntegrator::RPMDIntegrator</definition>
+        <argsstring>(int numCopies, double temperature, double frictionCoeff, double stepSize)</argsstring>
+        <name>RPMDIntegrator</name>
+        <param>
+          <type>int</type>
+          <declname>numCopies</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>temperature</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>frictionCoeff</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>stepSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classOpenMM_1_1RPMDIntegrator" kindref="compound">RPMDIntegrator</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numCopies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of copies of the system that should be simulated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temperature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the temperature of the heat bath (in Kelvin) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frictionCoeff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the friction coefficient which couples the system to the heat bath (in inverse picoseconds) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stepSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the step size with which to integrator the system (in picoseconds) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1a62696f0b3d5bdb3cc695383355955c21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::RPMDIntegrator::getNumCopies</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumCopies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of copies of the system being simulated. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="71" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1af3a9be1dc5d6bf973ea1e1f5847be893" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::RPMDIntegrator::getTemperature</definition>
+        <argsstring>() const </argsstring>
+        <name>getTemperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the temperature of the heat bath (in Kelvin).</para><para><simplesect kind="return"><para>the temperature of the heat bath, measured in Kelvin </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="79" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1a78455645e3e601ff8d44e35b009a5287" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::RPMDIntegrator::setTemperature</definition>
+        <argsstring>(double temp)</argsstring>
+        <name>setTemperature</name>
+        <param>
+          <type>double</type>
+          <declname>temp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the temperature of the heat bath (in Kelvin).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>temp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the temperature of the heat bath, measured in Kelvin </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="87" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1aa34624d88323d3784be65096712a7672" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::RPMDIntegrator::getFriction</definition>
+        <argsstring>() const </argsstring>
+        <name>getFriction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the friction coefficient which determines how strongly the system is coupled to the heat bath (in inverse ps).</para><para><simplesect kind="return"><para>the friction coefficient, measured in 1/ps </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="96" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1ad1dd51eb298724002c674850bebcadb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::RPMDIntegrator::setFriction</definition>
+        <argsstring>(double coeff)</argsstring>
+        <name>setFriction</name>
+        <param>
+          <type>double</type>
+          <declname>coeff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the friction coefficient which determines how strongly the system is coupled to the heat bath (in inverse ps).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coeff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the friction coefficient, measured in 1/ps </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="105" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1af320f6ceadfcc4d01bc993d0c6ea33c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::RPMDIntegrator::getRandomNumberSeed</definition>
+        <argsstring>() const </argsstring>
+        <name>getRandomNumberSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the random number seed. See <ref refid="classOpenMM_1_1RPMDIntegrator_1a357af856ab0bff19803b16d63f58472c" kindref="member">setRandomNumberSeed()</ref> for details. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="111" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1a357af856ab0bff19803b16d63f58472c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::RPMDIntegrator::setRandomNumberSeed</definition>
+        <argsstring>(int seed)</argsstring>
+        <name>setRandomNumberSeed</name>
+        <param>
+          <type>int</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the random number seed. The precise meaning of this parameter is undefined, and is left up to each <ref refid="classOpenMM_1_1Platform" kindref="compound">Platform</ref> to interpret in an appropriate way. It is guaranteed that if two simulations are run with different random number seeds, the sequence of random forces will be different. On the other hand, no guarantees are made about the behavior of simulations that use the same seed. In particular, Platforms are permitted to use non-deterministic algorithms which produce different results on successive runs, even if those runs were initialized identically. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="122" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1a1efdac4f9abec4af430c46ff6ffd1b97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::RPMDIntegrator::setPositions</definition>
+        <argsstring>(int copy, const std::vector&lt; Vec3 &gt; &amp;positions)</argsstring>
+        <name>setPositions</name>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the positions of all particles in one copy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the copy for which to set positions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the positions of all particles in the system </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1a6a7eb07261e0727999caafd4b1b4b9d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::RPMDIntegrator::setVelocities</definition>
+        <argsstring>(int copy, const std::vector&lt; Vec3 &gt; &amp;velocities)</argsstring>
+        <name>setVelocities</name>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+          <declname>velocities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the velocities of all particles in one copy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the copy for which to set velocities </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>velocities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the velocities of all particles in the system </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1aea0e59c256ba1d3cbf5e031d2466bd13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1State" kindref="compound">State</ref></type>
+        <definition>State OpenMM::RPMDIntegrator::getState</definition>
+        <argsstring>(int copy, int types, bool enforcePeriodicBox=false, int groups=0xFFFFFFFF)</argsstring>
+        <name>getState</name>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>types</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enforcePeriodicBox</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>groups</declname>
+          <defval>0xFFFFFFFF</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> object recording the current state information about one copy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>copy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the copy for which to retrieve state information </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>types</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the set of data types which should be stored in the <ref refid="classOpenMM_1_1State" kindref="compound">State</ref> object. This should be a union of DataType values, e.g. (State::Positions | State::Velocities). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enforcePeriodicBox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if false, the position of each particle will be whatever position is stored by the integrator, regardless of periodic boundary conditions. If true, particle positions will be translated so the center of every molecule lies in the same periodic box. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>groups</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a set of bit flags for which force groups to include when computing forces and energies. Group i will be included if (groups&amp;(1&lt;&lt;i)) != 0. The default value includes all groups. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1a5d179428b1f69ca4f355391fbcb727cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::RPMDIntegrator::step</definition>
+        <argsstring>(int steps)</argsstring>
+        <name>step</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a55151232664ae778eb2f0e2e8bbe7b67">step</reimplements>
+        <param>
+          <type>int</type>
+          <declname>steps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advance a simulation through time by taking a series of time steps.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of time steps to take </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="157"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1a57b68095499f767a19a1d1a4a84e7c36" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::RPMDIntegrator::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a6a2b5bcc61b799be0a37b4a431bdcd7d">initialize</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will be called by the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> when it is created. It informs the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> of what context it will be integrating, and gives it a chance to do any necessary initialization. It will also get called again if the application calls reinitialize() on the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1afbc745ee2d04bbda5d01bfd2dbb13985" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::RPMDIntegrator::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a204f42ff795b94be55d0c9ba32261af6">cleanup</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will be called by the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> when it is destroyed to let the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> do any necessary cleanup. It will also get called again if the application calls reinitialize() on the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1a2a30702baeff5d66bac92b777cbe668d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::RPMDIntegrator::stateChanged</definition>
+        <argsstring>(State::DataType changed)</argsstring>
+        <name>stateChanged</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1aa41aa4c012de261afa5dda15af4fb721">stateChanged</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933" kindref="member">State::DataType</ref></type>
+          <declname>changed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When the user modifies the state, we need to mark that the forces need to be recalculated. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1af439885e6218548312411912bdce0224" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; OpenMM::RPMDIntegrator::getKernelNames</definition>
+        <argsstring>()</argsstring>
+        <name>getKernelNames</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1ab27c6938ff637bef4d7478c90f687af4">getKernelNames</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1RPMDIntegrator_1a258422e8fb59df1ae380aa0755d447a0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double OpenMM::RPMDIntegrator::computeKineticEnergy</definition>
+        <argsstring>()</argsstring>
+        <name>computeKineticEnergy</name>
+        <reimplements refid="classOpenMM_1_1Integrator_1a0fd62d5846712eca58341556d48d991c">computeKineticEnergy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the kinetic energy of the system at the current time. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="181"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is an <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> which simulates a <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> using ring polymer molecular dynamics (RPMD). It simulates many copies of the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>, with successive copies connected by harmonic springs to form a ring. This allows certain quantum mechanical effects to be efficiently simulated.</para><para>Because this <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> simulates many copies of the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> at once, it must be used differently from other Integrators. Instead of setting positions and velocities by calling methods of the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>, you should use the corresponding methods of the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> to set them for specific copies of the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. Similarly, you should retrieve state information for particular copies by calling <ref refid="classOpenMM_1_1RPMDIntegrator_1aea0e59c256ba1d3cbf5e031d2466bd13" kindref="member">getState()</ref> on the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref>. Do not query the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> for state information. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="478">
+        <label>OpenMM::RPMDIntegrator</label>
+        <link refid="classOpenMM_1_1RPMDIntegrator"/>
+        <childnode refid="479" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="479">
+        <label>OpenMM::Integrator</label>
+        <link refid="classOpenMM_1_1Integrator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="480">
+        <label>OpenMM::RPMDIntegrator</label>
+        <link refid="classOpenMM_1_1RPMDIntegrator"/>
+        <childnode refid="481" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="481">
+        <label>OpenMM::Integrator</label>
+        <link refid="classOpenMM_1_1Integrator"/>
+        <childnode refid="482" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="483" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="482">
+        <label>OpenMM::ContextImpl</label>
+        <link refid="classOpenMM_1_1ContextImpl"/>
+      </node>
+      <node id="483">
+        <label>OpenMM::Context</label>
+        <link refid="classOpenMM_1_1Context"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" line="57" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RPMDIntegrator.h" bodystart="57" bodyend="187"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1afbc745ee2d04bbda5d01bfd2dbb13985" prot="protected" virt="virtual"><scope>OpenMM::RPMDIntegrator</scope><name>cleanup</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a258422e8fb59df1ae380aa0755d447a0" prot="protected" virt="virtual"><scope>OpenMM::RPMDIntegrator</scope><name>computeKineticEnergy</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ac26c806e60ca4a0547680edb68f6e39b" prot="protected" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>Context</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ac9c1c07848ae2c2e8617a949a11070c1" prot="protected" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>context</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a2400c03ee4a144db26f74cbbd911d08d" prot="private" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>forcesAreValid</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1ab3fb974086f593acfceb7922d7494d5d" prot="private" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>friction</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a1fedd4737a6b0cd3fd4fd5e7ef1e2c4c" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>getConstraintTolerance</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1aa34624d88323d3784be65096712a7672" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>getFriction</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1af439885e6218548312411912bdce0224" prot="protected" virt="virtual"><scope>OpenMM::RPMDIntegrator</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a62696f0b3d5bdb3cc695383355955c21" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>getNumCopies</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1af320f6ceadfcc4d01bc993d0c6ea33c7" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>getRandomNumberSeed</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1aea0e59c256ba1d3cbf5e031d2466bd13" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>getState</name></member>
+      <member refid="classOpenMM_1_1Integrator_1af2276c5c8926e6350eba13209342d8e9" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>getStepSize</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1af3a9be1dc5d6bf973ea1e1f5847be893" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>getTemperature</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1ae65f83b32f9e694f8f6b9f23bf5811be" prot="private" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>hasSetPosition</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a85356720334e7aa1cfb3dc12e4e2ee73" prot="private" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>hasSetVelocity</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a57b68095499f767a19a1d1a4a84e7c36" prot="protected" virt="virtual"><scope>OpenMM::RPMDIntegrator</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a2732506bfb2afd8e2e9954d08cab1304" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>Integrator</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1ac33944d25df609584d5ee25ad05ac52c" prot="private" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>isFirstStep</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a2fafe0838b1656839c06e908d2580e6c" prot="private" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>kernel</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1ab718f22af2da80ea0e5b3e06e53450d3" prot="private" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>numCopies</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ab3f6088553343feb8f47ab789e7a09a1" prot="protected" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>owner</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a700b1a588d7ebdae7c3aed9b1bf7c485" prot="private" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>randomNumberSeed</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a2fab5e330f9d1c16241d98878aaba342" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>RPMDIntegrator</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a696e7a244751f5b484ce26036a955723" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>setConstraintTolerance</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1ad1dd51eb298724002c674850bebcadb8" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>setFriction</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a1efdac4f9abec4af430c46ff6ffd1b97" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>setPositions</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a357af856ab0bff19803b16d63f58472c" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>setRandomNumberSeed</name></member>
+      <member refid="classOpenMM_1_1Integrator_1aa88c9270faf1fd3bf022c72b33beeb47" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>setStepSize</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a78455645e3e601ff8d44e35b009a5287" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>setTemperature</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a6a7eb07261e0727999caafd4b1b4b9d8" prot="public" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>setVelocities</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a2a30702baeff5d66bac92b777cbe668d" prot="protected" virt="virtual"><scope>OpenMM::RPMDIntegrator</scope><name>stateChanged</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a5d179428b1f69ca4f355391fbcb727cd" prot="public" virt="virtual"><scope>OpenMM::RPMDIntegrator</scope><name>step</name></member>
+      <member refid="classOpenMM_1_1RPMDIntegrator_1a3fe846024f14cbfce4927a9ceb22256b" prot="private" virt="non-virtual"><scope>OpenMM::RPMDIntegrator</scope><name>temperature</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a9abbef84d9e2c4e5a3d3139f8fa84fff" prot="public" virt="virtual"><scope>OpenMM::RPMDIntegrator</scope><name>~Integrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

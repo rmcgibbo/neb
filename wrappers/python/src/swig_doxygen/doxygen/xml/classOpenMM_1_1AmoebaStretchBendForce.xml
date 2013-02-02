@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1AmoebaStretchBendForce" kind="class" prot="public">
+    <compoundname>OpenMM::AmoebaStretchBendForce</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Force" prot="public" virt="non-virtual">OpenMM::Force</basecompoundref>
+    <includes refid="AmoebaStretchBendForce_8h" local="no">AmoebaStretchBendForce.h</includes>
+    <innerclass refid="classOpenMM_1_1AmoebaStretchBendForce_1_1StretchBendInfo" prot="public">OpenMM::AmoebaStretchBendForce::StretchBendInfo</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaStretchBendForce_1a0a8b96ac852511edd596472e71deae11" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenMM_1_1AmoebaStretchBendForce_1_1StretchBendInfo" kindref="compound">StretchBendInfo</ref> &gt;</type>
+        <definition>std::vector&lt;StretchBendInfo&gt; OpenMM::AmoebaStretchBendForce::stretchBends</definition>
+        <argsstring></argsstring>
+        <name>stretchBends</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h" line="124" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaStretchBendForce_1a92211f926cfd1614767406e772fe6b56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaStretchBendForce::AmoebaStretchBendForce</definition>
+        <argsstring>()</argsstring>
+        <name>AmoebaStretchBendForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an <ref refid="classOpenMM_1_1AmoebaStretchBendForce" kindref="compound">AmoebaStretchBendForce</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaStretchBendForce_1a0bb2d2bfbd554bfbe12ee2cc2a2c6884" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaStretchBendForce::getNumStretchBends</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumStretchBends</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of stretch-bend terms in the potential function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h" line="61" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaStretchBendForce_1a2b0cfc7bc5e11ca25e02915aab182971" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaStretchBendForce::addStretchBend</definition>
+        <argsstring>(int particle1, int particle2, int particle3, double lengthAB, double lengthCB, double angle, double k)</argsstring>
+        <name>addStretchBend</name>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lengthAB</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lengthCB</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a stretch-bend term to the force field.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the stretch-bend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the stretch-bend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the stretch-bend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lengthAB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium length of the stretch-bend in bond ab [particle1, particle2], measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lengthCB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium length of the stretch-bend in bond cb [particle3, particle2], measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium angle in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the force constant for the stretch-bend </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the stretch-bend that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaStretchBendForce_1ac7f629159af8c36e28eba1bd00d0f05e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaStretchBendForce::getStretchBendParameters</definition>
+        <argsstring>(int index, int &amp;particle1, int &amp;particle2, int &amp;particle3, double &amp;lengthAB, double &amp;lengthCB, double &amp;angle, double &amp;k) const </argsstring>
+        <name>getStretchBendParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>lengthAB</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>lengthCB</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the force field parameters for a stretch-bend term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the stretch-bend for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the stretch-bend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the stretch-bend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the stretch-bend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lengthAB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium length of the stretch-bend in bond ab [particle1, particle2], measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lengthCB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium length of the stretch-bend in bond cb [particle3, particle2], measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium angle in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the force constant for the stretch-bend </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaStretchBendForce_1a8239029c5ad5f5ad9ec19f33462b8e10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaStretchBendForce::setStretchBendParameters</definition>
+        <argsstring>(int index, int particle1, int particle2, int particle3, double lengthAB, double lengthCB, double angle, double k)</argsstring>
+        <name>setStretchBendParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle3</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lengthAB</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lengthCB</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the force field parameters for a stretch-bend term.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the stretch-bend for which to set parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle connected by the stretch-bend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle connected by the stretch-bend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the third particle connected by the stretch-bend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lengthAB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium length of the stretch-bend in bond ab [particle1, particle2], measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lengthCB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium length of the stretch-bend in bond cb [particle3, particle2], measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the equilibrium angle in radians </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the force constant for the stretch-bend </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaStretchBendForce_1ab0740aef6f2bef7f57904312e89968b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaStretchBendForce::updateParametersInContext</definition>
+        <argsstring>(Context &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the per-stretch-bend term parameters in a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> to match those stored in this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object. This method provides an efficient method to update certain parameters in an existing <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> without needing to reinitialize it. Simply call <ref refid="classOpenMM_1_1AmoebaStretchBendForce_1a8239029c5ad5f5ad9ec19f33462b8e10" kindref="member">setStretchBendParameters()</ref> to modify this object&apos;s parameters, then call updateParametersInState() to copy them over to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>.</para><para>The only information this method updates is the values of per-stretch-bend term parameters. The set of particles involved in a term cannot be changed, nor can new terms be added. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h" line="118"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaStretchBendForce_1a2937efe987df8f3b5699262b8764cb0c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> *</type>
+        <definition>ForceImpl* OpenMM::AmoebaStretchBendForce::createImpl</definition>
+        <argsstring>()</argsstring>
+        <name>createImpl</name>
+        <reimplements refid="classOpenMM_1_1Force_1ac110723f39368f7eeb0dbb2105771255">createImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is created, it invokes this method on each <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. It should create a new <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> object which can be used by the context for calculating forces. The <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> will be deleted automatically when the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is deleted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h" line="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements the Amoeba stretch-bend interaction.</para><para>To use it, create a StretchBendForce object then call <ref refid="classOpenMM_1_1AmoebaStretchBendForce_1a2b0cfc7bc5e11ca25e02915aab182971" kindref="member">addStretchBend()</ref> once for each stretch-bend. After a stretch-bend has been added, you can modify its force field parameters by calling <ref refid="classOpenMM_1_1AmoebaStretchBendForce_1a8239029c5ad5f5ad9ec19f33462b8e10" kindref="member">setStretchBendParameters()</ref>. This will have no effect on Contexts that already exist unless you call <ref refid="classOpenMM_1_1AmoebaStretchBendForce_1ab0740aef6f2bef7f57904312e89968b5" kindref="member">updateParametersInContext()</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="57">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="56">
+        <label>OpenMM::AmoebaStretchBendForce</label>
+        <link refid="classOpenMM_1_1AmoebaStretchBendForce"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="59">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="58">
+        <label>OpenMM::AmoebaStretchBendForce</label>
+        <link refid="classOpenMM_1_1AmoebaStretchBendForce"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h" line="49" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h" bodystart="49" bodyend="125"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1AmoebaStretchBendForce_1a2b0cfc7bc5e11ca25e02915aab182971" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>addStretchBend</name></member>
+      <member refid="classOpenMM_1_1AmoebaStretchBendForce_1a92211f926cfd1614767406e772fe6b56" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>AmoebaStretchBendForce</name></member>
+      <member refid="classOpenMM_1_1Force_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1AmoebaStretchBendForce_1a2937efe987df8f3b5699262b8764cb0c" prot="protected" virt="virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>createImpl</name></member>
+      <member refid="classOpenMM_1_1Force_1a40e75e251ec93d3bc9fc87b96026fbc2" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>Force</name></member>
+      <member refid="classOpenMM_1_1Force_1aa6d1d0fd8cad61e7ea37305c6d13a10d" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>getContextImpl</name></member>
+      <member refid="classOpenMM_1_1Force_1a5aca97957c70da1076fcd7cbac340604" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>getForceGroup</name></member>
+      <member refid="classOpenMM_1_1Force_1a4dead2c44734956400d0ca8619650890" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>getImplInContext</name></member>
+      <member refid="classOpenMM_1_1AmoebaStretchBendForce_1a0bb2d2bfbd554bfbe12ee2cc2a2c6884" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>getNumStretchBends</name></member>
+      <member refid="classOpenMM_1_1AmoebaStretchBendForce_1ac7f629159af8c36e28eba1bd00d0f05e" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>getStretchBendParameters</name></member>
+      <member refid="classOpenMM_1_1Force_1a53e3829a91825a9f6aa17e5ade713f84" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>setForceGroup</name></member>
+      <member refid="classOpenMM_1_1AmoebaStretchBendForce_1a8239029c5ad5f5ad9ec19f33462b8e10" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>setStretchBendParameters</name></member>
+      <member refid="classOpenMM_1_1AmoebaStretchBendForce_1a0a8b96ac852511edd596472e71deae11" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>stretchBends</name></member>
+      <member refid="classOpenMM_1_1AmoebaStretchBendForce_1ab0740aef6f2bef7f57904312e89968b5" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1Force_1a6516b32ebeb95a694f56d93bdf81f4fb" prot="public" virt="virtual"><scope>OpenMM::AmoebaStretchBendForce</scope><name>~Force</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="VirtualSite_8h" kind="file">
+    <compoundname>VirtualSite.h</compoundname>
+    <includes refid="windowsExport_8h" local="yes">internal/windowsExport.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="OpenMM_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</includedby>
+    <incdepgraph>
+      <node id="990">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="991">
+        <label>vector</label>
+      </node>
+      <node id="989">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VirtualSite.h</label>
+        <link refid="VirtualSite.h"/>
+        <childnode refid="990" relation="include">
+        </childnode>
+        <childnode refid="991" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="993">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</label>
+        <link refid="OpenMM_8h_source"/>
+      </node>
+      <node id="992">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VirtualSite.h</label>
+        <link refid="VirtualSite.h"/>
+        <childnode refid="993" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1VirtualSite" prot="public">OpenMM::VirtualSite</innerclass>
+    <innerclass refid="classOpenMM_1_1TwoParticleAverageSite" prot="public">OpenMM::TwoParticleAverageSite</innerclass>
+    <innerclass refid="classOpenMM_1_1ThreeParticleAverageSite" prot="public">OpenMM::ThreeParticleAverageSite</innerclass>
+    <innerclass refid="classOpenMM_1_1OutOfPlaneSite" prot="public">OpenMM::OutOfPlaneSite</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/VirtualSite.h"/>
+  </compounddef>
+</doxygen>

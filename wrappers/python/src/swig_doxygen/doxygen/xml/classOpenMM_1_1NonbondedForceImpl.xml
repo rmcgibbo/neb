@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1NonbondedForceImpl" kind="class" prot="public">
+    <compoundname>OpenMM::NonbondedForceImpl</compoundname>
+    <basecompoundref refid="classOpenMM_1_1ForceImpl" prot="public" virt="non-virtual">OpenMM::ForceImpl</basecompoundref>
+    <includes refid="NonbondedForceImpl_8h" local="no">NonbondedForceImpl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1NonbondedForceImpl_1addd599bb5294e4033ce67190c4ef17de" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1NonbondedForce" kindref="compound">NonbondedForce</ref> &amp;</type>
+        <definition>NonbondedForce&amp; OpenMM::NonbondedForceImpl::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="86" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NonbondedForceImpl_1a2dcf94ae369f1d1c1f8f8feda8eb60ca" prot="private" static="no" mutable="no">
+        <type>Kernel</type>
+        <definition>Kernel OpenMM::NonbondedForceImpl::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="87" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1a44cabc2609d66864880af952dd67296d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::NonbondedForceImpl::NonbondedForceImpl</definition>
+        <argsstring>(NonbondedForce &amp;owner)</argsstring>
+        <name>NonbondedForceImpl</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1NonbondedForce" kindref="compound">NonbondedForce</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1aff74ecb830be9a65f51baf181d271ea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::NonbondedForceImpl::~NonbondedForceImpl</definition>
+        <argsstring>()</argsstring>
+        <name>~NonbondedForceImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1ae2741c6138f63c8ebea173a82b1f22e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForceImpl::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a0a1f85a9c94613577399c1fada6ecb01">initialize</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called after the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> is created and before <ref refid="classOpenMM_1_1NonbondedForceImpl_1a19ee2d1b6ec599671fd49914e7900e61" kindref="member">updateContextState()</ref>, calcForces(), or calcEnergy() is called on it. This allows it to do any necessary initialization. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1a47082a9fcfcf7cbbda361339172bed6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenMM_1_1NonbondedForce" kindref="compound">NonbondedForce</ref> &amp;</type>
+        <definition>NonbondedForce&amp; OpenMM::NonbondedForceImpl::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a766c966d25ad0d8cf287ee07e524a081">getOwner</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object from which this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> was created. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="55" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1a19ee2d1b6ec599671fd49914e7900e61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForceImpl::updateContextState</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>updateContextState</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1aae2f5cc793b7071cb6516a02fa736087">updateContextState</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called at the beginning of each time step. It give the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> a chance to modify the state variables (positions, velocities, and parameters) stored in the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> in arbitrary ways before integration is performed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="58" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1a6bfd1f9f67cfe82b436519f08c0df6f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double OpenMM::NonbondedForceImpl::calcForcesAndEnergy</definition>
+        <argsstring>(ContextImpl &amp;context, bool includeForces, bool includeEnergy, int groups)</argsstring>
+        <name>calcForcesAndEnergy</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a1e2544ac6d58460a79697236e8b758be">calcForcesAndEnergy</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeForces</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeEnergy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>groups</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the force on each particle generated by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> and/or this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>&apos;s contribution to the potential energy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeForces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if forces should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeEnergy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the energy should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>groups</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a set of bit flags for which force groups to include. Group i should be included if (groups&amp;(1&lt;&lt;i)) != 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>this force&apos;s contribution to the potential energy of the system, or 0 if this force does not contribute to potential energy (or if includeEnergy is false) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1a5252b5943e2adc1dc46f500864fb7b05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; OpenMM::NonbondedForceImpl::getDefaultParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultParameters</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1adf18979257a14b23dd52dbda9e87c308">getDefaultParameters</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a map containing the default values for all adjustable parameters defined by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>. These parameters and their default values will automatically be added to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="62" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1a0422c32a8dc4e625abb4231cc0f4a68d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; OpenMM::NonbondedForceImpl::getKernelNames</definition>
+        <argsstring>()</argsstring>
+        <name>getKernelNames</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a5820facb44adaab79bbb02a3ba5bd79b">getKernelNames</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1af658f6a2f9261cfb433782984e14a3bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForceImpl::updateParametersInContext</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1af13d8680462c3e8639629289babb0278" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenMM::NonbondedForceImpl::calcEwaldParameters</definition>
+        <argsstring>(const System &amp;system, const NonbondedForce &amp;force, double &amp;alpha, int &amp;kmaxx, int &amp;kmaxy, int &amp;kmaxz)</argsstring>
+        <name>calcEwaldParameters</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> &amp;</type>
+          <declname>system</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1NonbondedForce" kindref="compound">NonbondedForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>kmaxx</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>kmaxy</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>kmaxz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a utility routine that calculates the values to use for alpha and kmax when using Ewald summation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1a50ea3493bcac5f19d0cd08bdf88042d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenMM::NonbondedForceImpl::calcPMEParameters</definition>
+        <argsstring>(const System &amp;system, const NonbondedForce &amp;force, double &amp;alpha, int &amp;xsize, int &amp;ysize, int &amp;zsize)</argsstring>
+        <name>calcPMEParameters</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> &amp;</type>
+          <declname>system</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1NonbondedForce" kindref="compound">NonbondedForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>xsize</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>ysize</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>zsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a utility routine that calculates the values to use for alpha and grid size when using Particle Mesh Ewald. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1a998c853d145bbe1286a3fa2fbb8107f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double OpenMM::NonbondedForceImpl::calcDispersionCorrection</definition>
+        <argsstring>(const System &amp;system, const NonbondedForce &amp;force)</argsstring>
+        <name>calcDispersionCorrection</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> &amp;</type>
+          <declname>system</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1NonbondedForce" kindref="compound">NonbondedForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the coefficient which, when divided by the periodic box volume, gives the long range dispersion correction to the energy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForceImpl_1a631d4542e1f43928efe37ba6398462ec" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int OpenMM::NonbondedForceImpl::findZero</definition>
+        <argsstring>(const ErrorFunction &amp;f, int initialGuess)</argsstring>
+        <name>findZero</name>
+        <param>
+          <type>const ErrorFunction &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>initialGuess</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the internal implementation of <ref refid="classOpenMM_1_1NonbondedForce" kindref="compound">NonbondedForce</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="421">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="420">
+        <label>OpenMM::NonbondedForceImpl</label>
+        <link refid="classOpenMM_1_1NonbondedForceImpl"/>
+        <childnode refid="421" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="423">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="422">
+        <label>OpenMM::NonbondedForceImpl</label>
+        <link refid="classOpenMM_1_1NonbondedForceImpl"/>
+        <childnode refid="423" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" line="50" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/NonbondedForceImpl.h" bodystart="50" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1a998c853d145bbe1286a3fa2fbb8107f0" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>calcDispersionCorrection</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1af13d8680462c3e8639629289babb0278" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>calcEwaldParameters</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1a6bfd1f9f67cfe82b436519f08c0df6f0" prot="public" virt="virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>calcForcesAndEnergy</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1a50ea3493bcac5f19d0cd08bdf88042d9" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>calcPMEParameters</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1a631d4542e1f43928efe37ba6398462ec" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>findZero</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1aaa19783e47e53df34083cbaadf37e41c" prot="public" virt="virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>getBondedParticles</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1a5252b5943e2adc1dc46f500864fb7b05" prot="public" virt="virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>getDefaultParameters</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1a0422c32a8dc4e625abb4231cc0f4a68d" prot="public" virt="virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1a47082a9fcfcf7cbbda361339172bed6c" prot="public" virt="virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>getOwner</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1ae2741c6138f63c8ebea173a82b1f22e9" prot="public" virt="virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1a2dcf94ae369f1d1c1f8f8feda8eb60ca" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>kernel</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1a44cabc2609d66864880af952dd67296d" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>NonbondedForceImpl</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1addd599bb5294e4033ce67190c4ef17de" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>owner</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1a19ee2d1b6ec599671fd49914e7900e61" prot="public" virt="virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>updateContextState</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1af658f6a2f9261cfb433782984e14a3bf" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1a8a2bccbabb2587111b46da67cea8293c" prot="public" virt="virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>~ForceImpl</name></member>
+      <member refid="classOpenMM_1_1NonbondedForceImpl_1aff74ecb830be9a65f51baf181d271ea7" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForceImpl</scope><name>~NonbondedForceImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

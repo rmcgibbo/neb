@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_d1d1bd6b29d8dd861e7721f6b5c11066" kind="dir">
+    <compoundname>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/</compoundname>
+    <innerdir refid="dir_78d51b94384e9306dce500fd3db759de">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/</innerdir>
+    <innerfile refid="AmoebaAngleForce_8h">AmoebaAngleForce.h</innerfile>
+    <innerfile refid="AmoebaBondForce_8h">AmoebaBondForce.h</innerfile>
+    <innerfile refid="AmoebaGeneralizedKirkwoodForce_8h">AmoebaGeneralizedKirkwoodForce.h</innerfile>
+    <innerfile refid="AmoebaInPlaneAngleForce_8h">AmoebaInPlaneAngleForce.h</innerfile>
+    <innerfile refid="amoebaKernels_8h">amoebaKernels.h</innerfile>
+    <innerfile refid="AmoebaMultipoleForce_8h">AmoebaMultipoleForce.h</innerfile>
+    <innerfile refid="AmoebaOutOfPlaneBendForce_8h">AmoebaOutOfPlaneBendForce.h</innerfile>
+    <innerfile refid="AmoebaPiTorsionForce_8h">AmoebaPiTorsionForce.h</innerfile>
+    <innerfile refid="AmoebaStretchBendForce_8h">AmoebaStretchBendForce.h</innerfile>
+    <innerfile refid="AmoebaTorsionTorsionForce_8h">AmoebaTorsionTorsionForce.h</innerfile>
+    <innerfile refid="AmoebaVdwForce_8h">AmoebaVdwForce.h</innerfile>
+    <innerfile refid="AmoebaWcaDispersionForce_8h">AmoebaWcaDispersionForce.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/"/>
+  </compounddef>
+</doxygen>

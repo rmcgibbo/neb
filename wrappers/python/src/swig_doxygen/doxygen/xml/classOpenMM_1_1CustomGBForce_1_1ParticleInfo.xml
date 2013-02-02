@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1CustomGBForce_1_1ParticleInfo" kind="class" prot="private">
+    <compoundname>OpenMM::CustomGBForce::ParticleInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1CustomGBForce_1_1ParticleInfo_1a0dc6fd0670c8f09b953f0c26ab7ba578" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OpenMM::CustomGBForce::ParticleInfo::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="524" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1_1ParticleInfo_1a280f75dcf253b90c010353af50f4ecbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CustomGBForce::ParticleInfo::ParticleInfo</definition>
+        <argsstring>()</argsstring>
+        <name>ParticleInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="525" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="525" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomGBForce_1_1ParticleInfo_1ab76e90285b41a7426825853e3774c2d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CustomGBForce::ParticleInfo::ParticleInfo</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;parameters)</argsstring>
+        <name>ParticleInfo</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="527" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="527" bodyend="528"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is an internal class used to record information about a particle. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" line="522" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h" bodystart="522" bodyend="529"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1CustomGBForce_1_1ParticleInfo_1a0dc6fd0670c8f09b953f0c26ab7ba578" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce::ParticleInfo</scope><name>parameters</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1_1ParticleInfo_1a280f75dcf253b90c010353af50f4ecbe" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce::ParticleInfo</scope><name>ParticleInfo</name></member>
+      <member refid="classOpenMM_1_1CustomGBForce_1_1ParticleInfo_1ab76e90285b41a7426825853e3774c2d3" prot="public" virt="non-virtual"><scope>OpenMM::CustomGBForce::ParticleInfo</scope><name>ParticleInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

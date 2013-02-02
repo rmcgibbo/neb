@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="AssertionUtilities_8h" kind="file">
+    <compoundname>AssertionUtilities.h</compoundname>
+    <includes refid="windowsExport_8h" local="yes">windowsExport.h</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">string</includes>
+    <includes local="no">sstream</includes>
+    <incdepgraph>
+      <node id="357">
+        <label>cmath</label>
+      </node>
+      <node id="358">
+        <label>string</label>
+      </node>
+      <node id="356">
+        <label>windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="359">
+        <label>sstream</label>
+      </node>
+      <node id="355">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h</label>
+        <link refid="AssertionUtilities.h"/>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="AssertionUtilities_8h_1a0966b817b229d48e5ffc7feab19a0be6" prot="public" static="no">
+        <name>ASSERT</name>
+        <param><defname>cond</defname></param>
+        <initializer>{if (!(cond)) throwException(__FILE__, __LINE__, &quot;&quot;);};</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" line="50" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AssertionUtilities_8h_1af1003ab8cfa6c4941159ebf0572b11b2" prot="public" static="no">
+        <name>ASSERT_EQUAL</name>
+        <param><defname>expected</defname></param>
+        <param><defname>found</defname></param>
+        <initializer>{if (!((expected) == (found))) {std::stringstream details; details &lt;&lt; &quot;Expected &quot;&lt;&lt;(expected)&lt;&lt;&quot;, found &quot;&lt;&lt;(found); throwException(__FILE__, __LINE__, details.str());}};</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" line="52" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AssertionUtilities_8h_1a51c365289ffdc3909229b48280d2f11d" prot="public" static="no">
+        <name>ASSERT_EQUAL_TOL</name>
+        <param><defname>expected</defname></param>
+        <param><defname>found</defname></param>
+        <param><defname>tol</defname></param>
+        <initializer>{double _scale_ = std::abs(expected) &gt; 1.0 ? std::abs(expected) : 1.0; if (!(std::abs((expected)-(found))/_scale_ &lt;= (tol))) {std::stringstream details; details &lt;&lt; &quot;Expected &quot;&lt;&lt;(expected)&lt;&lt;&quot;, found &quot;&lt;&lt;(found); throwException(__FILE__, __LINE__, details.str());}};</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" line="54" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AssertionUtilities_8h_1af66fd885d24b9d35d28efd5e1c448fa5" prot="public" static="no">
+        <name>ASSERT_EQUAL_VEC</name>
+        <param><defname>expected</defname></param>
+        <param><defname>found</defname></param>
+        <param><defname>tol</defname></param>
+        <initializer>{double _norm_ = std::sqrt((expected).dot(expected)); double _scale_ = _norm_ &gt; 1.0 ? _norm_ : 1.0; if ((std::abs(((expected)[0])-((found)[0]))/_scale_ &gt; (tol)) || (std::abs(((expected)[1])-((found)[1]))/_scale_ &gt; (tol)) || (std::abs(((expected)[2])-((found)[2]))/_scale_ &gt; (tol))) {std::stringstream details; details &lt;&lt; &quot; Expected &quot;&lt;&lt;(expected)&lt;&lt;&quot;, found &quot;&lt;&lt;(found); throwException(__FILE__, __LINE__, details.str());}};</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" line="56" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AssertionUtilities_8h_1a1ddf38e986a94d2812faaa1e77106a56" prot="public" static="no">
+        <name>ASSERT_USUALLY_EQUAL_TOL</name>
+        <param><defname>expected</defname></param>
+        <param><defname>found</defname></param>
+        <param><defname>tol</defname></param>
+        <initializer>{double _scale_ = std::abs(expected) &gt; 1.0 ? std::abs(expected) : 1.0; if (!(std::abs((expected)-(found))/_scale_ &lt;= (tol))) {std::stringstream details; details &lt;&lt; &quot;Expected &quot;&lt;&lt;(expected)&lt;&lt;&quot;, found &quot;&lt;&lt;(found)&lt;&lt;&quot; (This test is stochastic and may occasionally fail)&quot;; throwException(__FILE__, __LINE__, details.str());}};</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" line="58" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="AssertionUtilities_8h_1ace0ddb29dc9e908535358d6f6c65f777" prot="public" static="no">
+        <name>ASSERT_VALID_INDEX</name>
+        <param><defname>index</defname></param>
+        <param><defname>vector</defname></param>
+        <initializer>{if (index &lt; 0 || index &gt;= (int) vector.size()) throwException(__FILE__, __LINE__, &quot;Index out of range&quot;);};</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" line="60" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/AssertionUtilities.h"/>
+  </compounddef>
+</doxygen>

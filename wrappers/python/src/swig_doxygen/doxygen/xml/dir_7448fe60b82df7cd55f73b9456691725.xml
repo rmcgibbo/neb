@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_7448fe60b82df7cd55f73b9456691725" kind="dir">
+    <compoundname>/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/internal/</compoundname>
+    <innerfile refid="windowsExportRpmd_8h">windowsExportRpmd.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/internal/"/>
+  </compounddef>
+</doxygen>

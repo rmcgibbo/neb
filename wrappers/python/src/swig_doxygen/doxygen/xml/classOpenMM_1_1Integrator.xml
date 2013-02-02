@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1Integrator" kind="class" prot="public">
+    <compoundname>OpenMM::Integrator</compoundname>
+    <derivedcompoundref refid="classOpenMM_1_1BrownianIntegrator" prot="public" virt="non-virtual">OpenMM::BrownianIntegrator</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1CustomIntegrator" prot="public" virt="non-virtual">OpenMM::CustomIntegrator</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1LangevinIntegrator" prot="public" virt="non-virtual">OpenMM::LangevinIntegrator</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1NEBIntegrator" prot="public" virt="non-virtual">OpenMM::NEBIntegrator</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1RPMDIntegrator" prot="public" virt="non-virtual">OpenMM::RPMDIntegrator</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1VariableLangevinIntegrator" prot="public" virt="non-virtual">OpenMM::VariableLangevinIntegrator</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1VariableVerletIntegrator" prot="public" virt="non-virtual">OpenMM::VariableVerletIntegrator</derivedcompoundref>
+    <derivedcompoundref refid="classOpenMM_1_1VerletIntegrator" prot="public" virt="non-virtual">OpenMM::VerletIntegrator</derivedcompoundref>
+    <includes refid="Integrator_8h" local="no">Integrator.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenMM_1_1Integrator_1ac26c806e60ca4a0547680edb68f6e39b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Context</definition>
+        <argsstring></argsstring>
+        <name>Context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="95" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classOpenMM_1_1Integrator_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ContextImpl</definition>
+        <argsstring></argsstring>
+        <name>ContextImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="96" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1Integrator_1ac9c1c07848ae2c2e8617a949a11070c1" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> *</type>
+        <definition>ContextImpl* OpenMM::Integrator::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <reimplementedby refid="classOpenMM_1_1NEBIntegrator_1a2d96c855414f466a65d15c60931829c6">context</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="97" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1Integrator_1ab3f6088553343feb8f47ab789e7a09a1" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> *</type>
+        <definition>Context* OpenMM::Integrator::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <reimplementedby refid="classOpenMM_1_1NEBIntegrator_1af2a32921d5210f4a369b256ee766c857">owner</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="98" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1Integrator_1a33185045e1fcb1186e413d182f28e461" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::Integrator::stepSize</definition>
+        <argsstring></argsstring>
+        <name>stepSize</name>
+        <reimplementedby refid="classOpenMM_1_1NEBIntegrator_1a1d6443daa3f928d097cc3ce61c18336d">stepSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="133" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1Integrator_1ac30d9b040938d0be1eedfc6e7484c204" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::Integrator::constraintTol</definition>
+        <argsstring></argsstring>
+        <name>constraintTol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="133" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1Integrator_1a2732506bfb2afd8e2e9954d08cab1304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::Integrator::Integrator</definition>
+        <argsstring>()</argsstring>
+        <name>Integrator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Integrator_1a9abbef84d9e2c4e5a3d3139f8fa84fff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OpenMM::Integrator::~Integrator</definition>
+        <argsstring>()</argsstring>
+        <name>~Integrator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Integrator_1af2276c5c8926e6350eba13209342d8e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::Integrator::getStepSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getStepSize</name>
+        <reimplementedby refid="classOpenMM_1_1NEBIntegrator_1a0c5c2ad7eca8f5c8d0faf2bb7d9cf041">getStepSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the size of each time step, in picoseconds. If this integrator uses variable time steps, the size of the most recent step is returned.</para><para><simplesect kind="return"><para>the step size, measured in ps </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="64" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Integrator_1aa88c9270faf1fd3bf022c72b33beeb47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::Integrator::setStepSize</definition>
+        <argsstring>(double size)</argsstring>
+        <name>setStepSize</name>
+        <param>
+          <type>double</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the size of each time step, in picoseconds. If this integrator uses variable time steps, the effect of calling this method is undefined, and it may simply be ignored.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the step size, measured in ps </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="73" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Integrator_1a1fedd4737a6b0cd3fd4fd5e7ef1e2c4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::Integrator::getConstraintTolerance</definition>
+        <argsstring>() const </argsstring>
+        <name>getConstraintTolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the distance tolerance within which constraints are maintained, as a fraction of the constrained distance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="79" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Integrator_1a696e7a244751f5b484ce26036a955723" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::Integrator::setConstraintTolerance</definition>
+        <argsstring>(double tol)</argsstring>
+        <name>setConstraintTolerance</name>
+        <param>
+          <type>double</type>
+          <declname>tol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the distance tolerance within which constraints are maintained, as a fraction of the constrained distance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="85" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Integrator_1a55151232664ae778eb2f0e2e8bbe7b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::Integrator::step</definition>
+        <argsstring>(int steps)=0</argsstring>
+        <name>step</name>
+        <reimplementedby refid="classOpenMM_1_1VerletIntegrator_1a8bfb87088792e4e93c5947f2cfd2aa3a">step</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1VariableVerletIntegrator_1a5a8bbbd9e17d964fb8b25ad842516aac">step</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1NEBIntegrator_1a224ad328f561f443ee48100c338c9e78">step</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1LangevinIntegrator_1a7b8c533776000a6c360eb8112dc8123c">step</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1BrownianIntegrator_1a9c79551af4f0715cd7a53a1aa4615446">step</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1VariableLangevinIntegrator_1a6fc701469f54895b0a0a524a3eb29676">step</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1RPMDIntegrator_1a5d179428b1f69ca4f355391fbcb727cd">step</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomIntegrator_1a1eb08122e1eaf62121a3835f88813458">step</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>steps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advance a simulation through time by taking a series of time steps.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of time steps to take </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="93"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1Integrator_1a6a2b5bcc61b799be0a37b4a431bdcd7d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::Integrator::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)=0</argsstring>
+        <name>initialize</name>
+        <reimplementedby refid="classOpenMM_1_1VerletIntegrator_1acefa03d3ea1444149b4f3326e1a85de8">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1VariableVerletIntegrator_1ae56aaf72a292adb5099d5ac054a4fde3">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1NEBIntegrator_1adb2058e48085e469966d86e2654eb2bb">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1LangevinIntegrator_1a11ca455fa4de1f2de19db97db2cc9861">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1BrownianIntegrator_1a0f205a6e23fffff7aa25b55a5b65bf5e">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1VariableLangevinIntegrator_1a1d16e30bb73d173d07742e065135ebc5">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1RPMDIntegrator_1a57b68095499f767a19a1d1a4a84e7c36">initialize</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomIntegrator_1aafc2c4f73364b34b6fdd34a326109def">initialize</reimplementedby>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will be called by the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> when it is created. It informs the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> of what context it will be integrating, and gives it a chance to do any necessary initialization. It will also get called again if the application calls reinitialize() on the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Integrator_1a204f42ff795b94be55d0c9ba32261af6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::Integrator::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <reimplementedby refid="classOpenMM_1_1VerletIntegrator_1a8b58db35bf955a189256899edf6228cc">cleanup</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1VariableVerletIntegrator_1a1679178e9139a5d04efd2a1b609f7296">cleanup</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1LangevinIntegrator_1a41c8b6d3b44ae64c3663887de5db32ce">cleanup</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1BrownianIntegrator_1af36538476cf2e4a288e5e328f9c47c6f">cleanup</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1VariableLangevinIntegrator_1a82eb906f5c374cda0d13a21b8d7788bb">cleanup</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1RPMDIntegrator_1afbc745ee2d04bbda5d01bfd2dbb13985">cleanup</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomIntegrator_1a077fdbfc5b6e24fe92c0d7e2a37990de">cleanup</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will be called by the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> when it is destroyed to let the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> do any necessary cleanup. It will also get called again if the application calls reinitialize() on the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="109" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="109" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Integrator_1ab27c6938ff637bef4d7478c90f687af4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>virtual std::vector&lt;std::string&gt; OpenMM::Integrator::getKernelNames</definition>
+        <argsstring>()=0</argsstring>
+        <name>getKernelNames</name>
+        <reimplementedby refid="classOpenMM_1_1VerletIntegrator_1a643bc53634730ee40474a1342d8547f5">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1VariableVerletIntegrator_1a959a61f4b1c6f95fd0aeda1c0f51c125">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1NEBIntegrator_1a3d68d9164dcb4c818988e5593608e9c3">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1LangevinIntegrator_1a58c814ff7cb8f10e74959ead874cb5e2">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1BrownianIntegrator_1a96a4a21b0955cdb79fd416e8a678bd16">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1VariableLangevinIntegrator_1aac03fe41c32d739fd625eb92d1c18a13">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1RPMDIntegrator_1af439885e6218548312411912bdce0224">getKernelNames</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomIntegrator_1a795cabf613cb740603a6742239fd6b4a">getKernelNames</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Integrator_1aa41aa4c012de261afa5dda15af4fb721" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::Integrator::stateChanged</definition>
+        <argsstring>(State::DataType changed)</argsstring>
+        <name>stateChanged</name>
+        <reimplementedby refid="classOpenMM_1_1NEBIntegrator_1aba1d3d0f9ce47068333be76ab2317243">stateChanged</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1RPMDIntegrator_1a2a30702baeff5d66bac92b777cbe668d">stateChanged</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomIntegrator_1a28faefe25cb874842682253ea1c0ee7a">stateChanged</reimplementedby>
+        <param>
+          <type><ref refid="classOpenMM_1_1State_1a33046c06dbd6c93b71cc5d1448771933" kindref="member">State::DataType</ref></type>
+          <declname>changed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will be called by the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> when the user modifies aspects of the context state, such as positions, velocities, or parameters. This gives the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> a chance to discard cached information. This is <emphasis>only</emphasis> called when the user modifies information using methods of the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> object. It is <emphasis>not</emphasis> called when a <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> object modifies state information in its updateContextState() method (unless the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> calls a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> method to perform the modification).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>changed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this specifies what aspect of the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> was changed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="124" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="124" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1Integrator_1a0fd62d5846712eca58341556d48d991c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenMM::Integrator::computeKineticEnergy</definition>
+        <argsstring>()=0</argsstring>
+        <name>computeKineticEnergy</name>
+        <reimplementedby refid="classOpenMM_1_1NEBIntegrator_1a8722504f5b5784b5e88fe1fa54060502">computeKineticEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1VerletIntegrator_1ad0085c21ee68959f78d17de0b363c040">computeKineticEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1VariableVerletIntegrator_1a20e34f6c2a25513363cc005acda2a843">computeKineticEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1LangevinIntegrator_1a614f3018e913f959edb81cc697a9466d">computeKineticEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1BrownianIntegrator_1a9c718343c61594210dc81e0532224bdb">computeKineticEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1VariableLangevinIntegrator_1aaf9ad349b92e739a7f6f8a7cb0d06348">computeKineticEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1RPMDIntegrator_1a258422e8fb59df1ae380aa0755d447a0">computeKineticEnergy</reimplementedby>
+        <reimplementedby refid="classOpenMM_1_1CustomIntegrator_1acbf5f16ed43e6f4e74902e37a0c23d52">computeKineticEnergy</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the kinetic energy of the system at the current time. This may be different from simply mv<superscript>2</superscript>/2. For example, a leapfrog integrator will store velocities offset by half a step, but the kinetic energy should be computed at the current time, not delayed by half a step. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> defines a method for simulating a <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> by integrating the equations of motion. This is an abstract class. Subclasses define particular integration methods.</para><para>Each <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> object is bound to a particular <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> which it integrates. This connection is specified by passing the <ref refid="classOpenMM_1_1Integrator" kindref="compound">Integrator</ref> as an argument to the constructor of the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="383">
+        <label>OpenMM::RPMDIntegrator</label>
+        <link refid="classOpenMM_1_1RPMDIntegrator"/>
+        <childnode refid="378" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>OpenMM::VerletIntegrator</label>
+        <link refid="classOpenMM_1_1VerletIntegrator"/>
+        <childnode refid="378" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>OpenMM::LangevinIntegrator</label>
+        <link refid="classOpenMM_1_1LangevinIntegrator"/>
+        <childnode refid="378" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>OpenMM::Integrator</label>
+        <link refid="classOpenMM_1_1Integrator"/>
+      </node>
+      <node id="379">
+        <label>OpenMM::BrownianIntegrator</label>
+        <link refid="classOpenMM_1_1BrownianIntegrator"/>
+        <childnode refid="378" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>OpenMM::NEBIntegrator</label>
+        <link refid="classOpenMM_1_1NEBIntegrator"/>
+        <childnode refid="378" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>OpenMM::VariableLangevinIntegrator</label>
+        <link refid="classOpenMM_1_1VariableLangevinIntegrator"/>
+        <childnode refid="378" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="380">
+        <label>OpenMM::CustomIntegrator</label>
+        <link refid="classOpenMM_1_1CustomIntegrator"/>
+        <childnode refid="378" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>OpenMM::VariableVerletIntegrator</label>
+        <link refid="classOpenMM_1_1VariableVerletIntegrator"/>
+        <childnode refid="378" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="387">
+        <label>OpenMM::Integrator</label>
+        <link refid="classOpenMM_1_1Integrator"/>
+        <childnode refid="388" relation="usage">
+          <edgelabel>context</edgelabel>
+        </childnode>
+        <childnode refid="389" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="388">
+        <label>OpenMM::ContextImpl</label>
+        <link refid="classOpenMM_1_1ContextImpl"/>
+      </node>
+      <node id="389">
+        <label>OpenMM::Context</label>
+        <link refid="classOpenMM_1_1Context"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" line="54" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/Integrator.h" bodystart="54" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1Integrator_1a204f42ff795b94be55d0c9ba32261af6" prot="protected" virt="virtual"><scope>OpenMM::Integrator</scope><name>cleanup</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a0fd62d5846712eca58341556d48d991c" prot="protected" virt="pure-virtual"><scope>OpenMM::Integrator</scope><name>computeKineticEnergy</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ac30d9b040938d0be1eedfc6e7484c204" prot="private" virt="non-virtual"><scope>OpenMM::Integrator</scope><name>constraintTol</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ac9c1c07848ae2c2e8617a949a11070c1" prot="protected" virt="non-virtual"><scope>OpenMM::Integrator</scope><name>context</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ac26c806e60ca4a0547680edb68f6e39b" prot="protected" virt="non-virtual"><scope>OpenMM::Integrator</scope><name>Context</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::Integrator</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a1fedd4737a6b0cd3fd4fd5e7ef1e2c4c" prot="public" virt="non-virtual"><scope>OpenMM::Integrator</scope><name>getConstraintTolerance</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ab27c6938ff637bef4d7478c90f687af4" prot="protected" virt="pure-virtual"><scope>OpenMM::Integrator</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1Integrator_1af2276c5c8926e6350eba13209342d8e9" prot="public" virt="non-virtual"><scope>OpenMM::Integrator</scope><name>getStepSize</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a6a2b5bcc61b799be0a37b4a431bdcd7d" prot="protected" virt="pure-virtual"><scope>OpenMM::Integrator</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a2732506bfb2afd8e2e9954d08cab1304" prot="public" virt="non-virtual"><scope>OpenMM::Integrator</scope><name>Integrator</name></member>
+      <member refid="classOpenMM_1_1Integrator_1ab3f6088553343feb8f47ab789e7a09a1" prot="protected" virt="non-virtual"><scope>OpenMM::Integrator</scope><name>owner</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a696e7a244751f5b484ce26036a955723" prot="public" virt="non-virtual"><scope>OpenMM::Integrator</scope><name>setConstraintTolerance</name></member>
+      <member refid="classOpenMM_1_1Integrator_1aa88c9270faf1fd3bf022c72b33beeb47" prot="public" virt="non-virtual"><scope>OpenMM::Integrator</scope><name>setStepSize</name></member>
+      <member refid="classOpenMM_1_1Integrator_1aa41aa4c012de261afa5dda15af4fb721" prot="protected" virt="virtual"><scope>OpenMM::Integrator</scope><name>stateChanged</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a55151232664ae778eb2f0e2e8bbe7b67" prot="public" virt="pure-virtual"><scope>OpenMM::Integrator</scope><name>step</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a33185045e1fcb1186e413d182f28e461" prot="private" virt="non-virtual"><scope>OpenMM::Integrator</scope><name>stepSize</name></member>
+      <member refid="classOpenMM_1_1Integrator_1a9abbef84d9e2c4e5a3d3139f8fa84fff" prot="public" virt="virtual"><scope>OpenMM::Integrator</scope><name>~Integrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

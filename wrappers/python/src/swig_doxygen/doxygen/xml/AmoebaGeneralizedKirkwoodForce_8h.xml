@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="AmoebaGeneralizedKirkwoodForce_8h" kind="file">
+    <compoundname>AmoebaGeneralizedKirkwoodForce.h</compoundname>
+    <includes refid="Force_8h" local="yes">openmm/Force.h</includes>
+    <includes refid="windowsExportAmoeba_8h" local="yes">internal/windowsExportAmoeba.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="AmoebaGeneralizedKirkwoodForceImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h</includedby>
+    <includedby refid="OpenMMAmoeba_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/OpenMMAmoeba.h</includedby>
+    <incdepgraph>
+      <node id="1017">
+        <label>openmm/Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="1018" relation="include">
+        </childnode>
+      </node>
+      <node id="1018">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="1020">
+        <label>vector</label>
+      </node>
+      <node id="1019">
+        <label>internal/windowsExportAmoeba.h</label>
+        <link refid="windowsExportAmoeba_8h_source"/>
+      </node>
+      <node id="1016">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaGeneralizedKirkwoodForce.h</label>
+        <link refid="AmoebaGeneralizedKirkwoodForce.h"/>
+        <childnode refid="1017" relation="include">
+        </childnode>
+        <childnode refid="1019" relation="include">
+        </childnode>
+        <childnode refid="1020" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1024">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h</label>
+        <link refid="amoebaKernels_8h_source"/>
+      </node>
+      <node id="1023">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/OpenMMAmoeba.h</label>
+        <link refid="OpenMMAmoeba_8h_source"/>
+        <childnode refid="1024" relation="include">
+        </childnode>
+      </node>
+      <node id="1022">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h</label>
+        <link refid="AmoebaGeneralizedKirkwoodForceImpl_8h_source"/>
+      </node>
+      <node id="1021">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaGeneralizedKirkwoodForce.h</label>
+        <link refid="AmoebaGeneralizedKirkwoodForce.h"/>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1023" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForce" prot="public">OpenMM::AmoebaGeneralizedKirkwoodForce</innerclass>
+    <innerclass refid="classOpenMM_1_1AmoebaGeneralizedKirkwoodForce_1_1ParticleInfo" prot="public">OpenMM::AmoebaGeneralizedKirkwoodForce::ParticleInfo</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaGeneralizedKirkwoodForce.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo" kind="class" prot="public">
+    <compoundname>OpenMM::AmoebaVdwForce::VdwInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1a2164a5504e8546f4aa78319d641368e1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaVdwForce::VdwInfo::parentIndex</definition>
+        <argsstring></argsstring>
+        <name>parentIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="235" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1a7f8e57fb38bb6933fdd4e52b925fd2bb" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaVdwForce::VdwInfo::reductionFactor</definition>
+        <argsstring></argsstring>
+        <name>reductionFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="236" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1aac856a10b11259e04d0d02f9ceac6760" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaVdwForce::VdwInfo::sigma</definition>
+        <argsstring></argsstring>
+        <name>sigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="236" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1acd8ff79d29f01b0ae2a6878bcc578767" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaVdwForce::VdwInfo::epsilon</definition>
+        <argsstring></argsstring>
+        <name>epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="236" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1abebb38420ebe8cd29ef100c81be834e8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaVdwForce::VdwInfo::cutoff</definition>
+        <argsstring></argsstring>
+        <name>cutoff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="236" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1af78d3afa340c53268044ad62223bf3de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaVdwForce::VdwInfo::VdwInfo</definition>
+        <argsstring>()</argsstring>
+        <name>VdwInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="237" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="237" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1a6f39af224482cf4f11ac6fbbb70f5222" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaVdwForce::VdwInfo::VdwInfo</definition>
+        <argsstring>(int parentIndex, double sigma, double epsilon, double reductionFactor)</argsstring>
+        <name>VdwInfo</name>
+        <param>
+          <type>int</type>
+          <declname>parentIndex</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>epsilon</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>reductionFactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="244" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="243" bodyend="245"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="233" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="233" bodyend="246"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1abebb38420ebe8cd29ef100c81be834e8" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce::VdwInfo</scope><name>cutoff</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1acd8ff79d29f01b0ae2a6878bcc578767" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce::VdwInfo</scope><name>epsilon</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1a2164a5504e8546f4aa78319d641368e1" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce::VdwInfo</scope><name>parentIndex</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1a7f8e57fb38bb6933fdd4e52b925fd2bb" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce::VdwInfo</scope><name>reductionFactor</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1aac856a10b11259e04d0d02f9ceac6760" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce::VdwInfo</scope><name>sigma</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1af78d3afa340c53268044ad62223bf3de" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce::VdwInfo</scope><name>VdwInfo</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo_1a6f39af224482cf4f11ac6fbbb70f5222" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce::VdwInfo</scope><name>VdwInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

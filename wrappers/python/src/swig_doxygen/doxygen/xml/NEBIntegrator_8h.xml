@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="NEBIntegrator_8h" kind="file">
+    <compoundname>NEBIntegrator.h</compoundname>
+    <includes refid="Integrator_8h" local="yes">openmm/Integrator.h</includes>
+    <includes local="yes">openmm/Kernel.h</includes>
+    <includes refid="State_8h" local="yes">openmm/State.h</includes>
+    <includes refid="Vec3_8h" local="yes">openmm/Vec3.h</includes>
+    <includes refid="windowsExport_8h" local="yes">openmm/internal/windowsExport.h</includes>
+    <includedby refid="NEBKerenls_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBKerenls.h</includedby>
+    <includedby refid="NEBKernels_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBKernels.h</includedby>
+    <incdepgraph>
+      <node id="1343">
+        <label>cassert</label>
+      </node>
+      <node id="1348">
+        <label>openmm/Kernel.h</label>
+      </node>
+      <node id="1345">
+        <label>map</label>
+      </node>
+      <node id="1341">
+        <label>State.h</label>
+        <link refid="State_8h_source"/>
+        <childnode refid="1342" relation="include">
+        </childnode>
+        <childnode refid="1345" relation="include">
+        </childnode>
+        <childnode refid="1346" relation="include">
+        </childnode>
+        <childnode refid="1347" relation="include">
+        </childnode>
+      </node>
+      <node id="1347">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="1346">
+        <label>vector</label>
+      </node>
+      <node id="1344">
+        <label>iosfwd</label>
+      </node>
+      <node id="1339">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h</label>
+        <link refid="NEBIntegrator.h"/>
+        <childnode refid="1340" relation="include">
+        </childnode>
+        <childnode refid="1348" relation="include">
+        </childnode>
+        <childnode refid="1341" relation="include">
+        </childnode>
+        <childnode refid="1342" relation="include">
+        </childnode>
+        <childnode refid="1347" relation="include">
+        </childnode>
+      </node>
+      <node id="1342">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="1343" relation="include">
+        </childnode>
+        <childnode refid="1344" relation="include">
+        </childnode>
+      </node>
+      <node id="1340">
+        <label>openmm/Integrator.h</label>
+        <link refid="Integrator_8h_source"/>
+        <childnode refid="1341" relation="include">
+        </childnode>
+        <childnode refid="1342" relation="include">
+        </childnode>
+        <childnode refid="1345" relation="include">
+        </childnode>
+        <childnode refid="1346" relation="include">
+        </childnode>
+        <childnode refid="1347" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1351">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBKernels.h</label>
+        <link refid="NEBKernels_8h_source"/>
+      </node>
+      <node id="1349">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h</label>
+        <link refid="NEBIntegrator.h"/>
+        <childnode refid="1350" relation="include">
+        </childnode>
+        <childnode refid="1351" relation="include">
+        </childnode>
+      </node>
+      <node id="1350">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBKerenls.h</label>
+        <link refid="NEBKerenls_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1NEBIntegrator" prot="public">OpenMM::NEBIntegrator</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/neb/openmmapi/include/openmm/NEBIntegrator.h"/>
+  </compounddef>
+</doxygen>

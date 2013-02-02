@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="HarmonicAngleForce_8h" kind="file">
+    <compoundname>HarmonicAngleForce.h</compoundname>
+    <includes refid="Force_8h" local="yes">Force.h</includes>
+    <includes refid="Vec3_8h" local="yes">Vec3.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">vector</includes>
+    <includes refid="windowsExport_8h" local="yes">internal/windowsExport.h</includes>
+    <includedby refid="HarmonicAngleForceImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/HarmonicAngleForceImpl.h</includedby>
+    <includedby refid="OpenMM_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</includedby>
+    <incdepgraph>
+      <node id="297">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicAngleForce.h</label>
+        <link refid="HarmonicAngleForce.h"/>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="299" relation="include">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>cassert</label>
+      </node>
+      <node id="303">
+        <label>map</label>
+      </node>
+      <node id="299">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="304">
+        <label>vector</label>
+      </node>
+      <node id="302">
+        <label>iosfwd</label>
+      </node>
+      <node id="300">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="305">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicAngleForce.h</label>
+        <link refid="HarmonicAngleForce.h"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+      </node>
+      <node id="306">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/HarmonicAngleForceImpl.h</label>
+        <link refid="HarmonicAngleForceImpl_8h_source"/>
+      </node>
+      <node id="307">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</label>
+        <link refid="OpenMM_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1HarmonicAngleForce" prot="public">OpenMM::HarmonicAngleForce</innerclass>
+    <innerclass refid="classOpenMM_1_1HarmonicAngleForce_1_1AngleInfo" prot="private">OpenMM::HarmonicAngleForce::AngleInfo</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/HarmonicAngleForce.h"/>
+  </compounddef>
+</doxygen>

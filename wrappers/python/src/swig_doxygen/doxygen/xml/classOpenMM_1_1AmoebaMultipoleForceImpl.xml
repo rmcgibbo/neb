@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1AmoebaMultipoleForceImpl" kind="class" prot="public">
+    <compoundname>OpenMM::AmoebaMultipoleForceImpl</compoundname>
+    <basecompoundref refid="classOpenMM_1_1ForceImpl" prot="public" virt="non-virtual">OpenMM::ForceImpl</basecompoundref>
+    <includes refid="AmoebaMultipoleForceImpl_8h" local="no">AmoebaMultipoleForceImpl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a6532e71c141b573317e5625bbc237324" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1AmoebaMultipoleForce" kindref="compound">AmoebaMultipoleForce</ref> &amp;</type>
+        <definition>AmoebaMultipoleForce&amp; OpenMM::AmoebaMultipoleForceImpl::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="93" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a9e544c06759c7ff89c64630e5eb04495" prot="private" static="no" mutable="no">
+        <type>Kernel</type>
+        <definition>Kernel OpenMM::AmoebaMultipoleForceImpl::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="94" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a95edca886d268ffcc4d52d2b80842bb7" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaMultipoleForceImpl::CovalentDegrees[AmoebaMultipoleForce::CovalentEnd]</definition>
+        <argsstring>[AmoebaMultipoleForce::CovalentEnd]</argsstring>
+        <name>CovalentDegrees</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="96" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a332719c04ba0c3593a78b5ac8f6e7da6" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool OpenMM::AmoebaMultipoleForceImpl::initializedCovalentDegrees</definition>
+        <argsstring></argsstring>
+        <name>initializedCovalentDegrees</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="97" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a09023213a48d0895edc2ee7a5bfbc0b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaMultipoleForceImpl::AmoebaMultipoleForceImpl</definition>
+        <argsstring>(AmoebaMultipoleForce &amp;owner)</argsstring>
+        <name>AmoebaMultipoleForceImpl</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1AmoebaMultipoleForce" kindref="compound">AmoebaMultipoleForce</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a8d5e5e7b864a04144ecd1b5f5aa400ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaMultipoleForceImpl::~AmoebaMultipoleForceImpl</definition>
+        <argsstring>()</argsstring>
+        <name>~AmoebaMultipoleForceImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1acf8c0db01455a8e480003aad275758fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaMultipoleForceImpl::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a0a1f85a9c94613577399c1fada6ecb01">initialize</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called after the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> is created and before <ref refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a2f844d91bef6a17a071f70330d424183" kindref="member">updateContextState()</ref>, calcForces(), or calcEnergy() is called on it. This allows it to do any necessary initialization. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a692a58b0cea2040d13fb791e446fa6a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenMM_1_1AmoebaMultipoleForce" kindref="compound">AmoebaMultipoleForce</ref> &amp;</type>
+        <definition>AmoebaMultipoleForce&amp; OpenMM::AmoebaMultipoleForceImpl::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a766c966d25ad0d8cf287ee07e524a081">getOwner</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object from which this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> was created. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="53" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a2f844d91bef6a17a071f70330d424183" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaMultipoleForceImpl::updateContextState</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>updateContextState</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1aae2f5cc793b7071cb6516a02fa736087">updateContextState</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called at the beginning of each time step. It give the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> a chance to modify the state variables (positions, velocities, and parameters) stored in the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> in arbitrary ways before integration is performed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="56" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a226de06d2a03c8242dd95b6c0d6c6162" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaMultipoleForceImpl::calcForcesAndEnergy</definition>
+        <argsstring>(ContextImpl &amp;context, bool includeForces, bool includeEnergy, int groups)</argsstring>
+        <name>calcForcesAndEnergy</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a1e2544ac6d58460a79697236e8b758be">calcForcesAndEnergy</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeForces</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeEnergy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>groups</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the force on each particle generated by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> and/or this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>&apos;s contribution to the potential energy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeForces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if forces should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeEnergy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the energy should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>groups</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a set of bit flags for which force groups to include. Group i should be included if (groups&amp;(1&lt;&lt;i)) != 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>this force&apos;s contribution to the potential energy of the system, or 0 if this force does not contribute to potential energy (or if includeEnergy is false) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a859eedf12483f8786b8be117bde23f74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; OpenMM::AmoebaMultipoleForceImpl::getDefaultParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultParameters</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1adf18979257a14b23dd52dbda9e87c308">getDefaultParameters</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a map containing the default values for all adjustable parameters defined by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>. These parameters and their default values will automatically be added to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="60" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a83bd355f4d22b8663236ee90454f2fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; OpenMM::AmoebaMultipoleForceImpl::getKernelNames</definition>
+        <argsstring>()</argsstring>
+        <name>getKernelNames</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a5820facb44adaab79bbb02a3ba5bd79b">getKernelNames</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a65c3e5c950f07efd3e56bb4b218256d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaMultipoleForceImpl::getElectrostaticPotential</definition>
+        <argsstring>(ContextImpl &amp;context, const std::vector&lt; Vec3 &gt; &amp;inputGrid, std::vector&lt; double &gt; &amp;outputElectrostaticPotential)</argsstring>
+        <name>getElectrostaticPotential</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+          <declname>inputGrid</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>outputElectrostaticPotential</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a09c3464733df1864e114c3b3bc1840b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaMultipoleForceImpl::getSystemMultipoleMoments</definition>
+        <argsstring>(ContextImpl &amp;context, std::vector&lt; double &gt; &amp;outputMultipoleMonents)</argsstring>
+        <name>getSystemMultipoleMoments</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>outputMultipoleMonents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1add5e065745f80475ec4cf20824a9ddc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaMultipoleForceImpl::updateParametersInContext</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1ab1fd868ca1aebbc26e8422a9207be180" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenMM::AmoebaMultipoleForceImpl::getCovalentRange</definition>
+        <argsstring>(const AmoebaMultipoleForce &amp;force, int index, const std::vector&lt; AmoebaMultipoleForce::CovalentType &gt; &amp;lists, int *minCovalentIndex, int *maxCovalentIndex)</argsstring>
+        <name>getCovalentRange</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1AmoebaMultipoleForce" kindref="compound">AmoebaMultipoleForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; AmoebaMultipoleForce::CovalentType &gt; &amp;</type>
+          <declname>lists</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>minCovalentIndex</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>maxCovalentIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the CovalentMap for an atom</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classOpenMM_1_1AmoebaMultipoleForce" kindref="compound">AmoebaMultipoleForce</ref> force reference </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the atom for which to set parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minCovalentIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum covalent index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxCovalentIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum covalent index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1af7cabe4f08929bc408f7333972b9ac69" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void OpenMM::AmoebaMultipoleForceImpl::getCovalentDegree</definition>
+        <argsstring>(const AmoebaMultipoleForce &amp;force, std::vector&lt; int &gt; &amp;covalentDegree)</argsstring>
+        <name>getCovalentDegree</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1AmoebaMultipoleForce" kindref="compound">AmoebaMultipoleForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>covalentDegree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the covalent degree for the CovalentEnd lists</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classOpenMM_1_1AmoebaMultipoleForce" kindref="compound">AmoebaMultipoleForce</ref> force reference </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>covalentDegree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>covalent degrees for the CovalentEnd lists </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="83"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaMultipoleForceImpl_1a47bef325edc0f8961bf8212dc7c0a1f0" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int *</type>
+        <definition>static const int* OpenMM::AmoebaMultipoleForceImpl::getCovalentDegrees</definition>
+        <argsstring>(void)</argsstring>
+        <name>getCovalentDegrees</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the internal implementation of <ref refid="classOpenMM_1_1AmoebaMultipoleForce" kindref="compound">AmoebaMultipoleForce</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="37">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="36">
+        <label>OpenMM::AmoebaMultipoleForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaMultipoleForceImpl"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="39">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="38">
+        <label>OpenMM::AmoebaMultipoleForceImpl</label>
+        <link refid="classOpenMM_1_1AmoebaMultipoleForceImpl"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" line="48" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h" bodystart="48" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a09023213a48d0895edc2ee7a5bfbc0b4" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>AmoebaMultipoleForceImpl</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a226de06d2a03c8242dd95b6c0d6c6162" prot="public" virt="virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>calcForcesAndEnergy</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a95edca886d268ffcc4d52d2b80842bb7" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>CovalentDegrees</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1aaa19783e47e53df34083cbaadf37e41c" prot="public" virt="virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>getBondedParticles</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1af7cabe4f08929bc408f7333972b9ac69" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>getCovalentDegree</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a47bef325edc0f8961bf8212dc7c0a1f0" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>getCovalentDegrees</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1ab1fd868ca1aebbc26e8422a9207be180" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>getCovalentRange</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a859eedf12483f8786b8be117bde23f74" prot="public" virt="virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>getDefaultParameters</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a65c3e5c950f07efd3e56bb4b218256d1" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>getElectrostaticPotential</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a83bd355f4d22b8663236ee90454f2fcd" prot="public" virt="virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a692a58b0cea2040d13fb791e446fa6a0" prot="public" virt="virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>getOwner</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a09c3464733df1864e114c3b3bc1840b9" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>getSystemMultipoleMoments</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1acf8c0db01455a8e480003aad275758fd" prot="public" virt="virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a332719c04ba0c3593a78b5ac8f6e7da6" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>initializedCovalentDegrees</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a9e544c06759c7ff89c64630e5eb04495" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>kernel</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a6532e71c141b573317e5625bbc237324" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>owner</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a2f844d91bef6a17a071f70330d424183" prot="public" virt="virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>updateContextState</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1add5e065745f80475ec4cf20824a9ddc9" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1AmoebaMultipoleForceImpl_1a8d5e5e7b864a04144ecd1b5f5aa400ef" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>~AmoebaMultipoleForceImpl</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1a8a2bccbabb2587111b46da67cea8293c" prot="public" virt="virtual"><scope>OpenMM::AmoebaMultipoleForceImpl</scope><name>~ForceImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

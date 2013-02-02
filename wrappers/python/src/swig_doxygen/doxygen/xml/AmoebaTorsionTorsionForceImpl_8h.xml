@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="AmoebaTorsionTorsionForceImpl_8h" kind="file">
+    <compoundname>AmoebaTorsionTorsionForceImpl.h</compoundname>
+    <includes refid="ForceImpl_8h" local="yes">openmm/internal/ForceImpl.h</includes>
+    <includes refid="AmoebaTorsionTorsionForce_8h" local="yes">openmm/AmoebaTorsionTorsionForce.h</includes>
+    <includes local="yes">openmm/Kernel.h</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="1254">
+        <label>openmm/AmoebaTorsionTorsionForce.h</label>
+        <link refid="AmoebaTorsionTorsionForce_8h_source"/>
+        <childnode refid="1255" relation="include">
+        </childnode>
+        <childnode refid="1256" relation="include">
+        </childnode>
+        <childnode refid="1253" relation="include">
+        </childnode>
+        <childnode refid="1257" relation="include">
+        </childnode>
+      </node>
+      <node id="1247">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaTorsionTorsionForceImpl.h</label>
+        <link refid="AmoebaTorsionTorsionForceImpl.h"/>
+        <childnode refid="1248" relation="include">
+        </childnode>
+        <childnode refid="1254" relation="include">
+        </childnode>
+        <childnode refid="1258" relation="include">
+        </childnode>
+        <childnode refid="1252" relation="include">
+        </childnode>
+        <childnode refid="1251" relation="include">
+        </childnode>
+      </node>
+      <node id="1255">
+        <label>openmm/Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="1249" relation="include">
+        </childnode>
+      </node>
+      <node id="1248">
+        <label>openmm/internal/ForceImpl.h</label>
+        <link refid="ForceImpl_8h_source"/>
+        <childnode refid="1249" relation="include">
+        </childnode>
+        <childnode refid="1250" relation="include">
+        </childnode>
+        <childnode refid="1251" relation="include">
+        </childnode>
+        <childnode refid="1252" relation="include">
+        </childnode>
+        <childnode refid="1253" relation="include">
+        </childnode>
+      </node>
+      <node id="1257">
+        <label>cmath</label>
+      </node>
+      <node id="1258">
+        <label>openmm/Kernel.h</label>
+      </node>
+      <node id="1251">
+        <label>string</label>
+      </node>
+      <node id="1250">
+        <label>map</label>
+      </node>
+      <node id="1249">
+        <label>openmm/internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="1253">
+        <label>vector</label>
+      </node>
+      <node id="1252">
+        <label>utility</label>
+      </node>
+      <node id="1256">
+        <label>internal/windowsExportAmoeba.h</label>
+        <link refid="windowsExportAmoeba_8h_source"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classOpenMM_1_1AmoebaTorsionTorsionForceImpl" prot="public">OpenMM::AmoebaTorsionTorsionForceImpl</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaTorsionTorsionForceImpl.h"/>
+  </compounddef>
+</doxygen>

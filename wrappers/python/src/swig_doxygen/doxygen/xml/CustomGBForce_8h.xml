@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="CustomGBForce_8h" kind="file">
+    <compoundname>CustomGBForce.h</compoundname>
+    <includes refid="Force_8h" local="yes">Force.h</includes>
+    <includes refid="Vec3_8h" local="yes">Vec3.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">set</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">vector</includes>
+    <includes refid="windowsExport_8h" local="yes">internal/windowsExport.h</includes>
+    <includedby refid="CustomGBForceImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomGBForceImpl.h</includedby>
+    <includedby refid="OpenMM_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</includedby>
+    <incdepgraph>
+      <node id="155">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h</label>
+        <link refid="CustomGBForce.h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>cassert</label>
+      </node>
+      <node id="161">
+        <label>map</label>
+      </node>
+      <node id="157">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="164">
+        <label>vector</label>
+      </node>
+      <node id="163">
+        <label>utility</label>
+      </node>
+      <node id="160">
+        <label>iosfwd</label>
+      </node>
+      <node id="158">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>set</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="165">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h</label>
+        <link refid="CustomGBForce.h"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</label>
+        <link refid="OpenMM_8h_source"/>
+      </node>
+      <node id="166">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomGBForceImpl.h</label>
+        <link refid="CustomGBForceImpl_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1CustomGBForce" prot="public">OpenMM::CustomGBForce</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForce_1_1ParticleInfo" prot="private">OpenMM::CustomGBForce::ParticleInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForce_1_1PerParticleParameterInfo" prot="private">OpenMM::CustomGBForce::PerParticleParameterInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForce_1_1GlobalParameterInfo" prot="private">OpenMM::CustomGBForce::GlobalParameterInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForce_1_1ExclusionInfo" prot="private">OpenMM::CustomGBForce::ExclusionInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForce_1_1FunctionInfo" prot="private">OpenMM::CustomGBForce::FunctionInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1CustomGBForce_1_1ComputationInfo" prot="private">OpenMM::CustomGBForce::ComputationInfo</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomGBForce.h"/>
+  </compounddef>
+</doxygen>

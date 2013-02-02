@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="CustomHbondForceImpl_8h" kind="file">
+    <compoundname>CustomHbondForceImpl.h</compoundname>
+    <includes refid="ForceImpl_8h" local="yes">ForceImpl.h</includes>
+    <includes refid="CustomHbondForce_8h" local="yes">openmm/CustomHbondForce.h</includes>
+    <includes local="yes">openmm/Kernel.h</includes>
+    <includes local="yes">lepton/CustomFunction.h</includes>
+    <includes local="yes">lepton/ExpressionTreeNode.h</includes>
+    <includes local="yes">lepton/ParsedExpression.h</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="479">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="473" relation="include">
+        </childnode>
+      </node>
+      <node id="487">
+        <label>lepton/ParsedExpression.h</label>
+      </node>
+      <node id="472">
+        <label>ForceImpl.h</label>
+        <link refid="ForceImpl_8h_source"/>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+      </node>
+      <node id="481">
+        <label>cassert</label>
+      </node>
+      <node id="484">
+        <label>openmm/Kernel.h</label>
+      </node>
+      <node id="475">
+        <label>string</label>
+      </node>
+      <node id="474">
+        <label>map</label>
+      </node>
+      <node id="473">
+        <label>openmm/internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="485">
+        <label>lepton/CustomFunction.h</label>
+      </node>
+      <node id="477">
+        <label>vector</label>
+      </node>
+      <node id="478">
+        <label>openmm/CustomHbondForce.h</label>
+        <link refid="CustomHbondForce_8h_source"/>
+        <childnode refid="479" relation="include">
+        </childnode>
+        <childnode refid="480" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="483" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+      </node>
+      <node id="476">
+        <label>utility</label>
+      </node>
+      <node id="471">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h</label>
+        <link refid="CustomHbondForceImpl.h"/>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="484" relation="include">
+        </childnode>
+        <childnode refid="485" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+      </node>
+      <node id="482">
+        <label>iosfwd</label>
+      </node>
+      <node id="486">
+        <label>lepton/ExpressionTreeNode.h</label>
+      </node>
+      <node id="480">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="481" relation="include">
+        </childnode>
+        <childnode refid="482" relation="include">
+        </childnode>
+      </node>
+      <node id="483">
+        <label>set</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classOpenMM_1_1CustomHbondForceImpl" prot="public">OpenMM::CustomHbondForceImpl</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h"/>
+  </compounddef>
+</doxygen>

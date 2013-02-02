@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1IntegrateRPMDStepKernel" kind="class" prot="public">
+    <compoundname>OpenMM::IntegrateRPMDStepKernel</compoundname>
+    <includes refid="RpmdKernels_8h" local="no">RpmdKernels.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1IntegrateRPMDStepKernel_1ae627d32c9b111326da40d70c91f2d47b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string OpenMM::IntegrateRPMDStepKernel::Name</definition>
+        <argsstring>()</argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h" line="50" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1IntegrateRPMDStepKernel_1a6428f5a94e4648bdc4de3829cb3d5bec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::IntegrateRPMDStepKernel::IntegrateRPMDStepKernel</definition>
+        <argsstring>(std::string name, const Platform &amp;platform)</argsstring>
+        <name>IntegrateRPMDStepKernel</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Platform" kindref="compound">Platform</ref> &amp;</type>
+          <declname>platform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h" line="53" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h" bodystart="53" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1IntegrateRPMDStepKernel_1a2eafc87b26dead235b02109c147c591c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::IntegrateRPMDStepKernel::initialize</definition>
+        <argsstring>(const System &amp;system, const RPMDIntegrator &amp;integrator)=0</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> &amp;</type>
+          <declname>system</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1RPMDIntegrator" kindref="compound">RPMDIntegrator</ref> &amp;</type>
+          <declname>integrator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the kernel.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>system</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> this kernel will be applied to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>integrator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classOpenMM_1_1RPMDIntegrator" kindref="compound">RPMDIntegrator</ref> this kernel will be used for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1IntegrateRPMDStepKernel_1a916041000cb7a254dafbb4b20a366c7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::IntegrateRPMDStepKernel::execute</definition>
+        <argsstring>(ContextImpl &amp;context, const RPMDIntegrator &amp;integrator, bool forcesAreValid)=0</argsstring>
+        <name>execute</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1RPMDIntegrator" kindref="compound">RPMDIntegrator</ref> &amp;</type>
+          <declname>integrator</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forcesAreValid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Execute the kernel.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which to execute this kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>integrator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classOpenMM_1_1RPMDIntegrator" kindref="compound">RPMDIntegrator</ref> this kernel is being used for </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>forcesAreValid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the context has been modified since the last time step, this will be false to show that cached forces are invalid and must be recalculated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1IntegrateRPMDStepKernel_1a33eb9a4d5a797b2045ed2bb518c11909" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::IntegrateRPMDStepKernel::setPositions</definition>
+        <argsstring>(int copy, const std::vector&lt; Vec3 &gt; &amp;positions)=0</argsstring>
+        <name>setPositions</name>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the positions of all particles in one copy of the system. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1IntegrateRPMDStepKernel_1a382fc17ac3d6ec72b3e4afa9b71c1fd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::IntegrateRPMDStepKernel::setVelocities</definition>
+        <argsstring>(int copy, const std::vector&lt; Vec3 &gt; &amp;velocities)=0</argsstring>
+        <name>setVelocities</name>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classOpenMM_1_1Vec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+          <declname>velocities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the velocities of all particles in one copy of the system. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1IntegrateRPMDStepKernel_1abf8f34acfabf3eedff8c84e1d0f4d3b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::IntegrateRPMDStepKernel::copyToContext</definition>
+        <argsstring>(int copy, ContextImpl &amp;context)=0</argsstring>
+        <name>copyToContext</name>
+        <param>
+          <type>int</type>
+          <declname>copy</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy positions and velocities for one copy into the context. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1IntegrateRPMDStepKernel_1a3fbaf96e15eb706c69a1e503c0a087cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenMM::IntegrateRPMDStepKernel::computeKineticEnergy</definition>
+        <argsstring>(ContextImpl &amp;context, const RPMDIntegrator &amp;integrator)=0</argsstring>
+        <name>computeKineticEnergy</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1RPMDIntegrator" kindref="compound">RPMDIntegrator</ref> &amp;</type>
+          <declname>integrator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the kinetic energy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h" line="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This kernel is invoked by <ref refid="classOpenMM_1_1RPMDIntegrator" kindref="compound">RPMDIntegrator</ref> to take one time step, and to get and set the state of system copies. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h" line="48" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/rpmd/openmmapi/include/openmm/RpmdKernels.h" bodystart="48" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1IntegrateRPMDStepKernel_1a3fbaf96e15eb706c69a1e503c0a087cb" prot="public" virt="pure-virtual"><scope>OpenMM::IntegrateRPMDStepKernel</scope><name>computeKineticEnergy</name></member>
+      <member refid="classOpenMM_1_1IntegrateRPMDStepKernel_1abf8f34acfabf3eedff8c84e1d0f4d3b5" prot="public" virt="pure-virtual"><scope>OpenMM::IntegrateRPMDStepKernel</scope><name>copyToContext</name></member>
+      <member refid="classOpenMM_1_1IntegrateRPMDStepKernel_1a916041000cb7a254dafbb4b20a366c7e" prot="public" virt="pure-virtual"><scope>OpenMM::IntegrateRPMDStepKernel</scope><name>execute</name></member>
+      <member refid="classOpenMM_1_1IntegrateRPMDStepKernel_1a2eafc87b26dead235b02109c147c591c" prot="public" virt="pure-virtual"><scope>OpenMM::IntegrateRPMDStepKernel</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1IntegrateRPMDStepKernel_1a6428f5a94e4648bdc4de3829cb3d5bec" prot="public" virt="non-virtual"><scope>OpenMM::IntegrateRPMDStepKernel</scope><name>IntegrateRPMDStepKernel</name></member>
+      <member refid="classOpenMM_1_1IntegrateRPMDStepKernel_1ae627d32c9b111326da40d70c91f2d47b" prot="public" virt="non-virtual"><scope>OpenMM::IntegrateRPMDStepKernel</scope><name>Name</name></member>
+      <member refid="classOpenMM_1_1IntegrateRPMDStepKernel_1a33eb9a4d5a797b2045ed2bb518c11909" prot="public" virt="pure-virtual"><scope>OpenMM::IntegrateRPMDStepKernel</scope><name>setPositions</name></member>
+      <member refid="classOpenMM_1_1IntegrateRPMDStepKernel_1a382fc17ac3d6ec72b3e4afa9b71c1fd8" prot="public" virt="pure-virtual"><scope>OpenMM::IntegrateRPMDStepKernel</scope><name>setVelocities</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

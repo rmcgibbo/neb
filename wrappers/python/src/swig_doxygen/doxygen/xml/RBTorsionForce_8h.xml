@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="RBTorsionForce_8h" kind="file">
+    <compoundname>RBTorsionForce.h</compoundname>
+    <includes refid="Force_8h" local="yes">Force.h</includes>
+    <includes refid="Vec3_8h" local="yes">Vec3.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">vector</includes>
+    <includes refid="windowsExport_8h" local="yes">internal/windowsExport.h</includes>
+    <includedby refid="RBTorsionForceImpl_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/RBTorsionForceImpl.h</includedby>
+    <includedby refid="OpenMM_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</includedby>
+    <incdepgraph>
+      <node id="842">
+        <label>Force.h</label>
+        <link refid="Force_8h_source"/>
+        <childnode refid="843" relation="include">
+        </childnode>
+      </node>
+      <node id="845">
+        <label>cassert</label>
+      </node>
+      <node id="841">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/RBTorsionForce.h</label>
+        <link refid="RBTorsionForce.h"/>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="844" relation="include">
+        </childnode>
+        <childnode refid="847" relation="include">
+        </childnode>
+        <childnode refid="848" relation="include">
+        </childnode>
+        <childnode refid="843" relation="include">
+        </childnode>
+      </node>
+      <node id="847">
+        <label>map</label>
+      </node>
+      <node id="843">
+        <label>internal/windowsExport.h</label>
+        <link refid="windowsExport_8h_source"/>
+      </node>
+      <node id="848">
+        <label>vector</label>
+      </node>
+      <node id="846">
+        <label>iosfwd</label>
+      </node>
+      <node id="844">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="845" relation="include">
+        </childnode>
+        <childnode refid="846" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="850">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/RBTorsionForceImpl.h</label>
+        <link refid="RBTorsionForceImpl_8h_source"/>
+      </node>
+      <node id="849">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/RBTorsionForce.h</label>
+        <link refid="RBTorsionForce.h"/>
+        <childnode refid="850" relation="include">
+        </childnode>
+        <childnode refid="851" relation="include">
+        </childnode>
+      </node>
+      <node id="851">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/OpenMM.h</label>
+        <link refid="OpenMM_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenMM_1_1RBTorsionForce" prot="public">OpenMM::RBTorsionForce</innerclass>
+    <innerclass refid="classOpenMM_1_1RBTorsionForce_1_1RBTorsionInfo" prot="private">OpenMM::RBTorsionForce::RBTorsionInfo</innerclass>
+    <innernamespace refid="namespaceOpenMM">OpenMM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/RBTorsionForce.h"/>
+  </compounddef>
+</doxygen>

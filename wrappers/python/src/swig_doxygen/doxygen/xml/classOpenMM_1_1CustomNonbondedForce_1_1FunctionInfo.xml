@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo" kind="class" prot="private">
+    <compoundname>OpenMM::CustomNonbondedForce::FunctionInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo_1ae28763e17a6f1ddf0c20bd42ba731f45" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string OpenMM::CustomNonbondedForce::FunctionInfo::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" line="408" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo_1a8b52c9b76ad7cd3c51bd571a66f1a618" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OpenMM::CustomNonbondedForce::FunctionInfo::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" line="409" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo_1a989e6fd1ee0f349bc6f78a952bc00990" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::CustomNonbondedForce::FunctionInfo::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" line="410" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo_1aecb4b7800a05be1dd4fc45a98df4d302" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::CustomNonbondedForce::FunctionInfo::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" line="410" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo_1a7102d23237bcd23d35d4a560c5c32e7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CustomNonbondedForce::FunctionInfo::FunctionInfo</definition>
+        <argsstring>()</argsstring>
+        <name>FunctionInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" line="411" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" bodystart="411" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo_1a3c664f580bd05d4f81aa9e8b5e4b6166" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CustomNonbondedForce::FunctionInfo::FunctionInfo</definition>
+        <argsstring>(const std::string &amp;name, const std::vector&lt; double &gt; &amp;values, double min, double max)</argsstring>
+        <name>FunctionInfo</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" line="414" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" bodystart="413" bodyend="415"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is an internal class used to record information about a tabulated function. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" line="406" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/CustomNonbondedForce.h" bodystart="406" bodyend="416"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo_1a7102d23237bcd23d35d4a560c5c32e7b" prot="public" virt="non-virtual"><scope>OpenMM::CustomNonbondedForce::FunctionInfo</scope><name>FunctionInfo</name></member>
+      <member refid="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo_1a3c664f580bd05d4f81aa9e8b5e4b6166" prot="public" virt="non-virtual"><scope>OpenMM::CustomNonbondedForce::FunctionInfo</scope><name>FunctionInfo</name></member>
+      <member refid="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo_1aecb4b7800a05be1dd4fc45a98df4d302" prot="public" virt="non-virtual"><scope>OpenMM::CustomNonbondedForce::FunctionInfo</scope><name>max</name></member>
+      <member refid="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo_1a989e6fd1ee0f349bc6f78a952bc00990" prot="public" virt="non-virtual"><scope>OpenMM::CustomNonbondedForce::FunctionInfo</scope><name>min</name></member>
+      <member refid="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo_1ae28763e17a6f1ddf0c20bd42ba731f45" prot="public" virt="non-virtual"><scope>OpenMM::CustomNonbondedForce::FunctionInfo</scope><name>name</name></member>
+      <member refid="classOpenMM_1_1CustomNonbondedForce_1_1FunctionInfo_1a8b52c9b76ad7cd3c51bd571a66f1a618" prot="public" virt="non-virtual"><scope>OpenMM::CustomNonbondedForce::FunctionInfo</scope><name>values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

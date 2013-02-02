@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1CalcAmoebaWcaDispersionForceKernel" kind="class" prot="public">
+    <compoundname>OpenMM::CalcAmoebaWcaDispersionForceKernel</compoundname>
+    <includes refid="amoebaKernels_8h" local="no">amoebaKernels.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaWcaDispersionForceKernel_1af7754b0891b03e9d44d3dccecd7bcec0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string OpenMM::CalcAmoebaWcaDispersionForceKernel::Name</definition>
+        <argsstring>()</argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="451" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" bodystart="451" bodyend="453"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaWcaDispersionForceKernel_1a769de4416f15f0ed8c06fdf56f87c406" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CalcAmoebaWcaDispersionForceKernel::CalcAmoebaWcaDispersionForceKernel</definition>
+        <argsstring>(std::string name, const Platform &amp;platform)</argsstring>
+        <name>CalcAmoebaWcaDispersionForceKernel</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1Platform" kindref="compound">Platform</ref> &amp;</type>
+          <declname>platform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="455" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" bodystart="455" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaWcaDispersionForceKernel_1a6b1a46852fa770991968645f97c17988" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::CalcAmoebaWcaDispersionForceKernel::initialize</definition>
+        <argsstring>(const System &amp;system, const AmoebaWcaDispersionForce &amp;force)=0</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> &amp;</type>
+          <declname>system</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1AmoebaWcaDispersionForce" kindref="compound">AmoebaWcaDispersionForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the kernel.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>system</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> this kernel will be applied to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classOpenMM_1_1GBSAOBCForce" kindref="compound">GBSAOBCForce</ref> this kernel will be used for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="464"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaWcaDispersionForceKernel_1a8bbf12f3ad6a91f47b1cf84f98e67b76" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double OpenMM::CalcAmoebaWcaDispersionForceKernel::execute</definition>
+        <argsstring>(ContextImpl &amp;context, bool includeForces, bool includeEnergy)=0</argsstring>
+        <name>execute</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeForces</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeEnergy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Execute the kernel to calculate the forces and/or energy.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which to execute this kernel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeForces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if forces should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeEnergy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the energy should be calculated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the potential energy due to the force </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CalcAmoebaWcaDispersionForceKernel_1ad3146c4ba7459f93b6c32aacdc9e0690" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OpenMM::CalcAmoebaWcaDispersionForceKernel::copyParametersToContext</definition>
+        <argsstring>(ContextImpl &amp;context, const AmoebaWcaDispersionForce &amp;force)=0</argsstring>
+        <name>copyParametersToContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1AmoebaWcaDispersionForce" kindref="compound">AmoebaWcaDispersionForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy changed parameters over to a context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context to copy parameters to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classOpenMM_1_1AmoebaWcaDispersionForce" kindref="compound">AmoebaWcaDispersionForce</ref> to copy the parameters from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="481"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This kernel is invoked by <ref refid="classOpenMM_1_1AmoebaWcaDispersionForce" kindref="compound">AmoebaWcaDispersionForce</ref> to calculate the WCA dispersion forces acting on the system and the WCA dispersion energy of the system. </para>    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" line="447" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h" bodystart="447" bodyend="482"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1CalcAmoebaWcaDispersionForceKernel_1a769de4416f15f0ed8c06fdf56f87c406" prot="public" virt="non-virtual"><scope>OpenMM::CalcAmoebaWcaDispersionForceKernel</scope><name>CalcAmoebaWcaDispersionForceKernel</name></member>
+      <member refid="classOpenMM_1_1CalcAmoebaWcaDispersionForceKernel_1ad3146c4ba7459f93b6c32aacdc9e0690" prot="public" virt="pure-virtual"><scope>OpenMM::CalcAmoebaWcaDispersionForceKernel</scope><name>copyParametersToContext</name></member>
+      <member refid="classOpenMM_1_1CalcAmoebaWcaDispersionForceKernel_1a8bbf12f3ad6a91f47b1cf84f98e67b76" prot="public" virt="pure-virtual"><scope>OpenMM::CalcAmoebaWcaDispersionForceKernel</scope><name>execute</name></member>
+      <member refid="classOpenMM_1_1CalcAmoebaWcaDispersionForceKernel_1a6b1a46852fa770991968645f97c17988" prot="public" virt="pure-virtual"><scope>OpenMM::CalcAmoebaWcaDispersionForceKernel</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1CalcAmoebaWcaDispersionForceKernel_1af7754b0891b03e9d44d3dccecd7bcec0" prot="public" virt="non-virtual"><scope>OpenMM::CalcAmoebaWcaDispersionForceKernel</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="windowsExportAmoeba_8h" kind="file">
+    <compoundname>windowsExportAmoeba.h</compoundname>
+    <includedby refid="AmoebaAngleForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaAngleForce.h</includedby>
+    <includedby refid="AmoebaBondForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaBondForce.h</includedby>
+    <includedby refid="AmoebaGeneralizedKirkwoodForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaGeneralizedKirkwoodForce.h</includedby>
+    <includedby refid="AmoebaInPlaneAngleForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h</includedby>
+    <includedby refid="AmoebaMultipoleForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaMultipoleForce.h</includedby>
+    <includedby refid="AmoebaOutOfPlaneBendForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaOutOfPlaneBendForce.h</includedby>
+    <includedby refid="AmoebaPiTorsionForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaPiTorsionForce.h</includedby>
+    <includedby refid="AmoebaStretchBendForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h</includedby>
+    <includedby refid="AmoebaTorsionTorsionForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h</includedby>
+    <includedby refid="AmoebaVdwForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h</includedby>
+    <includedby refid="AmoebaWcaDispersionForce_8h" local="yes">/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaWcaDispersionForce.h</includedby>
+    <invincdepgraph>
+      <node id="1306">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaTorsionTorsionForce.h</label>
+        <link refid="AmoebaTorsionTorsionForce_8h_source"/>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+      </node>
+      <node id="1296">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaInPlaneAngleForce.h</label>
+        <link refid="AmoebaInPlaneAngleForce_8h_source"/>
+        <childnode refid="1297" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+      </node>
+      <node id="1307">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaTorsionTorsionForceImpl.h</label>
+        <link refid="AmoebaTorsionTorsionForceImpl_8h_source"/>
+      </node>
+      <node id="1298">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaMultipoleForce.h</label>
+        <link refid="AmoebaMultipoleForce_8h_source"/>
+        <childnode refid="1299" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+      </node>
+      <node id="1293">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaBondForceImpl.h</label>
+        <link refid="AmoebaBondForceImpl_8h_source"/>
+      </node>
+      <node id="1292">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaBondForce.h</label>
+        <link refid="AmoebaBondForce_8h_source"/>
+        <childnode refid="1293" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+      </node>
+      <node id="1299">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaMultipoleForceImpl.h</label>
+        <link refid="AmoebaMultipoleForceImpl_8h_source"/>
+      </node>
+      <node id="1301">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaOutOfPlaneBendForceImpl.h</label>
+        <link refid="AmoebaOutOfPlaneBendForceImpl_8h_source"/>
+      </node>
+      <node id="1310">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaWcaDispersionForce.h</label>
+        <link refid="AmoebaWcaDispersionForce_8h_source"/>
+        <childnode refid="1311" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+      </node>
+      <node id="1291">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/amoebaKernels.h</label>
+        <link refid="amoebaKernels_8h_source"/>
+      </node>
+      <node id="1308">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h</label>
+        <link refid="AmoebaVdwForce_8h_source"/>
+        <childnode refid="1309" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+      </node>
+      <node id="1290">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/OpenMMAmoeba.h</label>
+        <link refid="OpenMMAmoeba_8h_source"/>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1289">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaAngleForceImpl.h</label>
+        <link refid="AmoebaAngleForceImpl_8h_source"/>
+      </node>
+      <node id="1311">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaWcaDispersionForceImpl.h</label>
+        <link refid="AmoebaWcaDispersionForceImpl_8h_source"/>
+      </node>
+      <node id="1288">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaAngleForce.h</label>
+        <link refid="AmoebaAngleForce_8h_source"/>
+        <childnode refid="1289" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+      </node>
+      <node id="1300">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaOutOfPlaneBendForce.h</label>
+        <link refid="AmoebaOutOfPlaneBendForce_8h_source"/>
+        <childnode refid="1301" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+      </node>
+      <node id="1304">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaStretchBendForce.h</label>
+        <link refid="AmoebaStretchBendForce_8h_source"/>
+        <childnode refid="1305" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+      </node>
+      <node id="1287">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/windowsExportAmoeba.h</label>
+        <link refid="windowsExportAmoeba.h"/>
+        <childnode refid="1288" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1300" relation="include">
+        </childnode>
+        <childnode refid="1302" relation="include">
+        </childnode>
+        <childnode refid="1304" relation="include">
+        </childnode>
+        <childnode refid="1306" relation="include">
+        </childnode>
+        <childnode refid="1308" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+      </node>
+      <node id="1295">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaGeneralizedKirkwoodForceImpl.h</label>
+        <link refid="AmoebaGeneralizedKirkwoodForceImpl_8h_source"/>
+      </node>
+      <node id="1303">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaPiTorsionForceImpl.h</label>
+        <link refid="AmoebaPiTorsionForceImpl_8h_source"/>
+      </node>
+      <node id="1309">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaVdwForceImpl.h</label>
+        <link refid="AmoebaVdwForceImpl_8h_source"/>
+      </node>
+      <node id="1294">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaGeneralizedKirkwoodForce.h</label>
+        <link refid="AmoebaGeneralizedKirkwoodForce_8h_source"/>
+        <childnode refid="1295" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+      </node>
+      <node id="1302">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaPiTorsionForce.h</label>
+        <link refid="AmoebaPiTorsionForce_8h_source"/>
+        <childnode refid="1303" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+      </node>
+      <node id="1305">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaStretchBendForceImpl.h</label>
+        <link refid="AmoebaStretchBendForceImpl_8h_source"/>
+      </node>
+      <node id="1297">
+        <label>/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/AmoebaInPlaneAngleForceImpl.h</label>
+        <link refid="AmoebaInPlaneAngleForceImpl_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="windowsExportAmoeba_8h_1a5cf3c9cd50e0d54c6061fb084c35b079" prot="public" static="no">
+        <name>OPENMM_EXPORT_AMOEBA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/windowsExportAmoeba.h" line="38" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/windowsExportAmoeba.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/internal/windowsExportAmoeba.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,718 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1AmoebaVdwForce" kind="class" prot="public">
+    <compoundname>OpenMM::AmoebaVdwForce</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Force" prot="public" virt="non-virtual">OpenMM::Force</basecompoundref>
+    <includes refid="AmoebaVdwForce_8h" local="no">AmoebaVdwForce.h</includes>
+    <innerclass refid="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo" prot="public">OpenMM::AmoebaVdwForce::VdwInfo</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classOpenMM_1_1AmoebaVdwForce_1a6014194eb71944af9df786d851fee784" prot="public" static="no">
+        <name>NonbondedMethod</name>
+        <enumvalue id="classOpenMM_1_1AmoebaVdwForce_1a6014194eb71944af9df786d851fee784af158fd40c7f4259986935f6f332554c4" prot="public">
+          <name>NoCutoff</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No cutoff is applied to nonbonded interactions. The full set of N^2 interactions is computed exactly. This necessarily means that periodic boundary conditions cannot be used. This is the default. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1AmoebaVdwForce_1a6014194eb71944af9df786d851fee784a5452c300301ed92b4aadef4ffc5c482e" prot="public">
+          <name>CutoffPeriodic</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Periodic boundary conditions are used, so that each particle interacts only with the nearest periodic copy of each other particle. Interactions beyond the cutoff distance are ignored. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an enumeration of the different methods that may be used for handling long range nonbonded forces. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="60" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="60" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1a94b0721e9520c4d1af4e1b06feb24d07" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1AmoebaVdwForce_1a6014194eb71944af9df786d851fee784" kindref="member">NonbondedMethod</ref></type>
+        <definition>NonbondedMethod OpenMM::AmoebaVdwForce::nonbondedMethod</definition>
+        <argsstring></argsstring>
+        <name>nonbondedMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="221" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1a0bda6cb8450783767556d7340f1d4fe3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaVdwForce::cutoff</definition>
+        <argsstring></argsstring>
+        <name>cutoff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="222" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1a9f49a8ddc512fbd7d01340532c3ade53" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OpenMM::AmoebaVdwForce::useDispersionCorrection</definition>
+        <argsstring></argsstring>
+        <name>useDispersionCorrection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="223" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1a79ca2c83079f45aeb4268e4f479aa517" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string OpenMM::AmoebaVdwForce::sigmaCombiningRule</definition>
+        <argsstring></argsstring>
+        <name>sigmaCombiningRule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="225" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1ac73b61944ed2f07cc0a23eaf382505bc" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string OpenMM::AmoebaVdwForce::epsilonCombiningRule</definition>
+        <argsstring></argsstring>
+        <name>epsilonCombiningRule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="226" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1a9e45813d22cd5c4c654fbc797d577df1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;int&gt; &gt; OpenMM::AmoebaVdwForce::exclusions</definition>
+        <argsstring></argsstring>
+        <name>exclusions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="228" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1a28bc461608687c8e7a39739fb2873cb6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenMM_1_1AmoebaVdwForce_1_1VdwInfo" kindref="compound">VdwInfo</ref> &gt;</type>
+        <definition>std::vector&lt;VdwInfo&gt; OpenMM::AmoebaVdwForce::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="229" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1AmoebaVdwForce_1a54e322f96776dbca515b015c9b97e310" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; std::vector&lt;double&gt; &gt; &gt; OpenMM::AmoebaVdwForce::sigEpsTable</definition>
+        <argsstring></argsstring>
+        <name>sigEpsTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="230" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1ab9906e8565d4453c833be8336f40fcc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::AmoebaVdwForce::AmoebaVdwForce</definition>
+        <argsstring>()</argsstring>
+        <name>AmoebaVdwForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an Amoeba VdwForce. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1af306ef1ab8b1c7e62f15f5f00747571e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaVdwForce::getNumParticles</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumParticles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of particles </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="81" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1ab206b4bbc16d176f09f75f00c7d7c2e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForce::setParticleParameters</definition>
+        <argsstring>(int particleIndex, int parentIndex, double sigma, double epsilon, double reductionFactor)</argsstring>
+        <name>setParticleParameters</name>
+        <param>
+          <type>int</type>
+          <declname>particleIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parentIndex</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>epsilon</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>reductionFactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the force field parameters for a vdw particle.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particleIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the particle index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parentIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parent particle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vdw sigma </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vdw epsilon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reductionFactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the fraction of the distance along the line from the parent particle to this particle at which the interaction site should be placed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1a6ba19cd749edd300ae0c33eb1b9e4394" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForce::getParticleParameters</definition>
+        <argsstring>(int particleIndex, int &amp;parentIndex, double &amp;sigma, double &amp;epsilon, double &amp;reductionFactor) const </argsstring>
+        <name>getParticleParameters</name>
+        <param>
+          <type>int</type>
+          <declname>particleIndex</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>parentIndex</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>reductionFactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the force field parameters for a vdw particle.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particleIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the particle index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parentIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parent particle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vdw sigma </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vdw epsilon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reductionFactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the fraction of the distance along the line from the parent particle to this particle at which the interaction site should be placed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1acef3ca97b5ff4cb32a249c228e171e99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::AmoebaVdwForce::addParticle</definition>
+        <argsstring>(int parentIndex, double sigma, double epsilon, double reductionFactor)</argsstring>
+        <name>addParticle</name>
+        <param>
+          <type>int</type>
+          <declname>parentIndex</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>epsilon</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>reductionFactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add the force field parameters for a vdw particle.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parentIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the parent particle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vdw sigma </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vdw epsilon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reductionFactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the fraction of the distance along the line from the parent particle to this particle at which the interaction site should be placed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index of added particle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1a34461e53b5d58aa6683db0d835a0555f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForce::setSigmaCombiningRule</definition>
+        <argsstring>(const std::string &amp;sigmaCombiningRule)</argsstring>
+        <name>setSigmaCombiningRule</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sigmaCombiningRule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set sigma combining rule</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sigmaCombiningRule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sigma combining rule: &apos;ARITHMETIC&apos;, &apos;GEOMETRIC&apos;. &apos;CUBIC-MEAN&apos; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1a458caef6df9aa30e0383b7b086a3101c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; OpenMM::AmoebaVdwForce::getSigmaCombiningRule</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getSigmaCombiningRule</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get sigma combining rule</para><para><simplesect kind="return"><para>sigmaCombiningRule sigma combining rule: &apos;ARITHMETIC&apos;, &apos;GEOMETRIC&apos;. &apos;CUBIC-MEAN&apos; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1a7012c6ca0daee6d4524376c7a48a7034" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForce::setEpsilonCombiningRule</definition>
+        <argsstring>(const std::string &amp;epsilonCombiningRule)</argsstring>
+        <name>setEpsilonCombiningRule</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>epsilonCombiningRule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set epsilon combining rule</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>epsilonCombiningRule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>epsilon combining rule: &apos;ARITHMETIC&apos;, &apos;GEOMETRIC&apos;. &apos;HARMONIC&apos;, &apos;HHG&apos; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1af8488d3f33627fce7db475530ba717bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; OpenMM::AmoebaVdwForce::getEpsilonCombiningRule</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getEpsilonCombiningRule</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get epsilon combining rule</para><para><simplesect kind="return"><para>epsilonCombiningRule epsilon combining rule: &apos;ARITHMETIC&apos;, &apos;GEOMETRIC&apos;. &apos;HARMONIC&apos;, &apos;HHG&apos; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1a1a13f484fbf45422cdf6cae4a3ce27c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenMM::AmoebaVdwForce::getUseDispersionCorrection</definition>
+        <argsstring>() const </argsstring>
+        <name>getUseDispersionCorrection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get whether to add a contribution to the energy that approximately represents the effect of VdW interactions beyond the cutoff distance. The energy depends on the volume of the periodic box, and is only applicable when periodic boundary conditions are used. When running simulations at constant pressure, adding this contribution can improve the quality of results. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="156" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1a9daa398e967a7820e510c6ba6d1cb3cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForce::setUseDispersionCorrection</definition>
+        <argsstring>(bool useCorrection)</argsstring>
+        <name>setUseDispersionCorrection</name>
+        <param>
+          <type>bool</type>
+          <declname>useCorrection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to add a contribution to the energy that approximately represents the effect of VdW interactions beyond the cutoff distance. The energy depends on the volume of the periodic box, and is only applicable when periodic boundary conditions are used. When running simulations at constant pressure, adding this contribution can improve the quality of results. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="166" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="166" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1ab9e53dc63979072c07983e1d2fa7b5e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForce::setParticleExclusions</definition>
+        <argsstring>(int particleIndex, const std::vector&lt; int &gt; &amp;exclusions)</argsstring>
+        <name>setParticleExclusions</name>
+        <param>
+          <type>int</type>
+          <declname>particleIndex</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>exclusions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set exclusions for specified particle</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particleIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>particle index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exclusions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of exclusions </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1abd376e5b30bb83a54ec2b2fff5764ff5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForce::getParticleExclusions</definition>
+        <argsstring>(int particleIndex, std::vector&lt; int &gt; &amp;exclusions) const </argsstring>
+        <name>getParticleExclusions</name>
+        <param>
+          <type>int</type>
+          <declname>particleIndex</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>exclusions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get exclusions for specified particle</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particleIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>particle index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exclusions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of exclusions </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1a876e5171181c90bf87e27d6a5cf0f4d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForce::setCutoff</definition>
+        <argsstring>(double cutoff)</argsstring>
+        <name>setCutoff</name>
+        <param>
+          <type>double</type>
+          <declname>cutoff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the cutoff distance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1a7267b6c7d2f8b8e2bf5bf11911a9630d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::AmoebaVdwForce::getCutoff</definition>
+        <argsstring>(void) const </argsstring>
+        <name>getCutoff</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the cutoff distance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1a0abd2c49924729370f342e868bb85dcf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1AmoebaVdwForce_1a6014194eb71944af9df786d851fee784" kindref="member">NonbondedMethod</ref></type>
+        <definition>NonbondedMethod OpenMM::AmoebaVdwForce::getNonbondedMethod</definition>
+        <argsstring>() const </argsstring>
+        <name>getNonbondedMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the method used for handling long range nonbonded interactions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1a51bccd7cedbfdcb3677acbd7c8ffd89e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForce::setNonbondedMethod</definition>
+        <argsstring>(NonbondedMethod method)</argsstring>
+        <name>setNonbondedMethod</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1AmoebaVdwForce_1a6014194eb71944af9df786d851fee784" kindref="member">NonbondedMethod</ref></type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the method used for handling long range nonbonded interactions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1a0cd71dacceca0684ffc77211edb53971" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::AmoebaVdwForce::updateParametersInContext</definition>
+        <argsstring>(Context &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the per-particle parameters in a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> to match those stored in this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object. This method provides an efficient method to update certain parameters in an existing <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> without needing to reinitialize it. Simply call <ref refid="classOpenMM_1_1AmoebaVdwForce_1ab206b4bbc16d176f09f75f00c7d7c2e0" kindref="member">setParticleParameters()</ref> to modify this object&apos;s parameters, then call updateParametersInState() to copy them over to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>.</para><para>The only information this method updates is the values of per-particle parameters. All other aspects of the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> (the nonbonded method, the cutoff distance, etc.) are unaffected and can only be changed by reinitializing the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="214"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1AmoebaVdwForce_1af3db708476eb12a72464160d7a1940ec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> *</type>
+        <definition>ForceImpl* OpenMM::AmoebaVdwForce::createImpl</definition>
+        <argsstring>()</argsstring>
+        <name>createImpl</name>
+        <reimplements refid="classOpenMM_1_1Force_1ac110723f39368f7eeb0dbb2105771255">createImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is created, it invokes this method on each <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. It should create a new <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> object which can be used by the context for calculating forces. The <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> will be deleted automatically when the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is deleted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="217"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements a buffered 14-7 potential used to model van der Waals forces.</para><para>To use it, create an <ref refid="classOpenMM_1_1AmoebaVdwForce" kindref="compound">AmoebaVdwForce</ref> object then call <ref refid="classOpenMM_1_1AmoebaVdwForce_1acef3ca97b5ff4cb32a249c228e171e99" kindref="member">addParticle()</ref> once for each particle. After a particle has been added, you can modify its force field parameters by calling <ref refid="classOpenMM_1_1AmoebaVdwForce_1ab206b4bbc16d176f09f75f00c7d7c2e0" kindref="member">setParticleParameters()</ref>. This will have no effect on Contexts that already exist unless you call <ref refid="classOpenMM_1_1AmoebaVdwForce_1a0cd71dacceca0684ffc77211edb53971" kindref="member">updateParametersInContext()</ref>.</para><para>A unique feature of this class is that the interaction site for a particle does not need to be exactly at the particle&apos;s location. Instead, it can be placed a fraction of the distance from that particle to another one. This is typically done for hydrogens to place the interaction site slightly closer to the parent atom. The fraction is known as the &quot;reduction factor&quot;, since it reduces the distance from the parent atom to the interaction site. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="73">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="72">
+        <label>OpenMM::AmoebaVdwForce</label>
+        <link refid="classOpenMM_1_1AmoebaVdwForce"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="75">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="74">
+        <label>OpenMM::AmoebaVdwForce</label>
+        <link refid="classOpenMM_1_1AmoebaVdwForce"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" line="55" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/plugins/amoeba/openmmapi/include/openmm/AmoebaVdwForce.h" bodystart="55" bodyend="231"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1acef3ca97b5ff4cb32a249c228e171e99" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>addParticle</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1ab9906e8565d4453c833be8336f40fcc2" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>AmoebaVdwForce</name></member>
+      <member refid="classOpenMM_1_1Force_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1af3db708476eb12a72464160d7a1940ec" prot="protected" virt="virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>createImpl</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a0bda6cb8450783767556d7340f1d4fe3" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>cutoff</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a6014194eb71944af9df786d851fee784a5452c300301ed92b4aadef4ffc5c482e" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>CutoffPeriodic</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1ac73b61944ed2f07cc0a23eaf382505bc" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>epsilonCombiningRule</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a9e45813d22cd5c4c654fbc797d577df1" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>exclusions</name></member>
+      <member refid="classOpenMM_1_1Force_1a40e75e251ec93d3bc9fc87b96026fbc2" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>Force</name></member>
+      <member refid="classOpenMM_1_1Force_1aa6d1d0fd8cad61e7ea37305c6d13a10d" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>getContextImpl</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a7267b6c7d2f8b8e2bf5bf11911a9630d" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>getCutoff</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1af8488d3f33627fce7db475530ba717bb" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>getEpsilonCombiningRule</name></member>
+      <member refid="classOpenMM_1_1Force_1a5aca97957c70da1076fcd7cbac340604" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>getForceGroup</name></member>
+      <member refid="classOpenMM_1_1Force_1a4dead2c44734956400d0ca8619650890" prot="protected" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>getImplInContext</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a0abd2c49924729370f342e868bb85dcf" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>getNonbondedMethod</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1af306ef1ab8b1c7e62f15f5f00747571e" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>getNumParticles</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1abd376e5b30bb83a54ec2b2fff5764ff5" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>getParticleExclusions</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a6ba19cd749edd300ae0c33eb1b9e4394" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>getParticleParameters</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a458caef6df9aa30e0383b7b086a3101c" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>getSigmaCombiningRule</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a1a13f484fbf45422cdf6cae4a3ce27c4" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>getUseDispersionCorrection</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a6014194eb71944af9df786d851fee784af158fd40c7f4259986935f6f332554c4" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>NoCutoff</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a94b0721e9520c4d1af4e1b06feb24d07" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>nonbondedMethod</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a6014194eb71944af9df786d851fee784" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>NonbondedMethod</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a28bc461608687c8e7a39739fb2873cb6" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>parameters</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a876e5171181c90bf87e27d6a5cf0f4d7" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>setCutoff</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a7012c6ca0daee6d4524376c7a48a7034" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>setEpsilonCombiningRule</name></member>
+      <member refid="classOpenMM_1_1Force_1a53e3829a91825a9f6aa17e5ade713f84" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>setForceGroup</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a51bccd7cedbfdcb3677acbd7c8ffd89e" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>setNonbondedMethod</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1ab9e53dc63979072c07983e1d2fa7b5e8" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>setParticleExclusions</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1ab206b4bbc16d176f09f75f00c7d7c2e0" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>setParticleParameters</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a34461e53b5d58aa6683db0d835a0555f" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>setSigmaCombiningRule</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a9daa398e967a7820e510c6ba6d1cb3cd" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>setUseDispersionCorrection</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a54e322f96776dbca515b015c9b97e310" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>sigEpsTable</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a79ca2c83079f45aeb4268e4f479aa517" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>sigmaCombiningRule</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a0cd71dacceca0684ffc77211edb53971" prot="public" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1AmoebaVdwForce_1a9f49a8ddc512fbd7d01340532c3ade53" prot="private" virt="non-virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>useDispersionCorrection</name></member>
+      <member refid="classOpenMM_1_1Force_1a6516b32ebeb95a694f56d93bdf81f4fb" prot="public" virt="virtual"><scope>OpenMM::AmoebaVdwForce</scope><name>~Force</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

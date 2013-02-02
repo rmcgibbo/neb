@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1CustomHbondForceImpl" kind="class" prot="public">
+    <compoundname>OpenMM::CustomHbondForceImpl</compoundname>
+    <basecompoundref refid="classOpenMM_1_1ForceImpl" prot="public" virt="non-virtual">OpenMM::ForceImpl</basecompoundref>
+    <includes refid="CustomHbondForceImpl_8h" local="no">CustomHbondForceImpl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1CustomHbondForceImpl_1a43c758a08d35daa9e5bd2a2cca76d0eb" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1CustomHbondForce" kindref="compound">CustomHbondForce</ref> &amp;</type>
+        <definition>CustomHbondForce&amp; OpenMM::CustomHbondForceImpl::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="88" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1CustomHbondForceImpl_1a18e3650aed56c0db3821095ef97daab2" prot="private" static="no" mutable="no">
+        <type>Kernel</type>
+        <definition>Kernel OpenMM::CustomHbondForceImpl::kernel</definition>
+        <argsstring></argsstring>
+        <name>kernel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="89" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForceImpl_1ad291aa176d3291ac47172893e75fb332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CustomHbondForceImpl::CustomHbondForceImpl</definition>
+        <argsstring>(CustomHbondForce &amp;owner)</argsstring>
+        <name>CustomHbondForceImpl</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1CustomHbondForce" kindref="compound">CustomHbondForce</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForceImpl_1a5f226d9d02b93081b864cb93643fb6a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::CustomHbondForceImpl::~CustomHbondForceImpl</definition>
+        <argsstring>()</argsstring>
+        <name>~CustomHbondForceImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForceImpl_1ae5a93811802e1d01c6efd5801d45955b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomHbondForceImpl::initialize</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a0a1f85a9c94613577399c1fada6ecb01">initialize</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called after the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> is created and before <ref refid="classOpenMM_1_1CustomHbondForceImpl_1ada8d47078b763f01a32d3d32317b70d0" kindref="member">updateContextState()</ref>, calcForces(), or calcEnergy() is called on it. This allows it to do any necessary initialization. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForceImpl_1a1e8d245dc1054fef37ff067306437ca6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenMM_1_1CustomHbondForce" kindref="compound">CustomHbondForce</ref> &amp;</type>
+        <definition>CustomHbondForce&amp; OpenMM::CustomHbondForceImpl::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a766c966d25ad0d8cf287ee07e524a081">getOwner</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object from which this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> was created. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="56" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForceImpl_1ada8d47078b763f01a32d3d32317b70d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomHbondForceImpl::updateContextState</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>updateContextState</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1aae2f5cc793b7071cb6516a02fa736087">updateContextState</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called at the beginning of each time step. It give the <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> a chance to modify the state variables (positions, velocities, and parameters) stored in the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> in arbitrary ways before integration is performed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="59" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForceImpl_1a1db55f2af6bc140ec155f2aeff79bed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double OpenMM::CustomHbondForceImpl::calcForcesAndEnergy</definition>
+        <argsstring>(ContextImpl &amp;context, bool includeForces, bool includeEnergy, int groups)</argsstring>
+        <name>calcForcesAndEnergy</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a1e2544ac6d58460a79697236e8b758be">calcForcesAndEnergy</reimplements>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeForces</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeEnergy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>groups</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the force on each particle generated by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> and/or this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>&apos;s contribution to the potential energy of the system.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the context in which the system is being simulated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeForces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if forces should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeEnergy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the energy should be calculated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>groups</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a set of bit flags for which force groups to include. Group i should be included if (groups&amp;(1&lt;&lt;i)) != 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>this force&apos;s contribution to the potential energy of the system, or 0 if this force does not contribute to potential energy (or if includeEnergy is false) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForceImpl_1a4d78807ce61af91065f526571dacf16a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::map&lt; std::string, double &gt;</type>
+        <definition>std::map&lt;std::string, double&gt; OpenMM::CustomHbondForceImpl::getDefaultParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultParameters</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1adf18979257a14b23dd52dbda9e87c308">getDefaultParameters</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a map containing the default values for all adjustable parameters defined by this <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref>. These parameters and their default values will automatically be added to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForceImpl_1a4cc5063fde59a438c5172736df8f710e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; OpenMM::CustomHbondForceImpl::getKernelNames</definition>
+        <argsstring>()</argsstring>
+        <name>getKernelNames</name>
+        <reimplements refid="classOpenMM_1_1ForceImpl_1a5820facb44adaab79bbb02a3ba5bd79b">getKernelNames</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the names of all Kernels used by this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForceImpl_1aee9d820a36ea7936e441c8288dc2d44a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::CustomHbondForceImpl::updateParametersInContext</definition>
+        <argsstring>(ContextImpl &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1ContextImpl" kindref="compound">ContextImpl</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForceImpl_1a44bd61b6a63e46643e4b6c15d933d887" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Lepton::ParsedExpression</type>
+        <definition>static Lepton::ParsedExpression OpenMM::CustomHbondForceImpl::prepareExpression</definition>
+        <argsstring>(const CustomHbondForce &amp;force, const std::map&lt; std::string, Lepton::CustomFunction * &gt; &amp;functions, std::map&lt; std::string, std::vector&lt; int &gt; &gt; &amp;distances, std::map&lt; std::string, std::vector&lt; int &gt; &gt; &amp;angles, std::map&lt; std::string, std::vector&lt; int &gt; &gt; &amp;dihedrals)</argsstring>
+        <name>prepareExpression</name>
+        <param>
+          <type>const <ref refid="classOpenMM_1_1CustomHbondForce" kindref="compound">CustomHbondForce</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; std::string, Lepton::CustomFunction * &gt; &amp;</type>
+          <declname>functions</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::string, std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::string, std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>angles</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::string, std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>dihedrals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a utility routine that parses the energy expression, identifies the angles and dihedrals in it, and replaces them with variables. The particle indices returned in the maps are defined as follows: 0=a1, 1=a2, 2=a3, 3=d1, 4=d2, 5=d3.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classOpenMM_1_1CustomHbondForce" kindref="compound">CustomHbondForce</ref> to process </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>functions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>definitions of custom function that may appear in the expression </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distances</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on exit, this will contain an entry for each distance used in the expression. The key is the name of the corresponding variable, and the value is the list of particle indices. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on exit, this will contain an entry for each angle used in the expression. The key is the name of the corresponding variable, and the value is the list of particle indices. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dihedrals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on exit, this will contain an entry for each dihedral used in the expression. The key is the name of the corresponding variable, and the value is the list of particle indices. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a Parsed expression for the energy </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="82"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classOpenMM_1_1CustomHbondForceImpl_1a9bfc772f461552fe5696ba670d508bdb" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Lepton::ExpressionTreeNode</type>
+        <definition>static Lepton::ExpressionTreeNode OpenMM::CustomHbondForceImpl::replaceFunctions</definition>
+        <argsstring>(const Lepton::ExpressionTreeNode &amp;node, std::map&lt; std::string, int &gt; atoms, std::map&lt; std::string, std::vector&lt; int &gt; &gt; &amp;distances, std::map&lt; std::string, std::vector&lt; int &gt; &gt; &amp;angles, std::map&lt; std::string, std::vector&lt; int &gt; &gt; &amp;dihedrals)</argsstring>
+        <name>replaceFunctions</name>
+        <param>
+          <type>const Lepton::ExpressionTreeNode &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::string, int &gt;</type>
+          <declname>atoms</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::string, std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>distances</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::string, std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>angles</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::string, std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>dihedrals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the internal implementation of <ref refid="classOpenMM_1_1CustomHbondForce" kindref="compound">CustomHbondForce</ref>. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="219">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="218">
+        <label>OpenMM::CustomHbondForceImpl</label>
+        <link refid="classOpenMM_1_1CustomHbondForceImpl"/>
+        <childnode refid="219" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="221">
+        <label>OpenMM::ForceImpl</label>
+        <link refid="classOpenMM_1_1ForceImpl"/>
+      </node>
+      <node id="220">
+        <label>OpenMM::CustomHbondForceImpl</label>
+        <link refid="classOpenMM_1_1CustomHbondForceImpl"/>
+        <childnode refid="221" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" line="51" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/internal/CustomHbondForceImpl.h" bodystart="51" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1a1db55f2af6bc140ec155f2aeff79bed2" prot="public" virt="virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>calcForcesAndEnergy</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1ad291aa176d3291ac47172893e75fb332" prot="public" virt="non-virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>CustomHbondForceImpl</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1aaa19783e47e53df34083cbaadf37e41c" prot="public" virt="virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>getBondedParticles</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1a4d78807ce61af91065f526571dacf16a" prot="public" virt="virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>getDefaultParameters</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1a4cc5063fde59a438c5172736df8f710e" prot="public" virt="virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>getKernelNames</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1a1e8d245dc1054fef37ff067306437ca6" prot="public" virt="virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>getOwner</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1ae5a93811802e1d01c6efd5801d45955b" prot="public" virt="virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>initialize</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1a18e3650aed56c0db3821095ef97daab2" prot="private" virt="non-virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>kernel</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1a43c758a08d35daa9e5bd2a2cca76d0eb" prot="private" virt="non-virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>owner</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1a44bd61b6a63e46643e4b6c15d933d887" prot="public" virt="non-virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>prepareExpression</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1a9bfc772f461552fe5696ba670d508bdb" prot="private" virt="non-virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>replaceFunctions</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1ada8d47078b763f01a32d3d32317b70d0" prot="public" virt="virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>updateContextState</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1aee9d820a36ea7936e441c8288dc2d44a" prot="public" virt="non-virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1CustomHbondForceImpl_1a5f226d9d02b93081b864cb93643fb6a3" prot="public" virt="non-virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>~CustomHbondForceImpl</name></member>
+      <member refid="classOpenMM_1_1ForceImpl_1a8a2bccbabb2587111b46da67cea8293c" prot="public" virt="virtual"><scope>OpenMM::CustomHbondForceImpl</scope><name>~ForceImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

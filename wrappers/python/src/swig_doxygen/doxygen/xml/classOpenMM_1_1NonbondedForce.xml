@@ -1,0 +1,1018 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classOpenMM_1_1NonbondedForce" kind="class" prot="public">
+    <compoundname>OpenMM::NonbondedForce</compoundname>
+    <basecompoundref refid="classOpenMM_1_1Force" prot="public" virt="non-virtual">OpenMM::Force</basecompoundref>
+    <includes refid="NonbondedForce_8h" local="no">NonbondedForce.h</includes>
+    <innerclass refid="classOpenMM_1_1NonbondedForce_1_1ExceptionInfo" prot="private">OpenMM::NonbondedForce::ExceptionInfo</innerclass>
+    <innerclass refid="classOpenMM_1_1NonbondedForce_1_1ParticleInfo" prot="private">OpenMM::NonbondedForce::ParticleInfo</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cf" prot="public" static="no">
+        <name>NonbondedMethod</name>
+        <enumvalue id="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cfad13dd4bb7d9867b3c187d076c88f8bb4" prot="public">
+          <name>NoCutoff</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No cutoff is applied to nonbonded interactions. The full set of N^2 interactions is computed exactly. This necessarily means that periodic boundary conditions cannot be used. This is the default. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cfa8e12125ec7af9da6713afc75cb656356" prot="public">
+          <name>CutoffNonPeriodic</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Interactions beyond the cutoff distance are ignored. Coulomb interactions closer than the cutoff distance are modified using the reaction field method. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cfa389cc9c1d32af482704d7256c9a1d033" prot="public">
+          <name>CutoffPeriodic</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Periodic boundary conditions are used, so that each particle interacts only with the nearest periodic copy of each other particle. Interactions beyond the cutoff distance are ignored. Coulomb interactions closer than the cutoff distance are modified using the reaction field method. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cfaea30fd2b3e9e87cff3ff0a3cfaa4f07f" prot="public">
+          <name>Ewald</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Periodic boundary conditions are used, and Ewald summation is used to compute the interaction of each particle with all periodic copies of every other particle. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cfa2280137f402d5f75307e2774793e7483" prot="public">
+          <name>PME</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Periodic boundary conditions are used, and Particle-Mesh Ewald (PME) summation is used to compute the interaction of each particle with all periodic copies of every other particle. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an enumeration of the different methods that may be used for handling long range nonbonded forces. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="75" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="75" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenMM_1_1NonbondedForce_1a2e57d9abdb595003e1457f45b93f3cb7" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cf" kindref="member">NonbondedMethod</ref></type>
+        <definition>NonbondedMethod OpenMM::NonbondedForce::nonbondedMethod</definition>
+        <argsstring></argsstring>
+        <name>nonbondedMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="303" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NonbondedForce_1a85b54690c6c0e8e9d0636e7b590edae1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::NonbondedForce::cutoffDistance</definition>
+        <argsstring></argsstring>
+        <name>cutoffDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="304" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NonbondedForce_1a5dce92c7ba2aa8036eab320dd011fd69" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::NonbondedForce::rfDielectric</definition>
+        <argsstring></argsstring>
+        <name>rfDielectric</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="304" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NonbondedForce_1a51785250c8086c2d7c9d7a7f84ff747f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double OpenMM::NonbondedForce::ewaldErrorTol</definition>
+        <argsstring></argsstring>
+        <name>ewaldErrorTol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="304" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NonbondedForce_1a4ef85ce25928e382ca5f6e92383dfecf" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OpenMM::NonbondedForce::useDispersionCorrection</definition>
+        <argsstring></argsstring>
+        <name>useDispersionCorrection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="305" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NonbondedForce_1a551a1e6e578c73ea43059cde712d005f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OpenMM::NonbondedForce::recipForceGroup</definition>
+        <argsstring></argsstring>
+        <name>recipForceGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="306" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NonbondedForce_1a75ba047ccfc961127ba91acdbc90b132" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; ParticleInfo &gt;</type>
+        <definition>std::vector&lt;ParticleInfo&gt; OpenMM::NonbondedForce::particles</definition>
+        <argsstring></argsstring>
+        <name>particles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="308" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NonbondedForce_1a967bc337b632cfb47617247f53bbf588" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; ExceptionInfo &gt;</type>
+        <definition>std::vector&lt;ExceptionInfo&gt; OpenMM::NonbondedForce::exceptions</definition>
+        <argsstring></argsstring>
+        <name>exceptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="309" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenMM_1_1NonbondedForce_1a1c53886bad57c2ca0f36dd55350e6d51" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::pair&lt; int, int &gt;, int &gt;</type>
+        <definition>std::map&lt;std::pair&lt;int, int&gt;, int&gt; OpenMM::NonbondedForce::exceptionMap</definition>
+        <argsstring></argsstring>
+        <name>exceptionMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="310" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a6f390de4b2cde360e67f077aa5cf6ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OpenMM::NonbondedForce::NonbondedForce</definition>
+        <argsstring>()</argsstring>
+        <name>NonbondedForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classOpenMM_1_1NonbondedForce" kindref="compound">NonbondedForce</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a7c669d9bd23607bb53e6e8b82728775a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::NonbondedForce::getNumParticles</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumParticles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of particles for which force field parameters have been defined. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="110" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1af7ff8b1190279da4a7c0a28aa77aaf57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::NonbondedForce::getNumExceptions</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumExceptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of special interactions that should be calculated differently from other interactions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="116" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1ac56fa3700ec4fe15a7549e3b60965495" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cf" kindref="member">NonbondedMethod</ref></type>
+        <definition>NonbondedMethod OpenMM::NonbondedForce::getNonbondedMethod</definition>
+        <argsstring>() const </argsstring>
+        <name>getNonbondedMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the method used for handling long range nonbonded interactions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a0960e96d830494ccb308e30269f9a380" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::setNonbondedMethod</definition>
+        <argsstring>(NonbondedMethod method)</argsstring>
+        <name>setNonbondedMethod</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cf" kindref="member">NonbondedMethod</ref></type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the method used for handling long range nonbonded interactions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1abebf27b32536214cd8dec340192add82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::NonbondedForce::getCutoffDistance</definition>
+        <argsstring>() const </argsstring>
+        <name>getCutoffDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the cutoff distance (in nm) being used for nonbonded interactions. If the NonbondedMethod in use is NoCutoff, this value will have no effect.</para><para><simplesect kind="return"><para>the cutoff distance, measured in nm </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a053d15e3e3e9157a54eadbb84df746e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::setCutoffDistance</definition>
+        <argsstring>(double distance)</argsstring>
+        <name>setCutoffDistance</name>
+        <param>
+          <type>double</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the cutoff distance (in nm) being used for nonbonded interactions. If the NonbondedMethod in use is NoCutoff, this value will have no effect.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the cutoff distance, measured in nm </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a5cf9a832d84483dce8f530e894e6a863" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::NonbondedForce::getReactionFieldDielectric</definition>
+        <argsstring>() const </argsstring>
+        <name>getReactionFieldDielectric</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the dielectric constant to use for the solvent in the reaction field approximation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a085d74a071bc3a25124da475a87b0a42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::setReactionFieldDielectric</definition>
+        <argsstring>(double dielectric)</argsstring>
+        <name>setReactionFieldDielectric</name>
+        <param>
+          <type>double</type>
+          <declname>dielectric</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the dielectric constant to use for the solvent in the reaction field approximation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1ad26a7dbea329bc3ac9bf054f201784cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OpenMM::NonbondedForce::getEwaldErrorTolerance</definition>
+        <argsstring>() const </argsstring>
+        <name>getEwaldErrorTolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the error tolerance for Ewald summation. This corresponds to the fractional error in the forces which is acceptable. This value is used to select the reciprocal space cutoff and separation parameter so that the average error level will be less than the tolerance. There is not a rigorous guarantee that all forces on all atoms will be less than the tolerance, however. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1ab96787c5558d1a6df37888bbd2aa7258" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::setEwaldErrorTolerance</definition>
+        <argsstring>(double tol)</argsstring>
+        <name>setEwaldErrorTolerance</name>
+        <param>
+          <type>double</type>
+          <declname>tol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the error tolerance for Ewald summation. This corresponds to the fractional error in the forces which is acceptable. This value is used to select the reciprocal space cutoff and separation parameter so that the average error level will be less than the tolerance. There is not a rigorous guarantee that all forces on all atoms will be less than the tolerance, however. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a558f7ba562c91c668d1213dd1127068d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::NonbondedForce::addParticle</definition>
+        <argsstring>(double charge, double sigma, double epsilon)</argsstring>
+        <name>addParticle</name>
+        <param>
+          <type>double</type>
+          <declname>charge</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add the nonbonded force parameters for a particle. This should be called once for each particle in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. When it is called for the i&apos;th time, it specifies the parameters for the i&apos;th particle. For calculating the Lennard-Jones interaction between two particles, the arithmetic mean of the sigmas and the geometric mean of the epsilons for the two interacting particles is used (the Lorentz-Bertelot combining rule).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>charge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the charge of the particle, measured in units of the proton charge </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sigma parameter of the Lennard-Jones potential (corresponding to the van der Waals radius of the particle), measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the epsilon parameter of the Lennard-Jones potential (corresponding to the well depth of the van der Waals interaction), measured in kJ/mol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the particle that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a5ad15e799e233e307942acd31a9dd5fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::getParticleParameters</definition>
+        <argsstring>(int index, double &amp;charge, double &amp;sigma, double &amp;epsilon) const </argsstring>
+        <name>getParticleParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>charge</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the nonbonded force parameters for a particle.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the particle for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>charge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the charge of the particle, measured in units of the proton charge </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sigma parameter of the Lennard-Jones potential (corresponding to the van der Waals radius of the particle), measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the epsilon parameter of the Lennard-Jones potential (corresponding to the well depth of the van der Waals interaction), measured in kJ/mol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1aa869f87271dc10de006fb91918599d4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::setParticleParameters</definition>
+        <argsstring>(int index, double charge, double sigma, double epsilon)</argsstring>
+        <name>setParticleParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>charge</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the nonbonded force parameters for a particle. When calculating the Lennard-Jones interaction between two particles, it uses the arithmetic mean of the sigmas and the geometric mean of the epsilons for the two interacting particles (the Lorentz-Bertelot combining rule).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the particle for which to set parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>charge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the charge of the particle, measured in units of the proton charge </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sigma parameter of the Lennard-Jones potential (corresponding to the van der Waals radius of the particle), measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the epsilon parameter of the Lennard-Jones potential (corresponding to the well depth of the van der Waals interaction), measured in kJ/mol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a6f5420eaabde9eedb67fa05877b064f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::NonbondedForce::addException</definition>
+        <argsstring>(int particle1, int particle2, double chargeProd, double sigma, double epsilon, bool replace=false)</argsstring>
+        <name>addException</name>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>chargeProd</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>epsilon</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>replace</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an interaction to the list of exceptions that should be calculated differently from other interactions. If chargeProd and epsilon are both equal to 0, this will cause the interaction to be completely omitted from force and energy calculations.</para><para>In many cases, you can use <ref refid="classOpenMM_1_1NonbondedForce_1ad134560198e7d2150b6937e70652ea99" kindref="member">createExceptionsFromBonds()</ref> rather than adding each exception explicitly.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle involved in the interaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle involved in the interaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chargeProd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scaled product of the atomic charges (i.e. the strength of the Coulomb interaction), measured in units of the proton charge squared </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sigma parameter of the Lennard-Jones potential (corresponding to the van der Waals radius of the particle), measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the epsilon parameter of the Lennard-Jones potential (corresponding to the well depth of the van der Waals interaction), measured in kJ/mol </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>replace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>determines the behavior if there is already an exception for the same two particles. If true, the existing one is replaced. If false, an exception is thrown. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index of the exception that was added </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1ad727e1de9361d1b30224dd49cadc0f90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::getExceptionParameters</definition>
+        <argsstring>(int index, int &amp;particle1, int &amp;particle2, double &amp;chargeProd, double &amp;sigma, double &amp;epsilon) const </argsstring>
+        <name>getExceptionParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>chargeProd</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the force field parameters for an interaction that should be calculated differently from others.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the interaction for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle involved in the interaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle involved in the interaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chargeProd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scaled product of the atomic charges (i.e. the strength of the Coulomb interaction), measured in units of the proton charge squared </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sigma parameter of the Lennard-Jones potential (corresponding to the van der Waals radius of the particle), measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the epsilon parameter of the Lennard-Jones potential (corresponding to the well depth of the van der Waals interaction), measured in kJ/mol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a783159a8d50fb57e7db306b18c78b929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::setExceptionParameters</definition>
+        <argsstring>(int index, int particle1, int particle2, double chargeProd, double sigma, double epsilon)</argsstring>
+        <name>setExceptionParameters</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>particle2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>chargeProd</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the force field parameters for an interaction that should be calculated differently from others. If chargeProd and epsilon are both equal to 0, this will cause the interaction to be completely omitted from force and energy calculations.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the interaction for which to get parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the first particle involved in the interaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the second particle involved in the interaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chargeProd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the scaled product of the atomic charges (i.e. the strength of the Coulomb interaction), measured in units of the proton charge squared </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sigma parameter of the Lennard-Jones potential (corresponding to the van der Waals radius of the particle), measured in nm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the epsilon parameter of the Lennard-Jones potential (corresponding to the well depth of the van der Waals interaction), measured in kJ/mol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1ad134560198e7d2150b6937e70652ea99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::createExceptionsFromBonds</definition>
+        <argsstring>(const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;bonds, double coulomb14Scale, double lj14Scale)</argsstring>
+        <name>createExceptionsFromBonds</name>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;</type>
+          <declname>bonds</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>coulomb14Scale</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lj14Scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Identify exceptions based on the molecular topology. Particles which are separated by one or two bonds are set to not interact at all, while pairs of particles separated by three bonds (known as &quot;1-4 interactions&quot;) have their Coulomb and Lennard-Jones interactions reduced by a fixed factor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bonds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the set of bonds based on which to construct exceptions. Each element specifies the indices of two particles that are bonded to each other. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coulomb14Scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pairs of particles separated by three bonds will have the strength of their Coulomb interaction multiplied by this factor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lj14Scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pairs of particles separated by three bonds will have the strength of their Lennard-Jones interaction multiplied by this factor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a59c44b6a79f9600cbdd5e06b9ab86ace" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenMM::NonbondedForce::getUseDispersionCorrection</definition>
+        <argsstring>() const </argsstring>
+        <name>getUseDispersionCorrection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get whether to add a contribution to the energy that approximately represents the effect of Lennard-Jones interactions beyond the cutoff distance. The energy depends on the volume of the periodic box, and is only applicable when periodic boundary conditions are used. When running simulations at constant pressure, adding this contribution can improve the quality of results. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="256" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="256" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1ac71edb8b933b2ca452075c321caefa15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::setUseDispersionCorrection</definition>
+        <argsstring>(bool useCorrection)</argsstring>
+        <name>setUseDispersionCorrection</name>
+        <param>
+          <type>bool</type>
+          <declname>useCorrection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to add a contribution to the energy that approximately represents the effect of Lennard-Jones interactions beyond the cutoff distance. The energy depends on the volume of the periodic box, and is only applicable when periodic boundary conditions are used. When running simulations at constant pressure, adding this contribution can improve the quality of results. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="265" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="265" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a267cc08377f14f277245a012aee9c03e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OpenMM::NonbondedForce::getReciprocalSpaceForceGroup</definition>
+        <argsstring>() const </argsstring>
+        <name>getReciprocalSpaceForceGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the force group that reciprocal space interactions for Ewald or PME are included in. This allows multiple time step integrators to evaluate direct and reciprocal space interactions at different intervals: <ref refid="classOpenMM_1_1Force_1a5aca97957c70da1076fcd7cbac340604" kindref="member">getForceGroup()</ref> specifies the group for direct space, and <ref refid="classOpenMM_1_1NonbondedForce_1a267cc08377f14f277245a012aee9c03e" kindref="member">getReciprocalSpaceForceGroup()</ref> specifies the group for reciprocal space. If this is -1 (the default value), the same force group is used for reciprocal space as for direct space. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1af35a2f01bff0a3ee810f038df4538185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::setReciprocalSpaceForceGroup</definition>
+        <argsstring>(int group)</argsstring>
+        <name>setReciprocalSpaceForceGroup</name>
+        <param>
+          <type>int</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the force group that reciprocal space interactions for Ewald or PME are included in. This allows multiple time step integrators to evaluate direct and reciprocal space interactions at different intervals: <ref refid="classOpenMM_1_1Force_1a53e3829a91825a9f6aa17e5ade713f84" kindref="member">setForceGroup()</ref> specifies the group for direct space, and <ref refid="classOpenMM_1_1NonbondedForce_1af35a2f01bff0a3ee810f038df4538185" kindref="member">setReciprocalSpaceForceGroup()</ref> specifies the group for reciprocal space. If this is -1 (the default value), the same force group is used for reciprocal space as for direct space.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the group index. Legal values are between 0 and 31 (inclusive), or -1 to use the same force group that is specified for direct space. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1abc68b57ace47dafd3bf2e601b3cfa6eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::updateParametersInContext</definition>
+        <argsstring>(Context &amp;context)</argsstring>
+        <name>updateParametersInContext</name>
+        <param>
+          <type><ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the particle and exception parameters in a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> to match those stored in this <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> object. This method provides an efficient method to update certain parameters in an existing <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> without needing to reinitialize it. Simply call <ref refid="classOpenMM_1_1NonbondedForce_1aa869f87271dc10de006fb91918599d4e" kindref="member">setParticleParameters()</ref> and <ref refid="classOpenMM_1_1NonbondedForce_1a783159a8d50fb57e7db306b18c78b929" kindref="member">setExceptionParameters()</ref> to modify this object&apos;s parameters, then call updateParametersInState() to copy them over to the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>.</para><para>This method has several limitations. The only information it updates is the parameters of particles and exceptions. All other aspects of the <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> (the nonbonded method, the cutoff distance, etc.) are unaffected and can only be changed by reinitializing the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. Furthermore, only the chargeProd, sigma, and epsilon values of an exception can be changed; the pair of particles involved in the exception cannot change. Finally, this method cannot be used to add new particles or exceptions, only to change the parameters of existing ones. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="297"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a10f02eb66ea404674fc5e3407181aac4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> *</type>
+        <definition>ForceImpl* OpenMM::NonbondedForce::createImpl</definition>
+        <argsstring>()</argsstring>
+        <name>createImpl</name>
+        <reimplements refid="classOpenMM_1_1Force_1ac110723f39368f7eeb0dbb2105771255">createImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is created, it invokes this method on each <ref refid="classOpenMM_1_1Force" kindref="compound">Force</ref> in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>. It should create a new <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> object which can be used by the context for calculating forces. The <ref refid="classOpenMM_1_1ForceImpl" kindref="compound">ForceImpl</ref> will be deleted automatically when the <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref> is deleted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="299"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenMM_1_1NonbondedForce_1a142499b297173d0699445e231861fde2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenMM::NonbondedForce::addExclusionsToSet</definition>
+        <argsstring>(const std::vector&lt; std::set&lt; int &gt; &gt; &amp;bonded12, std::set&lt; int &gt; &amp;exclusions, int baseParticle, int fromParticle, int currentLevel) const </argsstring>
+        <name>addExclusionsToSet</name>
+        <param>
+          <type>const std::vector&lt; std::set&lt; int &gt; &gt; &amp;</type>
+          <declname>bonded12</declname>
+        </param>
+        <param>
+          <type>std::set&lt; int &gt; &amp;</type>
+          <declname>exclusions</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>baseParticle</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fromParticle</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>currentLevel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="307"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements nonbonded interactions between particles, including a Coulomb force to represent electrostatics and a Lennard-Jones force to represent van der Waals interactions. It optionally supports periodic boundary conditions and cutoffs for long range interactions. Lennard-Jones interactions are calculated with the Lorentz-Bertelot combining rule: it uses the arithmetic mean of the sigmas and the geometric mean of the epsilons for the two interacting particles.</para><para>To use this class, create a <ref refid="classOpenMM_1_1NonbondedForce" kindref="compound">NonbondedForce</ref> object, then call <ref refid="classOpenMM_1_1NonbondedForce_1a558f7ba562c91c668d1213dd1127068d" kindref="member">addParticle()</ref> once for each particle in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref> to define its parameters. The number of particles for which you define nonbonded parameters must be exactly equal to the number of particles in the <ref refid="classOpenMM_1_1System" kindref="compound">System</ref>, or else an exception will be thrown when you try to create a <ref refid="classOpenMM_1_1Context" kindref="compound">Context</ref>. After a particle has been added, you can modify its force field parameters by calling <ref refid="classOpenMM_1_1NonbondedForce_1aa869f87271dc10de006fb91918599d4e" kindref="member">setParticleParameters()</ref>. This will have no effect on Contexts that already exist unless you call <ref refid="classOpenMM_1_1NonbondedForce_1abc68b57ace47dafd3bf2e601b3cfa6eb" kindref="member">updateParametersInContext()</ref>.</para><para><ref refid="classOpenMM_1_1NonbondedForce" kindref="compound">NonbondedForce</ref> also lets you specify &quot;exceptions&quot;, particular pairs of particles whose interactions should be computed based on different parameters than those defined for the individual particles. This can be used to completely exclude certain interactions from the force calculation, or to alter how they interact with each other.</para><para>Many molecular force fields omit Coulomb and Lennard-Jones interactions between particles separated by one or two bonds, while using modified parameters for those separated by three bonds (known as &quot;1-4 interactions&quot;). This class provides a convenience method for this case called <ref refid="classOpenMM_1_1NonbondedForce_1ad134560198e7d2150b6937e70652ea99" kindref="member">createExceptionsFromBonds()</ref>. You pass to it a list of bonds and the scale factors to use for 1-4 interactions. It identifies all pairs of particles which are separated by 1, 2, or 3 bonds, then automatically creates exceptions for them. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="417">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="416">
+        <label>OpenMM::NonbondedForce</label>
+        <link refid="classOpenMM_1_1NonbondedForce"/>
+        <childnode refid="417" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="419">
+        <label>OpenMM::Force</label>
+        <link refid="classOpenMM_1_1Force"/>
+      </node>
+      <node id="418">
+        <label>OpenMM::NonbondedForce</label>
+        <link refid="classOpenMM_1_1NonbondedForce"/>
+        <childnode refid="419" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" line="70" bodyfile="/home/rmcgibbo/OpenMM5.0-Source/openmmapi/include/openmm/NonbondedForce.h" bodystart="70" bodyend="311"/>
+    <listofallmembers>
+      <member refid="classOpenMM_1_1NonbondedForce_1a6f5420eaabde9eedb67fa05877b064f3" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>addException</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a142499b297173d0699445e231861fde2" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>addExclusionsToSet</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a558f7ba562c91c668d1213dd1127068d" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>addParticle</name></member>
+      <member refid="classOpenMM_1_1Force_1a7e2f3e20ff3f49ee3b9c0e529422b663" prot="protected" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>ContextImpl</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1ad134560198e7d2150b6937e70652ea99" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>createExceptionsFromBonds</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a10f02eb66ea404674fc5e3407181aac4" prot="protected" virt="virtual"><scope>OpenMM::NonbondedForce</scope><name>createImpl</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a85b54690c6c0e8e9d0636e7b590edae1" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>cutoffDistance</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cfa8e12125ec7af9da6713afc75cb656356" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>CutoffNonPeriodic</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cfa389cc9c1d32af482704d7256c9a1d033" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>CutoffPeriodic</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cfaea30fd2b3e9e87cff3ff0a3cfaa4f07f" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>Ewald</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a51785250c8086c2d7c9d7a7f84ff747f" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>ewaldErrorTol</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a1c53886bad57c2ca0f36dd55350e6d51" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>exceptionMap</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a967bc337b632cfb47617247f53bbf588" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>exceptions</name></member>
+      <member refid="classOpenMM_1_1Force_1a40e75e251ec93d3bc9fc87b96026fbc2" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>Force</name></member>
+      <member refid="classOpenMM_1_1Force_1aa6d1d0fd8cad61e7ea37305c6d13a10d" prot="protected" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getContextImpl</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1abebf27b32536214cd8dec340192add82" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getCutoffDistance</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1ad26a7dbea329bc3ac9bf054f201784cb" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getEwaldErrorTolerance</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1ad727e1de9361d1b30224dd49cadc0f90" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getExceptionParameters</name></member>
+      <member refid="classOpenMM_1_1Force_1a5aca97957c70da1076fcd7cbac340604" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getForceGroup</name></member>
+      <member refid="classOpenMM_1_1Force_1a4dead2c44734956400d0ca8619650890" prot="protected" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getImplInContext</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1ac56fa3700ec4fe15a7549e3b60965495" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getNonbondedMethod</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1af7ff8b1190279da4a7c0a28aa77aaf57" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getNumExceptions</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a7c669d9bd23607bb53e6e8b82728775a" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getNumParticles</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a5ad15e799e233e307942acd31a9dd5fb" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getParticleParameters</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a5cf9a832d84483dce8f530e894e6a863" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getReactionFieldDielectric</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a267cc08377f14f277245a012aee9c03e" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getReciprocalSpaceForceGroup</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a59c44b6a79f9600cbdd5e06b9ab86ace" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>getUseDispersionCorrection</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cfad13dd4bb7d9867b3c187d076c88f8bb4" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>NoCutoff</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a6f390de4b2cde360e67f077aa5cf6ba9" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>NonbondedForce</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a2e57d9abdb595003e1457f45b93f3cb7" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>nonbondedMethod</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cf" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>NonbondedMethod</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a75ba047ccfc961127ba91acdbc90b132" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>particles</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a17664b9985e30c77c7778110b5f9a0cfa2280137f402d5f75307e2774793e7483" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>PME</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a551a1e6e578c73ea43059cde712d005f" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>recipForceGroup</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a5dce92c7ba2aa8036eab320dd011fd69" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>rfDielectric</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a053d15e3e3e9157a54eadbb84df746e1" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>setCutoffDistance</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1ab96787c5558d1a6df37888bbd2aa7258" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>setEwaldErrorTolerance</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a783159a8d50fb57e7db306b18c78b929" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>setExceptionParameters</name></member>
+      <member refid="classOpenMM_1_1Force_1a53e3829a91825a9f6aa17e5ade713f84" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>setForceGroup</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a0960e96d830494ccb308e30269f9a380" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>setNonbondedMethod</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1aa869f87271dc10de006fb91918599d4e" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>setParticleParameters</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a085d74a071bc3a25124da475a87b0a42" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>setReactionFieldDielectric</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1af35a2f01bff0a3ee810f038df4538185" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>setReciprocalSpaceForceGroup</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1ac71edb8b933b2ca452075c321caefa15" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>setUseDispersionCorrection</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1abc68b57ace47dafd3bf2e601b3cfa6eb" prot="public" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>updateParametersInContext</name></member>
+      <member refid="classOpenMM_1_1NonbondedForce_1a4ef85ce25928e382ca5f6e92383dfecf" prot="private" virt="non-virtual"><scope>OpenMM::NonbondedForce</scope><name>useDispersionCorrection</name></member>
+      <member refid="classOpenMM_1_1Force_1a6516b32ebeb95a694f56d93bdf81f4fb" prot="public" virt="virtual"><scope>OpenMM::NonbondedForce</scope><name>~Force</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
