@@ -25,10 +25,19 @@ public:
          return numImages;
      }
      
+     /**
+      * Get the spring constant, measured in kJ/mol/nm
+      * 
+      * @return spring constant, measured in Kelvin
+      */
      double getSpringConstant() const {
          return springConstant;
      }
 
+     /**
+      *
+      *
+      **/
      double getStepSize() const {
           return stepSize;
      }
