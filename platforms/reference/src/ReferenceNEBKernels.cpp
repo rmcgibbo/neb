@@ -10,7 +10,7 @@ using namespace std;
 static void OptGradientDescent(std::vector<RealVec>& positions, std::vector<RealVec>& forces, const RealOpenMM stepSize) {
     int numParticles = positions.size();
     for (int i = 0; i < numParticles; i++)
-	positions[i] += forces[i] * stepSize;
+      positions[i] += forces[i] * stepSize;
 }
 
 static vector<RealVec>& extractPositions(ContextImpl& context) {
@@ -88,12 +88,15 @@ void ReferenceIntegrateNEBStepKernel::execute(ContextImpl& context, const NEBInt
 	    for (int k = 0; k < 3; k++)
 	    unit_tangent[j][k] /= norm_of_unit_tangent;
 
+	/*std::cout << "Unit Tangent" << endl;
+	for (int j = 0; j < numParticles; j++)
+	std::cout << unit_tangent[j] << endl;*/
 	
 	vector<Vec3> spring_force(numParticles);
 	for (int j = 0; j < numParticles; j++) {
-	    RealOpenMM f_x = 2*positions[i][j][0] - positions[i-1][j][0] - positions[i+1][j][0];
-	    RealOpenMM f_y = 2*positions[i][j][1] - positions[i-1][j][1] - positions[i+1][j][1];
-	    RealOpenMM f_z = 2*positions[i][j][2] - positions[i-1][j][2] - positions[i+1][j][2];
+	    RealOpenMM f_x = -2*positions[i][j][0] + positions[i-1][j][0] + positions[i+1][j][0];
+	    RealOpenMM f_y = -2*positions[i][j][1] + positions[i-1][j][1] + positions[i+1][j][1];
+	    RealOpenMM f_z = -2*positions[i][j][2] + positions[i-1][j][2] + positions[i+1][j][2];
 	    spring_force[j] = Vec3(numImages * k * f_x,
 			      numImages * k * f_y,
 			      numImages * k * f_z);
@@ -107,10 +110,15 @@ void ReferenceIntegrateNEBStepKernel::execute(ContextImpl& context, const NEBInt
 	
 	// set the spring_force to be just the parallel projection along the
 	// tangent
+	//std::cout << "dot product with spring force" << dot_product_with_spring_force;
 	for (int j = 0; j < numParticles; j++)
 	    for (int k = 0; k < 3; k++)
 		spring_force[j][k] = unit_tangent[j][k] * dot_product_with_spring_force;
 	
+	/*std::cout << "Spring Force" << endl;
+	for (int j = 0; j < numParticles; j++)
+	std::cout << spring_force[j] << endl;*/
+
 	// take only the perpindicular component of the force due to the potential
 	// energy surface
 	RealOpenMM dot_product_with_potential_force = 0;
@@ -118,15 +126,23 @@ void ReferenceIntegrateNEBStepKernel::execute(ContextImpl& context, const NEBInt
 	    for (int k = 0; k < 3; k++)
 		dot_product_with_potential_force += forces[i][j][k]*unit_tangent[j][k];
 
+	/*std::cout << "Raw forces" << endl;
+        for (int j = 0; j < numParticles; j++)
+	std::cout << forces[i][j] << endl;*/
+
 	//for this force, we're subtracting off the parallel component
 	for (int j = 0; j < numParticles; j++) {
 	    for (int k = 0; k < 3; k++) {
-		forces[i][j][k] = forces[i][j][k] - unit_tangent[j][k] * dot_product_with_potential_force;
-		
-		// add the two forces together
-		forces[i][j][k] += spring_force[j][k];
+	      forces[i][j][k] = forces[i][j][k] - unit_tangent[j][k] * dot_product_with_potential_force;
+	      
+	      // add the two forces together
+	      //forces[i][j][k] += spring_force[j][k];
 	    }
 	}
+
+	/*std::cout << "All forces" << endl;
+	for (int j = 0; j < numParticles; j++)
+	std::cout << forces[i][j] << endl;*/
     }
     
     // null out forces on first and last images
@@ -144,12 +160,22 @@ void ReferenceIntegrateNEBStepKernel::execute(ContextImpl& context, const NEBInt
 
 
     // run the actual integrator with the modified forces
-    // for each system
-    for (int i = 0; i < numImages; i++) {
-	// by modifying pos, vel, and f, we change which coordinates
-	// the context object is pointing to
-        OptGradientDescent(positions[i], forces[i], stepSize);
+    // for each system (skip the end images)
+    // std::cout << "Force Norm" << endl;
+    for (int i = 1; i < numImages - 1; i++) {
+      double force_norm = 0.0;
+      for (int j = 0; j < numParticles; j++) {
+	for (int k = 0; k < 3; k++)
+	  force_norm += forces[i][j][k] * forces[i][j][k];
+	
+      }
+      //std::cout << force_norm << ", ";
+
+      // by modifying pos, vel, and f, we change which coordinates
+      // the context object is pointing to
+      OptGradientDescent(positions[i], forces[i], stepSize);
     }
+    //std::cout << endl;
     
 
 }
@@ -171,9 +197,9 @@ void ReferenceIntegrateNEBStepKernel::copyToContext(int image, ContextImpl& cont
     extractPositions(context) = positions[image];
     extractVelocities(context) = velocities[image];    
 
-    std::cout << "Forces:" << endl;    
+    /*std::cout << "Forces:" << endl;    
     for (int j = 0; j < forces[image].size(); j++) {
       std::cout << forces[image][j] << std::endl;
-    }
+      }*/
 }
 
