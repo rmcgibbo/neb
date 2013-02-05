@@ -77,7 +77,6 @@ void NEBIntegrator::step(int steps) {
     //std::cout << "NEBIntegrator::step\n";
     
     for (int i = 0; i < steps; ++i) {
-        dynamic_cast<IntegrateNEBStepKernel&>(kernel.getImpl()).execute(*context, *this, forcesAreValid);
-        forcesAreValid = true;
+        dynamic_cast<IntegrateNEBStepKernel&>(kernel.getImpl()).execute(*context, *this);
     }
 }

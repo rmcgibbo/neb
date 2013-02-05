@@ -33,7 +33,7 @@ public:
      * @param forcesAreValid if the context has been modified since the last time step, this will be
      *                       false to show that cached forces are invalid and must be recalculated
      */
-    void execute(ContextImpl& context, const NEBIntegrator& integrator, bool forcesAreValid);
+    void execute(ContextImpl& context, const NEBIntegrator& integrator);
     /**
      * Get the positions of all particles in one copy of the system.
      */

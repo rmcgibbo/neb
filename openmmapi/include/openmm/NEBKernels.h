@@ -30,10 +30,8 @@ public:
      *
      * @param context        the context in which to execute this kernel
      * @param integrator     the NEBIntegrator this kernel is being used for
-     * @param forcesAreValid if the context has been modified since the last time step, this will be
-     *                       false to show that cached forces are invalid and must be recalculated
      */
-    virtual void execute(ContextImpl& context, const NEBIntegrator& integrator, bool forcesAreValid) = 0;
+    virtual void execute(ContextImpl& context, const NEBIntegrator& integrator) = 0;
     /**
      * Get the positions of all particles in one copy of the system.
      */
